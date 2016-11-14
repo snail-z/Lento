@@ -5,7 +5,7 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * example:
-    * 初始化不设置frame，默认50
+    * 初始化不设置frame，默认50
     
 ```Object-c
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
@@ -14,7 +14,7 @@
       searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
       [self.view addSubview:searchBar];
 ```
-    * 通过DownJackets来设置一个实例，并进行增删
+    * 通过DownJackets来设置一个实例，并进行增删
 
 ```Object-c
 - (void)addDownJackets:(DownJackets *)downJackets
