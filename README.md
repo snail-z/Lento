@@ -6,22 +6,19 @@
 
 * Example:
  *            1. 初始化不设置frame，默认50
- *            2. 使用autolayout适配布局
-    
-```Object-c
+ ```Object-c
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
       searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
       [self.view addSubview:searchBar];
 ```
-    * 通过DownJackets来设置一个实例，并进行增删
-
+ *            2. 通过DownJackets来设置一个实例，并进行增删
+    
 ```Object-c
 - (void)addDownJackets:(DownJackets *)downJackets
 - (void)removeDownJackets:(DownJackets *)downJackets
 ```
-    * 更多使用方法请详见Demo
 
 * TODO list:
  *            1. 给textfield加上contentInset
