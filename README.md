@@ -18,7 +18,7 @@
       - (void)addDownJackets:(DownJackets *)downJackets
       - (void)removeDownJackets:(DownJackets *)downJackets
 ```
- *            3. 更多使用方法请通参见Demo
+ *            3. 更多详细使用方法请参见Demo
     
 * TODO list:
  *            1. 给textfield加上contentInset
