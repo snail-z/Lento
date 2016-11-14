@@ -9,7 +9,7 @@
     
       ```object-c
       
-      DownJacketSearchBar *searchBar = [DownJacketSearchBar new];
+      DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
       searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
