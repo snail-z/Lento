@@ -5,7 +5,7 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * example:
-    * 初始化不设置frame，默认高度50
+    * 初始化不设置frame，默认50
     
 ```Object-c
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
@@ -14,8 +14,21 @@
       searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
       [self.view addSubview:searchBar];
 ```
-   
+    * 通过DownJackets来设置一个实例，并进行增删
 
+```Object-c
+- (void)addDownJackets:(DownJackets *)downJackets
+- (void)removeDownJackets:(DownJackets *)downJackets
+```
+    * 具体使用方法详间Demo
+
+* TODO list
+ *            1. 给textfield加上contentInset
+ *            2. 使用autolayout适配布局
+ *            3. 取消选中时的scoll动画
+ *            4. 增加标题并根据文字长度来显示
+ *            5. 当删除textfield最后一个字符时会选中item...
+ */
 
 
 [1]: https://cocoapods.org "CocoaPods" 
