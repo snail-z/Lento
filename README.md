@@ -20,9 +20,9 @@
 - (void)addDownJackets:(DownJackets *)downJackets
 - (void)removeDownJackets:(DownJackets *)downJackets
 ```
-    * 具体使用方法详间Demo
+    * 更多使用方法请详见Demo
 
-* TODO list
+* TODO list:
  *            1. 给textfield加上contentInset
  *            2. 使用autolayout适配布局
  *            3. 取消选中时的scoll动画
