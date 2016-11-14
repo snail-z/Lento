@@ -20,6 +20,8 @@
       - (void)removeDownJackets:(DownJackets *)downJackets
 ```
 
+ *            3. 更多使用方法请通参见Demo
+ 
 * TODO list:
  *            1. 给textfield加上contentInset
  *            2. 使用autolayout适配布局
