@@ -5,4 +5,5 @@
   * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 
-[1]:https://cocoapods.org "CocoaPods"
+
+[1]:https://cocoapods.org"CocoaPods"
