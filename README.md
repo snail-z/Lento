@@ -27,8 +27,7 @@
  *            2. 使用autolayout适配布局
  *            3. 取消选中时的scoll动画
  *            4. 增加标题并根据文字长度来显示
- *            5. 当删除textfield最后一个字符时会选中item...
- */
+ *            5. 当删除textfield最后一个字符时会选中item
 
 
 [1]: https://cocoapods.org "CocoaPods" 
