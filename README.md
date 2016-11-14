@@ -5,7 +5,8 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * Example:
-    * 初始化不设置frame，默认50
+ *            1. 初始化不设置frame，默认50
+ *            2. 使用autolayout适配布局
     
 ```Object-c
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
