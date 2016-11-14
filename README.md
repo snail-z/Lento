@@ -16,8 +16,8 @@
  *            2. 通过DownJackets来设置一个实例，并进行增删
     
 ```Object-c
-- (void)addDownJackets:(DownJackets *)downJackets
-- (void)removeDownJackets:(DownJackets *)downJackets
+      - (void)addDownJackets:(DownJackets *)downJackets
+      - (void)removeDownJackets:(DownJackets *)downJackets
 ```
 
 * TODO list:
