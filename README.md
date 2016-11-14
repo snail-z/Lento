@@ -5,9 +5,9 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * example:
-   1. 初始化不设置frame，默认高度50
+   1 初始化不设置frame，默认高度50
    
-      ```Object
+      ```object-c
       DownJacketSearchBar *searchBar = [DownJacketSearchBar new];
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
