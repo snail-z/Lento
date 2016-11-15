@@ -6,7 +6,7 @@
 
 * Example:
  *            1. 初始化不设置frame，默认50
- ```Object-c
+ ```object-c 
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
