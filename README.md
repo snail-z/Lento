@@ -7,13 +7,13 @@
 * Example:
  *            1. 初始化不设置frame，默认50
 
- <object-c>```
+<code>```</code>
   DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init];
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
       searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
       [self.view addSubview:searchBar];
- </object-c>
+<code>```</code>
      
  *            2. 通过DownJackets来设置一个实例，并进行增删
  ```Object-c
