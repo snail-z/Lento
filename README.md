@@ -7,7 +7,7 @@
 * Example:
  *            1. 初始化不设置frame，默认50
 
- ```Object-c
+ ``` objc
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init]; 
       searchBar.delegate = self;
       searchBar.placeholder = @" 搜索昵称/姓名";
@@ -17,10 +17,10 @@
      
  *            2. 通过DownJackets来设置一个实例，并进行增删
  
- ```Object-c
+ ``` objc
       - (void)addDownJackets:(DownJackets *)downJackets
       - (void)removeDownJackets:(DownJackets *)downJackets
-```
+ ```
  *            3. 更多详细使用方法请参见Demo
     
 * TODO list:
