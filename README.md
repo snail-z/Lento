@@ -23,7 +23,7 @@
  ```
  *            3. 更多详细使用方法请参见Demo
     
-* TODO list:
+* TODO （待完善的地方）:
  *            1. 给textfield加上contentInset
  *            2. 使用autolayout适配布局
  *            3. 取消选中时的scoll动画
