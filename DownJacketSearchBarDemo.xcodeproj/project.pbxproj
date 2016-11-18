@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54852904370766C38D29EEE8 /* libPods-DownJacketSearchBarDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */; };
 		6148EF9E1DD58EBE00E2A86D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EF9D1DD58EBE00E2A86D /* main.m */; };
 		6148EFA11DD58EBE00E2A86D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFA01DD58EBE00E2A86D /* AppDelegate.m */; };
 		6148EFA41DD58EBE00E2A86D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFA31DD58EBE00E2A86D /* ViewController.m */; };
@@ -18,6 +19,8 @@
 		6148EFD61DD58F8D00E2A86D /* DownJacketSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD11DD58F8D00E2A86D /* DownJacketSearchBar.m */; };
 		6148EFD71DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD31DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m */; };
 		6148EFD81DD58F8D00E2A86D /* UIView+DownJacketLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD51DD58F8D00E2A86D /* UIView+DownJacketLayout.m */; };
+		6E55CABCDAC5CB384A6AAA48 /* libPods-DownJacketSearchBarDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */; };
+		823E15E9FDC133C1A119CB01 /* libPods-DownJacketSearchBarDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6148EF991DD58EBE00E2A86D /* DownJacketSearchBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownJacketSearchBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6148EF9D1DD58EBE00E2A86D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6148EF9F1DD58EBE00E2A86D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		6148EFD31DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DownJacketDeleteBackward.m"; sourceTree = "<group>"; };
 		6148EFD41DD58F8D00E2A86D /* UIView+DownJacketLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DownJacketLayout.h"; sourceTree = "<group>"; };
 		6148EFD51DD58F8D00E2A86D /* UIView+DownJacketLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DownJacketLayout.m"; sourceTree = "<group>"; };
+		71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823E15E9FDC133C1A119CB01 /* libPods-DownJacketSearchBarDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E55CABCDAC5CB384A6AAA48 /* libPods-DownJacketSearchBarDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54852904370766C38D29EEE8 /* libPods-DownJacketSearchBarDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,8 @@
 				6148EFB51DD58EBE00E2A86D /* DownJacketSearchBarDemoTests */,
 				6148EFC01DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests */,
 				6148EF9A1DD58EBE00E2A86D /* Products */,
+				CD9041DC5EB86B87E71165F9 /* Pods */,
+				A58DFD2FB956E938B5CAA158 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +180,29 @@
 			path = DownJacketSearchBar;
 			sourceTree = "<group>";
 		};
+		A58DFD2FB956E938B5CAA158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */,
+				60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */,
+				D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD9041DC5EB86B87E71165F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */,
+				71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */,
+				A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */,
+				5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */,
+				52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */,
+				7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6148EFC61DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */;
 			buildPhases = (
+				2889AD2B28F7FF70C200BD46 /* [CP] Check Pods Manifest.lock */,
 				6148EF951DD58EBE00E2A86D /* Sources */,
 				6148EF961DD58EBE00E2A86D /* Frameworks */,
 				6148EF971DD58EBE00E2A86D /* Resources */,
+				FE1415C0FD7ECEEE0E36DED2 /* [CP] Embed Pods Frameworks */,
+				EA6A9AA541507EBD681AFFB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6148EFC91DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */;
 			buildPhases = (
+				9FFA992C5092C05E5BC85F7E /* [CP] Check Pods Manifest.lock */,
 				6148EFAE1DD58EBE00E2A86D /* Sources */,
 				6148EFAF1DD58EBE00E2A86D /* Frameworks */,
 				6148EFB01DD58EBE00E2A86D /* Resources */,
+				74D8A2EC92838742987CE587 /* [CP] Embed Pods Frameworks */,
+				4492843C44DD1FB69BAB2E1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6148EFCC1DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */;
 			buildPhases = (
+				7703D8CBB23C6AD6053DA820 /* [CP] Check Pods Manifest.lock */,
 				6148EFB91DD58EBE00E2A86D /* Sources */,
 				6148EFBA1DD58EBE00E2A86D /* Frameworks */,
 				6148EFBB1DD58EBE00E2A86D /* Resources */,
+				A2A5BB5E591C9D44BFBC4CCE /* [CP] Embed Pods Frameworks */,
+				722652D22AC5ABA7DA1A2E30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +336,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2889AD2B28F7FF70C200BD46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4492843C44DD1FB69BAB2E1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		722652D22AC5ABA7DA1A2E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D8A2EC92838742987CE587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7703D8CBB23C6AD6053DA820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFA992C5092C05E5BC85F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A5BB5E591C9D44BFBC4CCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6A9AA541507EBD681AFFB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1415C0FD7ECEEE0E36DED2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6148EF951DD58EBE00E2A86D /* Sources */ = {
@@ -439,6 +626,7 @@
 		};
 		6148EFC71DD58EBE00E2A86D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
@@ -450,6 +638,7 @@
 		};
 		6148EFC81DD58EBE00E2A86D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
@@ -461,6 +650,7 @@
 		};
 		6148EFCA1DD58EBE00E2A86D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
@@ -473,6 +663,7 @@
 		};
 		6148EFCB1DD58EBE00E2A86D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
@@ -485,6 +676,7 @@
 		};
 		6148EFCD1DD58EBE00E2A86D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -496,6 +688,7 @@
 		};
 		6148EFCE1DD58EBE00E2A86D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -524,6 +717,7 @@
 				6148EFC81DD58EBE00E2A86D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6148EFC91DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +726,7 @@
 				6148EFCB1DD58EBE00E2A86D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6148EFCC1DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +735,7 @@
 				6148EFCE1DD58EBE00E2A86D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -164,6 +164,9 @@
             [_delegate searchBar:self textDidChange:textField.text];
         }
     }
+    if (!textField.hasText && !_dataDownJackets.count) {
+        [self endEditing];
+    }
 }
 
 #pragma mark - KVO 监听dataDownJackets变化
