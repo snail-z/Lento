@@ -30,7 +30,8 @@
  *            4. 增加标题并根据文字长度来显示
  *            5. 当删除textfield最后一个字符时会选中item 
 
-#### 最新修改：完善当删除textfield最后一个字符时会选中item的问题，详细如下
+
+##### 最新完善：修改当删除textfield最后一个字符时会选中item的问题，详细如下
  
  ``` objc
 - (void)downJacketdeleteBackward {
