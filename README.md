@@ -40,7 +40,7 @@
         [delegate textFieldDidDeleteBackward:self];
     }
     /**
-     1. 交互方法:runtime
+     1. 交换方法:runtime
      method_exchangeImplementations(deleteBackward, downJacketdeleteBackward);
      也就是外部调用downJacketdeleteBackward就相当于调用了deleteBackward，调用deleteBackward就相当于调用了downJacketdeleteBackward
      2. 此时调用的方法 'downJacketdeleteBackward' 相当于调用系统的 'deleteBackward' 方法,原因是在load方法中进行了方法交换.
