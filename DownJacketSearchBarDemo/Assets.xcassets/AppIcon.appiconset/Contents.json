@@ -2,6 +2,19 @@
   "images" : [
     {
       "idiom" : "iphone",
+<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
+=======
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+>>>>>>> update
       "size" : "29x29",
       "scale" : "2x"
     },
@@ -32,6 +45,19 @@
     },
     {
       "idiom" : "ipad",
+<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
+=======
+      "size" : "20x20",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+>>>>>>> update
       "size" : "29x29",
       "scale" : "1x"
     },
