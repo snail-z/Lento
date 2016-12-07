@@ -2,11 +2,7 @@
 //  UIView+DownJacketLayout.h
 //  <https://github.com/snail-z/DownJacketSearchBar>
 //
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-//  Created by 张浩 on 16/11/1.
-=======
 //  Created by zhanghao on 16/11/1.
->>>>>>> update
 //  Copyright © 2016年 zhanghao. All rights reserved.
 //
 

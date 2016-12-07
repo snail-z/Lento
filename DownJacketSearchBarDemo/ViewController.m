@@ -2,11 +2,7 @@
 //  ViewController.m
 //  DownJacketSearchBarDemo
 //
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-//  Created by 张浩 on 16/11/11.
-=======
 //  Created by zhanghao on 16/11/11.
->>>>>>> update
 //  Copyright © 2016年 zhanghao. All rights reserved.
 //
 
@@ -42,14 +38,9 @@
     _searchBar = [DownJacketSearchBar new];
     _searchBar.y = 64;
     _searchBar.delegate = self;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-    _searchBar.placeholder = @" 搜索昵称/姓名";
-    _searchBar.leftImage = [UIImage imageNamed:@"downJacket_search"];;
-=======
     _searchBar.placeholder = @"搜索";
     _searchBar.presetImage = [UIImage imageNamed:@"downJacket_search"];
     _searchBar.leftPadding = 10;
->>>>>>> update
     [self.view addSubview:_searchBar];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, _searchBar.bottom, self.view.width, self.view.height-_searchBar.height - 64) style:UITableViewStylePlain];
@@ -59,10 +50,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.editing = YES;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-=======
     _tableView.rowHeight = 50;
->>>>>>> update
     [self.view addSubview:self.tableView];
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6148EF981DD58EBE00E2A86D"
+               BlueprintIdentifier = "616127CE1DF81A7F007A2FCE"
                BuildableName = "DownJacketSearchBarDemo.app"
                BlueprintName = "DownJacketSearchBarDemo"
                ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6148EFB11DD58EBE00E2A86D"
+               BlueprintIdentifier = "616127E71DF81A7F007A2FCE"
                BuildableName = "DownJacketSearchBarDemoTests.xctest"
                BlueprintName = "DownJacketSearchBarDemoTests"
                ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6148EFBC1DD58EBE00E2A86D"
+               BlueprintIdentifier = "616127F21DF81A7F007A2FCE"
                BuildableName = "DownJacketSearchBarDemoUITests.xctest"
                BlueprintName = "DownJacketSearchBarDemoUITests"
                ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6148EF981DD58EBE00E2A86D"
+            BlueprintIdentifier = "616127CE1DF81A7F007A2FCE"
             BuildableName = "DownJacketSearchBarDemo.app"
             BlueprintName = "DownJacketSearchBarDemo"
             ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6148EF981DD58EBE00E2A86D"
+            BlueprintIdentifier = "616127CE1DF81A7F007A2FCE"
             BuildableName = "DownJacketSearchBarDemo.app"
             BlueprintName = "DownJacketSearchBarDemo"
             ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6148EF981DD58EBE00E2A86D"
+            BlueprintIdentifier = "616127CE1DF81A7F007A2FCE"
             BuildableName = "DownJacketSearchBarDemo.app"
             BlueprintName = "DownJacketSearchBarDemo"
             ReferencedContainer = "container:DownJacketSearchBarDemo.xcodeproj">

@@ -2,26 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-      "filename" : "downJacket_search.png",
-=======
->>>>>>> update
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-=======
       "filename" : "downJacket_search@2x.png",
->>>>>>> update
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-=======
       "filename" : "downJacket_search@3x.png",
->>>>>>> update
       "scale" : "3x"
     }
   ],

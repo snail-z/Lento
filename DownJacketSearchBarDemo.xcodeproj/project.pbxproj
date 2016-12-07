@@ -7,248 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-		54852904370766C38D29EEE8 /* libPods-DownJacketSearchBarDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */; };
-=======
->>>>>>> update
-		6148EF9E1DD58EBE00E2A86D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EF9D1DD58EBE00E2A86D /* main.m */; };
-		6148EFA11DD58EBE00E2A86D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFA01DD58EBE00E2A86D /* AppDelegate.m */; };
-		6148EFA41DD58EBE00E2A86D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFA31DD58EBE00E2A86D /* ViewController.m */; };
-		6148EFA71DD58EBE00E2A86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6148EFA51DD58EBE00E2A86D /* Main.storyboard */; };
-		6148EFA91DD58EBE00E2A86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6148EFA81DD58EBE00E2A86D /* Assets.xcassets */; };
-		6148EFAC1DD58EBE00E2A86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6148EFAA1DD58EBE00E2A86D /* LaunchScreen.storyboard */; };
-		6148EFB71DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFB61DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.m */; };
-		6148EFC21DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFC11DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.m */; };
-		6148EFD61DD58F8D00E2A86D /* DownJacketSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD11DD58F8D00E2A86D /* DownJacketSearchBar.m */; };
-		6148EFD71DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD31DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m */; };
-		6148EFD81DD58F8D00E2A86D /* UIView+DownJacketLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6148EFD51DD58F8D00E2A86D /* UIView+DownJacketLayout.m */; };
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-		6E55CABCDAC5CB384A6AAA48 /* libPods-DownJacketSearchBarDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */; };
-		823E15E9FDC133C1A119CB01 /* libPods-DownJacketSearchBarDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */; };
-=======
->>>>>>> update
+		616127D41DF81A7F007A2FCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D31DF81A7F007A2FCE /* main.m */; };
+		616127D71DF81A7F007A2FCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D61DF81A7F007A2FCE /* AppDelegate.m */; };
+		616127DA1DF81A7F007A2FCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D91DF81A7F007A2FCE /* ViewController.m */; };
+		616127DD1DF81A7F007A2FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616127DB1DF81A7F007A2FCE /* Main.storyboard */; };
+		616127DF1DF81A7F007A2FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616127DE1DF81A7F007A2FCE /* Assets.xcassets */; };
+		616127E21DF81A7F007A2FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */; };
+		616127ED1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */; };
+		616127F81DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */; };
+		6161280C1DF81A93007A2FCE /* DownJacketSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 616128071DF81A93007A2FCE /* DownJacketSearchBar.m */; };
+		6161280D1DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m in Sources */ = {isa = PBXBuildFile; fileRef = 616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */; };
+		6161280E1DF81A93007A2FCE /* UIView+DownJacketLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6148EFB31DD58EBE00E2A86D /* PBXContainerItemProxy */ = {
+		616127E91DF81A7F007A2FCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6148EF911DD58EBE00E2A86D /* Project object */;
+			containerPortal = 616127C71DF81A7F007A2FCE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6148EF981DD58EBE00E2A86D;
+			remoteGlobalIDString = 616127CE1DF81A7F007A2FCE;
 			remoteInfo = DownJacketSearchBarDemo;
 		};
-		6148EFBE1DD58EBE00E2A86D /* PBXContainerItemProxy */ = {
+		616127F41DF81A7F007A2FCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6148EF911DD58EBE00E2A86D /* Project object */;
+			containerPortal = 616127C71DF81A7F007A2FCE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6148EF981DD58EBE00E2A86D;
+			remoteGlobalIDString = 616127CE1DF81A7F007A2FCE;
 			remoteInfo = DownJacketSearchBarDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-		075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-=======
->>>>>>> update
-		6148EF991DD58EBE00E2A86D /* DownJacketSearchBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownJacketSearchBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6148EF9D1DD58EBE00E2A86D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6148EF9F1DD58EBE00E2A86D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6148EFA01DD58EBE00E2A86D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6148EFA21DD58EBE00E2A86D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6148EFA31DD58EBE00E2A86D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6148EFA61DD58EBE00E2A86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6148EFA81DD58EBE00E2A86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6148EFAB1DD58EBE00E2A86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6148EFAD1DD58EBE00E2A86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6148EFB21DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6148EFB61DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoTests.m; sourceTree = "<group>"; };
-		6148EFB81DD58EBE00E2A86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6148EFBD1DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6148EFC11DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoUITests.m; sourceTree = "<group>"; };
-		6148EFC31DD58EBE00E2A86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6148EFD01DD58F8D00E2A86D /* DownJacketSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownJacketSearchBar.h; sourceTree = "<group>"; };
-		6148EFD11DD58F8D00E2A86D /* DownJacketSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBar.m; sourceTree = "<group>"; };
-		6148EFD21DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DownJacketDeleteBackward.h"; sourceTree = "<group>"; };
-		6148EFD31DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DownJacketDeleteBackward.m"; sourceTree = "<group>"; };
-		6148EFD41DD58F8D00E2A86D /* UIView+DownJacketLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DownJacketLayout.h"; sourceTree = "<group>"; };
-		6148EFD51DD58F8D00E2A86D /* UIView+DownJacketLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DownJacketLayout.m"; sourceTree = "<group>"; };
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-		71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo.release.xcconfig"; sourceTree = "<group>"; };
-		7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownJacketSearchBarDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownJacketSearchBarDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-=======
->>>>>>> update
+		616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownJacketSearchBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127D31DF81A7F007A2FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		616127D51DF81A7F007A2FCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		616127D61DF81A7F007A2FCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		616127D81DF81A7F007A2FCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		616127D91DF81A7F007A2FCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		616127DC1DF81A7F007A2FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		616127DE1DF81A7F007A2FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		616127E11DF81A7F007A2FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		616127E31DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoTests.m; sourceTree = "<group>"; };
+		616127EE1DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoUITests.m; sourceTree = "<group>"; };
+		616127F91DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616128061DF81A93007A2FCE /* DownJacketSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownJacketSearchBar.h; sourceTree = "<group>"; };
+		616128071DF81A93007A2FCE /* DownJacketSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBar.m; sourceTree = "<group>"; };
+		616128081DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DownJacketDeleteBackward.h"; sourceTree = "<group>"; };
+		616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DownJacketDeleteBackward.m"; sourceTree = "<group>"; };
+		6161280A1DF81A93007A2FCE /* UIView+DownJacketLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DownJacketLayout.h"; sourceTree = "<group>"; };
+		6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DownJacketLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6148EF961DD58EBE00E2A86D /* Frameworks */ = {
+		616127CC1DF81A7F007A2FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				823E15E9FDC133C1A119CB01 /* libPods-DownJacketSearchBarDemo.a in Frameworks */,
-=======
->>>>>>> update
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFAF1DD58EBE00E2A86D /* Frameworks */ = {
+		616127E51DF81A7F007A2FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				6E55CABCDAC5CB384A6AAA48 /* libPods-DownJacketSearchBarDemoTests.a in Frameworks */,
-=======
->>>>>>> update
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFBA1DD58EBE00E2A86D /* Frameworks */ = {
+		616127F01DF81A7F007A2FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				54852904370766C38D29EEE8 /* libPods-DownJacketSearchBarDemoUITests.a in Frameworks */,
-=======
->>>>>>> update
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6148EF901DD58EBE00E2A86D = {
+		616127C61DF81A7F007A2FCE = {
 			isa = PBXGroup;
 			children = (
-				6148EFCF1DD58F8D00E2A86D /* DownJacketSearchBar */,
-				6148EF9B1DD58EBE00E2A86D /* DownJacketSearchBarDemo */,
-				6148EFB51DD58EBE00E2A86D /* DownJacketSearchBarDemoTests */,
-				6148EFC01DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests */,
-				6148EF9A1DD58EBE00E2A86D /* Products */,
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				CD9041DC5EB86B87E71165F9 /* Pods */,
-				A58DFD2FB956E938B5CAA158 /* Frameworks */,
-=======
->>>>>>> update
+				616128051DF81A93007A2FCE /* DownJacketSearchBar */,
+				616127D11DF81A7F007A2FCE /* DownJacketSearchBarDemo */,
+				616127EB1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */,
+				616127F61DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */,
+				616127D01DF81A7F007A2FCE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6148EF9A1DD58EBE00E2A86D /* Products */ = {
+		616127D01DF81A7F007A2FCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6148EF991DD58EBE00E2A86D /* DownJacketSearchBarDemo.app */,
-				6148EFB21DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.xctest */,
-				6148EFBD1DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.xctest */,
+				616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */,
+				616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */,
+				616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6148EF9B1DD58EBE00E2A86D /* DownJacketSearchBarDemo */ = {
+		616127D11DF81A7F007A2FCE /* DownJacketSearchBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6148EF9F1DD58EBE00E2A86D /* AppDelegate.h */,
-				6148EFA01DD58EBE00E2A86D /* AppDelegate.m */,
-				6148EFA21DD58EBE00E2A86D /* ViewController.h */,
-				6148EFA31DD58EBE00E2A86D /* ViewController.m */,
-				6148EFA51DD58EBE00E2A86D /* Main.storyboard */,
-				6148EFA81DD58EBE00E2A86D /* Assets.xcassets */,
-				6148EFAA1DD58EBE00E2A86D /* LaunchScreen.storyboard */,
-				6148EFAD1DD58EBE00E2A86D /* Info.plist */,
-				6148EF9C1DD58EBE00E2A86D /* Supporting Files */,
+				616127D51DF81A7F007A2FCE /* AppDelegate.h */,
+				616127D61DF81A7F007A2FCE /* AppDelegate.m */,
+				616127D81DF81A7F007A2FCE /* ViewController.h */,
+				616127D91DF81A7F007A2FCE /* ViewController.m */,
+				616127DB1DF81A7F007A2FCE /* Main.storyboard */,
+				616127DE1DF81A7F007A2FCE /* Assets.xcassets */,
+				616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */,
+				616127E31DF81A7F007A2FCE /* Info.plist */,
+				616127D21DF81A7F007A2FCE /* Supporting Files */,
 			);
 			path = DownJacketSearchBarDemo;
 			sourceTree = "<group>";
 		};
-		6148EF9C1DD58EBE00E2A86D /* Supporting Files */ = {
+		616127D21DF81A7F007A2FCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6148EF9D1DD58EBE00E2A86D /* main.m */,
+				616127D31DF81A7F007A2FCE /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6148EFB51DD58EBE00E2A86D /* DownJacketSearchBarDemoTests */ = {
+		616127EB1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6148EFB61DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.m */,
-				6148EFB81DD58EBE00E2A86D /* Info.plist */,
+				616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */,
+				616127EE1DF81A7F007A2FCE /* Info.plist */,
 			);
 			path = DownJacketSearchBarDemoTests;
 			sourceTree = "<group>";
 		};
-		6148EFC01DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests */ = {
+		616127F61DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6148EFC11DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.m */,
-				6148EFC31DD58EBE00E2A86D /* Info.plist */,
+				616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */,
+				616127F91DF81A7F007A2FCE /* Info.plist */,
 			);
 			path = DownJacketSearchBarDemoUITests;
 			sourceTree = "<group>";
 		};
-		6148EFCF1DD58F8D00E2A86D /* DownJacketSearchBar */ = {
+		616128051DF81A93007A2FCE /* DownJacketSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				6148EFD01DD58F8D00E2A86D /* DownJacketSearchBar.h */,
-				6148EFD11DD58F8D00E2A86D /* DownJacketSearchBar.m */,
-				6148EFD21DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.h */,
-				6148EFD31DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m */,
-				6148EFD41DD58F8D00E2A86D /* UIView+DownJacketLayout.h */,
-				6148EFD51DD58F8D00E2A86D /* UIView+DownJacketLayout.m */,
+				616128061DF81A93007A2FCE /* DownJacketSearchBar.h */,
+				616128071DF81A93007A2FCE /* DownJacketSearchBar.m */,
+				616128081DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.h */,
+				616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */,
+				6161280A1DF81A93007A2FCE /* UIView+DownJacketLayout.h */,
+				6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */,
 			);
 			path = DownJacketSearchBar;
 			sourceTree = "<group>";
 		};
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-		A58DFD2FB956E938B5CAA158 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A409D71749243366D581EEB /* libPods-DownJacketSearchBarDemo.a */,
-				60B773912363B3A5F7673699 /* libPods-DownJacketSearchBarDemoTests.a */,
-				D9BD74110D7018C20C8B0690 /* libPods-DownJacketSearchBarDemoUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CD9041DC5EB86B87E71165F9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */,
-				71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */,
-				A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */,
-				5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */,
-				52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */,
-				7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> update
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6148EF981DD58EBE00E2A86D /* DownJacketSearchBarDemo */ = {
+		616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6148EFC61DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */;
+			buildConfigurationList = 616127FC1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */;
 			buildPhases = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				2889AD2B28F7FF70C200BD46 /* [CP] Check Pods Manifest.lock */,
-				6148EF951DD58EBE00E2A86D /* Sources */,
-				6148EF961DD58EBE00E2A86D /* Frameworks */,
-				6148EF971DD58EBE00E2A86D /* Resources */,
-				FE1415C0FD7ECEEE0E36DED2 /* [CP] Embed Pods Frameworks */,
-				EA6A9AA541507EBD681AFFB6 /* [CP] Copy Pods Resources */,
-=======
-				6148EF951DD58EBE00E2A86D /* Sources */,
-				6148EF961DD58EBE00E2A86D /* Frameworks */,
-				6148EF971DD58EBE00E2A86D /* Resources */,
->>>>>>> update
+				616127CB1DF81A7F007A2FCE /* Sources */,
+				616127CC1DF81A7F007A2FCE /* Frameworks */,
+				616127CD1DF81A7F007A2FCE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -256,90 +180,74 @@
 			);
 			name = DownJacketSearchBarDemo;
 			productName = DownJacketSearchBarDemo;
-			productReference = 6148EF991DD58EBE00E2A86D /* DownJacketSearchBarDemo.app */;
+			productReference = 616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6148EFB11DD58EBE00E2A86D /* DownJacketSearchBarDemoTests */ = {
+		616127E71DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6148EFC91DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */;
+			buildConfigurationList = 616127FF1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */;
 			buildPhases = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				9FFA992C5092C05E5BC85F7E /* [CP] Check Pods Manifest.lock */,
-				6148EFAE1DD58EBE00E2A86D /* Sources */,
-				6148EFAF1DD58EBE00E2A86D /* Frameworks */,
-				6148EFB01DD58EBE00E2A86D /* Resources */,
-				74D8A2EC92838742987CE587 /* [CP] Embed Pods Frameworks */,
-				4492843C44DD1FB69BAB2E1A /* [CP] Copy Pods Resources */,
-=======
-				6148EFAE1DD58EBE00E2A86D /* Sources */,
-				6148EFAF1DD58EBE00E2A86D /* Frameworks */,
-				6148EFB01DD58EBE00E2A86D /* Resources */,
->>>>>>> update
+				616127E41DF81A7F007A2FCE /* Sources */,
+				616127E51DF81A7F007A2FCE /* Frameworks */,
+				616127E61DF81A7F007A2FCE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6148EFB41DD58EBE00E2A86D /* PBXTargetDependency */,
+				616127EA1DF81A7F007A2FCE /* PBXTargetDependency */,
 			);
 			name = DownJacketSearchBarDemoTests;
 			productName = DownJacketSearchBarDemoTests;
-			productReference = 6148EFB21DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.xctest */;
+			productReference = 616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6148EFBC1DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests */ = {
+		616127F21DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6148EFCC1DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */;
+			buildConfigurationList = 616128021DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */;
 			buildPhases = (
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-				7703D8CBB23C6AD6053DA820 /* [CP] Check Pods Manifest.lock */,
-				6148EFB91DD58EBE00E2A86D /* Sources */,
-				6148EFBA1DD58EBE00E2A86D /* Frameworks */,
-				6148EFBB1DD58EBE00E2A86D /* Resources */,
-				A2A5BB5E591C9D44BFBC4CCE /* [CP] Embed Pods Frameworks */,
-				722652D22AC5ABA7DA1A2E30 /* [CP] Copy Pods Resources */,
-=======
-				6148EFB91DD58EBE00E2A86D /* Sources */,
-				6148EFBA1DD58EBE00E2A86D /* Frameworks */,
-				6148EFBB1DD58EBE00E2A86D /* Resources */,
->>>>>>> update
+				616127EF1DF81A7F007A2FCE /* Sources */,
+				616127F01DF81A7F007A2FCE /* Frameworks */,
+				616127F11DF81A7F007A2FCE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6148EFBF1DD58EBE00E2A86D /* PBXTargetDependency */,
+				616127F51DF81A7F007A2FCE /* PBXTargetDependency */,
 			);
 			name = DownJacketSearchBarDemoUITests;
 			productName = DownJacketSearchBarDemoUITests;
-			productReference = 6148EFBD1DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.xctest */;
+			productReference = 616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6148EF911DD58EBE00E2A86D /* Project object */ = {
+		616127C71DF81A7F007A2FCE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = zhanghao;
 				TargetAttributes = {
-					6148EF981DD58EBE00E2A86D = {
-						CreatedOnToolsVersion = 7.3;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-=======
+					616127CE1DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = XPMXP6URKM;
->>>>>>> update
+						ProvisioningStyle = Automatic;
 					};
-					6148EFB11DD58EBE00E2A86D = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 6148EF981DD58EBE00E2A86D;
+					616127E71DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XPMXP6URKM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 616127CE1DF81A7F007A2FCE;
 					};
-					6148EFBC1DD58EBE00E2A86D = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 6148EF981DD58EBE00E2A86D;
+					616127F21DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XPMXP6URKM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 616127CE1DF81A7F007A2FCE;
 					};
 				};
 			};
-			buildConfigurationList = 6148EF941DD58EBE00E2A86D /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */;
+			buildConfigurationList = 616127CA1DF81A7F007A2FCE /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -347,37 +255,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 6148EF901DD58EBE00E2A86D;
-			productRefGroup = 6148EF9A1DD58EBE00E2A86D /* Products */;
+			mainGroup = 616127C61DF81A7F007A2FCE;
+			productRefGroup = 616127D01DF81A7F007A2FCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6148EF981DD58EBE00E2A86D /* DownJacketSearchBarDemo */,
-				6148EFB11DD58EBE00E2A86D /* DownJacketSearchBarDemoTests */,
-				6148EFBC1DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests */,
+				616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */,
+				616127E71DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */,
+				616127F21DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6148EF971DD58EBE00E2A86D /* Resources */ = {
+		616127CD1DF81A7F007A2FCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6148EFAC1DD58EBE00E2A86D /* LaunchScreen.storyboard in Resources */,
-				6148EFA91DD58EBE00E2A86D /* Assets.xcassets in Resources */,
-				6148EFA71DD58EBE00E2A86D /* Main.storyboard in Resources */,
+				616127E21DF81A7F007A2FCE /* LaunchScreen.storyboard in Resources */,
+				616127DF1DF81A7F007A2FCE /* Assets.xcassets in Resources */,
+				616127DD1DF81A7F007A2FCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFB01DD58EBE00E2A86D /* Resources */ = {
+		616127E61DF81A7F007A2FCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFBB1DD58EBE00E2A86D /* Resources */ = {
+		616127F11DF81A7F007A2FCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,205 +294,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-/* Begin PBXShellScriptBuildPhase section */
-		2889AD2B28F7FF70C200BD46 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4492843C44DD1FB69BAB2E1A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		722652D22AC5ABA7DA1A2E30 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74D8A2EC92838742987CE587 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoTests/Pods-DownJacketSearchBarDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7703D8CBB23C6AD6053DA820 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9FFA992C5092C05E5BC85F7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A2A5BB5E591C9D44BFBC4CCE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemoUITests/Pods-DownJacketSearchBarDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA6A9AA541507EBD681AFFB6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE1415C0FD7ECEEE0E36DED2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownJacketSearchBarDemo/Pods-DownJacketSearchBarDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-=======
->>>>>>> update
 /* Begin PBXSourcesBuildPhase section */
-		6148EF951DD58EBE00E2A86D /* Sources */ = {
+		616127CB1DF81A7F007A2FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6148EFA41DD58EBE00E2A86D /* ViewController.m in Sources */,
-				6148EFD61DD58F8D00E2A86D /* DownJacketSearchBar.m in Sources */,
-				6148EFA11DD58EBE00E2A86D /* AppDelegate.m in Sources */,
-				6148EFD71DD58F8D00E2A86D /* UITextField+DownJacketDeleteBackward.m in Sources */,
-				6148EFD81DD58F8D00E2A86D /* UIView+DownJacketLayout.m in Sources */,
-				6148EF9E1DD58EBE00E2A86D /* main.m in Sources */,
+				616127DA1DF81A7F007A2FCE /* ViewController.m in Sources */,
+				6161280C1DF81A93007A2FCE /* DownJacketSearchBar.m in Sources */,
+				616127D71DF81A7F007A2FCE /* AppDelegate.m in Sources */,
+				6161280D1DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m in Sources */,
+				6161280E1DF81A93007A2FCE /* UIView+DownJacketLayout.m in Sources */,
+				616127D41DF81A7F007A2FCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFAE1DD58EBE00E2A86D /* Sources */ = {
+		616127E41DF81A7F007A2FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6148EFB71DD58EBE00E2A86D /* DownJacketSearchBarDemoTests.m in Sources */,
+				616127ED1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6148EFB91DD58EBE00E2A86D /* Sources */ = {
+		616127EF1DF81A7F007A2FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6148EFC21DD58EBE00E2A86D /* DownJacketSearchBarDemoUITests.m in Sources */,
+				616127F81DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6148EFB41DD58EBE00E2A86D /* PBXTargetDependency */ = {
+		616127EA1DF81A7F007A2FCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6148EF981DD58EBE00E2A86D /* DownJacketSearchBarDemo */;
-			targetProxy = 6148EFB31DD58EBE00E2A86D /* PBXContainerItemProxy */;
+			target = 616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */;
+			targetProxy = 616127E91DF81A7F007A2FCE /* PBXContainerItemProxy */;
 		};
-		6148EFBF1DD58EBE00E2A86D /* PBXTargetDependency */ = {
+		616127F51DF81A7F007A2FCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6148EF981DD58EBE00E2A86D /* DownJacketSearchBarDemo */;
-			targetProxy = 6148EFBE1DD58EBE00E2A86D /* PBXContainerItemProxy */;
+			target = 616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */;
+			targetProxy = 616127F41DF81A7F007A2FCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6148EFA51DD58EBE00E2A86D /* Main.storyboard */ = {
+		616127DB1DF81A7F007A2FCE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6148EFA61DD58EBE00E2A86D /* Base */,
+				616127DC1DF81A7F007A2FCE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6148EFAA1DD58EBE00E2A86D /* LaunchScreen.storyboard */ = {
+		616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6148EFAB1DD58EBE00E2A86D /* Base */,
+				616127E11DF81A7F007A2FCE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -592,7 +359,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6148EFC41DD58EBE00E2A86D /* Debug */ = {
+		616127FA1DF81A7F007A2FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -604,10 +371,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -629,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -637,7 +407,7 @@
 			};
 			name = Debug;
 		};
-		6148EFC51DD58EBE00E2A86D /* Release */ = {
+		616127FB1DF81A7F007A2FCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -649,10 +419,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -668,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,54 +449,35 @@
 			};
 			name = Release;
 		};
-		6148EFC71DD58EBE00E2A86D /* Debug */ = {
+		616127FD1DF81A7F007A2FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = 075FE73B8712B9C48F714AEE /* Pods-DownJacketSearchBarDemo.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
-=======
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
->>>>>>> update
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		6148EFC81DD58EBE00E2A86D /* Release */ = {
+		616127FE1DF81A7F007A2FCE /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = 71086B612380A419D788E133 /* Pods-DownJacketSearchBarDemo.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
-=======
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
->>>>>>> update
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		6148EFCA1DD58EBE00E2A86D /* Debug */ = {
+		616128001DF81A7F007A2FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = A9D8647321DC69EB6B6F4391 /* Pods-DownJacketSearchBarDemoTests.debug.xcconfig */;
-=======
->>>>>>> update
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoTests;
@@ -732,14 +486,11 @@
 			};
 			name = Debug;
 		};
-		6148EFCB1DD58EBE00E2A86D /* Release */ = {
+		616128011DF81A7F007A2FCE /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = 5B868E7349ED7490815C935C /* Pods-DownJacketSearchBarDemoTests.release.xcconfig */;
-=======
->>>>>>> update
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoTests;
@@ -748,13 +499,10 @@
 			};
 			name = Release;
 		};
-		6148EFCD1DD58EBE00E2A86D /* Debug */ = {
+		616128031DF81A7F007A2FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = 52076E97B814D9761C695412 /* Pods-DownJacketSearchBarDemoUITests.debug.xcconfig */;
-=======
->>>>>>> update
 			buildSettings = {
+				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoUITests;
@@ -763,13 +511,10 @@
 			};
 			name = Debug;
 		};
-		6148EFCE1DD58EBE00E2A86D /* Release */ = {
+		616128041DF81A7F007A2FCE /* Release */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< cd4f779617c3ad0b92352922f4baaa56663e26bc
-			baseConfigurationReference = 7F673901E4AEB74BF43AB6AB /* Pods-DownJacketSearchBarDemoUITests.release.xcconfig */;
-=======
->>>>>>> update
 			buildSettings = {
+				DEVELOPMENT_TEAM = XPMXP6URKM;
 				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoUITests;
@@ -781,43 +526,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6148EF941DD58EBE00E2A86D /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */ = {
+		616127CA1DF81A7F007A2FCE /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6148EFC41DD58EBE00E2A86D /* Debug */,
-				6148EFC51DD58EBE00E2A86D /* Release */,
+				616127FA1DF81A7F007A2FCE /* Debug */,
+				616127FB1DF81A7F007A2FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6148EFC61DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */ = {
+		616127FC1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6148EFC71DD58EBE00E2A86D /* Debug */,
-				6148EFC81DD58EBE00E2A86D /* Release */,
+				616127FD1DF81A7F007A2FCE /* Debug */,
+				616127FE1DF81A7F007A2FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		6148EFC91DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */ = {
+		616127FF1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6148EFCA1DD58EBE00E2A86D /* Debug */,
-				6148EFCB1DD58EBE00E2A86D /* Release */,
+				616128001DF81A7F007A2FCE /* Debug */,
+				616128011DF81A7F007A2FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		6148EFCC1DD58EBE00E2A86D /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */ = {
+		616128021DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6148EFCD1DD58EBE00E2A86D /* Debug */,
-				6148EFCE1DD58EBE00E2A86D /* Release */,
+				616128031DF81A7F007A2FCE /* Debug */,
+				616128041DF81A7F007A2FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6148EF911DD58EBE00E2A86D /* Project object */;
+	rootObject = 616127C71DF81A7F007A2FCE /* Project object */;
 }
