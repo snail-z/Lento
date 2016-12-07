@@ -245,7 +245,7 @@ static NSString * const dataDownJacketsKey = @"dataDownJackets";
         [_items enumerateObjectsUsingBlock:^(DownJacketItem * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
             [button setFrame:CGRectMake(idx * (width + margin) + _self.leftPadding, margin, width, width)];
             button.center = CGPointMake(button.center.x, self.frame.size.height / 2);
-        }];
+        }]; 
         
         [UIView animateWithDuration:0.25 animations:^{
             CGFloat offsetX = scrollContentWidth -_scrollContainer.width;
