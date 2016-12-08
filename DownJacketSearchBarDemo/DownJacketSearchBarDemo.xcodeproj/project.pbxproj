@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616127D41DF81A7F007A2FCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D31DF81A7F007A2FCE /* main.m */; };
+		616127D71DF81A7F007A2FCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D61DF81A7F007A2FCE /* AppDelegate.m */; };
+		616127DA1DF81A7F007A2FCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127D91DF81A7F007A2FCE /* ViewController.m */; };
+		616127DD1DF81A7F007A2FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616127DB1DF81A7F007A2FCE /* Main.storyboard */; };
+		616127DF1DF81A7F007A2FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616127DE1DF81A7F007A2FCE /* Assets.xcassets */; };
+		616127E21DF81A7F007A2FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */; };
+		616127ED1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */; };
+		616127F81DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */; };
+		6161280C1DF81A93007A2FCE /* DownJacketSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 616128071DF81A93007A2FCE /* DownJacketSearchBar.m */; };
+		6161280D1DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m in Sources */ = {isa = PBXBuildFile; fileRef = 616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */; };
+		6161280E1DF81A93007A2FCE /* UIView+DownJacketLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		616127E91DF81A7F007A2FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 616127C71DF81A7F007A2FCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616127CE1DF81A7F007A2FCE;
+			remoteInfo = DownJacketSearchBarDemo;
+		};
+		616127F41DF81A7F007A2FCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 616127C71DF81A7F007A2FCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616127CE1DF81A7F007A2FCE;
+			remoteInfo = DownJacketSearchBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownJacketSearchBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127D31DF81A7F007A2FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		616127D51DF81A7F007A2FCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		616127D61DF81A7F007A2FCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		616127D81DF81A7F007A2FCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		616127D91DF81A7F007A2FCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		616127DC1DF81A7F007A2FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		616127DE1DF81A7F007A2FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		616127E11DF81A7F007A2FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		616127E31DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoTests.m; sourceTree = "<group>"; };
+		616127EE1DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownJacketSearchBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBarDemoUITests.m; sourceTree = "<group>"; };
+		616127F91DF81A7F007A2FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616128061DF81A93007A2FCE /* DownJacketSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownJacketSearchBar.h; sourceTree = "<group>"; };
+		616128071DF81A93007A2FCE /* DownJacketSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownJacketSearchBar.m; sourceTree = "<group>"; };
+		616128081DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DownJacketDeleteBackward.h"; sourceTree = "<group>"; };
+		616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DownJacketDeleteBackward.m"; sourceTree = "<group>"; };
+		6161280A1DF81A93007A2FCE /* UIView+DownJacketLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DownJacketLayout.h"; sourceTree = "<group>"; };
+		6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DownJacketLayout.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616127CC1DF81A7F007A2FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127E51DF81A7F007A2FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127F01DF81A7F007A2FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616127C61DF81A7F007A2FCE = {
+			isa = PBXGroup;
+			children = (
+				616128051DF81A93007A2FCE /* DownJacketSearchBar */,
+				616127D11DF81A7F007A2FCE /* DownJacketSearchBarDemo */,
+				616127EB1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */,
+				616127F61DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */,
+				616127D01DF81A7F007A2FCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		616127D01DF81A7F007A2FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */,
+				616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */,
+				616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		616127D11DF81A7F007A2FCE /* DownJacketSearchBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				616127D51DF81A7F007A2FCE /* AppDelegate.h */,
+				616127D61DF81A7F007A2FCE /* AppDelegate.m */,
+				616127D81DF81A7F007A2FCE /* ViewController.h */,
+				616127D91DF81A7F007A2FCE /* ViewController.m */,
+				616127DB1DF81A7F007A2FCE /* Main.storyboard */,
+				616127DE1DF81A7F007A2FCE /* Assets.xcassets */,
+				616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */,
+				616127E31DF81A7F007A2FCE /* Info.plist */,
+				616127D21DF81A7F007A2FCE /* Supporting Files */,
+			);
+			path = DownJacketSearchBarDemo;
+			sourceTree = "<group>";
+		};
+		616127D21DF81A7F007A2FCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				616127D31DF81A7F007A2FCE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		616127EB1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				616127EC1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m */,
+				616127EE1DF81A7F007A2FCE /* Info.plist */,
+			);
+			path = DownJacketSearchBarDemoTests;
+			sourceTree = "<group>";
+		};
+		616127F61DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				616127F71DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m */,
+				616127F91DF81A7F007A2FCE /* Info.plist */,
+			);
+			path = DownJacketSearchBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		616128051DF81A93007A2FCE /* DownJacketSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				616128061DF81A93007A2FCE /* DownJacketSearchBar.h */,
+				616128071DF81A93007A2FCE /* DownJacketSearchBar.m */,
+				616128081DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.h */,
+				616128091DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m */,
+				6161280A1DF81A93007A2FCE /* UIView+DownJacketLayout.h */,
+				6161280B1DF81A93007A2FCE /* UIView+DownJacketLayout.m */,
+			);
+			path = DownJacketSearchBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616127FC1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */;
+			buildPhases = (
+				616127CB1DF81A7F007A2FCE /* Sources */,
+				616127CC1DF81A7F007A2FCE /* Frameworks */,
+				616127CD1DF81A7F007A2FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownJacketSearchBarDemo;
+			productName = DownJacketSearchBarDemo;
+			productReference = 616127CF1DF81A7F007A2FCE /* DownJacketSearchBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		616127E71DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616127FF1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */;
+			buildPhases = (
+				616127E41DF81A7F007A2FCE /* Sources */,
+				616127E51DF81A7F007A2FCE /* Frameworks */,
+				616127E61DF81A7F007A2FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616127EA1DF81A7F007A2FCE /* PBXTargetDependency */,
+			);
+			name = DownJacketSearchBarDemoTests;
+			productName = DownJacketSearchBarDemoTests;
+			productReference = 616127E81DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		616127F21DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616128021DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */;
+			buildPhases = (
+				616127EF1DF81A7F007A2FCE /* Sources */,
+				616127F01DF81A7F007A2FCE /* Frameworks */,
+				616127F11DF81A7F007A2FCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				616127F51DF81A7F007A2FCE /* PBXTargetDependency */,
+			);
+			name = DownJacketSearchBarDemoUITests;
+			productName = DownJacketSearchBarDemoUITests;
+			productReference = 616127F31DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		616127C71DF81A7F007A2FCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = zhanghao;
+				TargetAttributes = {
+					616127CE1DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XPMXP6URKM;
+						ProvisioningStyle = Automatic;
+					};
+					616127E71DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XPMXP6URKM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 616127CE1DF81A7F007A2FCE;
+					};
+					616127F21DF81A7F007A2FCE = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XPMXP6URKM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 616127CE1DF81A7F007A2FCE;
+					};
+				};
+			};
+			buildConfigurationList = 616127CA1DF81A7F007A2FCE /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 616127C61DF81A7F007A2FCE;
+			productRefGroup = 616127D01DF81A7F007A2FCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */,
+				616127E71DF81A7F007A2FCE /* DownJacketSearchBarDemoTests */,
+				616127F21DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		616127CD1DF81A7F007A2FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616127E21DF81A7F007A2FCE /* LaunchScreen.storyboard in Resources */,
+				616127DF1DF81A7F007A2FCE /* Assets.xcassets in Resources */,
+				616127DD1DF81A7F007A2FCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127E61DF81A7F007A2FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127F11DF81A7F007A2FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616127CB1DF81A7F007A2FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616127DA1DF81A7F007A2FCE /* ViewController.m in Sources */,
+				6161280C1DF81A93007A2FCE /* DownJacketSearchBar.m in Sources */,
+				616127D71DF81A7F007A2FCE /* AppDelegate.m in Sources */,
+				6161280D1DF81A93007A2FCE /* UITextField+DownJacketDeleteBackward.m in Sources */,
+				6161280E1DF81A93007A2FCE /* UIView+DownJacketLayout.m in Sources */,
+				616127D41DF81A7F007A2FCE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127E41DF81A7F007A2FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616127ED1DF81A7F007A2FCE /* DownJacketSearchBarDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616127EF1DF81A7F007A2FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616127F81DF81A7F007A2FCE /* DownJacketSearchBarDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		616127EA1DF81A7F007A2FCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */;
+			targetProxy = 616127E91DF81A7F007A2FCE /* PBXContainerItemProxy */;
+		};
+		616127F51DF81A7F007A2FCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 616127CE1DF81A7F007A2FCE /* DownJacketSearchBarDemo */;
+			targetProxy = 616127F41DF81A7F007A2FCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		616127DB1DF81A7F007A2FCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616127DC1DF81A7F007A2FCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		616127E01DF81A7F007A2FCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616127E11DF81A7F007A2FCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616127FA1DF81A7F007A2FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		616127FB1DF81A7F007A2FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		616127FD1DF81A7F007A2FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		616127FE1DF81A7F007A2FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		616128001DF81A7F007A2FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownJacketSearchBarDemo.app/DownJacketSearchBarDemo";
+			};
+			name = Debug;
+		};
+		616128011DF81A7F007A2FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownJacketSearchBarDemo.app/DownJacketSearchBarDemo";
+			};
+			name = Release;
+		};
+		616128031DF81A7F007A2FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DownJacketSearchBarDemo;
+			};
+			name = Debug;
+		};
+		616128041DF81A7F007A2FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XPMXP6URKM;
+				INFOPLIST_FILE = DownJacketSearchBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zhanghao.DownJacketSearchBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DownJacketSearchBarDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616127CA1DF81A7F007A2FCE /* Build configuration list for PBXProject "DownJacketSearchBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616127FA1DF81A7F007A2FCE /* Debug */,
+				616127FB1DF81A7F007A2FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		616127FC1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616127FD1DF81A7F007A2FCE /* Debug */,
+				616127FE1DF81A7F007A2FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616127FF1DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616128001DF81A7F007A2FCE /* Debug */,
+				616128011DF81A7F007A2FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		616128021DF81A7F007A2FCE /* Build configuration list for PBXNativeTarget "DownJacketSearchBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616128031DF81A7F007A2FCE /* Debug */,
+				616128041DF81A7F007A2FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 616127C71DF81A7F007A2FCE /* Project object */;
+}
