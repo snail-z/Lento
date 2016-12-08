@@ -11,7 +11,7 @@
 
 @implementation UITextField (DownJacketDeleteBackward)
 
-NSString * const DownJacketTextFieldDidDeleteBackwardNotification = @"com.zhang.textfield.did.notification";
+NSString * const DownJacketTextFieldDidDeleteBackwardNotification = @"com.zhang.downJacketsField.did.notification";
 
 + (void)load {
     Method originalSelector = class_getInstanceMethod([self class], NSSelectorFromString(@"deleteBackward"));
@@ -25,9 +25,8 @@ NSString * const DownJacketTextFieldDidDeleteBackwardNotification = @"com.zhang.
         [delegate textFieldDidDeleteBackward:self];
     }
     [[NSNotificationCenter defaultCenter] postNotificationName:DownJacketTextFieldDidDeleteBackwardNotification object:self];
-    /*  Method Swizzling
-     Reference <http://nshipster.cn/method-swizzling/>
-     */
+    
+    // Method Swizzling <http://nshipster.cn/method-swizzling/>
     [self downJacketdeleteBackward];
 }
 

@@ -232,10 +232,10 @@ static NSString * const dataDownJacketsKey = @"dataDownJackets";
     if (!_dataDownJackets.count) {
         [self endEditing];
     } else {
-        // margin: subviews spacing
-        // width: subviews width and height
-        CGFloat margin = 7, width = self.height - 20;
-        CGFloat scrollContentWidth = (width + margin)*_dataDownJackets.count + _leftPadding - margin;
+        
+        // subviews spacing and width adjust
+        CGFloat spacing = 7, width = self.height - 20;
+        CGFloat scrollContentWidth = (width + spacing) * _dataDownJackets.count + _leftPadding - spacing;
         if (_dataDownJackets.count <= self.scrollConstraintCount) {
             [_searchItem removeFromSuperview];
             [self updateLayout:scrollContentWidth];
@@ -243,8 +243,9 @@ static NSString * const dataDownJacketsKey = @"dataDownJackets";
         
         __weak typeof(self) _self = self;
         [_items enumerateObjectsUsingBlock:^(DownJacketItem * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
-            [button setFrame:CGRectMake(idx * (width + margin) + _self.leftPadding, margin, width, width)];
-            button.center = CGPointMake(button.center.x, self.frame.size.height / 2);
+            button.size = CGSizeMake(width, width);
+            button.x = (width + spacing) * idx + _self.leftPadding;
+            button.centerY = self.height / 2;
         }]; 
         
         [UIView animateWithDuration:0.25 animations:^{

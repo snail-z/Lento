@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "DownJacketSearchBar"
-s.version      = "1.0.5"
+s.version      = "1.0.7
 s.summary      = 'A SearchBar For iOS'
 s.license      = 'MIT'
 s.platform     = :ios, '7.0'
