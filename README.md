@@ -24,11 +24,6 @@
       - (void)removeDownJackets:(DownJackets *)downJackets
  ```
  *            3. 更多详细使用方法请参见Demo
-    
-*  TODO:
- *            1. 使用autolayout适配布局
- *            2. 增加标题并根据文字长度来显示
-
 
 ##### 最新完善：修改当删除textfield最后一个字符时会选中item的问题，增加简单的动画，增加属性textInsetLeft可设置textfield的文本内边距等
  
