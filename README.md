@@ -5,7 +5,7 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * Example:
- *            1. 初始化不设置frame，默认50
+ *            1. 初始化不设置frame，默认60
 
  ``` objc
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init]; 
@@ -25,7 +25,7 @@
  ```
  *            3. 更多详细使用方法请参见Demo
     
-* TODO （待完善的地方）:
+*  TODO:
  *            1. 使用autolayout适配布局
  *            2. 增加标题并根据文字长度来显示
 
