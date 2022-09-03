@@ -6,7 +6,7 @@
     * 方法二：直接把 DownJacketSearchBar 文件夹（在 Demo 中）拖拽到你的项目中
 
 * Example:
- *            1. 初始化不设置frame，默认60
+ *            1. 初始化不设置frame
 
  ``` objc
       DownJacketSearchBar *searchBar = [[DownJacketSearchBar alloc] init]; 
