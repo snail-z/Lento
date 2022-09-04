@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Message(),
     Home(),
     Message(),
-    Message(),
+    Home(),
   ];
 
   void _onBottomNagigationBarTapped(index) {
