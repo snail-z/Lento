@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Widget> _homeWidgets = [
     Message(),
     Home(),
-    Message(),
+    Home(),
     Home(),
   ];
 
