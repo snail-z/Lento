@@ -52,7 +52,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   int _index = 0;
-
   final List<Widget> _homeWidgets = [
     Message(),
     Home(),
