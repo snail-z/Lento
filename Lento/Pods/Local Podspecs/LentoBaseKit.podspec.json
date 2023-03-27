@@ -1,0 +1,30 @@
+{
+  "name": "LentoBaseKit",
+  "version": "0.1.0",
+  "summary": "A short description of LentoBaseKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/LentoBaseKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@zuche.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/LentoBaseKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "LentoBaseKit/Classes/**/*",
+  "dependencies": {
+    "AmassingUI": [
+
+    ],
+    "ObjectMapper": [
+      "~> 4.2.0"
+    ]
+  }
+}

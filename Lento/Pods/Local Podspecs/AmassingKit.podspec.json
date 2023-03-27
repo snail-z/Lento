@@ -1,0 +1,22 @@
+{
+  "name": "AmassingKit",
+  "version": "0.1.0",
+  "summary": "A short description of AmassingKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/AmassingKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@zuche.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/AmassingKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AmassingKit/Classes/**/*"
+}

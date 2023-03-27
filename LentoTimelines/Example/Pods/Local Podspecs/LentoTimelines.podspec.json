@@ -1,0 +1,22 @@
+{
+  "name": "LentoTimelines",
+  "version": "0.1.0",
+  "summary": "A short description of LentoTimelines.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/LentoTimelines",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@zuche.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/LentoTimelines.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LentoTimelines/Classes/**/*"
+}

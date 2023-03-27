@@ -1,0 +1,6 @@
+module AmassingUI {
+  umbrella header "AmassingUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

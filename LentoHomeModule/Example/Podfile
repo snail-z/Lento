@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LentoHomeModule_Example' do
+  pod 'LentoHomeModule', :path => '../'
+
+  target 'LentoHomeModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

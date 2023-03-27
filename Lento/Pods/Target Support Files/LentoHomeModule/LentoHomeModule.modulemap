@@ -1,0 +1,6 @@
+module LentoHomeModule {
+  umbrella header "LentoHomeModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

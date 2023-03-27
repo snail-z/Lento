@@ -1,0 +1,16 @@
+PODS:
+  - AmassingDebugKit (0.1.0)
+
+DEPENDENCIES:
+  - AmassingDebugKit (from `../`)
+
+EXTERNAL SOURCES:
+  AmassingDebugKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmassingDebugKit: e2ff194f89539d16db15caf5ec864dcf95ccdae8
+
+PODFILE CHECKSUM: 488fe1d0bed620b2e2b6bec123f7d49a10b70d91
+
+COCOAPODS: 1.11.3

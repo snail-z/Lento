@@ -1,0 +1,16 @@
+PODS:
+  - AmassingExtensions (0.1.0)
+
+DEPENDENCIES:
+  - AmassingExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  AmassingExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmassingExtensions: df074b0891ca743b69c58318a30920e73044b35c
+
+PODFILE CHECKSUM: ca7811e72a72f7ca37f1f68ca36048e169e9054b
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ED2A4340-CB62-48DF-BB1B-5D90C0108DC8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "4F82AA6D-FFCE-4FAA-A9BC-2663653F7A2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B10059DD-3FBC-414A-B3A1-F01D4F41A12A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lento/Example/Transitions/MATabbarTransition.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "animateTransition(using:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD6927CE-D2E0-419C-B527-F00146E79AA2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Alamofire/Source/SessionDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "urlSession(_:task:didReceive:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "730165BA-CD05-4BC5-83BD-89B005E4DD74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Moya/Sources/Moya/MoyaProvider+Internal.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "sendAlamofireRequest(_:target:callbackQueue:progress:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "730165BA-CD05-4BC5-83BD-89B005E4DD74 - 871a01784d45bf5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moya.MoyaProvider.sendAlamofireRequest&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Alamofire.Request, &#x3c4;_1_0: Moya.Requestable&gt;(_: &#x3c4;_1_0, target: &#x3c4;_0_0, callbackQueue: Swift.Optional&lt;__C.OS_dispatch_queue&gt;, progress: Swift.Optional&lt;(Moya.ProgressResponse) -&gt; ()&gt;, completion: (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; ()) -&gt; Moya.CancellableToken"
+                  moduleName = "Lento"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios/Desktop/PROJECT/___FontReferenceTable/Lento/Pods/Moya/Sources/Moya/MoyaProvider+Internal.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "730165BA-CD05-4BC5-83BD-89B005E4DD74 - 6aaa603339596f9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.NSHTTPURLResponse&gt;, Swift.Optional&lt;Foundation.URLRequest&gt;, Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Moya.MoyaProvider.sendAlamofireRequest&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Alamofire.Request, &#x3c4;_1_0: Moya.Requestable&gt;(_: &#x3c4;_1_0, target: &#x3c4;_0_0, callbackQueue: Swift.Optional&lt;__C.OS_dispatch_queue&gt;, progress: Swift.Optional&lt;(Moya.ProgressResponse) -&gt; ()&gt;, completion: (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; ()) -&gt; Moya.CancellableToken"
+                  moduleName = "Lento"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios/Desktop/PROJECT/___FontReferenceTable/Lento/Pods/Moya/Sources/Moya/MoyaProvider+Internal.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EC0BB872872DD3800A7F23C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BB862872DD3800A7F23C /* AppDelegate.swift */; };
+		3EC0BB892872DD3800A7F23C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BB882872DD3800A7F23C /* SceneDelegate.swift */; };
+		3EC0BB8B2872DD3800A7F23C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BB8A2872DD3800A7F23C /* ViewController.swift */; };
+		3EC0BB8E2872DD3800A7F23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BB8C2872DD3800A7F23C /* Main.storyboard */; };
+		3EC0BB902872DD3A00A7F23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BB8F2872DD3A00A7F23C /* Assets.xcassets */; };
+		3EC0BB932872DD3A00A7F23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC0BB912872DD3A00A7F23C /* LaunchScreen.storyboard */; };
+		3EC0BB9E2872DD3A00A7F23C /* LentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BB9D2872DD3A00A7F23C /* LentoTests.swift */; };
+		3EC0BBA82872DD3A00A7F23C /* LentoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BBA72872DD3A00A7F23C /* LentoUITests.swift */; };
+		3EC0BBAA2872DD3A00A7F23C /* LentoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */; };
+		4607C80AAA011D7FED663517 /* libPods-Lento.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */; };
+		81FF625A2967B792000C564F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF62592967B792000C564F /* MineViewController.swift */; };
+		81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625B2967B7C9000C564F /* DiscoverViewController.swift */; };
+		81FF62602967BA78000C564F /* LentoBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625F2967BA78000C564F /* LentoBaseTabBarController.swift */; };
+		81FF62622967C6F6000C564F /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF62612967C6F6000C564F /* SidebarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EC0BB9A2872DD3A00A7F23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EC0BB7B2872DD3800A7F23C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EC0BB822872DD3800A7F23C;
+			remoteInfo = Lento;
+		};
+		3EC0BBA42872DD3A00A7F23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EC0BB7B2872DD3800A7F23C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EC0BB822872DD3800A7F23C;
+			remoteInfo = Lento;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F6AF23A28EA7F5A00DD8515 /* Lento-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lento-Bridging-Header.h"; sourceTree = "<group>"; };
+		3EC0BB832872DD3800A7F23C /* Lento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lento.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0BB862872DD3800A7F23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EC0BB882872DD3800A7F23C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3EC0BB8A2872DD3800A7F23C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EC0BB8D2872DD3800A7F23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EC0BB8F2872DD3A00A7F23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EC0BB922872DD3A00A7F23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EC0BB942872DD3A00A7F23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC0BB992872DD3A00A7F23C /* LentoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LentoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0BB9D2872DD3A00A7F23C /* LentoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoTests.swift; sourceTree = "<group>"; };
+		3EC0BBA32872DD3A00A7F23C /* LentoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LentoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0BBA72872DD3A00A7F23C /* LentoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoUITests.swift; sourceTree = "<group>"; };
+		3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lento.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lento.debug.xcconfig"; path = "Target Support Files/Pods-Lento/Pods-Lento.debug.xcconfig"; sourceTree = "<group>"; };
+		81FF62592967B792000C564F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		81FF625B2967B7C9000C564F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		81FF625F2967BA78000C564F /* LentoBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoBaseTabBarController.swift; sourceTree = "<group>"; };
+		81FF62612967C6F6000C564F /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		87CB33827A1CC269A4909A47 /* Pods-Lento.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lento.release.xcconfig"; path = "Target Support Files/Pods-Lento/Pods-Lento.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EC0BB802872DD3800A7F23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4607C80AAA011D7FED663517 /* libPods-Lento.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BB962872DD3A00A7F23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BBA02872DD3A00A7F23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EC0BB7A2872DD3800A7F23C = {
+			isa = PBXGroup;
+			children = (
+				3EC0BB852872DD3800A7F23C /* Lento */,
+				3EC0BB9C2872DD3A00A7F23C /* LentoTests */,
+				3EC0BBA62872DD3A00A7F23C /* LentoUITests */,
+				3EC0BB842872DD3800A7F23C /* Products */,
+				B1E6E9EEF56217E67EE0AF25 /* Pods */,
+				65C5FCFC3D833F833C9814E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EC0BB842872DD3800A7F23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0BB832872DD3800A7F23C /* Lento.app */,
+				3EC0BB992872DD3A00A7F23C /* LentoTests.xctest */,
+				3EC0BBA32872DD3A00A7F23C /* LentoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EC0BB852872DD3800A7F23C /* Lento */ = {
+			isa = PBXGroup;
+			children = (
+				812E417028FE35F300ED51F4 /* Example */,
+				3EC0BB862872DD3800A7F23C /* AppDelegate.swift */,
+				3EC0BB882872DD3800A7F23C /* SceneDelegate.swift */,
+				3EC0BB8A2872DD3800A7F23C /* ViewController.swift */,
+				2F6AF23A28EA7F5A00DD8515 /* Lento-Bridging-Header.h */,
+				3EC0BB8C2872DD3800A7F23C /* Main.storyboard */,
+				3EC0BB8F2872DD3A00A7F23C /* Assets.xcassets */,
+				3EC0BB912872DD3A00A7F23C /* LaunchScreen.storyboard */,
+				3EC0BB942872DD3A00A7F23C /* Info.plist */,
+			);
+			path = Lento;
+			sourceTree = "<group>";
+		};
+		3EC0BB9C2872DD3A00A7F23C /* LentoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0BB9D2872DD3A00A7F23C /* LentoTests.swift */,
+			);
+			path = LentoTests;
+			sourceTree = "<group>";
+		};
+		3EC0BBA62872DD3A00A7F23C /* LentoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0BBA72872DD3A00A7F23C /* LentoUITests.swift */,
+				3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */,
+			);
+			path = LentoUITests;
+			sourceTree = "<group>";
+		};
+		65C5FCFC3D833F833C9814E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		812E417028FE35F300ED51F4 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				81FF62582967B734000C564F /* demos */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		81FF62582967B734000C564F /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				81FF62592967B792000C564F /* MineViewController.swift */,
+				81FF625B2967B7C9000C564F /* DiscoverViewController.swift */,
+				81FF625F2967BA78000C564F /* LentoBaseTabBarController.swift */,
+				81FF62612967C6F6000C564F /* SidebarViewController.swift */,
+			);
+			path = demos;
+			sourceTree = "<group>";
+		};
+		B1E6E9EEF56217E67EE0AF25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */,
+				87CB33827A1CC269A4909A47 /* Pods-Lento.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EC0BB822872DD3800A7F23C /* Lento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EC0BBAD2872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "Lento" */;
+			buildPhases = (
+				696A41040741B45E5BFF4B05 /* [CP] Check Pods Manifest.lock */,
+				3EC0BB7F2872DD3800A7F23C /* Sources */,
+				3EC0BB802872DD3800A7F23C /* Frameworks */,
+				3EC0BB812872DD3800A7F23C /* Resources */,
+				5005312C585CF973AFD8978A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lento;
+			productName = Lento;
+			productReference = 3EC0BB832872DD3800A7F23C /* Lento.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EC0BB982872DD3A00A7F23C /* LentoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EC0BBB02872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "LentoTests" */;
+			buildPhases = (
+				3EC0BB952872DD3A00A7F23C /* Sources */,
+				3EC0BB962872DD3A00A7F23C /* Frameworks */,
+				3EC0BB972872DD3A00A7F23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EC0BB9B2872DD3A00A7F23C /* PBXTargetDependency */,
+			);
+			name = LentoTests;
+			productName = LentoTests;
+			productReference = 3EC0BB992872DD3A00A7F23C /* LentoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EC0BBA22872DD3A00A7F23C /* LentoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EC0BBB32872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "LentoUITests" */;
+			buildPhases = (
+				3EC0BB9F2872DD3A00A7F23C /* Sources */,
+				3EC0BBA02872DD3A00A7F23C /* Frameworks */,
+				3EC0BBA12872DD3A00A7F23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EC0BBA52872DD3A00A7F23C /* PBXTargetDependency */,
+			);
+			name = LentoUITests;
+			productName = LentoUITests;
+			productReference = 3EC0BBA32872DD3A00A7F23C /* LentoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EC0BB7B2872DD3800A7F23C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3EC0BB822872DD3800A7F23C = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1340;
+					};
+					3EC0BB982872DD3A00A7F23C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3EC0BB822872DD3800A7F23C;
+					};
+					3EC0BBA22872DD3A00A7F23C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3EC0BB822872DD3800A7F23C;
+					};
+				};
+			};
+			buildConfigurationList = 3EC0BB7E2872DD3800A7F23C /* Build configuration list for PBXProject "Lento" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EC0BB7A2872DD3800A7F23C;
+			productRefGroup = 3EC0BB842872DD3800A7F23C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EC0BB822872DD3800A7F23C /* Lento */,
+				3EC0BB982872DD3A00A7F23C /* LentoTests */,
+				3EC0BBA22872DD3A00A7F23C /* LentoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EC0BB812872DD3800A7F23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC0BB932872DD3A00A7F23C /* LaunchScreen.storyboard in Resources */,
+				3EC0BB902872DD3A00A7F23C /* Assets.xcassets in Resources */,
+				3EC0BB8E2872DD3800A7F23C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BB972872DD3A00A7F23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BBA12872DD3A00A7F23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5005312C585CF973AFD8978A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lento/Pods-Lento-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lento/Pods-Lento-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lento/Pods-Lento-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		696A41040741B45E5BFF4B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lento-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EC0BB7F2872DD3800A7F23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81FF62602967BA78000C564F /* LentoBaseTabBarController.swift in Sources */,
+				3EC0BB8B2872DD3800A7F23C /* ViewController.swift in Sources */,
+				3EC0BB872872DD3800A7F23C /* AppDelegate.swift in Sources */,
+				81FF625A2967B792000C564F /* MineViewController.swift in Sources */,
+				81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */,
+				3EC0BB892872DD3800A7F23C /* SceneDelegate.swift in Sources */,
+				81FF62622967C6F6000C564F /* SidebarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BB952872DD3A00A7F23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC0BB9E2872DD3A00A7F23C /* LentoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0BB9F2872DD3A00A7F23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC0BBA82872DD3A00A7F23C /* LentoUITests.swift in Sources */,
+				3EC0BBAA2872DD3A00A7F23C /* LentoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EC0BB9B2872DD3A00A7F23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EC0BB822872DD3800A7F23C /* Lento */;
+			targetProxy = 3EC0BB9A2872DD3A00A7F23C /* PBXContainerItemProxy */;
+		};
+		3EC0BBA52872DD3A00A7F23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EC0BB822872DD3800A7F23C /* Lento */;
+			targetProxy = 3EC0BBA42872DD3A00A7F23C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EC0BB8C2872DD3800A7F23C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EC0BB8D2872DD3800A7F23C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EC0BB912872DD3A00A7F23C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EC0BB922872DD3A00A7F23C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EC0BBAB2872DD3A00A7F23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EC0BBAC2872DD3A00A7F23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EC0BBAE2872DD3A00A7F23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT73DARZRD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lento/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.Lento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Lento/Lento-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EC0BBAF2872DD3A00A7F23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CB33827A1CC269A4909A47 /* Pods-Lento.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VT73DARZRD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lento/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.Lento;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Lento/Lento-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EC0BBB12872DD3A00A7F23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 799CMC9F9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.LentoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lento.app/Lento";
+			};
+			name = Debug;
+		};
+		3EC0BBB22872DD3A00A7F23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 799CMC9F9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.LentoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lento.app/Lento";
+			};
+			name = Release;
+		};
+		3EC0BBB42872DD3A00A7F23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 799CMC9F9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.LentoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lento;
+			};
+			name = Debug;
+		};
+		3EC0BBB52872DD3A00A7F23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 799CMC9F9X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mafia.LentoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lento;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EC0BB7E2872DD3800A7F23C /* Build configuration list for PBXProject "Lento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC0BBAB2872DD3A00A7F23C /* Debug */,
+				3EC0BBAC2872DD3A00A7F23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EC0BBAD2872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "Lento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC0BBAE2872DD3A00A7F23C /* Debug */,
+				3EC0BBAF2872DD3A00A7F23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EC0BBB02872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "LentoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC0BBB12872DD3A00A7F23C /* Debug */,
+				3EC0BBB22872DD3A00A7F23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EC0BBB32872DD3A00A7F23C /* Build configuration list for PBXNativeTarget "LentoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC0BBB42872DD3A00A7F23C /* Debug */,
+				3EC0BBB52872DD3A00A7F23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EC0BB7B2872DD3800A7F23C /* Project object */;
+}

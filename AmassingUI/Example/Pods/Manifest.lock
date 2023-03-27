@@ -1,0 +1,16 @@
+PODS:
+  - AmassingUI (0.1.0)
+
+DEPENDENCIES:
+  - AmassingUI (from `../`)
+
+EXTERNAL SOURCES:
+  AmassingUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmassingUI: 4a37ecdbdd8f2025c1ffbb1f61cac5c5f1874ea2
+
+PODFILE CHECKSUM: 112f90e429d8db335ae5f8244e0f7e87082d3fa0
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+module LentoFeedModule {
+  umbrella header "LentoFeedModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

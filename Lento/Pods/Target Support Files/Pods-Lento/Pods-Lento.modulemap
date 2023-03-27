@@ -1,0 +1,6 @@
+module Pods_Lento {
+  umbrella header "Pods-Lento-umbrella.h"
+
+  export *
+  module * { export * }
+}

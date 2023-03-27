@@ -1,0 +1,6 @@
+framework module AmassingExtensions {
+  umbrella header "AmassingExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

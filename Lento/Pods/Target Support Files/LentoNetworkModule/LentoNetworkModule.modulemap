@@ -1,0 +1,6 @@
+module LentoNetworkModule {
+  umbrella header "LentoNetworkModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

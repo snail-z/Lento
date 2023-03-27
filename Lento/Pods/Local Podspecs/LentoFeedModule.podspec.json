@@ -1,0 +1,47 @@
+{
+  "name": "LentoFeedModule",
+  "version": "0.1.0",
+  "summary": "A short description of LentoFeedModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/LentoFeedModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@zuche.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/LentoFeedModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "LentoFeedModule/Classes/**/*",
+  "resource_bundles": {
+    "LentoFeedModule": [
+      "LentoFeedModule/Assets/*.*"
+    ]
+  },
+  "dependencies": {
+    "AmassingUI": [
+
+    ],
+    "LentoBaseKit": [
+
+    ],
+    "ReactorKit": [
+      "~> 3.2.0"
+    ],
+    "RxCocoa": [
+      "6.5.0"
+    ],
+    "RxViewController": [
+      "~> 2.0.0"
+    ],
+    "ObjectMapper": [
+      "~> 4.2.0"
+    ]
+  }
+}

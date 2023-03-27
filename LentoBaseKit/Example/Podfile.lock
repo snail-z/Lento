@@ -1,0 +1,16 @@
+PODS:
+  - LentoBaseKit (0.1.0)
+
+DEPENDENCIES:
+  - LentoBaseKit (from `../`)
+
+EXTERNAL SOURCES:
+  LentoBaseKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LentoBaseKit: 795fe5f54d76b09945cd2e255ee4b962ff0440fb
+
+PODFILE CHECKSUM: ca197c202171bb4202700c099623525b3a7ebf94
+
+COCOAPODS: 1.11.3

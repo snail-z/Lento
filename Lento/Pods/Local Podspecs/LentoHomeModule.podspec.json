@@ -1,0 +1,54 @@
+{
+  "name": "LentoHomeModule",
+  "version": "0.1.0",
+  "summary": "A short description of LentoHomeModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/LentoHomeModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/LentoHomeModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "LentoHomeModule/Classes/**/*",
+  "dependencies": {
+    "AmassingUI": [
+
+    ],
+    "LentoBaseKit": [
+
+    ],
+    "LentoNetworkModule": [
+
+    ],
+    "SnapKit": [
+      "~> 5.0.1"
+    ],
+    "IGListKit": [
+      "3.4.0"
+    ],
+    "ReactorKit": [
+      "~> 3.2.0"
+    ],
+    "RxCocoa": [
+      "6.5.0"
+    ],
+    "RxViewController": [
+      "~> 2.0.0"
+    ],
+    "JXPagingView/Paging": [
+      "2.0.13"
+    ],
+    "JXSegmentedView": [
+
+    ]
+  }
+}

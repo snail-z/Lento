@@ -1,0 +1,1 @@
+../../../Target Support Files/JXSegmentedView/JXSegmentedView-umbrella.h

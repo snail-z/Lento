@@ -1,0 +1,6 @@
+framework module LentoTimelines {
+  umbrella header "LentoTimelines-umbrella.h"
+
+  export *
+  module * { export * }
+}
