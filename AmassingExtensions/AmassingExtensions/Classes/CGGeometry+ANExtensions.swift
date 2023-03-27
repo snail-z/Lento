@@ -14,6 +14,7 @@ public extension CGFloat {
     var abs: CGFloat {
         return Swift.abs(self)
     }
+    
     /// 将CGFloat转Int
     func toInt() -> Int {
         return Int(self)
