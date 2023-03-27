@@ -1,0 +1,6 @@
+module SkeletonView {
+  umbrella header "SkeletonView-umbrella.h"
+
+  export *
+  module * { export * }
+}

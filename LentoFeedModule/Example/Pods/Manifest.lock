@@ -1,0 +1,16 @@
+PODS:
+  - LentoFeedModule (0.1.0)
+
+DEPENDENCIES:
+  - LentoFeedModule (from `../`)
+
+EXTERNAL SOURCES:
+  LentoFeedModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LentoFeedModule: ad4e03fc0adb3b8c4f053b6f4f45b2481539c1ff
+
+PODFILE CHECKSUM: 992b6b8dff572076961b6ef33855d50c5dad207e
+
+COCOAPODS: 1.11.3

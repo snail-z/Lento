@@ -1,0 +1,28 @@
+{
+  "name": "DDHomeModule",
+  "version": "0.10.1",
+  "summary": "得到首页组件",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitlab.luojilab.com/iget-iOSSwift/DDHomeModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hailiangwang": "wanghailiang@luojilab.com"
+  },
+  "source": {
+    "git": "https://gitlab.luojilab.com/iget-iOSSwift/DDHomeModule.git",
+    "tag": "0.10.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.5",
+  "static_framework": true,
+  "source_files": "DDHomeModule/Classes/**/*",
+  "resources": [
+    "DDHomeModule/Assets/DDHomeModule.bundle"
+  ],
+  "swift_version": "5.5"
+}

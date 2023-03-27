@@ -1,0 +1,22 @@
+{
+  "name": "MADebugMagic",
+  "version": "0.1.0",
+  "summary": "A short description of MADebugMagic.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/MADebugMagic",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/MADebugMagic.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "MADebugMagic/Classes/**/*"
+}

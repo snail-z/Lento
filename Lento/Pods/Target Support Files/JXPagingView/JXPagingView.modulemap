@@ -1,0 +1,6 @@
+module JXPagingView {
+  umbrella header "JXPagingView-umbrella.h"
+
+  export *
+  module * { export * }
+}

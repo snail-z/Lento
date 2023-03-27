@@ -1,0 +1,167 @@
+PODS:
+  - Alamofire (5.6.4)
+  - AmassingDebugKit (0.1.0):
+    - AmassingExtensions
+    - AmassingUI
+    - MADebugMagic
+  - AmassingExtensions (0.1.0)
+  - AmassingUI (0.1.0):
+    - AmassingExtensions
+    - SnapKit (~> 5.0.1)
+  - AmassingWebKit (0.1.0)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+  - JXPagingView/Paging (2.0.13)
+  - JXSegmentedView (1.3.0)
+  - Kingfisher (7.3.2)
+  - KMNavigationBarTransition (1.1.10)
+  - LentoBaseKit (0.1.0):
+    - AmassingUI
+    - ObjectMapper (~> 4.2.0)
+  - LentoFeedModule (0.1.0):
+    - AmassingUI
+    - LentoBaseKit
+    - ObjectMapper (~> 4.2.0)
+    - ReactorKit (~> 3.2.0)
+    - RxCocoa (= 6.5.0)
+    - RxViewController (~> 2.0.0)
+  - LentoHomeModule (0.1.0):
+    - AmassingUI
+    - IGListKit (= 3.4.0)
+    - JXPagingView/Paging (= 2.0.13)
+    - JXSegmentedView
+    - LentoBaseKit
+    - LentoNetworkModule
+    - ReactorKit (~> 3.2.0)
+    - RxCocoa (= 6.5.0)
+    - RxViewController (~> 2.0.0)
+    - SnapKit (~> 5.0.1)
+  - LentoNetworkModule (0.1.0):
+    - Moya (~> 15.0.0)
+    - RxCocoa (= 6.5.0)
+  - LentoTimelines (0.1.0)
+  - MADebugMagic (0.1.0)
+  - MJRefresh (3.7.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - SkeletonView (1.26.2)
+  - SnapKit (5.0.1)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - AmassingDebugKit (from `../AmassingDebugKit/Classes/..`)
+  - AmassingExtensions (from `../AmassingExtensions/Classes/..`)
+  - AmassingUI (from `../AmassingUI/Classes/..`)
+  - AmassingWebKit (from `../AmassingWebKit/Classes/..`)
+  - IGListKit (= 3.4.0)
+  - JXPagingView/Paging
+  - JXPagingView/Paging (= 2.0.13)
+  - JXSegmentedView
+  - Kingfisher (~> 7.3.0)
+  - KMNavigationBarTransition
+  - LentoBaseKit (from `../LentoBaseKit/Classes/..`)
+  - LentoFeedModule (from `../LentoFeedModule/Classes/..`)
+  - LentoHomeModule (from `../LentoHomeModule/Classes/..`)
+  - LentoNetworkModule (from `../LentoNetworkModule/Classes/..`)
+  - LentoTimelines (from `../LentoTimelines/Classes/..`)
+  - MADebugMagic (from `../MADebugMagic/Classes/..`)
+  - MJRefresh
+  - ObjectMapper (~> 4.2.0)
+  - ReactorKit (~> 3.2.0)
+  - RxCocoa (= 6.5.0)
+  - RxViewController (~> 2.0.0)
+  - SkeletonView (~> 1.26.0)
+  - SnapKit (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IGListKit
+    - JXPagingView
+    - JXSegmentedView
+    - Kingfisher
+    - KMNavigationBarTransition
+    - MJRefresh
+    - Moya
+    - ObjectMapper
+    - ReactorKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxViewController
+    - SkeletonView
+    - SnapKit
+    - WeakMapTable
+
+EXTERNAL SOURCES:
+  AmassingDebugKit:
+    :path: "../AmassingDebugKit/Classes/.."
+  AmassingExtensions:
+    :path: "../AmassingExtensions/Classes/.."
+  AmassingUI:
+    :path: "../AmassingUI/Classes/.."
+  AmassingWebKit:
+    :path: "../AmassingWebKit/Classes/.."
+  LentoBaseKit:
+    :path: "../LentoBaseKit/Classes/.."
+  LentoFeedModule:
+    :path: "../LentoFeedModule/Classes/.."
+  LentoHomeModule:
+    :path: "../LentoHomeModule/Classes/.."
+  LentoNetworkModule:
+    :path: "../LentoNetworkModule/Classes/.."
+  LentoTimelines:
+    :path: "../LentoTimelines/Classes/.."
+  MADebugMagic:
+    :path: "../MADebugMagic/Classes/.."
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AmassingDebugKit: b511bb2b0a6faff33aef1c60da4873e1f5ec9135
+  AmassingExtensions: 91e4690b88730be2df0b7a37f2e6d07633185ef2
+  AmassingUI: 45edc375ff9e203421b2ad49909d44db55ae9c70
+  AmassingWebKit: ff9f53d7db8b5ff86c5a6bea1f9db4883fe5b51a
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
+  JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  KMNavigationBarTransition: ceea7a78462b6d9910cf6dba93465a7e9168a1b7
+  LentoBaseKit: b818cfbd9bf21468ac6434231d84c73fb8aef04a
+  LentoFeedModule: 157f597258f321296e94fc4505241a3a7a263fad
+  LentoHomeModule: cfb093cfdb52e67ba71a2b35830eb48aee1dc44e
+  LentoNetworkModule: 6e1aa238357aee7c799415cd935f794af072522e
+  LentoTimelines: b616f3e33c32ab48e0ff3bf4932adada77507a45
+  MADebugMagic: 61b16cefed3a6e6ee91c5f093008e9039c1d1327
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
+  SkeletonView: 8d1d2d23d0c8c691501fbc003f909f0ed7045d5f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 6fe5b904985ca00279ef74cda9ecbe8fa0ebaafa
+
+COCOAPODS: 1.11.3

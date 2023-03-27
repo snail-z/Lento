@@ -1,0 +1,6 @@
+framework module Pods_AmassingUI_Example {
+  umbrella header "Pods-AmassingUI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

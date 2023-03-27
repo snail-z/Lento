@@ -1,0 +1,6 @@
+module LentoBaseKit {
+  umbrella header "LentoBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

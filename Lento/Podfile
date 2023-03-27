@@ -1,0 +1,70 @@
+inhibit_all_warnings!
+use_modular_headers!
+install! 'cocoapods', :deterministic_uuids => false
+
+#第三方
+def share_third_pod
+  pod 'SnapKit', '~> 5.0.1'
+  pod 'IGListKit', '3.4.0', :modular_headers => true
+  pod 'SkeletonView', '~> 1.26.0'
+  pod 'ObjectMapper', '~> 4.2.0'
+  pod 'ReactorKit', '~> 3.2.0'
+  pod 'RxCocoa', '6.5.0'
+  pod 'RxViewController', '~> 2.0.0'
+  pod 'Kingfisher', '~> 7.3.0'
+#  pod 'Moya-ObjectMapper', '~> 2.9'
+  pod 'JXPagingView/Paging', '2.0.13'
+  pod 'JXSegmentedView'
+  pod 'KMNavigationBarTransition'
+  pod 'MJRefresh'
+  pod 'JXPagingView/Paging'
+end
+
+#公用组件
+def share_base_Pods
+  #公用扩展
+  pod 'AmassingExtensions', :path =>'../AmassingExtensions/Classes/..'
+  #公用UI
+  pod 'AmassingUI', :path =>'../AmassingUI/Classes/..'
+  #web交互
+  pod 'AmassingWebKit', :path =>'../AmassingWebKit/Classes/..'
+  #调试框架
+  pod 'AmassingDebugKit', :path =>'../AmassingDebugKit/Classes/..'
+  pod 'MADebugMagic', :path =>'../MADebugMagic/Classes/..'
+end
+
+#业务组件
+def lento_business_Pods
+  #业务基础依赖
+  pod 'LentoBaseKit', :path =>'../LentoBaseKit/Classes/..'
+  #网络框架
+  pod 'LentoNetworkModule', :path =>'../LentoNetworkModule/Classes/..'
+  #首页组件
+  pod 'LentoHomeModule', :path =>'../LentoHomeModule/Classes/..'
+  #推荐流
+  pod 'LentoFeedModule', :path =>'../LentoFeedModule/Classes/..'
+  #时间轴
+  pod 'LentoTimelines', :path =>'../LentoTimelines/Classes/..'
+end
+
+target 'Lento' do
+  share_third_pod
+  share_base_Pods
+  lento_business_Pods
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
+      target.build_configurations.each do |config|
+        
+          # Fix Xcode 14 code signing issues with bundles.
+          # See https://github.com/CocoaPods/CocoaPods/issues/8891#issuecomment-1249151085
+          config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+          
+          # https://github.com/CocoaPods/CocoaPods/issues/9233
+          config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+      end
+    end
+  end
+end

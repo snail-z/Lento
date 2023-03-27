@@ -1,0 +1,16 @@
+PODS:
+  - AmassingWebKit (0.1.0)
+
+DEPENDENCIES:
+  - AmassingWebKit (from `../`)
+
+EXTERNAL SOURCES:
+  AmassingWebKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmassingWebKit: 8600f6874f1b9808daf2725b380a76361900f6f3
+
+PODFILE CHECKSUM: 7e68e5e1d4415712713d630ca8ddf0610d703334
+
+COCOAPODS: 1.11.3

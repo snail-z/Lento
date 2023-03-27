@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LentoBaseKit_Example' do
+  pod 'LentoBaseKit', :path => '../'
+
+  target 'LentoBaseKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

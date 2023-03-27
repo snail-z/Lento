@@ -1,0 +1,32 @@
+{
+  "name": "AmassingUI",
+  "version": "0.1.0",
+  "summary": "A short description of AmassingUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhanghao/AmassingUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhanghao": "zhanghao@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhanghao/AmassingUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "source_files": "AmassingUI/Classes/**/*.{h,m,swift}",
+  "requires_arc": true,
+  "dependencies": {
+    "AmassingExtensions": [
+
+    ],
+    "SnapKit": [
+      "~> 5.0.1"
+    ]
+  }
+}

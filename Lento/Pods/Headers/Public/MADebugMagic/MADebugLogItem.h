@@ -1,0 +1,1 @@
+../../../../../MADebugMagic/MADebugMagic/Classes/MADebugLogItem.h

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LentoFeedModule_Example' do
+  pod 'LentoFeedModule', :path => '../'
+
+  target 'LentoFeedModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

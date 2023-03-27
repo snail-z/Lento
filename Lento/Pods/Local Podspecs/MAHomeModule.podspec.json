@@ -1,0 +1,28 @@
+{
+  "name": "MAHomeModule",
+  "version": "0.1.1",
+  "summary": "desc",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "xx",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xx": "x@x.com"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.5",
+  "static_framework": true,
+  "source_files": "MAHomeModule/Classes/**/*",
+  "resources": [
+    "MAHomeModule/Assets/MAHomeModule.bundle"
+  ],
+  "swift_version": "5.5"
+}

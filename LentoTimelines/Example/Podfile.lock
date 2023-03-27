@@ -1,0 +1,16 @@
+PODS:
+  - LentoTimelines (0.1.0)
+
+DEPENDENCIES:
+  - LentoTimelines (from `../`)
+
+EXTERNAL SOURCES:
+  LentoTimelines:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LentoTimelines: b616f3e33c32ab48e0ff3bf4932adada77507a45
+
+PODFILE CHECKSUM: 070a354461b1f7527a9033561661696930bb58f8
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AmassingDebugKit_Example' do
+  pod 'AmassingDebugKit', :path => '../'
+
+  target 'AmassingDebugKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
