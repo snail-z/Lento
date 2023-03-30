@@ -22,6 +22,7 @@ end
 
 #公用组件
 def share_base_Pods
+  pod 'AmassingRouter', :path =>'../AmassingRouter/Classes/..'
   #公用扩展
   pod 'AmassingExtensions', :path =>'../AmassingExtensions/Classes/..'
   #公用UI
@@ -64,6 +65,8 @@ post_install do |installer|
           
           # https://github.com/CocoaPods/CocoaPods/issues/9233
           config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+          
+          config.build_settings['SWIFT_VERSION'] = "5.0"
       end
     end
   end

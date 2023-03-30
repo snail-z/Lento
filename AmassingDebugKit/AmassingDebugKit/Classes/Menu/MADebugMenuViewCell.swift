@@ -8,7 +8,17 @@
 import UIKit
 import AmassingUI
 
-@objc open class Lento1BaseCollectionCell: UICollectionViewCell {
+class MADebugMenuViewCell: UICollectionViewCell {
+    
+    var item: MADebugMenuItem? {
+        didSet {
+            dataUpdates()
+        }
+    }
+    
+    var container: UIView!
+    var iconLabel: MALabel!
+    var descLabel: UILabel!
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,33 +33,7 @@ import AmassingUI
         layoutInitialization()
     }
     
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
     @objc open func commonInitialization() {
-        // Initialize subviews
-    }
-    
-    @objc open func layoutInitialization() {
-        // Configure the view layout
-    }
-}
-
-class MADebugMenuViewCell: Lento1BaseCollectionCell {
-    
-    var item: MADebugMenuItem? {
-        didSet {
-            dataUpdates()
-        }
-    }
-    
-    var container: UIView!
-    var iconLabel: MALabel!
-    var descLabel: UILabel!
-    
-    override func commonInitialization() {
         container = UIView()
         contentView.addSubview(container)
         
@@ -69,7 +53,7 @@ class MADebugMenuViewCell: Lento1BaseCollectionCell {
         contentView.addSubview(descLabel)
     }
     
-    override func layoutInitialization() {
+    @objc open func layoutInitialization() {
         container.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.width.equalToSuperview()

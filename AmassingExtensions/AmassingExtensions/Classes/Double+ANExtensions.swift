@@ -235,10 +235,10 @@ public extension Double {
     func trillionSuffixValue(reserved digits: Int = 2, formatted: Bool = true) -> String {
         let value = fabs(self)
         let tuples: (index: Int, unit: String)
-        if value < 10000 { tuples = (0, "")
-        } else if value < 100000000 { tuples = (4, "万")
-        } else if value < 1000000000000 { tuples = (8, "亿")
-        } else { tuples = (12, "万亿") }
+        if value < 10000 { tuples = (0, "") }
+        else if value < 100000000 { tuples = (4, "万") }
+        else if value < 1000000000000 { tuples = (8, "亿") }
+        else { tuples = (12, "万亿") }
         let numberValue = self / pow(10.0, Double(tuples.index))
         return numberValue.roundedValue(reserved: digits, formatted: formatted) + tuples.unit
     }
