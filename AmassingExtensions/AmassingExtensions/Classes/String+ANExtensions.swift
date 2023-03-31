@@ -102,8 +102,8 @@ public extension String {
     
     /// 字符串安全提取子串 (从某个位置起到某个位置结束)
     ///
-    ///     "Hello World".substringTake(from: 6, length: 5) -> "World"
-    func substringTake(from index: Int, length: Int) -> String? {
+    ///     "Hello World".substringSafe(from: 6, length: 5) -> "World"
+    func substringSafe(from index: Int, length: Int) -> String? {
         guard length >= 0, index >= 0, index < count  else { return nil }
         guard index.advanced(by: length) <= count else {
             return self[safe: index..<count]
@@ -113,38 +113,38 @@ public extension String {
     }
     
     /// 字符串安全提取子串 (从起始处到某个位置结束)
-    func substringTake(to index: Int) -> String? {
-        return substringTake(from: 0, length: index)
+    func substringSafe(to index: Int) -> String? {
+        return substringSafe(from: 0, length: index)
     }
     
     /// 字符串安全提取子串 (从某个位置起直到末尾结束)
-    func substringTake(from index: Int) -> String? {
-        return substringTake(from: index, length: count)
+    func substringSafe(from index: Int) -> String? {
+        return substringSafe(from: index, length: count)
     }
     
     /// 安全提取指定范围子串
-    func substringTake(range: NSRange) -> String? {
-        return substringTake(from: range.location, length: range.length)
+    func substringSafe(range: NSRange) -> String? {
+        return substringSafe(from: range.location, length: range.length)
     }
     
     /// 获取首字符
     var firstCharacter: String? {
-        return substringTake(to: 1)
+        return substringSafe(to: 1)
     }
     
     /// 获取末尾字符
     var lastCharacter: String? {
-        return substringTake(from: count - 1)
+        return substringSafe(from: count - 1)
     }
     
     /// 安全删除首字符并返回新字符串
     func deleteFirstCharacter() -> String? {
-        return substringTake(from: 1)
+        return substringSafe(from: 1)
     }
     
     /// 安全删除末尾字符并返回新字符串
     func deleteLastCharacter() -> String? {
-        return substringTake(to: count - 1)
+        return substringSafe(to: count - 1)
     }
 }
 
@@ -292,9 +292,9 @@ public extension String {
     
     /// 转Json字符串
     private static func toJosnString(_ object: Any, options: JSONSerialization.WritingOptions = []) -> String {
-            guard JSONSerialization.isValidJSONObject(object) else { return "" }
-            guard let data = try? JSONSerialization.data(withJSONObject: object, options: options) else { return "" }
-            return String(data: data, encoding: .utf8) ?? ""
+        guard JSONSerialization.isValidJSONObject(object) else { return "" }
+        guard let data = try? JSONSerialization.data(withJSONObject: object, options: options) else { return "" }
+        return String(data: data, encoding: .utf8) ?? ""
     }
     
     /// 生成md5摘要
