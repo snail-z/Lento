@@ -9,14 +9,6 @@ import Foundation
 import AmassingUI
 import LentoBaseKit
 
-public class KUILabel: UILabel {
-    public override var intrinsicContentSize: CGSize {
-        let value = super.intrinsicContentSize
-        print("KUILabel-intrinsicContentSize========> \(value)")
-        return value
-    }
-}
-
 public class MALabelViewController: LentoBaseViewController {
     
     public override func viewDidLoad() {
@@ -29,8 +21,8 @@ public class MALabelViewController: LentoBaseViewController {
     var stackView: UIStackView!
     var bgstackView: UIView!
     var tagStackView: MATagContainerView!
-    var tagLable1: KUILabel!
-    var tagLable2: KUILabel!
+    var tagLable1: UILabel!
+    var tagLable2: UILabel!
     
     func commonInitialization() {
         bgstackView = UIView()
@@ -42,7 +34,7 @@ public class MALabelViewController: LentoBaseViewController {
         stackView.spacing = 10
         view.addSubview(stackView)
         
-        tagLable1 = KUILabel()
+        tagLable1 = UILabel()
         tagLable1.font = .appFont()
         tagLable1.textColor = .white
         tagLable1.backgroundColor = .brown
@@ -55,7 +47,7 @@ public class MALabelViewController: LentoBaseViewController {
         tagStackView.preparedMaxLayoutWidth = UIScreen.main.bounds.width - 40
         stackView.addArrangedSubview(tagStackView)
         
-        tagLable2 = KUILabel()
+        tagLable2 = UILabel()
         tagLable2.font = .appFont()
         tagLable2.textColor = .white
         tagLable2.backgroundColor = .brown

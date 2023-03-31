@@ -32,14 +32,14 @@ public extension Array {
     }
     
     ///  获取数组中指定某范围内的元素 (返回某范围内元素的数组)
-    func subarray(at range: NSRange) -> [Element] {
-        var elements = [Element]()
+    func subarray(at range: NSRange) -> [Element]? {
         guard range.location >= 0, range.location < count else {
-            return elements
+            return nil
         }
         guard range.length > 0, NSMaxRange(range) <= count else {
-            return elements
+            return nil
         }
+        var elements = [Element]()
         for obj in self[range.location..<NSMaxRange(range)] {
             elements.append(obj)
         }
@@ -78,6 +78,7 @@ public extension Array {
             if maxTemp > maxValue { maxValue = maxTemp }
             if minTemp < minValue { minValue = minTemp }
         }
+        guard count.isOdd else { return (maxValue, minValue) }
         let lastValue = block(self[lastIndex])
         if lastValue > maxValue { maxValue = lastValue }
         if lastValue < minValue { minValue = lastValue }
