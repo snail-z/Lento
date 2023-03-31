@@ -5,6 +5,7 @@ PODS:
     - AmassingUI
     - MADebugMagic
   - AmassingExtensions (0.1.0)
+  - AmassingRouter (0.1.0)
   - AmassingUI (0.1.0):
     - AmassingExtensions
     - SnapKit (~> 5.0.1)
@@ -69,6 +70,7 @@ PODS:
 DEPENDENCIES:
   - AmassingDebugKit (from `../AmassingDebugKit/Classes/..`)
   - AmassingExtensions (from `../AmassingExtensions/Classes/..`)
+  - AmassingRouter (from `../AmassingRouter/Classes/..`)
   - AmassingUI (from `../AmassingUI/Classes/..`)
   - AmassingWebKit (from `../AmassingWebKit/Classes/..`)
   - IGListKit (= 3.4.0)
@@ -116,6 +118,8 @@ EXTERNAL SOURCES:
     :path: "../AmassingDebugKit/Classes/.."
   AmassingExtensions:
     :path: "../AmassingExtensions/Classes/.."
+  AmassingRouter:
+    :path: "../AmassingRouter/Classes/.."
   AmassingUI:
     :path: "../AmassingUI/Classes/.."
   AmassingWebKit:
@@ -137,6 +141,7 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AmassingDebugKit: b511bb2b0a6faff33aef1c60da4873e1f5ec9135
   AmassingExtensions: 91e4690b88730be2df0b7a37f2e6d07633185ef2
+  AmassingRouter: 32bbdc60167a8c9b15c625ff5e17973084990ee9
   AmassingUI: 45edc375ff9e203421b2ad49909d44db55ae9c70
   AmassingWebKit: ff9f53d7db8b5ff86c5a6bea1f9db4883fe5b51a
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
@@ -162,6 +167,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 6fe5b904985ca00279ef74cda9ecbe8fa0ebaafa
+PODFILE CHECKSUM: 1991bd71f9b523dab2233fc63860ef618be77413
 
 COCOAPODS: 1.11.3

@@ -124,7 +124,6 @@ import UIKit
                 subview.removeObserver(self, forKeyPath: aKey)
             }
         }
-        
         return super.willRemoveSubview(subview)
     }
     

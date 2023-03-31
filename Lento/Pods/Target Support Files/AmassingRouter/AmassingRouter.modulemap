@@ -1,0 +1,6 @@
+module AmassingRouter {
+  umbrella header "AmassingRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}
