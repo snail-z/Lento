@@ -31,7 +31,7 @@ public extension Array {
         return contains { type(of: $0) == elementType}
     }
     
-    ///  获取数组中指定某范围内的元素 (返回某范围内元素的数组)
+    /// 获取数组中指定某范围内的元素 (返回某范围内元素的数组)
     func subarray(at range: NSRange) -> [Element]? {
         guard range.location >= 0, range.location < count else {
             return nil

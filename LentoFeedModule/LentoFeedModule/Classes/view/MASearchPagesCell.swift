@@ -38,7 +38,6 @@ class MASearchPagesCell: LentoBaseCollectionCell {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.isPagingEnabled = false
-        collectionView.decelerationRate = .fast
         collectionView.register(cellWithClass: MASearchPagesListCell.self)
         contentView.addSubview(collectionView)
     }
@@ -73,26 +72,26 @@ extension MASearchPagesCell: UICollectionViewDataSource {
 extension MASearchPagesCell: UICollectionViewDelegate {
     
     /// 自定义分页位置 // .decelerationRate = .fast // .isPagingEnabled = false
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let pageWidth = MASearchConst.topPageSize.width
-        let pageSpacing = MASearchConst.tapPageSpacing
-        let x = targetContentOffset.pointee.x
-        let movedX = x - pageWidth * CGFloat(selectedIndex) - pageSpacing * CGFloat(selectedIndex)
-        if movedX < -pageWidth * 0.5 {
-            selectedIndex -= 1
-        } else if movedX > pageWidth * 0.5 {
-            selectedIndex += 1
-        }
-        var endX = pageWidth * CGFloat(selectedIndex)
-        endX += pageSpacing * CGFloat(selectedIndex)
-        endX += scrollView.contentInset.left
-        if abs(velocity.x) >= 2 {
-            targetContentOffset.pointee.x = endX
-        } else {
-            targetContentOffset.pointee.x = scrollView.contentOffset.x
-            scrollView.setContentOffset(CGPoint(x: endX, y: scrollView.contentOffset.y), animated: true)
-        }
-    }
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//        let pageWidth = MASearchConst.topPageSize.width
+//        let pageSpacing = MASearchConst.tapPageSpacing
+//        let x = targetContentOffset.pointee.x
+//        let movedX = x - pageWidth * CGFloat(selectedIndex) - pageSpacing * CGFloat(selectedIndex)
+//        if movedX < -pageWidth * 0.5 {
+//            selectedIndex -= 1
+//        } else if movedX > pageWidth * 0.5 {
+//            selectedIndex += 1
+//        }
+//        var endX = pageWidth * CGFloat(selectedIndex)
+//        endX += pageSpacing * CGFloat(selectedIndex)
+//        endX += scrollView.contentInset.left
+//        if abs(velocity.x) >= 2 {
+//            targetContentOffset.pointee.x = endX
+//        } else {
+//            targetContentOffset.pointee.x = scrollView.contentOffset.x
+//            scrollView.setContentOffset(CGPoint(x: endX, y: scrollView.contentOffset.y), animated: true)
+//        }
+//    }
 }
 
 class MASearchPagesListCell: LentoBaseCollectionCell {

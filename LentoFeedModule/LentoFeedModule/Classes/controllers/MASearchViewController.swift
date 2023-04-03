@@ -18,7 +18,7 @@ extension MASearchViewController {
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        searchBar.textField.becomeFirstResponder()
+        searchBar.textField.becomeFirstResponder()
     }
 }
 
