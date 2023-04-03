@@ -281,9 +281,9 @@ extension ViewController {
     func testDemo() {
         self.title = "RxSwift"
         let arr = ["A", "b", "c", "d", "e", "f", "g"]
-        let res = arr.firstElements(of: 2)
+        let res = arr.firstElements(2)
         print("res is: \(res)")
-        let las = arr.lastElements(of: 2)
+        let las = arr.lastElements(2)
         print("las is: \(las)")
         
         _ = las.element(safe: 5, default: "")

@@ -31,7 +31,7 @@ public extension Array {
         return contains { type(of: $0) == elementType}
     }
     
-    ///  获取数组中指定某范围内的元素 (返回某范围内元素的数组)
+    /// 获取数组中指定某范围内的元素 (返回某范围内元素的数组)
     func subarray(at range: NSRange) -> [Element]? {
         guard range.location >= 0, range.location < count else {
             return nil
@@ -47,7 +47,7 @@ public extension Array {
     }
     
     /// 获取数组中前n个元素 (返回包含原数组内前n个元素的数组)
-    func firstElements(of length: NSInteger) -> [Element] {
+    func firstElements(_ length: NSInteger) -> [Element] {
         var elements = [Element]()
         let end = Swift.max(0, Swift.min(self.count, length))
         for obj in self[0..<end] {
@@ -57,7 +57,7 @@ public extension Array {
     }
     
     /// 获取数组中后n个元素 (返回包含原数组内后n个元素的数组)
-    func lastElements(of length: NSInteger) -> [Element] {
+    func lastElements(_ length: NSInteger) -> [Element] {
         let begin = count - Swift.max(0, Swift.min(count, length))
         var elements = [Element]()
         for obj in self[begin..<count] {
