@@ -68,6 +68,24 @@ public class MALabelViewController: LentoBaseViewController {
         
         let temps = ["hu", "哈哈哈哈啊😄阿莱克哈苏地方", "表便签吧啊～", "666666表吧啊～", "IJkk签吧啊"]
         setTagChildViews(temps)
+        
+        stringTest1()
+    }
+    
+    func codePointCount() -> Int {
+        return 30
+    }
+    
+    func stringTest1() {
+        let value1 = "hu😄👨‍👩‍👦‍👦啊"
+        let value2 = "全是中文"
+        
+        let nsValue1 = value1.toNSString()
+        let nsValue2 = value2.toNSString()
+        
+        let ds = nsValue1.rangeOfCodePoint(start: 0, end: 2)
+        
+        print("====> \(value1.unicodeScalars.count)")
     }
     
     func setTagChildViews(_ temps: [String]) {

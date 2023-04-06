@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 /// 是否禁止输出日志，默认NO
+@property (nonatomic, assign) BOOL disableAllLog;
 @property (nonatomic, assign) BOOL disablePageLog;
 @property (nonatomic, assign) BOOL disableActionLog;
 @property (nonatomic, assign) BOOL disableNetworkLog;
