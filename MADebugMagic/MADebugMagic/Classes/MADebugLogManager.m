@@ -20,6 +20,7 @@
 }
 
 - (void)defaultValues {
+    _disableAllLog = YES;
     _disablePageLog = NO;
     _disableActionLog = NO;
     _disableNetworkLog = NO;
@@ -31,6 +32,7 @@
 }
 
 - (void)debugLog:(MADebugLogItem *)item {
+    if (_disableAllLog) return;
     if ([item isKindOfClass:MADebugActionLogItem.class] && _disableActionLog) return;
     if ([item isKindOfClass:MADebugPageLogItem.class] && _disablePageLog) return;
     if ([item isKindOfClass:MADebugNetworkLogItem.class] && _disableNetworkLog) return;
