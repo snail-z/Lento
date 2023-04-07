@@ -20,6 +20,16 @@ import AppKit
 
 public extension NSString {
     
+    /// 返回字符串中的Unicode代码点数
+    var codePointCount: Int {
+        var count: Int = 0
+        for code in (self as String).unicodeScalars {
+            let length = NSString(string: String(code)).length
+            count += length
+        }
+        return count
+    }
+    
     /// 将字符编码位置转为对应的字节数范围
     func rangeOfCodePoint(start: Int, end: Int) -> NSRange {
         return NSRange(location: start, length: end - start)

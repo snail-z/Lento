@@ -86,6 +86,13 @@ public class MALabelViewController: LentoBaseViewController {
         let ds = nsValue1.rangeOfCodePoint(start: 0, end: 2)
         
         print("====> \(value1.unicodeScalars.count)")
+        
+        var count: Int = 0
+        for code in value1.unicodeScalars {
+            let length = NSString(string: String(code)).length
+            count += length
+            print("======> \(code) == \(length)")
+        }
     }
     
     func setTagChildViews(_ temps: [String]) {
