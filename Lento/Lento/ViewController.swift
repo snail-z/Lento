@@ -386,7 +386,6 @@ extension ViewController {
         button.events.addAction(for: .touchUpInside) { sender in
             
 //            sender.showIndicatorText("加载中...", style: .medium, color: .white)
-            
 //            self.view.pk.showToast(message: "保存成功\n请到「我的-笔记」页面查看")
             self.view.pk.showToast(message: "保存成功\n请到「我的-笔记」页面查看", image: UIImage(named: "toast_success"))
             
@@ -394,7 +393,6 @@ extension ViewController {
                 sender.hideIndicator()
             }
         }
-        
         
         let xyView = UIImageView()
         xyView.backgroundColor = .gray
