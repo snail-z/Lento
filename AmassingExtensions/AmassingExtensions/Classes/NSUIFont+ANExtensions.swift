@@ -11,7 +11,7 @@ import UIKit
 public extension NSUIFont {
     
     /// 系统字体族所有字体名称
-    enum FontName: String {
+    public enum FontName: String {
         case academyEngravedLetPlain
         case alNile
         case americanTypewriter
@@ -97,7 +97,7 @@ public extension NSUIFont {
     }
 
     /// 系统字体族所有字体样式
-    enum FontStyle: String {
+    public enum FontStyle: String {
         case normal = ""
         case bold
         case boldItalic

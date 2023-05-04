@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Alamofire (5.6.4)
   - AmassingDebugKit (0.1.0):
     - AmassingExtensions
@@ -10,6 +25,7 @@ PODS:
     - AmassingExtensions
     - SnapKit (~> 5.0.1)
   - AmassingWebKit (0.1.0)
+  - Hero (1.6.2)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -68,11 +84,13 @@ PODS:
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1)
   - AmassingDebugKit (from `../AmassingDebugKit/Classes/..`)
   - AmassingExtensions (from `../AmassingExtensions/Classes/..`)
   - AmassingRouter (from `../AmassingRouter/Classes/..`)
   - AmassingUI (from `../AmassingUI/Classes/..`)
   - AmassingWebKit (from `../AmassingWebKit/Classes/..`)
+  - Hero
   - IGListKit (= 3.4.0)
   - JXPagingView/Paging
   - JXPagingView/Paging (= 2.0.13)
@@ -95,7 +113,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - Alamofire
+    - Hero
     - IGListKit
     - JXPagingView
     - JXSegmentedView
@@ -138,12 +158,14 @@ EXTERNAL SOURCES:
     :path: "../MADebugMagic/Classes/.."
 
 SPEC CHECKSUMS:
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AmassingDebugKit: b511bb2b0a6faff33aef1c60da4873e1f5ec9135
   AmassingExtensions: 91e4690b88730be2df0b7a37f2e6d07633185ef2
   AmassingRouter: 32bbdc60167a8c9b15c625ff5e17973084990ee9
   AmassingUI: 45edc375ff9e203421b2ad49909d44db55ae9c70
   AmassingWebKit: ff9f53d7db8b5ff86c5a6bea1f9db4883fe5b51a
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
@@ -167,6 +189,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 1991bd71f9b523dab2233fc63860ef618be77413
+PODFILE CHECKSUM: 52127947d10e6dc55b212ab6cf0025ff14df4431
 
 COCOAPODS: 1.11.3
