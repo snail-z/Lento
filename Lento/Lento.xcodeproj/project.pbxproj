@@ -17,11 +17,16 @@
 		3EC0BBA82872DD3A00A7F23C /* LentoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BBA72872DD3A00A7F23C /* LentoUITests.swift */; };
 		3EC0BBAA2872DD3A00A7F23C /* LentoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */; };
 		4607C80AAA011D7FED663517 /* libPods-Lento.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */; };
+		652C05EA4ED4F2BEE4646CE3 /* libPods-LentoWidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DE089C103A0E6A10E8DD54 /* libPods-LentoWidgetExtension.a */; };
 		81379B1629E5500C00B70912 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81379B1529E5500C00B70912 /* WidgetKit.framework */; };
 		81379B1829E5500C00B70912 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81379B1729E5500C00B70912 /* SwiftUI.framework */; };
 		81379B1B29E5500C00B70912 /* LentoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81379B1A29E5500C00B70912 /* LentoWidget.swift */; };
 		81379B1D29E5500D00B70912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81379B1C29E5500D00B70912 /* Assets.xcassets */; };
 		81379B2129E5500D00B70912 /* LentoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 81379B1429E5500C00B70912 /* LentoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8199A2D229E7DD25002285B7 /* LentoWidgetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D029E7DC83002285B7 /* LentoWidgetApi.swift */; };
+		8199A2D429E7F3AA002285B7 /* StudyWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D329E7F3AA002285B7 /* StudyWidgetViews.swift */; };
+		8199A2D629E7F403002285B7 /* WidgetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D529E7F403002285B7 /* WidgetConst.swift */; };
+		8199A2D829E7F4E2002285B7 /* WidgetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */; };
 		81FF625A2967B792000C564F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF62592967B792000C564F /* MineViewController.swift */; };
 		81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625B2967B7C9000C564F /* DiscoverViewController.swift */; };
 		81FF62602967BA78000C564F /* LentoBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625F2967BA78000C564F /* LentoBaseTabBarController.swift */; };
@@ -83,17 +88,24 @@
 		3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lento.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lento.debug.xcconfig"; path = "Target Support Files/Pods-Lento/Pods-Lento.debug.xcconfig"; sourceTree = "<group>"; };
+		79A9331D0CECB6DE67797937 /* Pods-LentoWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentoWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-LentoWidgetExtension/Pods-LentoWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		81379B1429E5500C00B70912 /* LentoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LentoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		81379B1529E5500C00B70912 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		81379B1729E5500C00B70912 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		81379B1A29E5500C00B70912 /* LentoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoWidget.swift; sourceTree = "<group>"; };
 		81379B1C29E5500D00B70912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81379B1E29E5500D00B70912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8199A2D029E7DC83002285B7 /* LentoWidgetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoWidgetApi.swift; sourceTree = "<group>"; };
+		8199A2D329E7F3AA002285B7 /* StudyWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWidgetViews.swift; sourceTree = "<group>"; };
+		8199A2D529E7F403002285B7 /* WidgetConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConst.swift; sourceTree = "<group>"; };
+		8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensions.swift; sourceTree = "<group>"; };
 		81FF62592967B792000C564F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		81FF625B2967B7C9000C564F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		81FF625F2967BA78000C564F /* LentoBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoBaseTabBarController.swift; sourceTree = "<group>"; };
 		81FF62612967C6F6000C564F /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		87CB33827A1CC269A4909A47 /* Pods-Lento.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lento.release.xcconfig"; path = "Target Support Files/Pods-Lento/Pods-Lento.release.xcconfig"; sourceTree = "<group>"; };
+		A22C1C1EC82B40022C2D185F /* Pods-LentoWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentoWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-LentoWidgetExtension/Pods-LentoWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		D3DE089C103A0E6A10E8DD54 /* libPods-LentoWidgetExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LentoWidgetExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,7 @@
 			files = (
 				81379B1829E5500C00B70912 /* SwiftUI.framework in Frameworks */,
 				81379B1629E5500C00B70912 /* WidgetKit.framework in Frameworks */,
+				652C05EA4ED4F2BEE4646CE3 /* libPods-LentoWidgetExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +207,7 @@
 				4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */,
 				81379B1529E5500C00B70912 /* WidgetKit.framework */,
 				81379B1729E5500C00B70912 /* SwiftUI.framework */,
+				D3DE089C103A0E6A10E8DD54 /* libPods-LentoWidgetExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,7 +223,11 @@
 		81379B1929E5500C00B70912 /* LentoWidget */ = {
 			isa = PBXGroup;
 			children = (
+				8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */,
+				8199A2D529E7F403002285B7 /* WidgetConst.swift */,
 				81379B1A29E5500C00B70912 /* LentoWidget.swift */,
+				8199A2D029E7DC83002285B7 /* LentoWidgetApi.swift */,
+				8199A2D329E7F3AA002285B7 /* StudyWidgetViews.swift */,
 				81379B1C29E5500D00B70912 /* Assets.xcassets */,
 				81379B1E29E5500D00B70912 /* Info.plist */,
 			);
@@ -232,6 +250,8 @@
 			children = (
 				4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */,
 				87CB33827A1CC269A4909A47 /* Pods-Lento.release.xcconfig */,
+				A22C1C1EC82B40022C2D185F /* Pods-LentoWidgetExtension.debug.xcconfig */,
+				79A9331D0CECB6DE67797937 /* Pods-LentoWidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -300,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81379B2529E5500D00B70912 /* Build configuration list for PBXNativeTarget "LentoWidgetExtension" */;
 			buildPhases = (
+				97F8FB759A75F141224F64AA /* [CP] Check Pods Manifest.lock */,
 				81379B1029E5500C00B70912 /* Sources */,
 				81379B1129E5500C00B70912 /* Frameworks */,
 				81379B1229E5500C00B70912 /* Resources */,
@@ -436,6 +457,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		97F8FB759A75F141224F64AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LentoWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -475,6 +518,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81379B1B29E5500C00B70912 /* LentoWidget.swift in Sources */,
+				8199A2D229E7DD25002285B7 /* LentoWidgetApi.swift in Sources */,
+				8199A2D829E7F4E2002285B7 /* WidgetExtensions.swift in Sources */,
+				8199A2D429E7F3AA002285B7 /* StudyWidgetViews.swift in Sources */,
+				8199A2D629E7F403002285B7 /* WidgetConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +824,7 @@
 		};
 		81379B2329E5500D00B70912 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22C1C1EC82B40022C2D185F /* Pods-LentoWidgetExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -788,7 +836,7 @@
 				INFOPLIST_FILE = LentoWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LentoWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -806,6 +854,7 @@
 		};
 		81379B2429E5500D00B70912 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A9331D0CECB6DE67797937 /* Pods-LentoWidgetExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -817,7 +866,7 @@
 				INFOPLIST_FILE = LentoWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LentoWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

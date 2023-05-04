@@ -54,6 +54,10 @@ target 'Lento' do
   lento_business_Pods
 end
 
+target 'LentoWidgetExtension' do
+  pod 'AFNetworking', '~> 3.1'
+end
+
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
