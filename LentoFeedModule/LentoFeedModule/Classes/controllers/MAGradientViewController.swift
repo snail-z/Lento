@@ -9,18 +9,83 @@ import UIKit
 import AmassingUI
 import LentoBaseKit
 
+extension MAGradientViewController: PickerViewDataSource {
+    public func pickerViewNumberOfRows(_ pickerView: PickerView) -> Int {
+        return osxNames.count
+    }
+    
+    public func pickerView(_ pickerView: PickerView, titleForRow row: Int) -> String {
+        return osxNames[row]
+    }
+}
+
+extension MAGradientViewController: PickerViewDelegate {
+    public func pickerViewHeightForRows(_ pickerView: PickerView) -> CGFloat {
+     return 60
+    }
+    
+    public func pickerView(_ pickerView: PickerView, styleForLabel label: UILabel, highlighted: Bool) {
+        label.textAlignment = .center
+        if (highlighted) {
+            label.font = UIFont.systemFont(ofSize: 26.0, weight: UIFont.Weight.light)
+            label.textColor = view.tintColor
+        } else {
+            label.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.light)
+            label.textColor = UIColor(red: 161.0/255.0, green: 161.0/255.0, blue: 161.0/255.0, alpha: 1.0)
+        }
+     
+    }
+    
+//    public func pickerView(_ pickerView: PickerView, viewForRow row: Int, highlighted: Bool, reusingView view: UIView?) -> UIView? {
+//        let v = UIView()
+//        v.backgroundColor = .random(.granite)
+//        return v
+//    }
+}
+
 public class MAGradientViewController: LentoBaseViewController {
     
     private var gradientView1: MAGradientView!
     private var gradientView2: MAGradientView!
     private var gradientView3: MAGradientView!
+    var examplePicker: PickerView!
+    
+    let osxNames = ["Cheetah", "Puma", "Jaguar", "Panther", "Tiger", "Leopard", "Snow Leopard", "Lion", "Montain Lion",
+                    "Mavericks", "Yosemite", "El Capitan"]
+    
+    func setupPicker() {
+        examplePicker = PickerView.init()
+        examplePicker.dataSource = self
+        examplePicker.delegate = self
+        examplePicker.scrollingStyle = .default
+        view.addSubview(examplePicker)
+        
+        examplePicker.backgroundColor = .yellow
+        examplePicker.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(10)
+            make.top.equalToSuperview().inset(200)
+            make.height.equalTo(180)
+        }
+        
+        let redView = UIView()
+        redView.backgroundColor = UIColor.red.withAlphaComponent(0.6)
+        view.addSubview(redView)
+        
+        redView.snp.makeConstraints { make in
+            make.center.equalTo(examplePicker)
+            make.width.equalTo(150)
+            make.height.equalTo(60)
+        }
+        
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        commonInitialization()
-        layoutInitialization()
-        addGadientPath()
-        gradientPathChanged()
+        setupPicker()
+//        commonInitialization()
+//        layoutInitialization()
+//        addGadientPath()
+//        gradientPathChanged()
     }
     
     func commonInitialization() {
