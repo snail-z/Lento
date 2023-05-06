@@ -13,7 +13,7 @@ public class MARulerView: UIView {
     public var style: MARulerStyle = .default
     
     /// 当前刻度尺指示的值
-    public var currentValue: Int = 0
+    public private(set) var currentValue: Int = 0
     
     /// 重载数据，当style属性更新后需调用此方法使生效
     public func reloadData() {
