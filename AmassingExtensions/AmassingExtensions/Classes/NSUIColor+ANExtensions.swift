@@ -29,7 +29,7 @@ public extension NSUIColor {
     }
     
     /// 返回十六进制颜色字符串对应的RGBA颜色
-    static func hex(_ hexString: String, alpha: CGFloat = 1.0) -> NSUIColor? {
+    static func hex(_ hexString: String) -> NSUIColor? {
         var format = hexString.replacingOccurrences(of: "0x", with: "")
         format = format.replacingOccurrences(of: "#", with: "")
         guard let hexValue = Int(format, radix: 16) else { return nil }
@@ -43,6 +43,11 @@ public extension NSUIColor {
         let randomBlue = CGFloat(arc4random() % 255)
         let alpha = isRandomAlpha ? CGFloat.random(in: 0.0...1.0) : 1.0
         return rgba(red: randomRed, green: randomGreen, blue: randomBlue, alpha: alpha)
+    }
+    
+    /// 返回增加透明度后的颜色值
+    func alpha(_ value: CGFloat) -> NSUIColor {
+        return withAlphaComponent(value)
     }
     
     /// 返回颜色的Red值
