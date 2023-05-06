@@ -1015,6 +1015,8 @@
 		46EB2E00009F10 /* Pods-Lento-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00009F00 /* Pods-Lento-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46EB2E00009F60 /* Pods-Lento-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00009F50 /* Pods-Lento-dummy.m */; };
 		46EB2E0000A050 /* Pods-LentoWidgetExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000A040 /* Pods-LentoWidgetExtension-dummy.m */; };
+		810286832A05251800B082DD /* MARulerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810286822A05251800B082DD /* MARulerStyle.swift */; };
+		810286852A05F70700B082DD /* MARulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810286842A05F70700B082DD /* MARulerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1472,7 +1474,7 @@
 		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Moya; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFB1C5332484E87325C30305A08DE01 /* LentoFeedModule */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = LentoFeedModule; path = libLentoFeedModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FF9D5C56306A20388FF90DB54AC5F8 /* LentoFeedModule-LentoFeedModule */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "LentoFeedModule-LentoFeedModule"; path = LentoFeedModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EB2E00000280 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00000280 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00000290 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		46EB2E000002A0 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		46EB2E000002B0 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
@@ -1582,10 +1584,10 @@
 		46EB2E00000970 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AmassingWebKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		46EB2E00000990 /* IGListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAssert.h; path = Source/Common/IGListAssert.h; sourceTree = "<group>"; };
 		46EB2E000009A0 /* IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListBatchUpdateData.h; path = Source/Common/IGListBatchUpdateData.h; sourceTree = "<group>"; };
-		46EB2E000009B0 /* IGListBatchUpdateData.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListBatchUpdateData.mm; path = Source/Common/IGListBatchUpdateData.mm; sourceTree = "<group>"; };
+		46EB2E000009B0 /* IGListBatchUpdateData.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = IGListBatchUpdateData.mm; path = Source/Common/IGListBatchUpdateData.mm; sourceTree = "<group>"; };
 		46EB2E000009C0 /* IGListCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCompatibility.h; path = Source/Common/IGListCompatibility.h; sourceTree = "<group>"; };
 		46EB2E000009D0 /* IGListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiff.h; path = Source/Common/IGListDiff.h; sourceTree = "<group>"; };
-		46EB2E000009E0 /* IGListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListDiff.mm; path = Source/Common/IGListDiff.mm; sourceTree = "<group>"; };
+		46EB2E000009E0 /* IGListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = IGListDiff.mm; path = Source/Common/IGListDiff.mm; sourceTree = "<group>"; };
 		46EB2E000009F0 /* IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiffable.h; path = Source/Common/IGListDiffable.h; sourceTree = "<group>"; };
 		46EB2E00000A00 /* IGListDiffKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiffKit.h; path = Source/Common/IGListDiffKit.h; sourceTree = "<group>"; };
 		46EB2E00000A10 /* IGListExperiments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListExperiments.h; path = Source/Common/IGListExperiments.h; sourceTree = "<group>"; };
@@ -1627,7 +1629,7 @@
 		46EB2E00000C50 /* IGListCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListCollectionView.m; path = Source/IGListCollectionView.m; sourceTree = "<group>"; };
 		46EB2E00000C60 /* IGListCollectionViewDelegateLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionViewDelegateLayout.h; path = Source/IGListCollectionViewDelegateLayout.h; sourceTree = "<group>"; };
 		46EB2E00000C70 /* IGListCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionViewLayout.h; path = Source/IGListCollectionViewLayout.h; sourceTree = "<group>"; };
-		46EB2E00000C80 /* IGListCollectionViewLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListCollectionViewLayout.mm; path = Source/IGListCollectionViewLayout.mm; sourceTree = "<group>"; };
+		46EB2E00000C80 /* IGListCollectionViewLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = IGListCollectionViewLayout.mm; path = Source/IGListCollectionViewLayout.mm; sourceTree = "<group>"; };
 		46EB2E00000C90 /* IGListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDisplayDelegate.h; path = Source/IGListDisplayDelegate.h; sourceTree = "<group>"; };
 		46EB2E00000CA0 /* IGListGenericSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListGenericSectionController.h; path = Source/IGListGenericSectionController.h; sourceTree = "<group>"; };
 		46EB2E00000CB0 /* IGListGenericSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListGenericSectionController.m; path = Source/IGListGenericSectionController.m; sourceTree = "<group>"; };
@@ -1678,7 +1680,7 @@
 		46EB2E00000F80 /* IGListSectionMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSectionMap.m; path = Source/Internal/IGListSectionMap.m; sourceTree = "<group>"; };
 		46EB2E00000F90 /* IGListStackedSectionControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListStackedSectionControllerInternal.h; path = Source/Internal/IGListStackedSectionControllerInternal.h; sourceTree = "<group>"; };
 		46EB2E00000FA0 /* IGListWorkingRangeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListWorkingRangeHandler.h; path = Source/Internal/IGListWorkingRangeHandler.h; sourceTree = "<group>"; };
-		46EB2E00000FB0 /* IGListWorkingRangeHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListWorkingRangeHandler.mm; path = Source/Internal/IGListWorkingRangeHandler.mm; sourceTree = "<group>"; };
+		46EB2E00000FB0 /* IGListWorkingRangeHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = IGListWorkingRangeHandler.mm; path = Source/Internal/IGListWorkingRangeHandler.mm; sourceTree = "<group>"; };
 		46EB2E00000FC0 /* UICollectionView+DebugDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+DebugDescription.h"; path = "Source/Internal/UICollectionView+DebugDescription.h"; sourceTree = "<group>"; };
 		46EB2E00000FD0 /* UICollectionView+DebugDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+DebugDescription.m"; path = "Source/Internal/UICollectionView+DebugDescription.m"; sourceTree = "<group>"; };
 		46EB2E00000FE0 /* UICollectionView+IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+IGListBatchUpdateData.h"; path = "Source/Internal/UICollectionView+IGListBatchUpdateData.h"; sourceTree = "<group>"; };
@@ -2418,42 +2420,42 @@
 		46EB2E00003F00 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		46EB2E00003F10 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		46EB2E00003F30 /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
-		46EB2E00003F40 /* CityList.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CityList.json; path = LentoFeedModule/Assets/CityList.json; sourceTree = "<group>"; };
-		46EB2E00003F50 /* Search1.json */ = {isa = PBXFileReference; includeInIndex = 1; name = Search1.json; path = LentoFeedModule/Assets/Search1.json; sourceTree = "<group>"; };
+		46EB2E00003F40 /* CityList.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = CityList.json; path = LentoFeedModule/Assets/CityList.json; sourceTree = "<group>"; };
+		46EB2E00003F50 /* Search1.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = Search1.json; path = LentoFeedModule/Assets/Search1.json; sourceTree = "<group>"; };
 		46EB2E00003F60 /* LentoFeedModule.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = LentoFeedModule.xcassets; path = LentoFeedModule/Assets/LentoFeedModule.xcassets; sourceTree = "<group>"; };
-		46EB2E00003F80 /* AmassingDebugKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmassingDebugKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00003F90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00003FA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00003FC0 /* AmassingExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmassingExtensions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00003FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00003FE0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004000 /* AmassingRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmassingRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004010 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004020 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004040 /* AmassingUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmassingUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004050 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004060 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004080 /* AmassingWebKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmassingWebKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004090 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E000040A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E000040C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E000040D0 /* LentoBaseKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LentoBaseKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000040E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004100 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004110 /* LentoFeedModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LentoFeedModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004120 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004140 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004150 /* LentoHomeModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LentoHomeModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004160 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004180 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004190 /* LentoNetworkModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LentoNetworkModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000041A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E000041C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E000041D0 /* LentoTimelines.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LentoTimelines.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000041E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00004200 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00004210 /* MADebugMagic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MADebugMagic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00004220 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		46EB2E00003F80 /* AmassingDebugKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmassingDebugKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00003F90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00003FA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00003FC0 /* AmassingExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmassingExtensions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00003FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00003FE0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004000 /* AmassingRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmassingRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004010 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004020 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004040 /* AmassingUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmassingUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004050 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004060 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004080 /* AmassingWebKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmassingWebKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004090 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E000040A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E000040C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E000040D0 /* LentoBaseKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LentoBaseKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000040E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004100 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004110 /* LentoFeedModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LentoFeedModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004120 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004140 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004150 /* LentoHomeModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LentoHomeModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004160 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004180 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004190 /* LentoNetworkModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LentoNetworkModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000041A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E000041C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E000041D0 /* LentoTimelines.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LentoTimelines.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000041E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00004200 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00004210 /* MADebugMagic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MADebugMagic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00004220 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46EB2E000044E0 /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E000044F0 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
 		46EB2E00004500 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
@@ -2647,6 +2649,8 @@
 		6DE7A6232D9606631FC9278EEAF5903E /* AmassingExtensions */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AmassingExtensions; path = libAmassingExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9F010E827A36ED33B2F9B303CCDCC5 /* AmassingRouter */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AmassingRouter; path = libAmassingRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = RxSwift; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		810286822A05251800B082DD /* MARulerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARulerStyle.swift; sourceTree = "<group>"; };
+		810286842A05F70700B082DD /* MARulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARulerView.swift; sourceTree = "<group>"; };
 		841E1C0626EEDCA7C8932CBFCC1806AE /* AmassingDebugKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AmassingDebugKit; path = libAmassingDebugKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9017C9069610A7C53AEA8B9804418E67 /* AmassingWebKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AmassingWebKit; path = libAmassingWebKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SnapKit; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3045,7 +3049,6 @@
 				46EB2E000004C0 /* Validation.swift */,
 				46EB2E00004820 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3157,7 +3160,6 @@
 				46EB2E00001040 /* Diffing */,
 				46EB2E00005A00 /* Support Files */,
 			);
-			name = IGListKit;
 			path = IGListKit;
 			sourceTree = "<group>";
 		};
@@ -3167,7 +3169,6 @@
 				46EB2E00001050 /* Paging */,
 				46EB2E00005B60 /* Support Files */,
 			);
-			name = JXPagingView;
 			path = JXPagingView;
 			sourceTree = "<group>";
 		};
@@ -3219,7 +3220,6 @@
 				46EB2E00001110 /* JXSegmentedViewTool.swift */,
 				46EB2E00005F30 /* Support Files */,
 			);
-			name = JXSegmentedView;
 			path = JXSegmentedView;
 			sourceTree = "<group>";
 		};
@@ -3247,7 +3247,6 @@
 				46EB2E00001480 /* UIViewController+KMNavigationBarTransition_internal.h */,
 				46EB2E00006180 /* Support Files */,
 			);
-			name = KMNavigationBarTransition;
 			path = KMNavigationBarTransition;
 			sourceTree = "<group>";
 		};
@@ -3317,7 +3316,6 @@
 				46EB2E00001550 /* WKInterfaceImage+Kingfisher.swift */,
 				46EB2E00006660 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -3465,7 +3463,6 @@
 				46EB2E00003F20 /* Resources */,
 				46EB2E00007740 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -3475,7 +3472,6 @@
 				46EB2E00002170 /* Core */,
 				46EB2E000079D0 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -3508,7 +3504,6 @@
 				46EB2E00002470 /* URLTransform.swift */,
 				46EB2E00007C70 /* Support Files */,
 			);
-			name = ObjectMapper;
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
@@ -3530,7 +3525,6 @@
 				46EB2E00002520 /* View.swift */,
 				46EB2E00007E60 /* Support Files */,
 			);
-			name = ReactorKit;
 			path = ReactorKit;
 			sourceTree = "<group>";
 		};
@@ -3649,7 +3643,6 @@
 				46EB2E00002960 /* WKWebView+Rx.swift */,
 				46EB2E00008660 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -3663,7 +3656,6 @@
 				46EB2E00002C70 /* Utils.swift */,
 				46EB2E000087D0 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -3832,7 +3824,6 @@
 				46EB2E000032D0 /* Zip+Collection.swift */,
 				46EB2E000092F0 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -3843,7 +3834,6 @@
 				46EB2E00003690 /* UIViewController+Rx.swift */,
 				46EB2E00009430 /* Support Files */,
 			);
-			name = RxViewController;
 			path = RxViewController;
 			sourceTree = "<group>";
 		};
@@ -3912,7 +3902,6 @@
 				46EB2E00003A50 /* UIView+Transitions.swift */,
 				46EB2E00009910 /* Support Files */,
 			);
-			name = SkeletonView;
 			path = SkeletonView;
 			sourceTree = "<group>";
 		};
@@ -3957,7 +3946,6 @@
 				46EB2E00003C90 /* UILayoutSupport+Extensions.swift */,
 				46EB2E00009C70 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -3967,7 +3955,6 @@
 				46EB2E00003CA0 /* WeakMapTable.swift */,
 				46EB2E00009DA0 /* Support Files */,
 			);
-			name = WeakMapTable;
 			path = WeakMapTable;
 			sourceTree = "<group>";
 		};
@@ -3982,7 +3969,6 @@
 				46EB2E000044D0 /* Support Files */,
 				46EB2E00003DD0 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -4225,6 +4211,8 @@
 				46EB2E00001A50 /* MASearchViewController.swift */,
 				46EB2E00001A60 /* MAWaterfallDetailViewController.swift */,
 				46EB2E00001A70 /* MAWaterfallLayoutViewController.swift */,
+				810286822A05251800B082DD /* MARulerStyle.swift */,
+				810286842A05F70700B082DD /* MARulerView.swift */,
 				46EB2E00001AD0 /* PickerView.swift */,
 				46EB2E00001A80 /* pages */,
 			);
@@ -4240,7 +4228,6 @@
 				46EB2E00001AB0 /* TJPageController.h */,
 				46EB2E00001AC0 /* TJPageController.m */,
 			);
-			name = pages;
 			path = pages;
 			sourceTree = "<group>";
 		};
@@ -7079,9 +7066,11 @@
 				46EB2E00006AA0 /* MAButtonViews.swift in Sources */,
 				46EB2E00006AB0 /* MACardFlowView.swift in Sources */,
 				46EB2E00006BF0 /* MACircularTransition.swift in Sources */,
+				810286832A05251800B082DD /* MARulerStyle.swift in Sources */,
 				46EB2E00006AC0 /* MAGradientViewController.swift in Sources */,
 				46EB2E00006AD0 /* MALabelViewController.swift in Sources */,
 				46EB2E00006C60 /* MALeftAlignedCell.swift in Sources */,
+				810286852A05F70700B082DD /* MARulerView.swift in Sources */,
 				46EB2E00006C70 /* MALeftAlignedConst.swift in Sources */,
 				46EB2E00006BC0 /* MALeftAlignedData.swift in Sources */,
 				46EB2E00006C80 /* MALeftAlignedHeaderView.swift in Sources */,

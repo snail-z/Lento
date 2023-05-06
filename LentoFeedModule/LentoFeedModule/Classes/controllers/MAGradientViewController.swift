@@ -79,9 +79,63 @@ public class MAGradientViewController: LentoBaseViewController {
         
     }
     
+    lazy var markView: UIView = {
+        let markView = UIView()
+        markView.backgroundColor = UIColor.hex(0xF5627C)
+        markView.layer.cornerRadius = 3
+        markView.layer.masksToBounds = true
+        return markView
+    }()
+    
+    lazy var valueLabel: UILabel = {
+        let valueLabel = UILabel()
+        valueLabel.textColor = UIColor.hex(0x282626)
+        valueLabel.font = UIFont.fontName(.dINAlternate, style: .bold, size: 42)
+        return valueLabel
+    }()
+    
+    func setupRuleView() {
+        let aView = MARulerView()
+        view.addSubview(aView)
+        aView.backgroundColor = .yellow
+        
+        aView.style.minValue = 40
+        aView.style.maxValue = 180
+        aView.style.indicatorSize = CGSize(width: 28, height: 12)
+        aView.style.indicatorTopPadding = 6
+        aView.style.indicatorFont = UIFont.fontName(.dINAlternate, style: .bold, size: 12)
+        aView.style.indicatorTextColor = UIColor.hex(0x888A91).alpha(0.9)
+        aView.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(10)
+            make.top.equalToSuperview().inset(200)
+            make.height.equalTo(180)
+        }
+        
+        aView.didValueChangedClosure = { [weak self] (oldValue, newValue) in
+            self?.valueLabel.text = "\(Int(newValue))"
+        }
+        aView.reloadData()
+        
+        view.addSubview(markView)
+        markView.snp.makeConstraints { make in
+            make.bottom.equalTo(aView).inset(18)
+            make.centerX.equalTo(aView)
+            make.size.equalTo(CGSize(width: 5, height: 43))
+        }
+        
+        aView.addSubview(valueLabel)
+        valueLabel.snp.makeConstraints { make in
+            make.top.centerX.equalToSuperview()
+        }
+        
+        
+        aView.setCurrentValue(56, animated: false)
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        setupPicker()
+//        setupPicker()
+        setupRuleView()
 //        commonInitialization()
 //        layoutInitialization()
 //        addGadientPath()
