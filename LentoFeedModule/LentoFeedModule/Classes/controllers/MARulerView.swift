@@ -28,7 +28,7 @@ public class MARulerView: UIView {
     }
     
     /// 当前刻度尺指示值 currentValue 改变回调
-    @objc public var didValueChangedClosure: ((_ oldValue: Int, _ newValue: Int) -> Void)?
+    public var didValueChangedClosure: ((_ oldValue: Int, _ newValue: Int) -> Void)?
     
     private lazy var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
