@@ -1,95 +1,50 @@
 //
-//  PickerView.swift
+//  MARulerView.swift
+//  LentoFeedModule
 //
-//  Created by Filipe Alvarenga on 19/05/15.
-//  Copyright (c) 2015 Filipe Alvarenga. All rights reserved.
+//  Created by zhang on 2023/5/6.
 //
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
 
 import UIKit
 
-// MARK: - Protocols
-
-@objc public protocol PickerViewDataSource: class {
-    func pickerViewNumberOfRows(_ pickerView: PickerView) -> Int
-    func pickerView(_ pickerView: PickerView, titleForRow row: Int) -> String
-}
-
-@objc public protocol PickerViewDelegate: class {
-    func pickerViewHeightForRows(_ pickerView: PickerView) -> CGFloat
-    @objc optional func pickerView(_ pickerView: PickerView, didSelectRow row: Int)
-    @objc optional func pickerView(_ pickerView: PickerView, didTapRow row: Int)
-    @objc optional func pickerView(_ pickerView: PickerView, styleForLabel label: UILabel, highlighted: Bool)
-    @objc optional func pickerView(_ pickerView: PickerView, viewForRow row: Int, highlighted: Bool, reusingView view: UIView?) -> UIView?
-}
-
-open class PickerView: UIView {
+@objc public protocol CYTPickerViewDataSource: class {
     
-    // MARK: Nested Types
+    func pickerViewNumberOfRows(_ pickerView: CYTPickerView) -> Int
+    func pickerView(_ pickerView: CYTPickerView, titleForRow row: Int) -> String
+}
+
+@objc public protocol CYTPickerViewDelegate: class {
+    
+    func pickerViewHeightForRows(_ pickerView: CYTPickerView) -> CGFloat
+    @objc optional func pickerView(_ pickerView: CYTPickerView, didSelectRow row: Int)
+    @objc optional func pickerView(_ pickerView: CYTPickerView, didTapRow row: Int)
+    @objc optional func pickerView(_ pickerView: CYTPickerView, styleForLabel label: UILabel, highlighted: Bool)
+    @objc optional func pickerView(_ pickerView: CYTPickerView, viewForRow row: Int, highlighted: Bool, reusingView view: UIView?) -> UIView?
+}
+
+open class CYTPickerView: UIView {
     
     fileprivate class SimplePickerTableViewCell: UITableViewCell {
         lazy var titleLabel: UILabel = {
             let titleLabel = UILabel(frame: CGRect(x: 0.0, y: 0.0, width: self.contentView.frame.width, height: self.contentView.frame.height))
             titleLabel.textAlignment = .center
-            
             return titleLabel
         }()
         
         var customView: UIView?
     }
-    
-    /**
-        ScrollingStyle Enum.
-    
-        - parameter Default: Show only the number of rows informed in data source.
-    
-        - parameter Infinite: Loop through the data source offering a infinite scrolling experience to the user.
-    */
-    
+
     @objc public enum ScrollingStyle: Int {
         case `default`, infinite
     }
-    
-    /**
-        SelectionStyle Enum.
-    
-        - parameter None: Don't uses any aditional view to highlight the selection, only the label style customization provided by delegate.
-    
-        - parameter DefaultIndicator: Provide a simple selection indicator on the bottom of the highlighted row with full width and 2pt of height.
-                                  The default color is its superview `tintColor` but you have free access to customize the DefaultIndicator through the `defaultSelectionIndicator` property.
-    
-        - parameter Overlay: Provide a full width and height (the height you provided on delegate) view that overlay the highlighted row.
-                         The default color is its superview `tintColor` and the alpha is set to 0.25, but you have free access to customize it through the `selectionOverlay` property.
-                         Tip: You can set the alpha to 1.0 and background color to .clearColor() and add your custom selection view to make it looks as you want 
-                         (don't forget to properly add the constraints related to `selectionOverlay` to keep your experience with any screen size).
-    
-        - parameter Image: Provide a full width and height image view selection indicator (the height you provided on delegate) without any image.
-                       You must have a selection indicator as a image and set it to the image view through the `selectionImageView` property.
-    */
-    
+   
     @objc public enum SelectionStyle: Int {
         case none, defaultIndicator, overlay, image
     }
     
     // MARK: Properties
     
-    var enabled = true {
+    public var enabled = true {
         didSet {
             if enabled {
                 turnPickerViewOn()
@@ -99,10 +54,7 @@ open class PickerView: UIView {
         }
     }
     
-    fileprivate var selectionOverlayH: NSLayoutConstraint!
-    fileprivate var selectionImageH: NSLayoutConstraint!
-    fileprivate var selectionIndicatorB: NSLayoutConstraint!
-    fileprivate var pickerCellBackgroundColor: UIColor?
+    
     
     var numberOfRowsByDataSource: Int {
         get {
@@ -110,11 +62,7 @@ open class PickerView: UIView {
         }
     }
 
-    fileprivate var indexesByDataSource: Int {
-        get {
-            return numberOfRowsByDataSource > 0 ? numberOfRowsByDataSource - 1 : numberOfRowsByDataSource
-        }
-    }
+    
     
     var rowHeight: CGFloat {
         get {
@@ -131,14 +79,24 @@ open class PickerView: UIView {
     
     fileprivate let pickerViewCellIdentifier = "pickerViewCell"
     
-    open weak var dataSource: PickerViewDataSource?
-    open weak var delegate: PickerViewDelegate?
+    fileprivate var selectionOverlayH: NSLayoutConstraint!
+    fileprivate var selectionImageH: NSLayoutConstraint!
+    fileprivate var selectionIndicatorB: NSLayoutConstraint!
+    fileprivate var pickerCellBackgroundColor: UIColor?
+    
+    fileprivate var indexesByDataSource: Int {
+        get {
+            return numberOfRowsByDataSource > 0 ? numberOfRowsByDataSource - 1 : numberOfRowsByDataSource
+        }
+    }
+    
+    open weak var dataSource: CYTPickerViewDataSource?
+    open weak var delegate: CYTPickerViewDelegate?
     
     open lazy var defaultSelectionIndicator: UIView = {
         let selectionIndicator = UIView()
         selectionIndicator.backgroundColor = self.tintColor
         selectionIndicator.alpha = 0.0
-        
         return selectionIndicator
     }()
     
@@ -159,7 +117,6 @@ open class PickerView: UIView {
     
     public lazy var tableView: UITableView = {
         let tableView = UITableView()
-        
         return tableView
     }()
     
@@ -393,7 +350,7 @@ open class PickerView: UIView {
         super.willMove(toWindow: newWindow)
         
         if let _ = newWindow {
-            NotificationCenter.default.addObserver(self, selector: #selector(PickerView.adjustCurrentSelectedAfterOrientationChanges),
+            NotificationCenter.default.addObserver(self, selector: #selector(CYTPickerView.adjustCurrentSelectedAfterOrientationChanges),
                                                             name: UIDevice.orientationDidChangeNotification, object: nil)
         } else {
             NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
@@ -537,7 +494,7 @@ open class PickerView: UIView {
     
 }
 
-extension PickerView: UITableViewDataSource {
+extension CYTPickerView: UITableViewDataSource {
     
     // MARK: UITableViewDataSource
     
@@ -601,7 +558,7 @@ extension PickerView: UITableViewDataSource {
     
 }
 
-extension PickerView: UITableViewDelegate {
+extension CYTPickerView: UITableViewDelegate {
     
     // MARK: UITableViewDelegate
     
@@ -624,7 +581,7 @@ extension PickerView: UITableViewDelegate {
     
 }
 
-extension PickerView: UIScrollViewDelegate {
+extension CYTPickerView: UIScrollViewDelegate {
     
     // MARK: UIScrollViewDelegate
     
