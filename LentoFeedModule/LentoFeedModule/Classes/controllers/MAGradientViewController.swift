@@ -9,22 +9,23 @@ import UIKit
 import AmassingUI
 import LentoBaseKit
 
-extension MAGradientViewController: PickerViewDataSource {
-    public func pickerViewNumberOfRows(_ pickerView: PickerView) -> Int {
+extension MAGradientViewController: CYTPickerViewDataSource {
+    
+    public func pickerViewNumberOfRows(_ pickerView: CYTPickerView) -> Int {
         return osxNames.count
     }
     
-    public func pickerView(_ pickerView: PickerView, titleForRow row: Int) -> String {
+    public func pickerView(_ pickerView: CYTPickerView, titleForRow row: Int) -> String {
         return osxNames[row]
     }
 }
 
-extension MAGradientViewController: PickerViewDelegate {
-    public func pickerViewHeightForRows(_ pickerView: PickerView) -> CGFloat {
+extension MAGradientViewController: CYTPickerViewDelegate {
+    public func pickerViewHeightForRows(_ pickerView: CYTPickerView) -> CGFloat {
      return 60
     }
     
-    public func pickerView(_ pickerView: PickerView, styleForLabel label: UILabel, highlighted: Bool) {
+    public func pickerView(_ pickerView: CYTPickerView, styleForLabel label: UILabel, highlighted: Bool) {
         label.textAlignment = .center
         if (highlighted) {
             label.font = UIFont.systemFont(ofSize: 26.0, weight: UIFont.Weight.light)
@@ -48,13 +49,13 @@ public class MAGradientViewController: LentoBaseViewController {
     private var gradientView1: MAGradientView!
     private var gradientView2: MAGradientView!
     private var gradientView3: MAGradientView!
-    var examplePicker: PickerView!
+    var examplePicker: CYTPickerView!
     
     let osxNames = ["Cheetah", "Puma", "Jaguar", "Panther", "Tiger", "Leopard", "Snow Leopard", "Lion", "Montain Lion",
                     "Mavericks", "Yosemite", "El Capitan"]
     
     func setupPicker() {
-        examplePicker = PickerView.init()
+        examplePicker = CYTPickerView.init()
         examplePicker.dataSource = self
         examplePicker.delegate = self
         examplePicker.scrollingStyle = .default
@@ -134,8 +135,8 @@ public class MAGradientViewController: LentoBaseViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-//        setupPicker()
-        setupRuleView()
+        setupPicker()
+//        setupRuleView()
 //        commonInitialization()
 //        layoutInitialization()
 //        addGadientPath()

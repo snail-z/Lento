@@ -446,7 +446,7 @@
 		46EB2E00006B60 /* MAWaterfallLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001A70 /* MAWaterfallLayoutViewController.swift */; };
 		46EB2E00006B70 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001A90 /* Page1ViewController.swift */; };
 		46EB2E00006B80 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001AA0 /* Page2ViewController.swift */; };
-		46EB2E00006B90 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001AD0 /* PickerView.swift */; };
+		46EB2E00006B90 /* CYTPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001AD0 /* CYTPickerView.swift */; };
 		46EB2E00006BA0 /* FontLibrariesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001AF0 /* FontLibrariesData.swift */; };
 		46EB2E00006BB0 /* LentoFeedUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B00 /* LentoFeedUtility.swift */; };
 		46EB2E00006BC0 /* MALeftAlignedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B10 /* MALeftAlignedData.swift */; };
@@ -1852,7 +1852,7 @@
 		46EB2E00001AA0 /* Page2ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		46EB2E00001AB0 /* TJPageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TJPageController.h; sourceTree = "<group>"; };
 		46EB2E00001AC0 /* TJPageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TJPageController.m; sourceTree = "<group>"; };
-		46EB2E00001AD0 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		46EB2E00001AD0 /* CYTPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CYTPickerView.swift; sourceTree = "<group>"; };
 		46EB2E00001AF0 /* FontLibrariesData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontLibrariesData.swift; sourceTree = "<group>"; };
 		46EB2E00001B00 /* LentoFeedUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LentoFeedUtility.swift; sourceTree = "<group>"; };
 		46EB2E00001B10 /* MALeftAlignedData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MALeftAlignedData.swift; sourceTree = "<group>"; };
@@ -4213,7 +4213,7 @@
 				46EB2E00001A70 /* MAWaterfallLayoutViewController.swift */,
 				810286822A05251800B082DD /* MARulerStyle.swift */,
 				810286842A05F70700B082DD /* MARulerView.swift */,
-				46EB2E00001AD0 /* PickerView.swift */,
+				46EB2E00001AD0 /* CYTPickerView.swift */,
 				46EB2E00001A80 /* pages */,
 			);
 			name = controllers;
@@ -7098,7 +7098,7 @@
 				46EB2E00006CF0 /* MAWrapTagView.swift in Sources */,
 				46EB2E00006B70 /* Page1ViewController.swift in Sources */,
 				46EB2E00006B80 /* Page2ViewController.swift in Sources */,
-				46EB2E00006B90 /* PickerView.swift in Sources */,
+				46EB2E00006B90 /* CYTPickerView.swift in Sources */,
 				46EB2E00006A20 /* TJPageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
