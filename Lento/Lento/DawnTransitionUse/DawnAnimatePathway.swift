@@ -1,5 +1,5 @@
 //
-//  MYTestAnimate.swift
+//  DawnAnimatePathway.swift
 //  Lento
 //
 //  Created by zhang on 2023/6/27.
@@ -124,7 +124,7 @@ public struct DawnAnimatePathway: DawnCustomTransitionCapable {
             snpV?.layer.transform = CATransform3DScale(CATransform3DIdentity, zoomScale, zoomScale, 1)
         }
         UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut) {
-            snpV?.layer.transform = CATransform3DIdentity
+            snpV?.layer.transform = CATransform3DScale(CATransform3DIdentity, 1, 1, 1)
             snpV?.center = containerView.center
             
             tempView.frame = targetFrame
@@ -148,11 +148,5 @@ public struct DawnAnimatePathway: DawnCustomTransitionCapable {
             complete(finished)
         }
         return true
-    }
-}
-
-extension CGRect {
-    init(origin: CGPoint = .zero, w: CGFloat, h: CGFloat) {
-        self.init(origin: origin, size: CGSize(width: w, height: h))
     }
 }

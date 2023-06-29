@@ -42,7 +42,8 @@
 		8199A2D629E7F403002285B7 /* WidgetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D529E7F403002285B7 /* WidgetConst.swift */; };
 		8199A2D829E7F4E2002285B7 /* WidgetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */; };
 		81B2AE892A4939F4009AE186 /* DawnAnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */; };
-		81D332A32A4A754B00AA5A6A /* MYTestAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D332A22A4A754B00AA5A6A /* MYTestAnimate.swift */; };
+		81D332A32A4A754B00AA5A6A /* DawnAnimatePathway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */; };
+		81F8FC0F2A4DA97900F3E22A /* AlipayAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */; };
 		81FE44C62A36BEEA008E8DB7 /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */; };
 		81FF625A2967B792000C564F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF62592967B792000C564F /* MineViewController.swift */; };
 		81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625B2967B7C9000C564F /* DiscoverViewController.swift */; };
@@ -131,7 +132,8 @@
 		8199A2D529E7F403002285B7 /* WidgetConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConst.swift; sourceTree = "<group>"; };
 		8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensions.swift; sourceTree = "<group>"; };
 		81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimationConfiguration.swift; sourceTree = "<group>"; };
-		81D332A22A4A754B00AA5A6A /* MYTestAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYTestAnimate.swift; sourceTree = "<group>"; };
+		81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathway.swift; sourceTree = "<group>"; };
+		81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipayAnimate.swift; sourceTree = "<group>"; };
 		81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnTransitionModifiers.swift; sourceTree = "<group>"; };
 		81FF62592967B792000C564F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		81FF625B2967B7C9000C564F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				812EF0672A32B408004E3A54 /* DawnTransition */,
+				81F8FC102A4DAA7B00F3E22A /* DawnTransitionUse */,
 				812E417028FE35F300ED51F4 /* Example */,
 				3EC0BB862872DD3800A7F23C /* AppDelegate.swift */,
 				3EC0BB882872DD3800A7F23C /* SceneDelegate.swift */,
@@ -253,9 +256,6 @@
 				81FF62582967B734000C564F /* demos */,
 				812EF07E2A332E30004E3A54 /* DawnTest1ViewController.swift */,
 				812EF0802A332E90004E3A54 /* DawnTest2ViewController.swift */,
-				81D332A22A4A754B00AA5A6A /* MYTestAnimate.swift */,
-				816A05FD2A4D20E8000CCD88 /* MYAppStoreAnimate.swift */,
-				816A05FF2A4D2A17000CCD88 /* MYSmaeAnimte.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -291,6 +291,17 @@
 				81379B1E29E5500D00B70912 /* Info.plist */,
 			);
 			path = LentoWidget;
+			sourceTree = "<group>";
+		};
+		81F8FC102A4DAA7B00F3E22A /* DawnTransitionUse */ = {
+			isa = PBXGroup;
+			children = (
+				81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */,
+				816A05FD2A4D20E8000CCD88 /* MYAppStoreAnimate.swift */,
+				816A05FF2A4D2A17000CCD88 /* MYSmaeAnimte.swift */,
+				81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */,
+			);
+			path = DawnTransitionUse;
 			sourceTree = "<group>";
 		};
 		81FF62582967B734000C564F /* demos */ = {
@@ -559,7 +570,7 @@
 				812EF0792A3323AD004E3A54 /* UIViewController+Dawn.swift in Sources */,
 				3EC0BB892872DD3800A7F23C /* SceneDelegate.swift in Sources */,
 				812EF07B2A3323BD004E3A54 /* UIView+Dawn.swift in Sources */,
-				81D332A32A4A754B00AA5A6A /* MYTestAnimate.swift in Sources */,
+				81D332A32A4A754B00AA5A6A /* DawnAnimatePathway.swift in Sources */,
 				816A06002A4D2A17000CCD88 /* MYSmaeAnimte.swift in Sources */,
 				81FF62622967C6F6000C564F /* SidebarViewController.swift in Sources */,
 				812EF06D2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
@@ -569,6 +580,7 @@
 				812EF07D2A33258A004E3A54 /* DawnCompatible.swift in Sources */,
 				812EF0752A3318BE004E3A54 /* DawnTransition+Complete.swift in Sources */,
 				81FE44C62A36BEEA008E8DB7 /* DawnTransitionModifiers.swift in Sources */,
+				81F8FC0F2A4DA97900F3E22A /* AlipayAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

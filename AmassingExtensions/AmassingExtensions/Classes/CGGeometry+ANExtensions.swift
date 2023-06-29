@@ -195,6 +195,11 @@ public extension CGSize {
 }
 
 public extension CGRect {
+
+    /// 使用宽高初始化CGRect
+    init(w: CGFloat, h: CGFloat) {
+        self.init(origin: .zero, size: CGSize(width: w, height: h))
+    }
     
     /// 将CGRect放大指定的倍数
     func scaled(_ scale: CGFloat) -> CGRect {

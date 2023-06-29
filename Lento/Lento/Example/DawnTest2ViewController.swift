@@ -21,6 +21,8 @@ class DawnTest2ViewController: UIViewController {
         
         
         let imgView = UIImageView.init(image: UIImage.init(named: "001"))
+        imgView.backgroundColor = .white
+        imgView.clipsToBounds = true
         view.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.left.equalTo(100)
@@ -67,7 +69,7 @@ class DawnTest3ViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
-        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan2(gr:))))
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:))))
         
         ///1544*1028 宽高比 = 1.5
         wrapView = WrapVView()

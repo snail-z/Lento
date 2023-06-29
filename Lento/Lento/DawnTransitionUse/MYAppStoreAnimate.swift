@@ -16,6 +16,7 @@ public struct DawnAnimateAppStoreToday: DawnCustomTransitionCapable {
     
     public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> Bool {
         
+        
         return true
     }
     
