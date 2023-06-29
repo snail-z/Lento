@@ -89,7 +89,7 @@ class DawnTest1ViewController: UIViewController {
     func jumped() {
         let vc = DawnTest2ViewController()
         vc.dawn.isTransitioningEnabled = true
-        vc.dawn.modalAnimationType = .pageOut(direction: .right)
+        vc.dawn.modalAnimationType = .pageIn(direction: .left)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }

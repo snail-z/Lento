@@ -12,6 +12,7 @@ extension DawnTransition {
     public func animate() {
         guard state == .starting else { return }
         state = .animating
+        
         guard let fromVC = fromViewController, let toVC = toViewController else {
             complete(finished: false)
             return
@@ -26,8 +27,8 @@ extension DawnTransition {
             guard let capable = toVC.dawn.transitionCapable else { return }
             let stage = capable.dawnModifierStagePresenting()
             let config = capable.dawnAnimationConfigurationPresenting()
-            let fromModifiers = presentFromModifiers(stage)
-            let toModifiers = presentToModifiers(stage, config)
+            let fromModifiers = preprocessFromModifiers(stage)
+            let toModifiers = preprocessToModifiers(stage, config)
             performAnimate(duration: config.duration,
                            delay: config.delay,
                            options: config.curve.usable(),
@@ -48,8 +49,8 @@ extension DawnTransition {
             guard let capable = fromVC.dawn.transitionCapable else { return }
             let config = capable.dawnAnimationConfigurationDismissing()
             let stage = capable.dawnModifierStageDismissing()
-            let fromModifiers = dismissFromModifiers(stage)
-            let toModifiers = dismissToModifiers(stage, config)
+            let fromModifiers = preprocessFromModifiers(stage)
+            let toModifiers = preprocessToModifiers(stage, config)
             performAnimate(duration: config.duration,
                            delay: config.delay,
                            options: config.curve.usable(),
@@ -69,9 +70,9 @@ internal extension DawnTransition {
     
     typealias AnimatedBlock = () -> Void
     typealias FinishedBlock = () -> Bool
-    typealias Assemble = (didChange: AnimatedBlock, endChange: FinishedBlock)
+    typealias Changed = (didChange: AnimatedBlock, endChange: FinishedBlock)
     
-    func presentFromModifiers(_ stage: DawnModifierStage) -> Assemble? {
+    func preprocessFromModifiers(_ stage: DawnModifierStage) -> Changed? {
         guard let fromView = fromViewController?.view, let containerView = containerView else { return nil }
         guard let snoptView = fromView.dawn.snapshotView() else { return nil }
         snoptView.frame = containerView.bounds
@@ -97,66 +98,7 @@ internal extension DawnTransition {
         return (didChange, endChange)
     }
 
-    func presentToModifiers(_ stage: DawnModifierStage, _ config: DawnAnimationConfiguration) -> Assemble? {
-        guard let toView = toViewController?.view , let containerView = containerView else { return nil }
-        containerView.backgroundColor = config.containerBackgroundColor
-        guard let snoptView = toView.dawn.snapshotView() else { return nil }
-        snoptView.frame = containerView.bounds
-        containerView.addSubview(snoptView)
-        if config.sendToViewToBack {
-            containerView.sendSubviewToBack(snoptView)
-        } else {
-            containerView.bringSubviewToFront(snoptView)
-        }
-        
-        if let begin = stage.toViewBeginModifiers {
-            snoptView.dawnRender(DawnTargetState.final(begin))
-        }
-        
-        let didChange: AnimatedBlock = {
-            if let end = stage.toViewEndModifiers {
-                snoptView.dawnRender(DawnTargetState.final(end))
-            }
-        }
-        
-        let endChange: FinishedBlock = {
-            snoptView.dawnOverlayNil()
-            snoptView.removeFromSuperview()
-            return true
-        }
-        return (didChange, endChange)
-    }
-}
-
-internal extension DawnTransition {
-    
-    func dismissFromModifiers(_ stage: DawnModifierStage) -> Assemble? {
-        guard let fromView = fromViewController?.view, let containerView = containerView else { return nil }
-        guard let snoptView = fromView.dawn.snapshotView() else { return nil }
-        snoptView.frame = containerView.bounds
-        containerView.addSubview(snoptView)
-        
-        if let begin = stage.fromViewBeginModifiers {
-            snoptView.dawnRender(DawnTargetState.final(begin))
-        }
-        
-        let didChange: AnimatedBlock = {
-            if let end = stage.fromViewEndModifiers {
-                snoptView.dawnRender(DawnTargetState.final(end))
-            }
-        }
-        
-        fromView.isHidden = true
-        let endChange: FinishedBlock = {
-            fromView.isHidden = false
-            snoptView.dawnOverlayNil()
-            snoptView.removeFromSuperview()
-            return true
-        }
-        return (didChange, endChange)
-    }
-    
-    func dismissToModifiers(_ stage: DawnModifierStage, _ config: DawnAnimationConfiguration) -> Assemble? {
+    func preprocessToModifiers(_ stage: DawnModifierStage, _ config: DawnAnimationConfiguration) -> Changed? {
         guard let toView = toViewController?.view, let containerView = containerView else { return nil }
         containerView.backgroundColor = config.containerBackgroundColor
         guard let snoptView = toView.dawn.snapshotView() else { return nil }
