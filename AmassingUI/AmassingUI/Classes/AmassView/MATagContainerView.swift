@@ -11,10 +11,10 @@ import UIKit
 *  1. 类似`UIStackView`用法，根据子视图自撑开，自动排列换行
 *  2. 支持子视图隐藏显示，动态布局，无需调整约束
  注意：若在UITableViewCell自适应高度中使用到MATagContainerView，
- 外部需要进行视图包装提前约束好尺寸，参考MAWrapTagView使用 -
+ 外部可以二次视图封装提前约束好尺寸，参考MAWrapTagView使用 -
  由于UITableView.automaticDimension自适应高度，内部子视图约束会异步调用updateViewConstraints刷新布局，
  而MATagContainerView内部子视图也会异步调用layoutIfNeeded刷新布局，
- 所以计算内容后可能会晚于UITableView.automaticDimension设置的高度，导致不能有效撑开内容布局。
+ 所以计算内容后的大小可能会晚于UITableView.automaticDimension的高度，导致不能有效撑开内容布局。
  */
 @objc open class MATagContainerView: UIView {
 
@@ -73,7 +73,6 @@ import UIKit
     @objc public var didIntrinsicSizeChanged: ((_ oldSize: CGSize, _ newSize: CGSize) -> Void)?
     
     private let observerKeys = ["hidden", "layer.opacity"]
-    
     private var contentLayoutSize: CGSize = .zero
     
     open override var intrinsicContentSize: CGSize {

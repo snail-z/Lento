@@ -32,8 +32,10 @@ class LenPopupNextViewController: LentoBaseViewController {
         view.backgroundColor = .random(.gentle)
 
         visorTab = UIView()
-        let pan = MKScreenEdgePanGestureRecognizer(target: self, action: #selector(didPan))
-        pan.edges = .left
+//        let pan = MKScreenEdgePanGestureRecognizer(target: self, action: #selector(didPan))
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan))
+        pan.delegate = self
+//        pan.edges = .all
         visorTab.addGestureRecognizer(pan)
         view.addSubview(visorTab)
         visorTab.snp.makeConstraints { make in
@@ -65,8 +67,8 @@ class LenPopupNextViewController: LentoBaseViewController {
     }
     
     @objc func didPan(_ pan: UIPanGestureRecognizer) {
-        let translation = pan.translation(in: view).x
-        let distance = translation / view.bounds.width
+        let translation = pan.translation(in: view).y
+        let distance = translation / view.bounds.height
 
         let speed = pan.velocity(in: view)
         print("飞机===> speed is: \(speed)")
@@ -85,8 +87,8 @@ class LenPopupNextViewController: LentoBaseViewController {
             print("===> end speed is: \(speed)")
             self.isInteractive = false
 
-            if speed.x < 0 {
-                if abs(speed.x) > 100 {
+            if speed.y < 0 {
+                if abs(speed.y) > 100 {
                     self.interactiveCoordinator.cancel()
                 } else {
                     if distance < 0.5 {
@@ -96,7 +98,7 @@ class LenPopupNextViewController: LentoBaseViewController {
                     }
                 }
             } else {/// 意图向下
-                if abs(speed.x) > 100 {
+                if abs(speed.y) > 100 {
                     self.interactiveCoordinator.finish()
                 } else {
                     if distance < 0.5 {
@@ -130,6 +132,38 @@ class LenPopupNextViewController: LentoBaseViewController {
         print("✈️✈️LenPopupNextViewController-dello")
     }
         
+}
+
+extension LenPopupNextViewController {
+
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        let gesture:UIPanGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
+        let velocity = gesture.velocity(in: view)
+        print("velocity======x======> \(velocity)")
+//        if velocity.x < 0 {
+//            if abs(velocity.x) > abs(velocity.y) {
+//                print("=====x======> 从右往左边滑动")
+//                return true
+//            } else {
+//                print("=====x======> 从左边wang右边滑动")
+//            }
+//        } else {
+////            print("velocity=======BBBBB")
+//        }
+        
+        if velocity.y > 0 {
+            if abs(velocity.y) > abs(velocity.x) {
+                print("=====x======> 从上往下边滑动")
+                return true
+            }
+        }
+        
+        if velocity.y < 0 {
+            
+        }
+        
+        return false
+    }
 }
 
 

@@ -1,13 +1,63 @@
 //
 //  MARulerView.swift
-//  LentoFeedModule
+//  AmassingUI
 //
-//  Created by zhang on 2023/5/6.
+//  Created by zhang on 2022/10/3.
 //
 
 import UIKit
 
-public class MARulerView: UIView {
+@objc open class MARulerStyle: NSObject {
+ 
+    public static var `default` = MARulerStyle()
+    
+    /// 刻度尺线条颜色
+    public var lineColor: UIColor = .black
+    
+    /// 刻度之间的距离 (涉及位置的准确性，尽量不带小数)
+    public var spacing: CGFloat = 25
+    
+    /// 刻度的宽度
+    public var lineWidth: CGFloat = 1
+    
+    /// 长刻度的长度
+    public var longLineDistance: CGFloat = 30
+    
+    /// 短刻度的长度
+    public var shortLineDistance: CGFloat = 20
+    
+    /// 刻度尺文字字体
+    public var indicatorFont: UIFont = .systemFont(ofSize: 12)
+    
+    /// 刻度尺文字颜色
+    public var indicatorTextColor: UIColor = .black
+    
+    /// 刻度尺文字背景色
+    public var indicatorBackgroundColor: UIColor = .clear
+    
+    /// 刻度文字与刻度尺水平线间距
+    public var indicatorTopPadding: CGFloat = 6
+    
+    /// 刻度文字底部间距
+    public var indicatorBottomPadding: CGFloat = .zero
+    
+    /// 刻度指示文字大小
+    public var indicatorSize = CGSize(width: 26, height: 12)
+    
+    /// 刻度尺最小值
+    public var minValue: Int = 0
+    
+    /// 刻度尺最大值
+    public var maxValue: Int = 100
+    
+    /// 刻度尺精度 (能被1整除的效果会比较好)
+    public var accuracy: CGFloat = 1
+    
+    /// 滚动内边距，默认nil将使用UIEdgeInsets(top: 0, left: 父视图bounds.width/2, bottom: 0, right: bounds.width/2)
+    public var scrollContentInset: UIEdgeInsets? = nil
+}
+
+@objc open class MARulerView: UIView {
 
     /// 外观样式
     public var style: MARulerStyle = .default
@@ -81,7 +131,6 @@ extension MARulerView: UICollectionViewDataSource {
         return Int(value / 10)
     }
     
-    
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withClass: MARulerCell.self, for: indexPath)
         cell.dateUpdates(style, at: indexPath)
@@ -116,7 +165,7 @@ extension MARulerView: UICollectionViewDelegate {
 
 fileprivate class MARulerCell: UICollectionViewCell {
 
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         commonInitialization()
         layoutInitialization()
@@ -129,7 +178,7 @@ fileprivate class MARulerCell: UICollectionViewCell {
     private var layerViews: UIView!
     private var labelViews: UIView!
     
-    private func commonInitialization() {
+    func commonInitialization() {
         layerViews = UIView()
         layerViews.backgroundColor = .clear
         contentView.addSubview(layerViews)
@@ -148,7 +197,7 @@ fileprivate class MARulerCell: UICollectionViewCell {
         }
     }
     
-    private func layoutInitialization() {
+    func layoutInitialization() {
         layerViews.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -158,7 +207,7 @@ fileprivate class MARulerCell: UICollectionViewCell {
         }
     }
 
-    public func dateUpdates(_ style: MARulerStyle, at indexPath: IndexPath) {
+    func dateUpdates(_ style: MARulerStyle, at indexPath: IndexPath) {
         guard let layers = layerViews.layer.sublayers else { return }
         for (index, subLayer) in layers.enumerated() {
             let label = labelViews.subviews[index] as! UILabel
@@ -195,7 +244,7 @@ fileprivate class MARulerCell: UICollectionViewCell {
         }
     }
     
-    private func longMarked(_ index: Int) -> Bool {
+    func longMarked(_ index: Int) -> Bool {
         return index == 0 || index == 5 || index == 10
     }
 }

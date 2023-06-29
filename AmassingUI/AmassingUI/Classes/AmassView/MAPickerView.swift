@@ -1,5 +1,5 @@
 //
-//  MADatePicker.swift
+//  MAPickerView.swift
 //  AmassingUI
 //
 //  Created by zhanghao on 2022/10/3.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MADatePicker: UIView {
+@objc class MAPickerView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

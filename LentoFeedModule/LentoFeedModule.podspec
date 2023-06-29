@@ -44,4 +44,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RxCocoa', '6.5.0'
   s.dependency 'RxViewController', '~> 2.0.0'
   s.dependency 'ObjectMapper', '~> 4.2.0'
+  s.dependency 'Hero'
 end
