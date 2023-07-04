@@ -213,37 +213,62 @@ class DawnTest1ViewController: UIViewController {
     }
 }
 
+internal var UIPanGestureAssociatedDawnCallChangedKey: Void?
+
+extension UIPanGestureRecognizer {
+    
+    var dawnCallChanged: Bool {
+        get {
+            if let value = objc_getAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey) as? Bool {
+                return value
+            }
+            return false
+        }
+        set { objc_setAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+    }
+}
+
 extension DawnTest1ViewController {
     
     @objc func handlePan(gr: UIPanGestureRecognizer) {
         var translation = gr.translation(in: self.view).x
         var distance = translation / (view.bounds.width)
-        var velocityX = gr.velocity(in: view).x
-        
-        translation = translation - abs(translation)
         distance = abs(distance)
-//        velocityX = abs(velocityX)
-        
-        
-        print("======> translation is: \(translation)  distance is: \(distance)  velocity is: \(velocityX)")
-
-        
+        translation = abs(translation)
         switch gr.state {
         case .began:
+//            gr.dawnCallChanged = false
             let vc = DawnTest2ViewController()
             vc.dawn.isTransitioningEnabled = true
             vc.dawn.modalAnimationType = .pageIn(direction: .left)
             vc.modalPresentationStyle = .fullScreen
             Dawn.shared.driven(presenting: vc)
             self.present(vc, animated: true)
+            print("=======> began")
         case .changed:
+//            gr.dawnCallChanged = true
+            print("=======> changed")
             Dawn.shared.update(distance)
         default:
-            if ((translation + velocityX) / view.bounds.width) < 0.5 {
+            let velocityX = gr.velocity(in: view).x
+            print("=======> end-translation is: \(translation)   velocityx is: \(velocityX)")
+            
+            if ((translation - velocityX) / self.view.bounds.width) > 0.5 {
                 Dawn.shared.finish()
             } else {
                 Dawn.shared.cancel()
             }
+            
+//            func ended() {
+//
+//            }
+//
+//            if gr.dawnCallChanged {
+//                ended()
+//            } else {
+//                Dawn.shared.precip { ended() }
+//            }
+//            gr.dawnCallChanged = false
         }
     }
 }

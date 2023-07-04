@@ -10,7 +10,7 @@ import UIKit
 extension DawnTransition: UIViewControllerTransitioningDelegate {
  
     private var interactiveTransitioning: UIViewControllerInteractiveTransitioning? {
-        return interactiveDriven
+        return driveninViewController?.dawn.interactiveDriver
     }
     
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

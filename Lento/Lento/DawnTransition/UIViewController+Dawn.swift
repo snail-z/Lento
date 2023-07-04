@@ -76,6 +76,12 @@ extension DawnExtension where Base: UIViewController {
             objc_setAssociatedObject(base, &DawnInteractiveDriverViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
+    
+    func nilInteractiveDriver() {
+        if let _ = objc_getAssociatedObject(base, &DawnInteractiveDriverViewControllerAssociatedKey) as? UIPercentDrivenInteractiveTransition {
+            objc_setAssociatedObject(base, &DawnInteractiveDriverViewControllerAssociatedKey, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
 }
 
 fileprivate var DawnInteractiveDriverViewControllerAssociatedKey: Void?

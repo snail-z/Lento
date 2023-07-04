@@ -43,7 +43,10 @@ public class DawnTransition: NSObject {
     /// 转场容器对象
     internal var containerView: UIView?
     
+    /// 转场对象状态
     internal var state: DawnTransitionState = .possible
-    internal var interactiveDriven: UIViewControllerInteractiveTransitioning?
+    
+    internal var driveninViewController: UIViewController?
     internal var drivenConfiguration: DawnAnimationConfiguration?
+    internal var drivenChanged: Bool = false
 }
