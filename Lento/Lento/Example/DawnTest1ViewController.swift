@@ -49,25 +49,74 @@ class WrapVView: LentoBaseView {
 
 class DawnTest1ViewController: UIViewController {
     
-    var avView: UIView!
+    var avView1: UILabel!
+    var avView2: UILabel!
+    var avView3: UILabel!
+    var avView4: UILabel!
     var wrapView: WrapVView!
+    var roundBG: UIView!
+    var roundBtn: UIImageView!
+    
+    func makeLabel(text: String?) -> UILabel {
+        let label = UILabel()
+        label.text = text
+        label.font = .gillSans()
+        label.textColor = .white
+        label.backgroundColor = .random(.fairy)
+        label.textAlignment = .center
+        return label
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .hex(0xEEEEEE)
-        // Do any additional setup after loading the view.
         
-        avView = UIView()
-        avView.backgroundColor = .yellow
-        view.addSubview(avView)
-        avView.snp.makeConstraints { make in
+        avView1 = makeLabel(text: "normal")
+        view.addSubview(avView1)
+        avView1.snp.makeConstraints { make in
             make.width.equalTo(200)
-            make.height.equalTo(60)
+            make.height.equalTo(50)
             make.centerX.equalToSuperview()
-            make.top.equalTo(100)
+            make.top.equalTo(50)
         }
-        avView.addTapGesture { [weak self] _ in
+        avView1.addTapGesture { [weak self] _ in
             self?.jumped()
+        }
+        
+        avView2 = makeLabel(text: "Today")
+        view.addSubview(avView2)
+        avView2.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(avView1.snp.bottom).offset(20)
+        }
+        avView2.addTapGesture { [weak self] _ in
+            self?.jumped2()
+        }
+        
+        avView3 = makeLabel(text: "AliPage")
+        view.addSubview(avView3)
+        avView3.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(avView2.snp.bottom).offset(20)
+        }
+        avView3.addTapGesture { [weak self] _ in
+            self?.jumped3()
+        }
+        
+        avView4 = makeLabel(text: "RoundKnob")
+        view.addSubview(avView4)
+        avView4.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(avView3.snp.bottom).offset(20)
+        }
+        avView4.addTapGesture { [weak self] _ in
+            self?.jumped4()
         }
         
         wrapView = WrapVView()
@@ -84,6 +133,42 @@ class DawnTest1ViewController: UIViewController {
         wrapView.addTapGesture { [weak self] _ in
             self?.jumpedTwo()
         }
+        
+        roundBG = UIView()
+        roundBG.backgroundColor = .blue
+        roundBG.layer.cornerRadius = 30
+        roundBG.layer.masksToBounds = true
+        view.addSubview(roundBG)
+        roundBG.snp.makeConstraints { make in
+            make.right.equalToSuperview().inset(5)
+            make.top.equalToSuperview().inset(5)
+            make.width.height.equalTo(60)
+        }
+        roundBtn = UIImageView(image: UIImage(named: "plus-circle"))
+        roundBtn.contentMode = .scaleAspectFit
+        roundBtn.backgroundColor = .blue
+        roundBG.addSubview(roundBtn)
+        roundBtn.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.height.equalTo(40)
+        }
+        roundBG.addTapGesture { [weak self] _ in
+            self?.jumped5()
+        }
+        
+        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePan(gr:)))
+        edgePanGesture.edges = UIRectEdge.right
+        view.addGestureRecognizer(edgePanGesture)
+        
+//        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:))))
+    }
+    
+    func jumped2() {
+        let vc = StoreViewController()
+        vc.dawn.isTransitioningEnabled = true
+        vc.dawn.modalAnimationType = .pageIn(direction: .up)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
     func jumped() {
@@ -100,6 +185,66 @@ class DawnTest1ViewController: UIViewController {
         vc.dawn.transitionCapable = DawnAnimatePathway(source: self, target: vc)
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
+    }
+    
+    func jumped3() {
+        let vc = AlipageViewController()
+        vc.dawn.isTransitioningEnabled = true
+        vc.dawn.modalAnimationType = .zoomSlide(direction: .left, scale: 0.85)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
+    func jumped4() {
+        let item1 = StoreItemModel.init(title: "我是主标题", subTitle: "我是副标题哈哈哈哈哈哈哈", imageName: "image2", content: "在这个春意盎然的季节，我收获了几缕春风，他们轻轻地、悄悄地拂过我心田，停留在我记忆中，挥之不去。友情，是一缕春风，拂去我心灵的阴霾；亲情，是一缕春风，呵护是我心中的美好；关爱，是一缕春风，吹去刺骨的冰冷，带来温暖。\n繁花似锦，你我手拉手，肩并肩齐走在回家的那条平坦的小路上。你偶尔会摸摸我的头，掐掐我的脸，而我也尽力找话茬，希望不会太闷。“你说……我们长大了还能上同一间高中不？”我小心翼翼地问道。你抿了抿唇，苦涩的味道在你的声音里散开，“也许吧。”“但是……无论怎么样，我们都是好朋友。”看似平静的语调，在我心中激起万丈波澜，在昏暗的灯光下，我俩的手握的更紧了。百花争艳，友情更美。")
+        let vc = StoreDetailViewController(storeItem: item1)
+        vc.dawn.isTransitioningEnabled = true
+        vc.dawn.modalAnimationType = .push(direction: .left)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func jumped5() {
+        let vc = AlipageViewController()
+        vc.dawn.isTransitioningEnabled = true
+        vc.dawn.modalAnimationType = .push(direction: .left)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+}
+
+extension DawnTest1ViewController {
+    
+    @objc func handlePan(gr: UIPanGestureRecognizer) {
+        var translation = gr.translation(in: self.view).x
+        var distance = translation / (view.bounds.width)
+        var velocityX = gr.velocity(in: view).x
+        
+        translation = translation - abs(translation)
+        distance = abs(distance)
+//        velocityX = abs(velocityX)
+        
+        
+        print("======> translation is: \(translation)  distance is: \(distance)  velocity is: \(velocityX)")
+
+        
+        switch gr.state {
+        case .began:
+            let vc = DawnTest2ViewController()
+            vc.dawn.isTransitioningEnabled = true
+            vc.dawn.modalAnimationType = .pageIn(direction: .left)
+            vc.modalPresentationStyle = .fullScreen
+            Dawn.shared.driven(presenting: vc)
+            self.present(vc, animated: true)
+        case .changed:
+            Dawn.shared.update(distance)
+        default:
+            if ((translation + velocityX) / view.bounds.width) < 0.5 {
+                Dawn.shared.finish()
+            } else {
+                Dawn.shared.cancel()
+            }
+        }
     }
 }
 

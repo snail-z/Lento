@@ -27,7 +27,6 @@ class DawnTest2ViewController: UIViewController {
         imgView.snp.makeConstraints { make in
             make.left.equalTo(100)
             make.right.equalTo(-100)
-            make.width.equalTo(200)
             make.height.equalTo(220)
             make.centerY.equalToSuperview()
         }
@@ -38,12 +37,8 @@ class DawnTest2ViewController: UIViewController {
         let distance = translation / (view.bounds.width)
         switch gr.state {
         case .began:
-            if let vvvv = self.dawn.transitionCapable as? DawnCustomTransitionDeputy {
-//                vvvv.dismissingConfiguration.duration = 0.5
-                vvvv.dismissingConfiguration.curve = .linear
-                print("vvvv===> \(vvvv)")
-            }
-            Dawn.shared.driven(self)
+//            Dawn.shared.driven(self, configuration: .init(duration: 2, curve: .linear))
+            Dawn.shared.driven(dismissing: self)
             dismiss(animated: true)
         case .changed:
             Dawn.shared.update(distance)
@@ -112,7 +107,7 @@ extension DawnTest3ViewController {
         let distance = translation / (view.bounds.width)
         switch gr.state {
         case .began:
-            Dawn.shared.driven(self)
+            Dawn.shared.driven(dismissing: self)
             dismiss(animated: true)
         case .changed:
             Dawn.shared.update(distance)
@@ -135,7 +130,7 @@ extension DawnTest3ViewController {
         let translation = gr.translation(in: self.view).x
         let distance = translation / (view.bounds.width)
         
-        let minScale: CGFloat = 0.7
+        let minScale: CGFloat = 0.85
         var scale = 1 - distance * 0.35
         scale = min(1, scale)
         let maxRadius: CGFloat = 20

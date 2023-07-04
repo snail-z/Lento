@@ -28,7 +28,6 @@ internal class DawnSnapshotView: UIView {
 }
 
 extension UIView: DawnCompatible {}
-
 internal extension DawnExtension where Base: UIView {
     
     func slowSnapshotView() -> UIView {

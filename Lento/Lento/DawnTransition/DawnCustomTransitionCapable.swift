@@ -26,19 +26,19 @@ public protocol DawnCustomTransitionCapable {
 extension DawnCustomTransitionCapable {
     
     public func dawnModifierStagePresenting() -> DawnModifierStage {
-        return .default()
+        return .init()
     }
     
     public func dawnModifierStageDismissing() -> DawnModifierStage {
-        return .default()
+        return .init()
     }
     
     public func dawnAnimationConfigurationPresenting() -> DawnAnimationConfiguration {
-        return DawnAnimationConfiguration(sendToViewToBack: false)
+        return .init(sendToViewToBack: false)
     }
     
     public func dawnAnimationConfigurationDismissing() -> DawnAnimationConfiguration {
-        return DawnAnimationConfiguration(sendToViewToBack: false)
+        return .init(sendToViewToBack: false)
     }
 }
 

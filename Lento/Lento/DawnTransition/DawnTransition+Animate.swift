@@ -25,8 +25,8 @@ extension DawnTransition {
             }
             guard boolean == false else { return }
             guard let capable = toVC.dawn.transitionCapable else { return }
+            let config = (drivenConfiguration != nil) ? drivenConfiguration! : capable.dawnAnimationConfigurationPresenting()
             let stage = capable.dawnModifierStagePresenting()
-            let config = capable.dawnAnimationConfigurationPresenting()
             let fromModifiers = preprocessFromModifiers(stage)
             let toModifiers = preprocessToModifiers(stage, config)
             performAnimate(duration: config.duration,
@@ -47,7 +47,7 @@ extension DawnTransition {
             }
             guard boolean == false else { return }
             guard let capable = fromVC.dawn.transitionCapable else { return }
-            let config = capable.dawnAnimationConfigurationDismissing()
+            let config = (drivenConfiguration != nil) ? drivenConfiguration! : capable.dawnAnimationConfigurationDismissing()
             let stage = capable.dawnModifierStageDismissing()
             let fromModifiers = preprocessFromModifiers(stage)
             let toModifiers = preprocessToModifiers(stage, config)

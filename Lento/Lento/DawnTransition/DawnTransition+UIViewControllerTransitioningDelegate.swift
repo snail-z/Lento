@@ -9,7 +9,7 @@ import UIKit
 
 extension DawnTransition: UIViewControllerTransitioningDelegate {
  
-    var interactiveTransitioning: UIViewControllerInteractiveTransitioning? {
+    private var interactiveTransitioning: UIViewControllerInteractiveTransitioning? {
         return interactiveDriven
     }
     

@@ -77,49 +77,53 @@ extension DawnAnimationType {
         }
     }
     
+    internal static var linearOffset: CGPoint {
+        return CGPoint(x: UIScreen.size.width * 0.28, y: UIScreen.size.height * 0.28)
+    }
+    
     internal static func stage(type: DawnAnimationType) -> DawnModifierStage {
         let stage = DawnModifierStage()
         switch type {
         case .push(direction: .left):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
-            stage.fromViewEndModifiers = [.position(horizontal: -50), .defaultShadow()]
+            stage.fromViewEndModifiers = [.position(horizontal: -linearOffset.x), .defaultShadow()]
             stage.toViewBeginModifiers = [.position(.right), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .push(direction: .right):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
-            stage.fromViewEndModifiers = [.position(horizontal: 50), .defaultShadow()]
+            stage.fromViewEndModifiers = [.position(horizontal: linearOffset.x), .defaultShadow()]
             stage.toViewBeginModifiers = [.position(.left), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .push(direction: .up):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
-            stage.fromViewEndModifiers = [.position(vertical: -100), .defaultShadow()]
+            stage.fromViewEndModifiers = [.position(vertical: -linearOffset.y), .defaultShadow()]
             stage.toViewBeginModifiers = [.position(.down), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .push(direction: .down):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
-            stage.fromViewEndModifiers = [.position(vertical: 100), .defaultShadow()]
+            stage.fromViewEndModifiers = [.position(vertical: linearOffset.y), .defaultShadow()]
             stage.toViewBeginModifiers = [.position(.up), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
             
         case .pull(direction: .left):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
             stage.fromViewEndModifiers = [.position(.left), .defaultShadow()]
-            stage.toViewBeginModifiers = [.position(horizontal: 50), .defaultShadow()]
+            stage.toViewBeginModifiers = [.position(horizontal: linearOffset.x), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .pull(direction: .right):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
             stage.fromViewEndModifiers = [.position(.right), .defaultShadow()]
-            stage.toViewBeginModifiers = [.position(horizontal: -50), .defaultShadow()]
+            stage.toViewBeginModifiers = [.position(horizontal: -linearOffset.x), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .pull(direction: .up):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
             stage.fromViewEndModifiers = [.position(.up), .defaultShadow()]
-            stage.toViewBeginModifiers = [.position(vertical: 100), .defaultShadow()]
+            stage.toViewBeginModifiers = [.position(vertical: linearOffset.y), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         case .pull(direction: .down):
             stage.fromViewBeginModifiers = [.position(.center), .defaultShadow()]
             stage.fromViewEndModifiers = [.position(.down), .defaultShadow()]
-            stage.toViewBeginModifiers = [.position(vertical: -100), .defaultShadow()]
+            stage.toViewBeginModifiers = [.position(vertical: -linearOffset.y), .defaultShadow()]
             stage.toViewEndModifiers = [.position(.center), .defaultShadow()]
         
         case .pageIn(direction: .left, let scale):
@@ -221,11 +225,11 @@ extension DawnAnimationType {
         default: dismissingToBack = false
         }
         
-        deputy.presentingConfiguration = DawnAnimationConfiguration(duration: 0.375,
+        deputy.presentingConfiguration = DawnAnimationConfiguration(duration: 0.295,
                                                                     curve: .easeInOut,
                                                                     sendToViewToBack: presentingToBack)
         
-        deputy.dismissingConfiguration = DawnAnimationConfiguration(duration: 0.375,
+        deputy.dismissingConfiguration = DawnAnimationConfiguration(duration: 0.295,
                                                                     curve: .easeInOut,
                                                                     sendToViewToBack: dismissingToBack)
         return deputy
@@ -234,8 +238,8 @@ extension DawnAnimationType {
 
 internal class DawnCustomTransitionDeputy {
     
-    internal var presentingModifierStage: DawnModifierStage = .default()
-    internal var dismissingModifierStage: DawnModifierStage = .default()
+    internal var presentingModifierStage: DawnModifierStage = .init()
+    internal var dismissingModifierStage: DawnModifierStage = .init()
     
     internal var presentingConfiguration: DawnAnimationConfiguration = .init(sendToViewToBack: false)
     internal var dismissingConfiguration: DawnAnimationConfiguration = .init(sendToViewToBack: true)

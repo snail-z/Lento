@@ -18,7 +18,15 @@
 		3EC0BBAA2872DD3A00A7F23C /* LentoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0BBA92872DD3A00A7F23C /* LentoUITestsLaunchTests.swift */; };
 		4607C80AAA011D7FED663517 /* libPods-Lento.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */; };
 		652C05EA4ED4F2BEE4646CE3 /* libPods-LentoWidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DE089C103A0E6A10E8DD54 /* libPods-LentoWidgetExtension.a */; };
+		81076E852A4EBB88003810A8 /* AlipageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81076E842A4EBB88003810A8 /* AlipageViewController.swift */; };
+		81076E872A4ED6D6003810A8 /* AlipageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81076E862A4ED6D6003810A8 /* AlipageCell.swift */; };
+		81076E892A4ED77C003810A8 /* AlipageLagerImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81076E882A4ED77C003810A8 /* AlipageLagerImageController.swift */; };
 		810E1B0F2A47D2E500EDF342 /* DawnAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E1B0E2A47D2E500EDF342 /* DawnAnimationType.swift */; };
+		812D53352A4E68BB00096E2A /* StoreItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D53342A4E68BB00096E2A /* StoreItemModel.swift */; };
+		812D53372A4E68CF00096E2A /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D53362A4E68CF00096E2A /* StoreViewController.swift */; };
+		812D53392A4E68F000096E2A /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D53382A4E68F000096E2A /* StoreCell.swift */; };
+		812D533B2A4E6BD700096E2A /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D533A2A4E6BD700096E2A /* StoreDetailViewController.swift */; };
+		812D533D2A4E6BF800096E2A /* StoreDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812D533C2A4E6BF800096E2A /* StoreDetailHeaderView.swift */; };
 		812EF06B2A330265004E3A54 /* DawnTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812EF06A2A330265004E3A54 /* DawnTransition+Interactive.swift */; };
 		812EF06D2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812EF06C2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */; };
 		812EF06F2A3302BE004E3A54 /* DawnTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812EF06E2A3302BE004E3A54 /* DawnTransition.swift */; };
@@ -35,15 +43,17 @@
 		81379B1B29E5500C00B70912 /* LentoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81379B1A29E5500C00B70912 /* LentoWidget.swift */; };
 		81379B1D29E5500D00B70912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81379B1C29E5500D00B70912 /* Assets.xcassets */; };
 		81379B2129E5500D00B70912 /* LentoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 81379B1429E5500C00B70912 /* LentoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		816A05FE2A4D20E8000CCD88 /* MYAppStoreAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A05FD2A4D20E8000CCD88 /* MYAppStoreAnimate.swift */; };
-		816A06002A4D2A17000CCD88 /* MYSmaeAnimte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A05FF2A4D2A17000CCD88 /* MYSmaeAnimte.swift */; };
+		816A05FE2A4D20E8000CCD88 /* DawnAnimateRoughToady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A05FD2A4D20E8000CCD88 /* DawnAnimateRoughToady.swift */; };
+		816A06002A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A05FF2A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift */; };
 		8199A2D229E7DD25002285B7 /* LentoWidgetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D029E7DC83002285B7 /* LentoWidgetApi.swift */; };
 		8199A2D429E7F3AA002285B7 /* StudyWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D329E7F3AA002285B7 /* StudyWidgetViews.swift */; };
 		8199A2D629E7F403002285B7 /* WidgetConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D529E7F403002285B7 /* WidgetConst.swift */; };
 		8199A2D829E7F4E2002285B7 /* WidgetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */; };
 		81B2AE892A4939F4009AE186 /* DawnAnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */; };
+		81B83E832A52A9D500E417EA /* DawnAnimateRoundKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B83E822A52A9D500E417EA /* DawnAnimateRoundKnob.swift */; };
+		81B83E852A52E69B00E417EA /* AliPageSnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B83E842A52E69B00E417EA /* AliPageSnapshotCache.swift */; };
 		81D332A32A4A754B00AA5A6A /* DawnAnimatePathway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */; };
-		81F8FC0F2A4DA97900F3E22A /* AlipayAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */; };
+		81F8FC0F2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8FC0E2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift */; };
 		81FE44C62A36BEEA008E8DB7 /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */; };
 		81FF625A2967B792000C564F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF62592967B792000C564F /* MineViewController.swift */; };
 		81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF625B2967B7C9000C564F /* DiscoverViewController.swift */; };
@@ -107,7 +117,15 @@
 		4C230C6D9A3719A3BD79D01F /* libPods-Lento.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lento.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0F0127DBA99CD63D6F53E2 /* Pods-Lento.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lento.debug.xcconfig"; path = "Target Support Files/Pods-Lento/Pods-Lento.debug.xcconfig"; sourceTree = "<group>"; };
 		79A9331D0CECB6DE67797937 /* Pods-LentoWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentoWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-LentoWidgetExtension/Pods-LentoWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		81076E842A4EBB88003810A8 /* AlipageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipageViewController.swift; sourceTree = "<group>"; };
+		81076E862A4ED6D6003810A8 /* AlipageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipageCell.swift; sourceTree = "<group>"; };
+		81076E882A4ED77C003810A8 /* AlipageLagerImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipageLagerImageController.swift; sourceTree = "<group>"; };
 		810E1B0E2A47D2E500EDF342 /* DawnAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimationType.swift; sourceTree = "<group>"; };
+		812D53342A4E68BB00096E2A /* StoreItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemModel.swift; sourceTree = "<group>"; };
+		812D53362A4E68CF00096E2A /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		812D53382A4E68F000096E2A /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		812D533A2A4E6BD700096E2A /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
+		812D533C2A4E6BF800096E2A /* StoreDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailHeaderView.swift; sourceTree = "<group>"; };
 		812EF06A2A330265004E3A54 /* DawnTransition+Interactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DawnTransition+Interactive.swift"; sourceTree = "<group>"; };
 		812EF06C2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DawnTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		812EF06E2A3302BE004E3A54 /* DawnTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnTransition.swift; sourceTree = "<group>"; };
@@ -125,15 +143,17 @@
 		81379B1A29E5500C00B70912 /* LentoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoWidget.swift; sourceTree = "<group>"; };
 		81379B1C29E5500D00B70912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81379B1E29E5500D00B70912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		816A05FD2A4D20E8000CCD88 /* MYAppStoreAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAppStoreAnimate.swift; sourceTree = "<group>"; };
-		816A05FF2A4D2A17000CCD88 /* MYSmaeAnimte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYSmaeAnimte.swift; sourceTree = "<group>"; };
+		816A05FD2A4D20E8000CCD88 /* DawnAnimateRoughToady.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimateRoughToady.swift; sourceTree = "<group>"; };
+		816A05FF2A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathwayChangeless.swift; sourceTree = "<group>"; };
 		8199A2D029E7DC83002285B7 /* LentoWidgetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LentoWidgetApi.swift; sourceTree = "<group>"; };
 		8199A2D329E7F3AA002285B7 /* StudyWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyWidgetViews.swift; sourceTree = "<group>"; };
 		8199A2D529E7F403002285B7 /* WidgetConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConst.swift; sourceTree = "<group>"; };
 		8199A2D729E7F4E2002285B7 /* WidgetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensions.swift; sourceTree = "<group>"; };
 		81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimationConfiguration.swift; sourceTree = "<group>"; };
+		81B83E822A52A9D500E417EA /* DawnAnimateRoundKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimateRoundKnob.swift; sourceTree = "<group>"; };
+		81B83E842A52E69B00E417EA /* AliPageSnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPageSnapshotCache.swift; sourceTree = "<group>"; };
 		81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathway.swift; sourceTree = "<group>"; };
-		81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipayAnimate.swift; sourceTree = "<group>"; };
+		81F8FC0E2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathwayLarger.swift; sourceTree = "<group>"; };
 		81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnTransitionModifiers.swift; sourceTree = "<group>"; };
 		81FF62592967B792000C564F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		81FF625B2967B7C9000C564F /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -250,9 +270,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		81076E832A4EBB67003810A8 /* AliPage */ = {
+			isa = PBXGroup;
+			children = (
+				81076E862A4ED6D6003810A8 /* AlipageCell.swift */,
+				81076E842A4EBB88003810A8 /* AlipageViewController.swift */,
+				81076E882A4ED77C003810A8 /* AlipageLagerImageController.swift */,
+				81B83E842A52E69B00E417EA /* AliPageSnapshotCache.swift */,
+			);
+			path = AliPage;
+			sourceTree = "<group>";
+		};
+		812D53332A4E68AD00096E2A /* appstore */ = {
+			isa = PBXGroup;
+			children = (
+				812D53342A4E68BB00096E2A /* StoreItemModel.swift */,
+				812D53382A4E68F000096E2A /* StoreCell.swift */,
+				812D53362A4E68CF00096E2A /* StoreViewController.swift */,
+				812D533A2A4E6BD700096E2A /* StoreDetailViewController.swift */,
+				812D533C2A4E6BF800096E2A /* StoreDetailHeaderView.swift */,
+			);
+			path = appstore;
+			sourceTree = "<group>";
+		};
 		812E417028FE35F300ED51F4 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				81076E832A4EBB67003810A8 /* AliPage */,
+				812D53332A4E68AD00096E2A /* appstore */,
 				81FF62582967B734000C564F /* demos */,
 				812EF07E2A332E30004E3A54 /* DawnTest1ViewController.swift */,
 				812EF0802A332E90004E3A54 /* DawnTest2ViewController.swift */,
@@ -297,9 +342,10 @@
 			isa = PBXGroup;
 			children = (
 				81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */,
-				816A05FD2A4D20E8000CCD88 /* MYAppStoreAnimate.swift */,
-				816A05FF2A4D2A17000CCD88 /* MYSmaeAnimte.swift */,
-				81F8FC0E2A4DA97900F3E22A /* AlipayAnimate.swift */,
+				816A05FD2A4D20E8000CCD88 /* DawnAnimateRoughToady.swift */,
+				81F8FC0E2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift */,
+				816A05FF2A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift */,
+				81B83E822A52A9D500E417EA /* DawnAnimateRoundKnob.swift */,
 			);
 			path = DawnTransitionUse;
 			sourceTree = "<group>";
@@ -556,23 +602,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				816A05FE2A4D20E8000CCD88 /* MYAppStoreAnimate.swift in Sources */,
+				816A05FE2A4D20E8000CCD88 /* DawnAnimateRoughToady.swift in Sources */,
 				81FF62602967BA78000C564F /* LentoBaseTabBarController.swift in Sources */,
+				812D53352A4E68BB00096E2A /* StoreItemModel.swift in Sources */,
+				81B83E852A52E69B00E417EA /* AliPageSnapshotCache.swift in Sources */,
+				812D53392A4E68F000096E2A /* StoreCell.swift in Sources */,
 				3EC0BB8B2872DD3800A7F23C /* ViewController.swift in Sources */,
 				810E1B0F2A47D2E500EDF342 /* DawnAnimationType.swift in Sources */,
+				812D53372A4E68CF00096E2A /* StoreViewController.swift in Sources */,
 				3EC0BB872872DD3800A7F23C /* AppDelegate.swift in Sources */,
+				81076E892A4ED77C003810A8 /* AlipageLagerImageController.swift in Sources */,
 				81FF625A2967B792000C564F /* MineViewController.swift in Sources */,
+				812D533B2A4E6BD700096E2A /* StoreDetailViewController.swift in Sources */,
 				812EF06F2A3302BE004E3A54 /* DawnTransition.swift in Sources */,
 				812EF06B2A330265004E3A54 /* DawnTransition+Interactive.swift in Sources */,
 				81FF625C2967B7C9000C564F /* DiscoverViewController.swift in Sources */,
+				81B83E832A52A9D500E417EA /* DawnAnimateRoundKnob.swift in Sources */,
 				812EF0772A3318CB004E3A54 /* DawnTransition+Animate.swift in Sources */,
 				81B2AE892A4939F4009AE186 /* DawnAnimationConfiguration.swift in Sources */,
 				812EF0792A3323AD004E3A54 /* UIViewController+Dawn.swift in Sources */,
 				3EC0BB892872DD3800A7F23C /* SceneDelegate.swift in Sources */,
 				812EF07B2A3323BD004E3A54 /* UIView+Dawn.swift in Sources */,
 				81D332A32A4A754B00AA5A6A /* DawnAnimatePathway.swift in Sources */,
-				816A06002A4D2A17000CCD88 /* MYSmaeAnimte.swift in Sources */,
+				816A06002A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift in Sources */,
 				81FF62622967C6F6000C564F /* SidebarViewController.swift in Sources */,
+				81076E852A4EBB88003810A8 /* AlipageViewController.swift in Sources */,
 				812EF06D2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
 				812EF0712A330B23004E3A54 /* DawnCustomTransitionCapable.swift in Sources */,
 				812EF0812A332E90004E3A54 /* DawnTest2ViewController.swift in Sources */,
@@ -580,7 +634,9 @@
 				812EF07D2A33258A004E3A54 /* DawnCompatible.swift in Sources */,
 				812EF0752A3318BE004E3A54 /* DawnTransition+Complete.swift in Sources */,
 				81FE44C62A36BEEA008E8DB7 /* DawnTransitionModifiers.swift in Sources */,
-				81F8FC0F2A4DA97900F3E22A /* AlipayAnimate.swift in Sources */,
+				812D533D2A4E6BF800096E2A /* StoreDetailHeaderView.swift in Sources */,
+				81F8FC0F2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift in Sources */,
+				81076E872A4ED6D6003810A8 /* AlipageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

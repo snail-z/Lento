@@ -18,14 +18,6 @@ public class DawnModifierStage {
     var toViewEndModifiers: [DawnModifier]?
 }
 
-extension DawnModifierStage {
-    
-    internal static func `default`() -> DawnModifierStage {
-        let stage = DawnModifierStage()
-        return stage
-    }
-}
-
 public struct DawnTargetState {
     
     public var transform: CATransform3D?
@@ -76,8 +68,7 @@ extension DawnTargetState {
 public final class DawnModifier {
   
     internal let apply:(inout DawnTargetState) -> Void
-  
-    public init(applyFunction:@escaping (inout DawnTargetState) -> Void) {
+    internal init(applyFunction:@escaping (inout DawnTargetState) -> Void) {
         apply = applyFunction
     }
 }
@@ -146,15 +137,15 @@ extension DawnModifier {
     
     public static func position(horizontal offset : CGFloat) -> DawnModifier {
         return DawnModifier { targetState in
-            let bounds = UIScreen.main.bounds
-            targetState.position = .any(x: bounds.width * 0.5 + offset, y: bounds.height * 0.5)
+            targetState.position = .any(x: UIScreen.size.width * 0.5 + offset,
+                                        y: UIScreen.size.height * 0.5)
         }
     }
     
     public static func position(vertical offset : CGFloat) -> DawnModifier {
         return DawnModifier { targetState in
-            let bounds = UIScreen.main.bounds
-            targetState.position = .any(x: bounds.width * 0.5, y: bounds.height * 0.5 + offset)
+            targetState.position = .any(x: UIScreen.size.width * 0.5,
+                                        y: UIScreen.size.height * 0.5 + offset)
         }
     }
     

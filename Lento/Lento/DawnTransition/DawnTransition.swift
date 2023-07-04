@@ -23,12 +23,10 @@ public enum DawnTransitionState: Int {
 }
 
 public class Dawn: NSObject {
-  
-    /// 用于控制转换的共享单例对象
     public static var shared = DawnTransition()
 }
 
-open class DawnTransition: NSObject {
+public class DawnTransition: NSObject {
     
     public var isTransitioning: Bool { return state != .possible }
     public internal(set) var isPresenting: Bool = true
@@ -47,4 +45,5 @@ open class DawnTransition: NSObject {
     
     internal var state: DawnTransitionState = .possible
     internal var interactiveDriven: UIViewControllerInteractiveTransitioning?
+    internal var drivenConfiguration: DawnAnimationConfiguration?
 }

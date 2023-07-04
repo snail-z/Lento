@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIViewController: DawnCompatible {}
-
 extension DawnExtension where Base: UIViewController {
  
     public var isTransitioningEnabled: Bool {
