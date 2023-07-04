@@ -79,19 +79,19 @@ internal extension DawnTransition {
         containerView.addSubview(snoptView)
         
         if let begin = stage.fromViewBeginModifiers {
-            snoptView.dawnRender(DawnTargetState.final(begin))
+            snoptView.dawn.render(DawnTargetState.final(begin))
         }
         
         let didChange: AnimatedBlock = {
             if let end = stage.fromViewEndModifiers {
-                snoptView.dawnRender(DawnTargetState.final(end))
+                snoptView.dawn.render(DawnTargetState.final(end))
             }
         }
         
         fromView.isHidden = true
         let endChange: FinishedBlock = {
             fromView.isHidden = false
-            snoptView.dawnOverlayNil()
+            snoptView.dawn.nilOverlay()
             snoptView.removeFromSuperview()
             return true
         }
@@ -111,17 +111,17 @@ internal extension DawnTransition {
         }
         
         if let begin = stage.toViewBeginModifiers {
-            snoptView.dawnRender(DawnTargetState.final(begin))
+            snoptView.dawn.render(DawnTargetState.final(begin))
         }
         
         let didChange: AnimatedBlock = {
             if let end = stage.toViewEndModifiers {
-                snoptView.dawnRender(DawnTargetState.final(end))
+                snoptView.dawn.render(DawnTargetState.final(end))
             }
         }
         
         let endChange: FinishedBlock = {
-            snoptView.dawnOverlayNil()
+            snoptView.dawn.nilOverlay()
             snoptView.removeFromSuperview()
             return true
         }

@@ -46,118 +46,112 @@ internal extension DawnExtension where Base: UIView {
     }
     
     func snapshotView() -> UIView? {
-        let snapshot = base.snapshotView(afterScreenUpdates: true)
-//        if #available(iOS 11.0, *), let oldSnapshot = snapshot {
-//            // 在iOS 11中，snapshotView(afterScreenUpdates)快照不会包含容器视图
-//            return DawnSnapshotView(contentView: oldSnapshot)
-//        } else {
-            return snapshot
-//        }
+        return base.snapshotView(afterScreenUpdates: true)
     }
 }
 
 internal var UIViewAssociatedDawnOverlayKey: Void?
 internal var UIViewAssociatedDawnEffectViewKey: Void?
 
-internal extension UIView {
+internal extension DawnExtension where Base: UIView {
     
-    var dawnOverlay: UIView {
+    var overlay: UIView {
         get {
-            if let overlay = objc_getAssociatedObject(self, &UIViewAssociatedDawnOverlayKey) as? UIView {
-                return overlay
+            if let aView = objc_getAssociatedObject(base, &UIViewAssociatedDawnOverlayKey) as? UIView {
+                return aView
             }
-            let overlay = UIView(frame: bounds)
-            addSubview(overlay)
-            self.dawnOverlay = overlay
+            let overlay = UIView(frame: base.bounds)
+            base.addSubview(overlay)
+            self.overlay = overlay
             return overlay
         }
-        set { objc_setAssociatedObject(self, &UIViewAssociatedDawnOverlayKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        set { objc_setAssociatedObject(base, &UIViewAssociatedDawnOverlayKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
-    var dawnEffectView: UIVisualEffectView {
+    var effectView: UIVisualEffectView {
         get {
-            if let overlay = objc_getAssociatedObject(self, &UIViewAssociatedDawnEffectViewKey) as? UIVisualEffectView {
-                return overlay
+            if let aView = objc_getAssociatedObject(base, &UIViewAssociatedDawnEffectViewKey) as? UIVisualEffectView {
+                return aView
             }
-            let effectView = UIVisualEffectView(frame: bounds)
-            addSubview(effectView)
-            self.dawnEffectView = effectView
+            let effectView = UIVisualEffectView(frame: base.bounds)
+            base.addSubview(effectView)
+            self.effectView = effectView
             return effectView
         }
-        set { objc_setAssociatedObject(self, &UIViewAssociatedDawnEffectViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+        set { objc_setAssociatedObject(base, &UIViewAssociatedDawnEffectViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
     
-    func dawnOverlayNil() {
-        if let overlay = objc_getAssociatedObject(self, &UIViewAssociatedDawnOverlayKey) as? UIView {
+    func nilOverlay() {
+        if let overlay = objc_getAssociatedObject(base, &UIViewAssociatedDawnOverlayKey) as? UIView {
             overlay.removeFromSuperview()
-            objc_setAssociatedObject(self, &UIViewAssociatedDawnOverlayKey, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(base, &UIViewAssociatedDawnOverlayKey, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
-        if let effectView = objc_getAssociatedObject(self, &UIViewAssociatedDawnEffectViewKey) as? UIVisualEffectView {
+        if let effectView = objc_getAssociatedObject(base, &UIViewAssociatedDawnEffectViewKey) as? UIVisualEffectView {
             effectView.removeFromSuperview()
-            objc_setAssociatedObject(self, &UIViewAssociatedDawnEffectViewKey, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(base, &UIViewAssociatedDawnEffectViewKey, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-
-    func dawnRender(_ targetState: DawnTargetState) {
+    
+    func render(_ targetState: DawnTargetState) {
         if let backgroundColor = targetState.backgroundColor {
-            layer.backgroundColor = backgroundColor
+            base.layer.backgroundColor = backgroundColor
         }
         if let size = targetState.size {
-            layer.bounds.size = size
+            base.layer.bounds.size = size
         }
-        if let type = targetState.position, let bounds = superview?.bounds {
-            let fbounds = CGSize(width: bounds.width / 2, height: bounds.height / 2)
+        if let type = targetState.position, let bounds = base.superview?.bounds {
+            let fbs = CGSize(width: bounds.width / 2, height: bounds.height / 2)
             switch type {
             case .up:
-                layer.position = CGPoint(x: layer.position.x, y:  .zero - fbounds.height)
+                base.layer.position = CGPoint(x: base.layer.position.x, y:  .zero - fbs.height)
             case .down:
-                layer.position = CGPoint(x: layer.position.x, y:  bounds.height + fbounds.height)
+                base.layer.position = CGPoint(x: base.layer.position.x, y:  bounds.height + fbs.height)
             case .left:
-                layer.position = CGPoint(x: .zero - fbounds.width, y: layer.position.y)
+                base.layer.position = CGPoint(x: .zero - fbs.width, y: base.layer.position.y)
             case .right:
-                layer.position = CGPoint(x: bounds.width + fbounds.width, y: layer.position.y)
+                base.layer.position = CGPoint(x: bounds.width + fbs.width, y: base.layer.position.y)
             case .center:
-                layer.position = CGPoint(x: fbounds.width, y: fbounds.height)
+                base.layer.position = CGPoint(x: fbs.width, y: fbs.height)
             case .any(let x, let y):
-                layer.position = CGPoint(x: x, y: y)
+                base.layer.position = CGPoint(x: x, y: y)
             }
         }
         if let opacity = targetState.opacity {
-            layer.opacity = opacity
+            base.layer.opacity = opacity
         }
         if let cornerRadius = targetState.cornerRadius {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
+            base.layer.cornerRadius = cornerRadius
+            base.layer.masksToBounds = true
         }
         if let borderWidth = targetState.borderWidth {
-            layer.borderWidth = borderWidth.native
+            base.layer.borderWidth = borderWidth.native
         }
         if let borderColor = targetState.borderColor {
-            layer.borderColor = borderColor
+            base.layer.borderColor = borderColor
         }
         if let transform = targetState.transform {
-            layer.transform = transform
+            base.layer.transform = transform
         }
         if let shadowColor = targetState.shadowColor {
-            layer.shadowColor = shadowColor
+            base.layer.shadowColor = shadowColor
         }
         if let shadowRadius = targetState.shadowRadius {
-            layer.shadowRadius = shadowRadius
+            base.layer.shadowRadius = shadowRadius
         }
         if let shadowOpacity = targetState.shadowOpacity {
-            layer.shadowOpacity = shadowOpacity
+            base.layer.shadowOpacity = shadowOpacity
         }
         if let shadowOffset = targetState.shadowOffset {
-            layer.shadowOffset = shadowOffset
+            base.layer.shadowOffset = shadowOffset
         }
-        if let overlay = targetState.overlay {
-            self.dawnOverlay.backgroundColor = overlay.color
-            self.dawnOverlay.alpha = overlay.opacity
+        if let normalOverlay = targetState.overlay {
+            overlay.backgroundColor = normalOverlay.color
+            overlay.alpha = normalOverlay.opacity
         }
-        if let overlay = targetState.blurOverlay {
-            guard let style = UIBlurEffect.Style(rawValue: overlay.effect.rawValue) else { return }
-            self.dawnEffectView.effect = UIBlurEffect(style: style)
-            self.dawnEffectView.alpha = overlay.opacity
+        if let blurOverlay = targetState.blurOverlay {
+            guard let style = UIBlurEffect.Style(rawValue: blurOverlay.effect.rawValue) else { return }
+            effectView.effect = UIBlurEffect(style: style)
+            effectView.alpha = blurOverlay.opacity
         }
     }
 }
