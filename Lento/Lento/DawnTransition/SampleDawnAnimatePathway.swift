@@ -1,5 +1,5 @@
 //
-//  DawnAnimatePathway.swift
+//  SampleDawnAnimatePathway.swift
 //  Lento
 //
 //  Created by zhang on 2023/6/27.
@@ -14,16 +14,16 @@ public protocol DawnTransitioningAnimatePathway: NSObjectProtocol {
 
 public struct DawnAnimatePathway: DawnCustomTransitionCapable {
     
-    private let kFakeTag: Int = 10236
     public var duration: TimeInterval = 0.275
     public var zoomScale: CGFloat = 0.9
     
-    public weak var sourceDelegate: DawnTransitioningAnimatePathway?
-    public weak var targetDelegate: DawnTransitioningAnimatePathway?
+    public private(set) weak var sourceDelegate: DawnTransitioningAnimatePathway?
+    public private(set) weak var targetDelegate: DawnTransitioningAnimatePathway?
+    private let kFakeTag: Int = 10236
     
     init(source: DawnTransitioningAnimatePathway, target: DawnTransitioningAnimatePathway) {
-        sourceDelegate = source
-        targetDelegate = target
+        self.sourceDelegate = source
+        self.targetDelegate = target
     }
     
     public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> Bool {

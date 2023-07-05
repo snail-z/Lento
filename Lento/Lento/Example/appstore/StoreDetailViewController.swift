@@ -18,7 +18,6 @@ class StoreDetailViewController: UIViewController {
     }
     
     private var isDismiss = false
-    
     private let storeItem: StoreItemModel
     
     private lazy var closeButton: UIButton = {
@@ -33,10 +32,8 @@ class StoreDetailViewController: UIViewController {
         scrollView.contentInsetAdjustmentBehavior = .never
         scrollView.backgroundColor = UIColor.white
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-//        scrollView.isMultipleTouchEnabled = false
+        scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         scrollView.delaysContentTouches = true
-//        scrollView.contentSize = CGSize(width: 200, height: self.view.height)
         return scrollView
     }()
     
@@ -108,7 +105,7 @@ class StoreDetailViewController: UIViewController {
         let img2 = UIImage(named: names[names.randomIndex])
         AliPageSnapshotCache.shared.addImage(img)
         AliPageSnapshotCache.shared.addImage(img2)
-        self.dawn.transitionCapable = DawnAnimatePathwayChangeless()
+        self.dawn.transitionCapable = DawnAnimateRoundKnob()
         dismiss(animated: true, completion: nil)
     }
     

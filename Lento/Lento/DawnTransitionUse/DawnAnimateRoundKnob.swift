@@ -7,61 +7,65 @@
 
 import UIKit
 
-public protocol DawnTransitioningAnimateRoundKnob: NSObjectProtocol {
-    
-    func dawnAnimatePathwayView() -> UIView?
-}
-
 public struct DawnAnimateRoundKnob: DawnCustomTransitionCapable {
     
+    private let kFakeTag: Int = 10236
     public var duration: TimeInterval = 0.275
+    public var zoomScale: CGFloat = 0.9
 
     public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> Bool {
-        let containerView = context.container
-        let fromView = context.fromViewController.view!
-        let toView = context.toViewController.view!
-//        guard let sourceView = sourceDelegate?.dawnAnimatePathwayView() else { return false }
-//        guard let targetView = targetDelegate?.dawnAnimatePathwayView() else { return false }
-//        guard let sourceSnapshot = sourceView.dawn.snapshotView() else { return false }
-//        guard let targetSnapshot = targetView.dawn.snapshotView() else { return false }
-//        targetView.superview?.layoutIfNeeded()
-//
-//        containerView.addSubview(toView)
-//        toView.isHidden = true
-//        toView.layoutIfNeeded()
-//
-//        let sourceFrame = sourceView.superview!.convert(sourceView.frame, to: containerView)
-//        let sourceScale = sourceView.width / sourceView.height
-//        let targetScale = targetView.width / targetView.height
-//
-//        let tempView = UIView(frame: sourceFrame)
-//        tempView.backgroundColor = .white
-//        tempView.clipsToBounds = true
-//        tempView.layer.masksToBounds = true
-//        tempView.layer.cornerRadius = sourceView.layer.cornerRadius
-//        containerView.addSubview(tempView)
-//
-//        targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / targetScale)
-//        targetSnapshot.center = CGPoint(x: targetSnapshot.center.x, y: tempView.bounds.height/2)
-//
-//        targetSnapshot.alpha = 0
-//        tempView.addSubview(targetSnapshot)
-//
-//        sourceSnapshot.frame = CGRect(origin: .zero, size: tempView.bounds.size)
-//        sourceSnapshot.center = CGPoint(x: sourceSnapshot.center.x, y: tempView.bounds.height/2)
-//        sourceSnapshot.alpha = 1
-//        tempView.addSubview(sourceSnapshot)
-        
-        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut) {
-            
-        } completion: { finished in
-           
-            complete(finished)
-        }
-        return true
+        return false
     }
     
     public func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> Bool {
+        let containerView = context.container
+        let fromView = context.fromViewController.view!
+        let toView = context.toViewController.view!
+        
+        guard let sourceSnapshot = fromView.dawn.snapshotView() else { return false }
+        guard let targetSnapshot = toView.dawn.snapshotView() else { return false }
+        
+        targetSnapshot.frame = containerView.bounds
+        containerView.addSubview(targetSnapshot)
+        
+        let tempView = UIView(frame: containerView.bounds)
+        tempView.backgroundColor = .yellow
+        tempView.layer.masksToBounds = true
+        tempView.clipsToBounds = true
+        tempView.layer.cornerRadius = fromView.layer.cornerRadius
+        tempView.layer.masksToBounds = true
+        containerView.addSubview(tempView)
+        
+        sourceSnapshot.frame = containerView.bounds
+        tempView.addSubview(sourceSnapshot)
+        
+        let roundView = UIView()
+        roundView.frame = tempView.bounds
+        roundView.backgroundColor = .white
+        roundView.alpha = 0
+        tempView.addSubview(roundView)
+        
+        fromView.isHidden = true
+        tempView.layer.cornerRadius = 10
+        UIView.animate(withDuration: 0.275, delay: 0, options: .curveEaseOut) {
+            let size = CGSize(width: 60, height: 60)
+            let paddingtop: CGFloat = 5
+            let x = UIScreen.main.bounds.width - paddingtop - size.width
+            tempView.frame = CGRect(x: x, y: paddingtop + UIScreen.totalNavHeight, width: size.width, height: size.height)
+            sourceSnapshot.frame = tempView.bounds
+            roundView.alpha = 1
+            tempView.layer.cornerRadius = size.width / 2
+        } completion: { finished in
+            UIView.animate(withDuration: 0.25) {
+                tempView.alpha = 0
+            } completion: { _ in
+                targetSnapshot.removeFromSuperview()
+                tempView.removeFromSuperview()
+                fromView.isHidden = false
+                toView.isHidden = false
+                complete(finished)
+            }
+        }
         return true
     }
 }
