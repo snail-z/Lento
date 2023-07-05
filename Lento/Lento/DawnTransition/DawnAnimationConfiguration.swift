@@ -13,7 +13,7 @@ public struct DawnAnimationConfiguration {
     public var delay: TimeInterval = 0
     
     /// 动画时长
-    public var duration: TimeInterval = 0.35
+    public var duration: TimeInterval = 0.295
     
     /// 动画曲线，默认慢快慢
     public var curve: DawnAnimationCurve = .easeInOut
@@ -55,9 +55,6 @@ public enum DawnSnapshotType {
     
     /// 正常快照视图动画
     case normal
-
-    /// 将快照封装到容器内，对容器视图做动画
-    case wrapperSnapshot
     
     /// 不创建快照，直接视图做动画 (会打乱视图层次结构，视图控制器必须重建「慎用」)
     case noSnapshot

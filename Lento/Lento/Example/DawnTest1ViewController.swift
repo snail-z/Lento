@@ -213,20 +213,20 @@ class DawnTest1ViewController: UIViewController {
     }
 }
 
-internal var UIPanGestureAssociatedDawnCallChangedKey: Void?
-
-extension UIPanGestureRecognizer {
-    
-    var dawnCallChanged: Bool {
-        get {
-            if let value = objc_getAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey) as? Bool {
-                return value
-            }
-            return false
-        }
-        set { objc_setAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
-    }
-}
+//internal var UIPanGestureAssociatedDawnCallChangedKey: Void?
+//
+//extension UIPanGestureRecognizer {
+//    
+//    var dawnCallChanged: Bool {
+//        get {
+//            if let value = objc_getAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey) as? Bool {
+//                return value
+//            }
+//            return false
+//        }
+//        set { objc_setAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+//    }
+//}
 
 extension DawnTest1ViewController {
     
@@ -237,12 +237,13 @@ extension DawnTest1ViewController {
         translation = abs(translation)
         switch gr.state {
         case .began:
+            Dawn.shared.driven(presenting: self)
+            
 //            gr.dawnCallChanged = false
             let vc = DawnTest2ViewController()
             vc.dawn.isTransitioningEnabled = true
             vc.dawn.modalAnimationType = .pageIn(direction: .left)
             vc.modalPresentationStyle = .fullScreen
-            Dawn.shared.driven(presenting: vc)
             self.present(vc, animated: true)
             print("=======> began")
         case .changed:

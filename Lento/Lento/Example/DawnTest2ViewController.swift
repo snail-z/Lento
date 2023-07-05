@@ -9,18 +9,31 @@ import UIKit
 
 class DawnTest2ViewController: UIViewController {
 
+    deinit {
+        print("DawnTest2ViewController ==> ✈️")
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        let g = UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:)))
-        g.delegate = self
-        view.addGestureRecognizer(g)
+        let pan = DawnPanGestureRecognizer(transitionController: self, type: .dismiss) { [weak self] in
+            self?.dismiss(animated: true)
+        }
+        pan.isRecognizeWhenEdges = false
+        pan.recognizeDirection = .leftToRight
+        view.dawn.addPanGestureRecognizer(pan)
+        
+        let panTwo = DawnPanGestureRecognizer(transitionController: self, type: .dismiss) { [weak self] in
+            self?.dismiss(animated: true)
+        }
+        panTwo.isRecognizeWhenEdges = false
+        panTwo.recognizeDirection = .rightToLeft
+        view.dawn.addPanGestureRecognizer(panTwo)
         
         view.addTapGesture { [weak self] _ in
             self?.dismiss(animated: true)
         }
-        
         
         let imgView = UIImageView.init(image: UIImage.init(named: "001"))
         imgView.backgroundColor = .white
@@ -33,56 +46,7 @@ class DawnTest2ViewController: UIViewController {
             make.centerY.equalToSuperview()
         }
     }
-    
-    @objc func handlePan(gr: UIPanGestureRecognizer) {
-        let translation = gr.translation(in: self.view).x
-        let distance = translation / (view.bounds.width)
-        switch gr.state {
-        case .began:
-//            Dawn.shared.driven(self, configuration: .init(duration: 2, curve: .linear))
-            Dawn.shared.driven(dismissing: self)
-            dismiss(animated: true)
-        case .changed:
-            Dawn.shared.update(distance)
-        default:
-            let velocity = gr.velocity(in: view)
-            /**
-             velocity-x：从左往右为正值，从右往左为负值
-             translation-x: 手指点拖动的实际距离
-             
-             */
-//            print("22=======> translation is: \(translation)   velocityx is: \(velocity.x)")
-            if ((translation + velocity.x) / view.bounds.width) > 0.5 {
-                Dawn.shared.finish()
-            } else {
-                Dawn.shared.cancel()
-            }
-        }
-    }
 }
-
-extension DawnTest2ViewController: UIGestureRecognizerDelegate {
-    
-    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        let gesture:UIPanGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
-        let velocity = gesture.velocity(in: view)
-        if velocity.x < 0 {
-            if abs(velocity.x) > abs(velocity.y) {
-                print("=====x======> 从右往左边滑动")
-                return false
-            } else {
-                print("=====x======> 从左边wang右边滑动")
-                return false
-            }
-        } else {
-            print("velocity=======BBBBB")
-        }
-        
-        return true
-    }
-}
-
-
 
 class DawnTest3ViewController: UIViewController {
 
@@ -125,28 +89,6 @@ class DawnTest3ViewController: UIViewController {
     }
     
     var beginx: CGFloat = .zero
-}
-
-extension DawnTest3ViewController {
-    
-    @objc func handlePan2(gr: UIPanGestureRecognizer) {
-        let translation = gr.translation(in: self.view).x
-        let distance = translation / (view.bounds.width)
-        switch gr.state {
-        case .began:
-            Dawn.shared.driven(dismissing: self)
-            dismiss(animated: true)
-        case .changed:
-            Dawn.shared.update(distance)
-        default:
-            let velocity = gr.velocity(in: view)
-            if ((translation + velocity.x) / view.bounds.width) > 0.5 {
-                Dawn.shared.finish()
-            } else {
-                Dawn.shared.cancel()
-            }
-        }
-    }
 }
 
 extension DawnTest3ViewController {

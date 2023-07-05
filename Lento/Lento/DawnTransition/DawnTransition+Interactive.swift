@@ -42,10 +42,10 @@ extension DawnTransition {
         drivenChanged ? work() : precip(work)
     }
     
-    /// fix: 边缘快速轻扫未调用changed动画不执行问题
+    /// fix: 手指快速扫动未调用changed状态动画不执行问题
     internal func precip(_ work: @escaping () -> Void) {
         drivable.update(0.01)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.02, execute: work)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.025, execute: work)
     }
     
     internal func driven(_ viewController: UIViewController, configuration: DawnAnimationConfiguration? = nil, presenting: Bool) {

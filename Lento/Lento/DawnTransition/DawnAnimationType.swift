@@ -225,13 +225,8 @@ extension DawnAnimationType {
         default: dismissingToBack = false
         }
         
-        deputy.presentingConfiguration = DawnAnimationConfiguration(duration: 0.295,
-                                                                    curve: .easeInOut,
-                                                                    sendToViewToBack: presentingToBack)
-        
-        deputy.dismissingConfiguration = DawnAnimationConfiguration(duration: 0.295,
-                                                                    curve: .easeInOut,
-                                                                    sendToViewToBack: dismissingToBack)
+        deputy.presentingConfiguration = DawnAnimationConfiguration(sendToViewToBack: presentingToBack)
+        deputy.dismissingConfiguration = DawnAnimationConfiguration(sendToViewToBack: dismissingToBack)
         return deputy
     }
 }

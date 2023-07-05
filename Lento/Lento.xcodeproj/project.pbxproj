@@ -52,6 +52,7 @@
 		81B2AE892A4939F4009AE186 /* DawnAnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */; };
 		81B83E832A52A9D500E417EA /* DawnAnimateRoundKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B83E822A52A9D500E417EA /* DawnAnimateRoundKnob.swift */; };
 		81B83E852A52E69B00E417EA /* AliPageSnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B83E842A52E69B00E417EA /* AliPageSnapshotCache.swift */; };
+		81CD5E452A55025A00B46452 /* UIView+DawnPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CD5E442A55025A00B46452 /* UIView+DawnPanGestureRecognizer.swift */; };
 		81D332A32A4A754B00AA5A6A /* DawnAnimatePathway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */; };
 		81F8FC0F2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8FC0E2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift */; };
 		81FE44C62A36BEEA008E8DB7 /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */; };
@@ -152,6 +153,7 @@
 		81B2AE882A4939F4009AE186 /* DawnAnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimationConfiguration.swift; sourceTree = "<group>"; };
 		81B83E822A52A9D500E417EA /* DawnAnimateRoundKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimateRoundKnob.swift; sourceTree = "<group>"; };
 		81B83E842A52E69B00E417EA /* AliPageSnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPageSnapshotCache.swift; sourceTree = "<group>"; };
+		81CD5E442A55025A00B46452 /* UIView+DawnPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DawnPanGestureRecognizer.swift"; sourceTree = "<group>"; };
 		81D332A22A4A754B00AA5A6A /* DawnAnimatePathway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathway.swift; sourceTree = "<group>"; };
 		81F8FC0E2A4DA97900F3E22A /* DawnAnimatePathwayLarger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimatePathwayLarger.swift; sourceTree = "<group>"; };
 		81FE44C52A36BEEA008E8DB7 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnTransitionModifiers.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				812EF0702A330B23004E3A54 /* DawnCustomTransitionCapable.swift */,
 				812EF0782A3323AD004E3A54 /* UIViewController+Dawn.swift */,
 				812EF07A2A3323BD004E3A54 /* UIView+Dawn.swift */,
+				81CD5E442A55025A00B46452 /* UIView+DawnPanGestureRecognizer.swift */,
 			);
 			path = DawnTransition;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 				816A06002A4D2A17000CCD88 /* DawnAnimatePathwayChangeless.swift in Sources */,
 				81FF62622967C6F6000C564F /* SidebarViewController.swift in Sources */,
 				81076E852A4EBB88003810A8 /* AlipageViewController.swift in Sources */,
+				81CD5E452A55025A00B46452 /* UIView+DawnPanGestureRecognizer.swift in Sources */,
 				812EF06D2A33029A004E3A54 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
 				812EF0712A330B23004E3A54 /* DawnCustomTransitionCapable.swift in Sources */,
 				812EF0812A332E90004E3A54 /* DawnTest2ViewController.swift in Sources */,
