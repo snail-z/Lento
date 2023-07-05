@@ -45,11 +45,6 @@ public extension NSUIColor {
         return rgba(red: randomRed, green: randomGreen, blue: randomBlue, alpha: alpha)
     }
     
-    /// 返回增加透明度后的颜色值
-    func alpha(_ value: CGFloat) -> NSUIColor {
-        return withAlphaComponent(value)
-    }
-    
     /// 返回颜色的Red值
     var redComponent: Int {
         var r: CGFloat = 0
@@ -76,6 +71,11 @@ public extension NSUIColor {
         var a: CGFloat = 0
         getRed(nil, green: nil, blue: nil, alpha: &a)
         return a
+    }
+    
+    /// 返回增加透明度后的颜色值
+    func alpha(_ value: CGFloat) -> NSUIColor {
+        return withAlphaComponent(value)
     }
 }
 

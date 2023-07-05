@@ -12,6 +12,11 @@ import UIKit
 
 public extension UIScreen {
     
+    /// 屏幕尺寸
+    static var size: CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    }
+    
     /// 交换屏幕尺寸宽高
     static var swapSize: CGSize {
         return CGSize(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)

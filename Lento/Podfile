@@ -18,6 +18,7 @@ def share_third_pod
   pod 'KMNavigationBarTransition'
   pod 'MJRefresh'
   pod 'JXPagingView/Paging'
+  pod 'Hero'
 end
 
 #公用组件

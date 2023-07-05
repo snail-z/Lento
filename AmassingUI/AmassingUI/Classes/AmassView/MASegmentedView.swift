@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MASegmentedView: UIView {
+@objc class MASegmentedView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

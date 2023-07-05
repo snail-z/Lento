@@ -111,10 +111,10 @@ public class LenPopupViewController: LentoBaseViewController {
         }
         
         nextButton.addTapGesture { [weak self] tap in
-//            let vc = LenPopupNextViewController()
-//            vc.transitioningDelegate = self
-//            self?.present(vc, animated: true)
-            self?.goto()
+            let vc = LenPopupNextViewController()
+            vc.transitioningDelegate = self
+            self?.present(vc, animated: true)
+//            self?.goto()
         }
         
         

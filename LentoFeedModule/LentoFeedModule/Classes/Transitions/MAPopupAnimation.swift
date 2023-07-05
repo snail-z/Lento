@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LentoBaseKit
 
 public enum POAnimaType {
     case none
@@ -64,19 +65,37 @@ extension MAPopupAnimation: UIViewControllerAnimatedTransitioning {
                 let toView = transitionContext.view(forKey: UITransitionContextViewKey.to)
                 froView?.frame = containerView.bounds
                 froView?.center = CGPointMake(containerView.center.x, containerView.center.y);
-                let half = CGSize(width: containerView.bounds.width / 2, height: containerView.bounds.height / 2)
+//                let half = CGSize(width: containerView.bounds.width / 2, height: containerView.bounds.height / 2)
                 
-                let stView = froView?.subviews.first
+                let av = UIView()
+                av.backgroundColor = .red
+                av.frame = containerView.bounds
+                av.alpha = 0.5
+                containerView.insertSubview(av, at: 1)
+                
+                toVC.view?.transform = CGAffineTransformMakeScale(0.8, 0.8);
+                
+//                let stView = froView?.subviews.first
                 
                 UIView.animate(withDuration: duration, delay: 0) {
+                    toVC.view?.transform = CGAffineTransformIdentity
+                    av.alpha = 0
                     froView?.layer.cornerRadius = 20
                     froView?.layer.masksToBounds = true
-                    froView?.centerY = containerView.bounds.height + half.height
+                    froView?.frame = CGRect(x: 20, y: 200, width: 350, height: 500)
+                    
+                    if let fVc = fromVC as? LenPopupNextViewController {
+                        fVc.dissButton.centerX = froView!.bounds.width / 2
+                    }
+//                    froView?.centerY = containerView.bounds.height + half.height
+//                    froView?.width = 300
+//                    froView?.centerX = containerView.bounds.width / 2
                     //                froView?.backgroundColor = .clear
                     //                stView?.centerY = containerView.bounds.height + half.height
                 } completion: { finished in
+                    froView?.frame = containerView.bounds
                     transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-                    
+                    av.removeFromSuperview()
                 }
             }
         
@@ -88,6 +107,11 @@ extension MAPopupAnimation: UIViewControllerAnimatedTransitioning {
             }
             
             print("snapshot is: ===> \(snapshot)")
+            
+            let av = UIView()
+            av.backgroundColor = .cyan
+            av.frame = CGRectMake(10, 200, 100, 100)
+            snapshot.addSubview(av)
         
             snapshot.backgroundColor = .orange
             containerView.addSubview(snapshot)

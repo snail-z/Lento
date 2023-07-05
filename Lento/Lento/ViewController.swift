@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
     
-    let amassingUIs = ["LenPopupViewController", "TabTest","UICollectionViewLeftAlignedLayout", "UICollectionViewWaterfallLayout" , "Font Libraries", "MAButton", "MASearchView", "MAPageListViewController", "MAPopupViewController", "MALabel", "MAGradientView", "MAIndexView", "MASegmentedView", "MATextField", "MATextView", "MADatePicker", "MACycleScrollView", "MAAttributedLabel"]
+    let amassingUIs = ["DawnTest1ViewController", "HeroViewController", "LenPopupViewController", "TabTest","UICollectionViewLeftAlignedLayout", "UICollectionViewWaterfallLayout" , "Font Libraries", "MAButton", "MASearchView", "MAPageListViewController", "MAPopupViewController", "MALabel", "MAGradientView", "MAIndexView", "MASegmentedView", "MATextField", "MATextView", "MADatePicker", "MACycleScrollView", "MAAttributedLabel"]
     
     func setup() {
         title = "AmassingUI"
@@ -88,6 +88,16 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let value = amassingUIs[indexPath.row]
+        
+        if value == "DawnTest1ViewController" {
+            let vc = DawnTest1ViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if value == "HeroViewController" {
+            let vc = HeroViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
         
         if value == "LenPopupViewController" {
             let vc = LenPopupViewController()
