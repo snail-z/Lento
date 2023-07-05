@@ -66,20 +66,18 @@ public class DawnPanGestureRecognizer: NSObject {
     /// 设置手势从某个方向开始识别
     public var recognizeDirection: Direction = .leftToRight
     
-    /// 将要进行转场动画的控制器
-    public private(set) weak var transitionController: UIViewController!
-    
     public enum TransitioningType {
         case present, dismiss
     }
     public private(set) var transitionType: TransitioningType
+    public private(set) weak var driverViewController: UIViewController!
 
     private weak var panView: UIView!
     private var panGestureRecognizer: UIPanGestureRecognizer?
     private var willTransition: (() -> Void)?
     
-    init(transitionController: UIViewController, type: TransitioningType, prepare: (() -> Void)!) {
-        self.transitionController = transitionController
+    init(driver: UIViewController, type: TransitioningType, prepare: (() -> Void)!) {
+        self.driverViewController = driver
         self.transitionType = type
         self.willTransition = prepare
     }
@@ -88,7 +86,6 @@ public class DawnPanGestureRecognizer: NSObject {
 extension DawnPanGestureRecognizer {
     
     fileprivate func bindPanRecognizer(_ view: UIView) {
-        guard transitionController.dawn.isTransitioningEnabled else { return }
         panView = view
         isRecognizeWhenEdges ? addEdgePanRecognizer(inView: view) : addPanRecognizer(inView: view)
     }
@@ -147,9 +144,9 @@ extension DawnPanGestureRecognizer {
     private func prepare() {
         switch transitionType {
         case .present:
-            Dawn.shared.driven(presenting: transitionController)
+            Dawn.shared.driven(presenting: driverViewController)
         case .dismiss:
-            Dawn.shared.driven(dismissing: transitionController)
+            Dawn.shared.driven(dismissing: driverViewController)
         }
         willTransition?()
     }

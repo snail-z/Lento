@@ -8,28 +8,16 @@
 import UIKit
 
 class DawnTest2ViewController: UIViewController {
-
-    deinit {
-        print("DawnTest2ViewController ==> ✈️")
-    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
-        let pan = DawnPanGestureRecognizer(transitionController: self, type: .dismiss) { [weak self] in
+        let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
             self?.dismiss(animated: true)
         }
         pan.isRecognizeWhenEdges = false
         pan.recognizeDirection = .leftToRight
         view.dawn.addPanGestureRecognizer(pan)
-        
-        let panTwo = DawnPanGestureRecognizer(transitionController: self, type: .dismiss) { [weak self] in
-            self?.dismiss(animated: true)
-        }
-        panTwo.isRecognizeWhenEdges = false
-        panTwo.recognizeDirection = .rightToLeft
-        view.dawn.addPanGestureRecognizer(panTwo)
         
         view.addTapGesture { [weak self] _ in
             self?.dismiss(animated: true)

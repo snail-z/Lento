@@ -8,12 +8,6 @@
 import UIKit
 import LentoBaseKit
 
-/**
- /// 苹果商店toady样式
- case today
- /// 摘要精华区样式
- case digest
- */
 class WrapVView: LentoBaseView {
     
     var imgView: UIImageView!
@@ -155,12 +149,17 @@ class DawnTest1ViewController: UIViewController {
         roundBG.addTapGesture { [weak self] _ in
             self?.jumped5()
         }
-        
-        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePan(gr:)))
-        edgePanGesture.edges = UIRectEdge.right
-        view.addGestureRecognizer(edgePanGesture)
-        
-//        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:))))
+                
+        let pan = DawnPanGestureRecognizer(driver: self, type: .present) { [weak self] in
+            let vc = DawnTest2ViewController()
+            vc.dawn.isTransitioningEnabled = true
+            vc.dawn.modalAnimationType = .pageIn(direction: .right)
+            vc.modalPresentationStyle = .fullScreen
+            self?.present(vc, animated: true)
+        }
+        pan.isRecognizeWhenEdges = true
+        pan.recognizeDirection = .rightToLeft
+        view.dawn.addPanGestureRecognizer(pan)
     }
     
     func jumped2() {
@@ -210,67 +209,6 @@ class DawnTest1ViewController: UIViewController {
         vc.dawn.modalAnimationType = .push(direction: .left)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
-    }
-}
-
-//internal var UIPanGestureAssociatedDawnCallChangedKey: Void?
-//
-//extension UIPanGestureRecognizer {
-//    
-//    var dawnCallChanged: Bool {
-//        get {
-//            if let value = objc_getAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey) as? Bool {
-//                return value
-//            }
-//            return false
-//        }
-//        set { objc_setAssociatedObject(self, &UIPanGestureAssociatedDawnCallChangedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
-//    }
-//}
-
-extension DawnTest1ViewController {
-    
-    @objc func handlePan(gr: UIPanGestureRecognizer) {
-        var translation = gr.translation(in: self.view).x
-        var distance = translation / (view.bounds.width)
-        distance = abs(distance)
-        translation = abs(translation)
-        switch gr.state {
-        case .began:
-            Dawn.shared.driven(presenting: self)
-            
-//            gr.dawnCallChanged = false
-            let vc = DawnTest2ViewController()
-            vc.dawn.isTransitioningEnabled = true
-            vc.dawn.modalAnimationType = .pageIn(direction: .left)
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
-            print("=======> began")
-        case .changed:
-//            gr.dawnCallChanged = true
-            print("=======> changed")
-            Dawn.shared.update(distance)
-        default:
-            let velocityX = gr.velocity(in: view).x
-            print("=======> end-translation is: \(translation)   velocityx is: \(velocityX)")
-            
-            if ((translation - velocityX) / self.view.bounds.width) > 0.5 {
-                Dawn.shared.finish()
-            } else {
-                Dawn.shared.cancel()
-            }
-            
-//            func ended() {
-//
-//            }
-//
-//            if gr.dawnCallChanged {
-//                ended()
-//            } else {
-//                Dawn.shared.precip { ended() }
-//            }
-//            gr.dawnCallChanged = false
-        }
     }
 }
 
