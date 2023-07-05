@@ -75,8 +75,7 @@ class StoreDetailViewController: UIViewController {
         view.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         setupUI()
         
-        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePan(gr:)))
-//        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(edgePanGestureAction(_:)))
+        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(edgePanGestureAction(_:)))
         
         edgePanGesture.edges = UIRectEdge.left
         view.addGestureRecognizer(edgePanGesture)
@@ -148,28 +147,6 @@ class StoreDetailViewController: UIViewController {
 
     }
 
-}
-
-extension StoreDetailViewController {
-    
-    @objc func handlePan(gr: UIPanGestureRecognizer) {
-        let translation = gr.translation(in: self.view).x
-        let distance = translation / (view.bounds.width)
-        switch gr.state {
-        case .began:
-            Dawn.shared.driven(dismissing: self)
-            dismiss(animated: true)
-        case .changed:
-            Dawn.shared.update(distance)
-        default:
-            let velocity = gr.velocity(in: view)
-            if ((translation + velocity.x) / view.bounds.width) > 0.5 {
-                Dawn.shared.finish()
-            } else {
-                Dawn.shared.cancel()
-            }
-        }
-    }
 }
 
 extension StoreDetailViewController {

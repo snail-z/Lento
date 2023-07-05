@@ -9,14 +9,6 @@ import UIKit
 
 class StoreViewController: UIViewController {
     
-    var statusBarHidden = false {
-        didSet {
-            UIView.animate(withDuration: 0.2) {
-                self.setNeedsStatusBarAppearanceUpdate()
-            }
-        }
-    }
-    
     private var dataList = [StoreItemModel]()
     private var targetView: UIView?
 
@@ -27,7 +19,6 @@ class StoreViewController: UIViewController {
         tableView.rowHeight = (UIScreen.main.bounds.width - 40)*1.22
         tableView.separatorStyle = .none
         tableView.register(StoreCell.self, forCellReuseIdentifier: StoreCell.description())
-
         return tableView
     }()
 
@@ -35,22 +26,9 @@ class StoreViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupData()
-        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:))))
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        statusBarHidden = false
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
-    }
-    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-        return .slide
-    }
-    override var prefersStatusBarHidden: Bool {
-        return false
+        view.dawn.addPanGestureRecognizer(DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
+            self?.dismiss(animated: true)
+        })
     }
 
     var pathway: DawnAnimatePathway!
@@ -148,7 +126,6 @@ extension StoreViewController: DawnTransitioningAnimatePathway {
         
         
 //        return cell.bgImageView
-        
         return targetView
     }
 }
@@ -157,28 +134,5 @@ extension StoreDetailViewController: DawnTransitioningAnimatePathway {
     
     func dawnAnimatePathwayView() -> UIView? {
         return view
-    }
-}
-
-
-extension StoreViewController {
-    
-    @objc func handlePan(gr: UIPanGestureRecognizer) {
-        let translation = gr.translation(in: self.view).x
-        let distance = translation / (view.bounds.width)
-        switch gr.state {
-        case .began:
-            Dawn.shared.driven(dismissing: self)
-            dismiss(animated: true)
-        case .changed:
-            Dawn.shared.update(distance)
-        default:
-            let velocity = gr.velocity(in: view)
-            if ((translation + velocity.x) / view.bounds.width) > 0.5 {
-                Dawn.shared.finish()
-            } else {
-                Dawn.shared.cancel()
-            }
-        }
     }
 }
