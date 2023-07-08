@@ -153,7 +153,7 @@ class DawnTest1ViewController: UIViewController {
         let pan = DawnPanGestureRecognizer(driver: self, type: .present) { [weak self] in
             let vc = DawnTest2ViewController()
             vc.dawn.isTransitioningEnabled = true
-            vc.dawn.modalAnimationType = .pageIn(direction: .right)
+            vc.dawn.modalAnimationType = .pageIn(direction: .left)
             vc.modalPresentationStyle = .fullScreen
             self?.present(vc, animated: true)
         }
