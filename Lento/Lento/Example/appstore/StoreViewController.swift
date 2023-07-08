@@ -73,7 +73,7 @@ extension StoreViewController: UITableViewDataSource,UITableViewDelegate {
                 let vc = StoreDetailViewController(storeItem: self.dataList[indexPath.section])
                 vc.dawn.isTransitioningEnabled = true
                 self.pathway = DawnAnimatePathway(source: self, target: vc)
-                self.pathway.duration = 2.75
+                self.pathway.duration = 0.75
 //                self.pathway.sourcePathwayView = cell.bgImageView.dawn.snapshotView()
 //                self.pathway.sourceBGView = cell.bgImageView
                 vc.dawn.transitionCapable = self.pathway
@@ -125,8 +125,8 @@ extension StoreViewController: DawnTransitioningAnimatePathway {
 //        }
         
         
-//        return cell.bgImageView
-        return targetView
+        return cell.bgImageView
+//        return targetView
     }
 }
 

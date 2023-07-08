@@ -24,7 +24,7 @@ extension DawnTransition {
         drivable.update(percentageComplete)
     }
     
-    public func finish(animate: Bool = true) {
+    public func finish() {
         func work() {
             drivable.completionSpeed =  1 - drivable.percentComplete
             drivable.finish()
@@ -33,7 +33,7 @@ extension DawnTransition {
         drivenChanged ? work() : precip(work)
     }
 
-    public func cancel(animate: Bool = true) {
+    public func cancel() {
         func work() {
             drivable.completionSpeed = drivable.percentComplete
             drivable.cancel()

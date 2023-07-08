@@ -20,8 +20,19 @@ open class LentoBaseNavViewController: UINavigationController {
             navigationBarAppearance.shadowColor = .clear
             navigationBar.standardAppearance = navigationBarAppearance
             navigationBar.scrollEdgeAppearance = navigationBarAppearance
+            
         } else {
             navigationBar.shadowImage = UIImage()
+        }
+        
+        if #available(iOS 15.0, *) {
+           let appearance = UITabBarAppearance()
+           appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.white
+           
+        
+//           tabBar.standardAppearance = appearance
+//           self.tabController.tabBar.scrollEdgeAppearance = view.standardAppearance
         }
     }
     

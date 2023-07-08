@@ -131,7 +131,7 @@ public struct DawnAnimatePathway: DawnCustomTransitionCapable {
             tempView.layer.cornerRadius = sourceView.layer.cornerRadius
             
             targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / targetScale)
-            sourceSnapshot.frame = tempView.bounds
+            sourceSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / sourceScale)
             
             sourceSnapshot.alpha = 1
             targetSnapshot.alpha = 0

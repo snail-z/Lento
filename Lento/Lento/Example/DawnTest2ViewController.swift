@@ -15,7 +15,7 @@ class DawnTest2ViewController: UIViewController {
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
             self?.dismiss(animated: true)
         }
-        pan.isRecognizeWhenEdges = false
+        pan.isRecognizeWhenEdges = true
         pan.recognizeDirection = .leftToRight
         view.dawn.addPanGestureRecognizer(pan)
         
