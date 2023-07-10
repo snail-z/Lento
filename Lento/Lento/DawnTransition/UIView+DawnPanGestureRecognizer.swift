@@ -1,8 +1,8 @@
 //
 //  UIView+DawnPanGestureRecognizer.swift
-//  Lento
+//  DawnTransition
 //
-//  Created by zhang on 2023/7/5.
+//  Created by zhang on 2022/7/5.
 //
 
 import UIKit
@@ -37,7 +37,7 @@ extension DawnExtension where Base: UIView {
     }
 }
 
-internal var UIViewAssociatedDawnPanGestureRecognizerKey: Void?
+fileprivate var UIViewAssociatedDawnPanGestureRecognizerKey: Void?
 extension DawnExtension where Base: UIView {
     
     fileprivate var panGestures: [DawnPanGestureRecognizer]? {
@@ -69,19 +69,22 @@ public class DawnPanGestureRecognizer: NSObject {
     public enum TransitioningType {
         case present, dismiss
     }
-    public private(set) var transitionType: TransitioningType
-    public private(set) weak var driverViewController: UIViewController!
+    public internal(set) var transitionType: TransitioningType
+    public internal(set) weak var driverViewController: UIViewController!
 
-    private weak var panView: UIView!
-    private var panGestureRecognizer: UIPanGestureRecognizer?
-    private var willTransition: (() -> Void)?
+    internal weak var panView: UIView!
+    internal var panGestureRecognizer: UIPanGestureRecognizer?
+    internal var startTransition: (() -> Void)?
     
     init(driver: UIViewController, type: TransitioningType, prepare: (() -> Void)!) {
         self.driverViewController = driver
         self.transitionType = type
-        self.willTransition = prepare
+        self.startTransition = prepare
     }
 }
+
+internal class _DawnPanGestureRecognizer: UIPanGestureRecognizer {}
+internal class _DawnEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer {}
 
 extension DawnPanGestureRecognizer {
     
@@ -96,13 +99,13 @@ extension DawnPanGestureRecognizer {
     }
     
     private func addPanRecognizer(inView view: UIView) {
-        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        panGestureRecognizer = _DawnPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         panGestureRecognizer!.delegate = self
         view.addGestureRecognizer(panGestureRecognizer!)
     }
     
     private func addEdgePanRecognizer(inView view: UIView) {
-        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleEdgePan(_:)))
+        let edgePan = _DawnEdgePanGestureRecognizer(target: self, action: #selector(handleEdgePan(_:)))
         edgePan.delegate = self
         edgePan.edges = directionToEdge()
         panGestureRecognizer = edgePan
@@ -141,17 +144,17 @@ extension DawnPanGestureRecognizer {
 
 extension DawnPanGestureRecognizer {
     
-    private func prepare() {
+    @objc internal func prepare() {
         switch transitionType {
         case .present:
             Dawn.shared.driven(presenting: driverViewController)
         case .dismiss:
             Dawn.shared.driven(dismissing: driverViewController)
         }
-        willTransition?()
+        startTransition?()
     }
     
-    private func handleLeft(_ g: UIPanGestureRecognizer) {
+    @objc internal func handleLeft(_ g: UIPanGestureRecognizer) {
         let translation = g.translation(in: panView).x
         let distance = translation / panView.bounds.width
         switch g.state {
@@ -169,7 +172,7 @@ extension DawnPanGestureRecognizer {
         }
     }
     
-    private func handleRight(_ g: UIPanGestureRecognizer) {
+    @objc internal func handleRight(_ g: UIPanGestureRecognizer) {
         let translation = abs(g.translation(in: panView).x)
         let distance = abs(translation / panView.bounds.width)
         switch g.state {
@@ -187,7 +190,7 @@ extension DawnPanGestureRecognizer {
         }
     }
     
-    private func handleTop(_ g: UIPanGestureRecognizer) {
+    @objc internal func handleTop(_ g: UIPanGestureRecognizer) {
         let translation = g.translation(in: panView).y
         let distance = translation / panView.bounds.height
         switch g.state {
@@ -205,7 +208,7 @@ extension DawnPanGestureRecognizer {
         }
     }
     
-    private func handleBottom(_ g: UIPanGestureRecognizer) {
+    @objc internal func handleBottom(_ g: UIPanGestureRecognizer) {
         let translation = abs(g.translation(in: panView).y)
         let distance = abs(translation / panView.bounds.height)
         switch g.state {
@@ -240,5 +243,9 @@ extension DawnPanGestureRecognizer: UIGestureRecognizerDelegate {
         case .bottomToTop:
             return (velocity.y < .zero) && (abs(velocity.y) > abs(velocity.x))
         }
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
     }
 }

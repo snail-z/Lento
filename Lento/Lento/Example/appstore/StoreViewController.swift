@@ -72,10 +72,8 @@ extension StoreViewController: UITableViewDataSource,UITableViewDelegate {
             }, completion: { (_) in
                 let vc = StoreDetailViewController(storeItem: self.dataList[indexPath.section])
                 vc.dawn.isTransitioningEnabled = true
-                self.pathway = DawnAnimatePathway(source: self, target: vc)
+                self.pathway = DawnAnimatePathway(sourceView: cell.bgImageView)
                 self.pathway.duration = 0.75
-//                self.pathway.sourcePathwayView = cell.bgImageView.dawn.snapshotView()
-//                self.pathway.sourceBGView = cell.bgImageView
                 vc.dawn.transitionCapable = self.pathway
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
@@ -110,29 +108,4 @@ extension StoreViewController: UITableViewDataSource,UITableViewDelegate {
         return 15
     }
     
-}
-
-extension StoreViewController: DawnTransitioningAnimatePathway {
-    
-    func dawnAnimatePathwayView() -> UIView? {
-        guard let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? StoreCell else {
-            return nil
-        }
-        
-        
-//        DispatchQueue.main.async {
-//            cell.layoutIfNeeded()
-//        }
-        
-        
-        return cell.bgImageView
-//        return targetView
-    }
-}
-
-extension StoreDetailViewController: DawnTransitioningAnimatePathway {
-    
-    func dawnAnimatePathwayView() -> UIView? {
-        return view
-    }
 }

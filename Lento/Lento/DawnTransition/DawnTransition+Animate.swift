@@ -1,8 +1,8 @@
 //
 //  DawnTransition+Animate.swift
-//  Lento
+//  DawnTransition
 //
-//  Created by zhang on 2023/6/9.
+//  Created by zhang on 2022/6/9.
 //
 
 import UIKit
@@ -29,10 +29,10 @@ extension DawnTransition {
             let stage = capable.dawnModifierStagePresenting()
             let fromModifiers = preprocessFromModifiers(stage)
             let toModifiers = preprocessToModifiers(stage, config)
-            performAnimate(duration: config.duration,
-                           delay: config.delay,
-                           options: config.curve.usable(),
-                           springStiffness: config.spring) {
+            Dawn.animate(duration: config.duration,
+                         delay: config.delay,
+                         options: config.curve.usable(),
+                         springStiffness: config.spring) {
                 fromModifiers?.didChange()
                 toModifiers?.didChange()
             } completion: { finished in
@@ -51,10 +51,10 @@ extension DawnTransition {
             let stage = capable.dawnModifierStageDismissing()
             let fromModifiers = preprocessFromModifiers(stage)
             let toModifiers = preprocessToModifiers(stage, config)
-            performAnimate(duration: config.duration,
-                           delay: config.delay,
-                           options: config.curve.usable(),
-                           springStiffness: config.spring) {
+            Dawn.animate(duration: config.duration,
+                         delay: config.delay,
+                         options: config.curve.usable(),
+                         springStiffness: config.spring) {
                 fromModifiers?.didChange()
                 toModifiers?.didChange()
             } completion: { finished in
@@ -129,9 +129,9 @@ internal extension DawnTransition {
     }
 }
 
-internal extension DawnTransition {
+internal extension Dawn {
     
-    func performAnimate(duration: TimeInterval,
+    static func animate(duration: TimeInterval,
                         delay: TimeInterval,
                         options: UIView.AnimationOptions,
                         springStiffness: (damping: CGFloat, velocity: CGFloat)?,

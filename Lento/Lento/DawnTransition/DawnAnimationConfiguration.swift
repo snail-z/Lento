@@ -1,8 +1,8 @@
 //
 //  DawnAnimationConfiguration.swift
-//  Lento
+//  DawnTransition
 //
-//  Created by zhang on 2023/6/26.
+//  Created by zhang on 2022/6/26.
 //
 
 import UIKit
@@ -56,6 +56,6 @@ public enum DawnSnapshotType {
     /// 正常快照视图动画
     case normal
     
-    /// 不创建快照，直接视图做动画 (会打乱视图层次结构，视图控制器必须重建「慎用」)
+    /// 不创建快照，直接视图做动画(会打乱视图层次结构，视图控制器必须重建「慎用」)
     case noSnapshot
 }

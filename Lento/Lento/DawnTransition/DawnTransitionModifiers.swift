@@ -1,8 +1,8 @@
 //
 //  DawnTransitionModifiers.swift
-//  Lento
+//  DawnTransition
 //
-//  Created by zhang on 2023/6/12.
+//  Created by zhang on 2022/6/12.
 //
 
 import UIKit
@@ -50,8 +50,8 @@ public struct DawnTargetState {
         case light = 1
         case dark = 2
     }
-    public var blurOverlay: (effect: BlurEffect, opacity: CGFloat)?
-    public var overlay: (color: UIColor, opacity: CGFloat)?
+    public var blurOverlay: (effect: BlurEffect, opacity: Float)?
+    public var overlay: (color: UIColor, opacity: Float)?
 }
 
 extension DawnTargetState {
@@ -231,13 +231,13 @@ extension DawnModifier {
         }
     }
     
-    public static func overlay(color: UIColor, opacity: CGFloat) -> DawnModifier {
+    public static func overlay(color: UIColor, opacity: Float) -> DawnModifier {
         return DawnModifier { targetState in
             targetState.overlay = (color, opacity)
         }
     }
     
-    public static func blurOverlay(_ effect: DawnTargetState.BlurEffect, opacity: CGFloat) -> DawnModifier {
+    public static func blurOverlay(_ effect: DawnTargetState.BlurEffect, opacity: Float) -> DawnModifier {
         return DawnModifier { targetState in
             targetState.blurOverlay = (effect, opacity)
         }

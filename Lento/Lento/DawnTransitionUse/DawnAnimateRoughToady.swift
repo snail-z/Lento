@@ -9,7 +9,7 @@ import UIKit
 
 public protocol DawnAnimateRoughToadyToday: NSObjectProtocol {
     
-    func dawnAnimatePathwayView() -> UIView
+    func dawnAnimatePathwayView() -> UIView?
 }
 
 public struct DawnAnimateRoughToady: DawnCustomTransitionCapable {
@@ -18,10 +18,10 @@ public struct DawnAnimateRoughToady: DawnCustomTransitionCapable {
     public var duration: TimeInterval = 0.275
     public var zoomScale: CGFloat = 0.9
     
-    public weak var sourceDelegate: DawnTransitioningAnimatePathway?
-    public weak var targetDelegate: DawnTransitioningAnimatePathway?
+    public weak var sourceDelegate: DawnAnimateRoughToadyToday?
+    public weak var targetDelegate: DawnAnimateRoughToadyToday?
     
-    init(source: DawnTransitioningAnimatePathway, target: DawnTransitioningAnimatePathway) {
+    init(source: DawnAnimateRoughToadyToday, target: DawnAnimateRoughToadyToday) {
         sourceDelegate = source
         targetDelegate = target
     }
