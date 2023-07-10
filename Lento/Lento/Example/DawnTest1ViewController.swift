@@ -171,17 +171,22 @@ class DawnTest1ViewController: UIViewController {
     }
     
     func jumped() {
-        let vc = DawnTest2ViewController()
-        vc.dawn.isTransitioningEnabled = true
-        vc.dawn.modalAnimationType = .pageIn(direction: .left)
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+        self.navigationController?.dawn.isNavTransitioningEnabled = true
+        
+        let vc = DawnNavTest1ViewController()
+        vc.dawn.modalAnimationType = .push(direction: .up)
+        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = DawnTest2ViewController()
+//        vc.dawn.isTransitioningEnabled = true
+//        vc.dawn.modalAnimationType = .pageIn(direction: .left)
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true)
     }
     
     func jumpedTwo() {
         let vc = DawnTest3ViewController()
         vc.dawn.isTransitioningEnabled = true
-        vc.dawn.transitionCapable = DawnAnimatePathway(source: self, target: vc)
+        vc.dawn.transitionCapable = DawnAnimatePathway(sourceView: wrapView)
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
@@ -209,19 +214,5 @@ class DawnTest1ViewController: UIViewController {
         vc.dawn.modalAnimationType = .push(direction: .left)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
-    }
-}
-
-extension DawnTest1ViewController: DawnTransitioningAnimatePathway {
-    
-    func dawnAnimatePathwayView() -> UIView? {
-        return wrapView
-    }
-}
-
-extension DawnTest3ViewController: DawnTransitioningAnimatePathway {
-    
-    func dawnAnimatePathwayView() -> UIView? {
-        return view
     }
 }

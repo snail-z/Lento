@@ -1,8 +1,8 @@
 //
 //  UIView+Dawn.swift
-//  Lento
+//  DawnTransition
 //
-//  Created by zhang on 2023/6/9.
+//  Created by zhang on 2022/6/9.
 //
 
 import UIKit
@@ -146,12 +146,12 @@ internal extension DawnExtension where Base: UIView {
         }
         if let normalOverlay = targetState.overlay {
             overlay.backgroundColor = normalOverlay.color
-            overlay.alpha = normalOverlay.opacity
+            overlay.alpha = CGFloat(normalOverlay.opacity)
         }
         if let blurOverlay = targetState.blurOverlay {
             guard let style = UIBlurEffect.Style(rawValue: blurOverlay.effect.rawValue) else { return }
             effectView.effect = UIBlurEffect(style: style)
-            effectView.alpha = blurOverlay.opacity
+            effectView.alpha = CGFloat(blurOverlay.opacity)
         }
     }
 }
