@@ -22,7 +22,7 @@ pod 'DawnTransition'
 
 ## Author
 
-snail-z, 40460770@qq.com
+snail-z, haozhang0770@163.com
 
 ## License
 
