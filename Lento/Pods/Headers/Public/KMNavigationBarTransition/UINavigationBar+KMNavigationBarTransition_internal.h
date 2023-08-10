@@ -1,1 +1,0 @@
-../../../KMNavigationBarTransition/KMNavigationBarTransition/UINavigationBar+KMNavigationBarTransition_internal.h

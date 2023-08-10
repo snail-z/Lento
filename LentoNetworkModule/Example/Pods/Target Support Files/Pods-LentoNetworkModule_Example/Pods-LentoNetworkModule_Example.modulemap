@@ -1,6 +1,0 @@
-framework module Pods_LentoNetworkModule_Example {
-  umbrella header "Pods-LentoNetworkModule_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,1 +1,0 @@
-../../../../../AmassingUI/AmassingUI/Classes/AmassLayout/UICollectionViewPinToVisibleLayout.h

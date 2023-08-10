@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1F1848FB-A904-41CB-9BA1-803B41F28889"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "639C3EC7-583D-4754-9A3D-FDBFD456E609"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DawnTransition/Next2ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25EEB61C-4E69-4551-92FD-90558AD2F7E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../DawnTransition/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "animationController(forDismissed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "25EEB61C-4E69-4551-92FD-90558AD2F7E3 - f38e455759e74ceb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DawnTransition.DawnTransition.animationController(forPresented: __C.UIViewController, presenting: __C.UIViewController, source: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt;"
+                  moduleName = "DawnTransition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios/Desktop/github/DawnTransition/DawnTransition/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+               <Location
+                  uuid = "25EEB61C-4E69-4551-92FD-90558AD2F7E3 - 9cc26c8b397834fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DawnTransition.DawnTransition.animationController(forDismissed: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt;"
+                  moduleName = "DawnTransition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios/Desktop/github/DawnTransition/DawnTransition/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,28 @@
+PODS:
+  - DawnKit (1.0.2):
+    - DawnKit/DawnExtensions (= 1.0.2)
+    - DawnKit/DawnUI (= 1.0.2)
+  - DawnKit/DawnExtensions (1.0.2)
+  - DawnKit/DawnUI (1.0.2):
+    - DawnKit/DawnExtensions
+  - DawnTransition (0.1.0)
+
+DEPENDENCIES:
+  - DawnKit
+  - DawnTransition (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DawnKit
+
+EXTERNAL SOURCES:
+  DawnTransition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DawnKit: 24c68842c81e4ec25b31d33852fff98cc1bbb503
+  DawnTransition: 0e1ce3772e0d2c205c44c80f003ce7c0a647b1f7
+
+PODFILE CHECKSUM: 99f2e7b58c4ecb7dc4e1e971e606b8ed0b33196b
+
+COCOAPODS: 1.11.3

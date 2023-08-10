@@ -1,6 +1,0 @@
-module AmassingWebKit {
-  umbrella header "AmassingWebKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module MADebugMagic {
-  umbrella header "MADebugMagic-umbrella.h"
-
-  export *
-  module * { export * }
-}

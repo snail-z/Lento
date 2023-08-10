@@ -1,6 +1,0 @@
-module AmassingDebugKit {
-  umbrella header "AmassingDebugKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

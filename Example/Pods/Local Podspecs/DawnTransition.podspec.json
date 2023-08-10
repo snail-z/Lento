@@ -1,0 +1,22 @@
+{
+  "name": "DawnTransition",
+  "version": "0.1.0",
+  "summary": "A short description of DawnTransition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/snail-z/DawnTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "snail-z": "40460770@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/snail-z/DawnTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DawnTransition/Classes/**/*"
+}
