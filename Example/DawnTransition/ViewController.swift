@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
     
-    let dataList = ["Push1ViewController", "Push2ViewController"]
+    let dataList = ["Sample1ViewController", "Sample2ViewController"]
 }
 
 extension ViewController: UITableViewDataSource {
@@ -66,13 +66,13 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let value = dataList[indexPath.row]
         
-        if value == "Push1ViewController" {
-            let vc = Push1ViewController()
+        if value == "Sample1ViewController" {
+            let vc = Sample1ViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
         
-        if value == "Push2ViewController" {
-            let vc = Push2ViewController()
+        if value == "Sample2ViewController" {
+            let vc = Sample2ViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -98,5 +98,6 @@ extension ViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 }

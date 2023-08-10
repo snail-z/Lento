@@ -17,12 +17,11 @@
 		813293B5421F04FB2010B54E /* Pods_DawnTransition_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4B0D7D998E3B4729BEA187 /* Pods_DawnTransition_Tests.framework */; };
 		817C552C2A846D590059B5F0 /* ViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C552B2A846D590059B5F0 /* ViewControllerCell.swift */; };
 		817C552E2A846DC60059B5F0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C552D2A846DC60059B5F0 /* Utility.swift */; };
-		817C55312A84712F0059B5F0 /* Push1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55302A84712F0059B5F0 /* Push1ViewController.swift */; };
-		817C55332A8471530059B5F0 /* Push2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55322A8471530059B5F0 /* Push2ViewController.swift */; };
-		817C55352A8473B30059B5F0 /* Next1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55342A8473B30059B5F0 /* Next1ViewController.swift */; };
+		817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55302A84712F0059B5F0 /* Sample1ViewController.swift */; };
+		817C55332A8471530059B5F0 /* Sample2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55322A8471530059B5F0 /* Sample2ViewController.swift */; };
 		817C55372A8475B30059B5F0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55362A8475B30059B5F0 /* BaseNavigationController.swift */; };
-		817C55392A8477A20059B5F0 /* Next2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55382A8477A20059B5F0 /* Next2ViewController.swift */; };
 		817C553B2A8479D50059B5F0 /* LagerImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C553A2A8479D50059B5F0 /* LagerImageController.swift */; };
+		817C553D2A84CAC10059B5F0 /* SmapleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +53,11 @@
 		6E22C8815738A60B4B98CC1E /* Pods-DawnTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DawnTransition_Example.debug.xcconfig"; path = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		817C552B2A846D590059B5F0 /* ViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCell.swift; sourceTree = "<group>"; };
 		817C552D2A846DC60059B5F0 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		817C55302A84712F0059B5F0 /* Push1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push1ViewController.swift; sourceTree = "<group>"; };
-		817C55322A8471530059B5F0 /* Push2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push2ViewController.swift; sourceTree = "<group>"; };
-		817C55342A8473B30059B5F0 /* Next1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next1ViewController.swift; sourceTree = "<group>"; };
+		817C55302A84712F0059B5F0 /* Sample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample1ViewController.swift; sourceTree = "<group>"; };
+		817C55322A8471530059B5F0 /* Sample2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample2ViewController.swift; sourceTree = "<group>"; };
 		817C55362A8475B30059B5F0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		817C55382A8477A20059B5F0 /* Next2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next2ViewController.swift; sourceTree = "<group>"; };
 		817C553A2A8479D50059B5F0 /* LagerImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LagerImageController.swift; sourceTree = "<group>"; };
+		817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmapleBaseViewController.swift; sourceTree = "<group>"; };
 		8D4B0D7D998E3B4729BEA187 /* Pods_DawnTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCD4D927A58634D29D0A54C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EBF99FD24F7C7A4B83B64E9D /* Pods_DawnTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,10 +169,9 @@
 		817C552F2A84710F0059B5F0 /* Smaple */ = {
 			isa = PBXGroup;
 			children = (
-				817C55302A84712F0059B5F0 /* Push1ViewController.swift */,
-				817C55322A8471530059B5F0 /* Push2ViewController.swift */,
-				817C55342A8473B30059B5F0 /* Next1ViewController.swift */,
-				817C55382A8477A20059B5F0 /* Next2ViewController.swift */,
+				817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */,
+				817C55302A84712F0059B5F0 /* Sample1ViewController.swift */,
+				817C55322A8471530059B5F0 /* Sample2ViewController.swift */,
 				817C553A2A8479D50059B5F0 /* LagerImageController.swift */,
 			);
 			name = Smaple;
@@ -367,15 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817C55392A8477A20059B5F0 /* Next2ViewController.swift in Sources */,
 				817C55372A8475B30059B5F0 /* BaseNavigationController.swift in Sources */,
 				817C552E2A846DC60059B5F0 /* Utility.swift in Sources */,
-				817C55332A8471530059B5F0 /* Push2ViewController.swift in Sources */,
+				817C55332A8471530059B5F0 /* Sample2ViewController.swift in Sources */,
 				817C552C2A846D590059B5F0 /* ViewControllerCell.swift in Sources */,
-				817C55312A84712F0059B5F0 /* Push1ViewController.swift in Sources */,
-				817C55352A8473B30059B5F0 /* Next1ViewController.swift in Sources */,
+				817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				817C553D2A84CAC10059B5F0 /* SmapleBaseViewController.swift in Sources */,
 				817C553B2A8479D50059B5F0 /* LagerImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

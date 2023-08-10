@@ -4,24 +4,29 @@
 //
 //  Created by zhang on 2022/6/27.
 //
+//  The MIT License (MIT)
+//
+//  Copyright (c) 2022 snail-z <haozhang0770@163.com>
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 
 import UIKit
-
-internal extension CGRect {
-    
-    /// 使用宽高初始化CGRect
-    init(w: CGFloat, h: CGFloat) {
-        self.init(origin: .zero, size: CGSize(width: w, height: h))
-    }
-}
-
-internal extension UIScreen {
-    
-    /// 屏幕尺寸
-    static var size: CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-    }
-}
 
 public class DawnAnimateDissolve: DawnCustomTransitionCapable {
     
@@ -72,7 +77,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         tempView.layer.cornerRadius = sourceView.layer.cornerRadius
         containerView.addSubview(tempView)
         
-        targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / targetScale)
+        targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
         targetSnapshot.alpha = 0
         tempView.addSubview(targetSnapshot)
         
@@ -87,8 +92,8 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             tempView.frame = containerView.frame
             tempView.layer.cornerRadius = toView.layer.cornerRadius
             
-            sourceSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / sourceScale)
-            targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / targetScale)
+            sourceSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / sourceScale)
+            targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
             targetSnapshot.alpha = 1
             sourceSnapshot.alpha = 0
         } completion: { finished in
@@ -148,11 +153,11 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         tempView.layer.cornerRadius = fromView.layer.cornerRadius
         containerView.addSubview(tempView)
         
-        sourceSnapshot.frame = CGRect(w: tempView.bounds.width, h: targetView.bounds.width / sourceScale)
+        sourceSnapshot.frame = CGRect(by: tempView.bounds.width, targetView.bounds.width / sourceScale)
         sourceSnapshot.alpha = 0
         tempView.addSubview(sourceSnapshot)
         
-        targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.height)
+        targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.height)
         targetSnapshot.alpha = 1
         tempView.addSubview(targetSnapshot)
         
@@ -165,7 +170,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             tempView.frame = targetFrame
             tempView.layer.cornerRadius = sourceView.layer.cornerRadius
             
-            targetSnapshot.frame = CGRect(w: tempView.bounds.width, h: tempView.bounds.width / targetScale)
+            targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
             sourceSnapshot.frame = tempView.bounds
             
             sourceSnapshot.alpha = 1
@@ -181,4 +186,8 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         }
         return .customizing
     }
+}
+
+internal func CGRect(by width: CGFloat, _ height: CGFloat) -> CGRect {
+    return CGRect(x: .zero, y: .zero, width: width, height: height)
 }
