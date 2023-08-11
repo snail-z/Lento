@@ -77,7 +77,9 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         tempView.layer.cornerRadius = sourceView.layer.cornerRadius
         containerView.addSubview(tempView)
         
-        targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
+        targetSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                      width: tempView.bounds.width,
+                                      height: tempView.bounds.width / targetScale)
         targetSnapshot.alpha = 0
         tempView.addSubview(targetSnapshot)
         
@@ -92,8 +94,12 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             tempView.frame = containerView.frame
             tempView.layer.cornerRadius = toView.layer.cornerRadius
             
-            sourceSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / sourceScale)
-            targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
+            sourceSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                          width: tempView.bounds.width,
+                                          height: tempView.bounds.width / sourceScale)
+            targetSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                          width: tempView.bounds.width,
+                                          height: tempView.bounds.width / targetScale)
             targetSnapshot.alpha = 1
             sourceSnapshot.alpha = 0
         } completion: { finished in
@@ -153,11 +159,15 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         tempView.layer.cornerRadius = fromView.layer.cornerRadius
         containerView.addSubview(tempView)
         
-        sourceSnapshot.frame = CGRect(by: tempView.bounds.width, targetView.bounds.width / sourceScale)
+        sourceSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                      width: tempView.bounds.width,
+                                      height: targetView.bounds.width / sourceScale)
         sourceSnapshot.alpha = 0
         tempView.addSubview(sourceSnapshot)
         
-        targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.height)
+        targetSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                      width: tempView.bounds.width,
+                                      height: tempView.bounds.height)
         targetSnapshot.alpha = 1
         tempView.addSubview(targetSnapshot)
         
@@ -170,7 +180,9 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             tempView.frame = targetFrame
             tempView.layer.cornerRadius = sourceView.layer.cornerRadius
             
-            targetSnapshot.frame = CGRect(by: tempView.bounds.width, tempView.bounds.width / targetScale)
+            targetSnapshot.frame = CGRect(x: .zero, y: .zero,
+                                          width: tempView.bounds.width,
+                                          height: tempView.bounds.width / targetScale)
             sourceSnapshot.frame = tempView.bounds
             
             sourceSnapshot.alpha = 1
@@ -186,8 +198,4 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         }
         return .customizing
     }
-}
-
-internal func CGRect(by width: CGFloat, _ height: CGFloat) -> CGRect {
-    return CGRect(x: .zero, y: .zero, width: width, height: height)
 }

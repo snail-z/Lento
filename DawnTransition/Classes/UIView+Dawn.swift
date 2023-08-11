@@ -39,7 +39,7 @@ internal extension DawnExtension where Base: UIView {
     }
     
     func slowSnapshotView(wrapped: Bool = false) -> UIView? {
-        UIGraphicsBeginImageContextWithOptions(base.bounds.size, base.isOpaque, 0)
+        UIGraphicsBeginImageContextWithOptions(base.bounds.size, false, 0)
         guard let currentContext = UIGraphicsGetCurrentContext() else {
             UIGraphicsEndImageContext()
             return nil
@@ -47,7 +47,6 @@ internal extension DawnExtension where Base: UIView {
         base.layer.render(in: currentContext)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         let imageView = UIImageView(image: image)
         imageView.frame = base.bounds
         guard wrapped else { return imageView }

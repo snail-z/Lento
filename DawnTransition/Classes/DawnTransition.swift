@@ -39,7 +39,7 @@ public enum DawnTransitionState: Int {
     // DawnTransition的`animate`方法已被调用，动画中
     case animating
 
-    // 已调用DawnTransition的`complete` 方法，转场结束或取消正在清理
+    // 已调用DawnTransition的`complete` 方法，转场结束正在清理
     case completing
 }
 
