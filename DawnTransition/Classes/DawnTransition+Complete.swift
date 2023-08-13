@@ -50,7 +50,10 @@ extension DawnTransition {
             return
         }
         
-        if !transitionCancelled {
+        if transitionCancelled {
+            addSubview(fromViewController!.view)
+            removeView(toViewController!.view)
+        } else {
             addSubview(toViewController!.view)
             removeView(fromViewController!.view)
         }

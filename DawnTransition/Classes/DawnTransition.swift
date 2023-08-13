@@ -63,6 +63,11 @@ public class DawnTransition: NSObject {
     /// 转场上下文对象
     internal weak var transitionContext: UIViewControllerContextTransitioning?
     
+    /// 转场是否被取消
+    internal var isTransitionCancelled: Bool {
+        return transitionContext?.transitionWasCancelled ?? true
+    }
+    
     /// 转场容器对象
     internal var containerView: UIView?
     

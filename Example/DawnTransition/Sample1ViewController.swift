@@ -58,14 +58,14 @@ class Sample1ViewController: SmapleBaseViewController {
     }
     
     func addEdgeRecognizer() {
-        let label = createLabel(text: "从\n此\n处\n向\n左\n边\n滑\n动")
+        let label = createLabel(text: "从\n此\n处\n边\n缘\n向\n左\n滑\n动")
         label.font = UIFont.italicSystemFont(ofSize: 11)
         label.textColor = .white
         label.backgroundColor = .clear
         label.numberOfLines = 0
         view.addSubview(label)
         label.dw.makeConstraints { make in
-            make.right.equalToSuperview().inset(20)
+            make.right.equalToSuperview().inset(10)
             make.centerY.equalToSuperview()
         }
         
@@ -105,7 +105,7 @@ extension Sample1ViewController {
 fileprivate class Push1ViewController: SmapleBaseViewController {
     
     override func setGestures() {
-        pageTip("从屏幕左边缘向右滑动")
+        pageTip("从屏幕边缘左侧向右滑动")
         backButton.isHidden = true
         
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
@@ -131,7 +131,7 @@ fileprivate class Push2ViewController: SmapleBaseViewController {
     }
     
     override func setGestures() {
-        pageTip("在屏幕任意位置，从下向上滑动")
+        pageTip("从屏幕任意位置，由下向上滑动")
         backButton.isHidden = true
      
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
@@ -146,7 +146,7 @@ fileprivate class Push2ViewController: SmapleBaseViewController {
 fileprivate class Push3ViewController: SmapleBaseViewController {
     
     override func setGestures() {
-        pageTip("从屏幕左边缘向右滑动")
+        pageTip("从屏幕边缘左侧向右滑动")
         backButton.isHidden = true
         
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in

@@ -47,7 +47,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
     private let kSnapshotKey = 2606, kOverlayKey = 2607
     public private(set) var pathSourceView: UIView?
     
-    init(sourceView: UIView) {
+    public init(sourceView: UIView) {
         self.pathSourceView = sourceView
     }
     

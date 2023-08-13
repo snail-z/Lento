@@ -83,7 +83,7 @@ extension Sample2ViewController {
 fileprivate class Modal1ViewController: SmapleBaseViewController {
     
     override func setGestures() {
-        pageTip("从屏幕左边缘向右滑动")
+        pageTip("从屏幕边缘左侧向右滑动")
         backButton.isHidden = true
         
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
@@ -98,7 +98,7 @@ fileprivate class Modal1ViewController: SmapleBaseViewController {
 fileprivate class Modal2ViewController: SmapleBaseViewController {
     
     override func setGestures() {
-        pageTip("在屏幕任意位置，从上往下滑动")
+        pageTip("从屏幕任意位置，由上往下滑动")
         backButton.isHidden = true
         
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
@@ -113,7 +113,7 @@ fileprivate class Modal2ViewController: SmapleBaseViewController {
 fileprivate class Modal3ViewController: SmapleBaseViewController {
     
     override func setGestures() {
-        pageTip("在屏幕任意位置，从右往左滑动")
+        pageTip("从屏幕任意位置，由右向左滑动")
         backButton.isHidden = true
         
         let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in

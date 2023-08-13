@@ -20,8 +20,20 @@
 		817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55302A84712F0059B5F0 /* Sample1ViewController.swift */; };
 		817C55332A8471530059B5F0 /* Sample2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55322A8471530059B5F0 /* Sample2ViewController.swift */; };
 		817C55372A8475B30059B5F0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C55362A8475B30059B5F0 /* BaseNavigationController.swift */; };
-		817C553B2A8479D50059B5F0 /* LagerImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C553A2A8479D50059B5F0 /* LagerImageController.swift */; };
 		817C553D2A84CAC10059B5F0 /* SmapleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */; };
+		81C85AA12A865999009A7987 /* Sample3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AA02A865999009A7987 /* Sample3ViewController.swift */; };
+		81C85AA92A88B38D009A7987 /* KlipageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AA82A88B38D009A7987 /* KlipageModel.swift */; };
+		81C85AAB2A88B3BB009A7987 /* KlipageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AAA2A88B3BB009A7987 /* KlipageViewController.swift */; };
+		81C85AAD2A88B3D4009A7987 /* KlipageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AAC2A88B3D4009A7987 /* KlipageCell.swift */; };
+		81C85AB92A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AB22A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.m */; };
+		81C85ABA2A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AB32A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m */; };
+		81C85ABB2A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AB42A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.m */; };
+		81C85ABC2A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AB72A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift */; };
+		81C85ABE2A88B512009A7987 /* KliPageSnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85ABD2A88B512009A7987 /* KliPageSnapshotCache.swift */; };
+		81C85AC42A88B6DB009A7987 /* DescIMGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC32A88B6DB009A7987 /* DescIMGViewController.swift */; };
+		81C85AC62A88B716009A7987 /* DescIMGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC52A88B716009A7987 /* DescIMGModel.swift */; };
+		81C85AC82A88B733009A7987 /* DescIMGCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC72A88B733009A7987 /* DescIMGCell.swift */; };
+		81C85ACA2A88B793009A7987 /* DescIMGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +68,24 @@
 		817C55302A84712F0059B5F0 /* Sample1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample1ViewController.swift; sourceTree = "<group>"; };
 		817C55322A8471530059B5F0 /* Sample2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample2ViewController.swift; sourceTree = "<group>"; };
 		817C55362A8475B30059B5F0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		817C553A2A8479D50059B5F0 /* LagerImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LagerImageController.swift; sourceTree = "<group>"; };
 		817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmapleBaseViewController.swift; sourceTree = "<group>"; };
+		81C85AA02A865999009A7987 /* Sample3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample3ViewController.swift; sourceTree = "<group>"; };
+		81C85AA82A88B38D009A7987 /* KlipageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipageModel.swift; sourceTree = "<group>"; };
+		81C85AAA2A88B3BB009A7987 /* KlipageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipageViewController.swift; sourceTree = "<group>"; };
+		81C85AAC2A88B3D4009A7987 /* KlipageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipageCell.swift; sourceTree = "<group>"; };
+		81C85AB12A88B49A009A7987 /* DawnTransition_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DawnTransition_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C85AB22A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewPinToVisibleLayout.m; sourceTree = "<group>"; };
+		81C85AB32A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDistanceBetweenLayout.m; sourceTree = "<group>"; };
+		81C85AB42A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		81C85AB52A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDistanceBetweenLayout.h; sourceTree = "<group>"; };
+		81C85AB62A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewPinToVisibleLayout.h; sourceTree = "<group>"; };
+		81C85AB72A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		81C85AB82A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		81C85ABD2A88B512009A7987 /* KliPageSnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KliPageSnapshotCache.swift; sourceTree = "<group>"; };
+		81C85AC32A88B6DB009A7987 /* DescIMGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGViewController.swift; sourceTree = "<group>"; };
+		81C85AC52A88B716009A7987 /* DescIMGModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGModel.swift; sourceTree = "<group>"; };
+		81C85AC72A88B733009A7987 /* DescIMGCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGCell.swift; sourceTree = "<group>"; };
+		81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescIMGHeaderView.swift; sourceTree = "<group>"; };
 		8D4B0D7D998E3B4729BEA187 /* Pods_DawnTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCD4D927A58634D29D0A54C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EBF99FD24F7C7A4B83B64E9D /* Pods_DawnTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,16 +144,19 @@
 		607FACD21AFB9204008FA782 /* Example for DawnTransition */ = {
 			isa = PBXGroup;
 			children = (
+				81C85AC22A88B689009A7987 /* DescIMG */,
+				81C85AC12A88B66B009A7987 /* FlowIMG */,
+				81C85AB02A88B46D009A7987 /* Layout */,
 				817C552F2A84710F0059B5F0 /* Smaple */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				817C552B2A846D590059B5F0 /* ViewControllerCell.swift */,
 				817C55362A8475B30059B5F0 /* BaseNavigationController.swift */,
+				817C552D2A846DC60059B5F0 /* Utility.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				817C552D2A846DC60059B5F0 /* Utility.swift */,
 			);
 			name = "Example for DawnTransition";
 			path = DawnTransition;
@@ -172,9 +203,46 @@
 				817C553C2A84CAC10059B5F0 /* SmapleBaseViewController.swift */,
 				817C55302A84712F0059B5F0 /* Sample1ViewController.swift */,
 				817C55322A8471530059B5F0 /* Sample2ViewController.swift */,
-				817C553A2A8479D50059B5F0 /* LagerImageController.swift */,
+				81C85AA02A865999009A7987 /* Sample3ViewController.swift */,
 			);
 			name = Smaple;
+			sourceTree = "<group>";
+		};
+		81C85AB02A88B46D009A7987 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				81C85AB52A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.h */,
+				81C85AB32A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m */,
+				81C85AB82A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.h */,
+				81C85AB42A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.m */,
+				81C85AB62A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.h */,
+				81C85AB22A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.m */,
+				81C85AB72A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift */,
+				81C85AB12A88B49A009A7987 /* DawnTransition_Example-Bridging-Header.h */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		81C85AC12A88B66B009A7987 /* FlowIMG */ = {
+			isa = PBXGroup;
+			children = (
+				81C85AA82A88B38D009A7987 /* KlipageModel.swift */,
+				81C85AAC2A88B3D4009A7987 /* KlipageCell.swift */,
+				81C85AAA2A88B3BB009A7987 /* KlipageViewController.swift */,
+				81C85ABD2A88B512009A7987 /* KliPageSnapshotCache.swift */,
+			);
+			path = FlowIMG;
+			sourceTree = "<group>";
+		};
+		81C85AC22A88B689009A7987 /* DescIMG */ = {
+			isa = PBXGroup;
+			children = (
+				81C85AC32A88B6DB009A7987 /* DescIMGViewController.swift */,
+				81C85AC52A88B716009A7987 /* DescIMGModel.swift */,
+				81C85AC72A88B733009A7987 /* DescIMGCell.swift */,
+				81C85AC92A88B793009A7987 /* DescIMGHeaderView.swift */,
+			);
+			name = DescIMG;
 			sourceTree = "<group>";
 		};
 		98865DCD1ECF6A04498417BE /* Pods */ = {
@@ -242,7 +310,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = VT73DARZRD;
-						LastSwiftMigration = "";
+						LastSwiftMigration = 1400;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -364,15 +432,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C85ABB2A88B49B009A7987 /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				81C85AAD2A88B3D4009A7987 /* KlipageCell.swift in Sources */,
+				81C85AC42A88B6DB009A7987 /* DescIMGViewController.swift in Sources */,
 				817C55372A8475B30059B5F0 /* BaseNavigationController.swift in Sources */,
 				817C552E2A846DC60059B5F0 /* Utility.swift in Sources */,
 				817C55332A8471530059B5F0 /* Sample2ViewController.swift in Sources */,
+				81C85AB92A88B49B009A7987 /* UICollectionViewPinToVisibleLayout.m in Sources */,
+				81C85ABE2A88B512009A7987 /* KliPageSnapshotCache.swift in Sources */,
+				81C85ACA2A88B793009A7987 /* DescIMGHeaderView.swift in Sources */,
 				817C552C2A846D590059B5F0 /* ViewControllerCell.swift in Sources */,
+				81C85AC82A88B733009A7987 /* DescIMGCell.swift in Sources */,
+				81C85AA12A865999009A7987 /* Sample3ViewController.swift in Sources */,
+				81C85AA92A88B38D009A7987 /* KlipageModel.swift in Sources */,
+				81C85ABC2A88B49B009A7987 /* UICollectionViewWaterfallLayout.swift in Sources */,
+				81C85ABA2A88B49B009A7987 /* UICollectionViewDistanceBetweenLayout.m in Sources */,
+				81C85AAB2A88B3BB009A7987 /* KlipageViewController.swift in Sources */,
 				817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				817C553D2A84CAC10059B5F0 /* SmapleBaseViewController.swift in Sources */,
-				817C553B2A8479D50059B5F0 /* LagerImageController.swift in Sources */,
+				81C85AC62A88B716009A7987 /* DescIMGModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +606,7 @@
 			baseConfigurationReference = 6E22C8815738A60B4B98CC1E /* Pods-DawnTransition_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VT73DARZRD;
 				INFOPLIST_FILE = DawnTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -533,6 +614,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DawnTransition/Layout/DawnTransition_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -543,6 +626,7 @@
 			baseConfigurationReference = 2256BED02C5ED6DB470F85A6 /* Pods-DawnTransition_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VT73DARZRD;
 				INFOPLIST_FILE = DawnTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -550,6 +634,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DawnTransition/Layout/DawnTransition_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
