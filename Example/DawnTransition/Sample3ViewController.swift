@@ -70,14 +70,14 @@ extension Sample3ViewController {
     func jump1() {
         let vc = KlipageViewController()
         vc.dawn.isNavigationEnabled = true
-        vc.dawn.navigationAnimationType = .pageIn(direction: .left)
+        vc.dawn.transitionAnimationType = .pageIn(direction: .left)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func jump2() {
         let vc = MyViewController()
         vc.dawn.isNavigationEnabled = true
-        vc.dawn.navigationAnimationType = .pageIn(direction: .left)
+        vc.dawn.transitionAnimationType = .pageIn(direction: .left)
         let pathway = DawnAnimateDissolve(sourceView: btn2)
         pathway.duration = 0.375
         vc.dawn.transitionCapable = pathway
@@ -92,6 +92,7 @@ extension Sample3ViewController {
             guard let `self` = self else { return }
             sender.dawn.transitionCapable = DawnAnimateButtonhole(holeView: `self`.roundBtn)
         }
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     

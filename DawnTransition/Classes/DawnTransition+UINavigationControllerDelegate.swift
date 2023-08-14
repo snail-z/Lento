@@ -65,23 +65,12 @@ extension DawnExtension where Base: UIViewController {
             return objc_getAssociatedObject(base, &DawnIsNavEnabledUIViewControllerAssociatedKey) as? Bool ?? false
         }
         set {
+            if newValue { // swizzling
+                Dawn.swizzlePushViewController()
+            }
             objc_setAssociatedObject(base, &DawnIsNavEnabledUIViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-    
-    /// 设置导航转场动画类型
-    public var navigationAnimationType: DawnAnimationType {
-        get {
-            return objc_getAssociatedObject(base, &DawnAnimationTypeNavigationControllerAssociatedKey) as? DawnAnimationType ?? .none
-        }
-        set {
-            // swizzling
-            Dawn.swizzlePushViewController()
-            transitionCapable = newValue.toTransitionDeputy()
-            objc_setAssociatedObject(base, &DawnAnimationTypeNavigationControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 }
 
 fileprivate var DawnIsNavEnabledUIViewControllerAssociatedKey: Void?
-fileprivate var DawnAnimationTypeNavigationControllerAssociatedKey: Void?

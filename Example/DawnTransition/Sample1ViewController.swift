@@ -83,21 +83,21 @@ extension Sample1ViewController {
     func jump1() {
         let vc = Push1ViewController()
         vc.dawn.isNavigationEnabled = true
-        vc.dawn.navigationAnimationType = .pageIn(direction: .left)
+        vc.dawn.transitionAnimationType = .pageIn(direction: .left)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func jump2() {
         let vc = Push2ViewController()
         vc.dawn.isNavigationEnabled = true
-        vc.dawn.navigationAnimationType = .selectBy(presenting: .fade, dismissing: .push(direction: .up))
+        vc.dawn.transitionAnimationType = .selectBy(presenting: .fade, dismissing: .push(direction: .up))
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func jump3() {
         let vc = Push3ViewController()
         vc.dawn.isNavigationEnabled = true
-        vc.dawn.navigationAnimationType = .zoomSlide(direction: .left)
+        vc.dawn.transitionAnimationType = .zoomSlide(direction: .left)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

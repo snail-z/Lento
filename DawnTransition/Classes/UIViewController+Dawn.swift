@@ -43,21 +43,18 @@ extension DawnExtension where Base: UIViewController {
             } else {
                 base.transitioningDelegate = nil
             }
+            base.modalPresentationStyle = .fullScreen
         }
     }
     
     /// 设置模态转场动画类型
-    public var modalAnimationType: DawnAnimationType {
+    public var transitionAnimationType: DawnAnimationType {
         get {
-            if let value = objc_getAssociatedObject(base, &DawnModalAnimationTypeViewControllerAssociatedKey) as? DawnAnimationType {
-                return value
-            }
-            return .none
+            return objc_getAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey) as? DawnAnimationType ?? .none
         }
         set {
-            base.modalPresentationStyle = .fullScreen
             transitionCapable = newValue.toTransitionDeputy()
-            objc_setAssociatedObject(base, &DawnModalAnimationTypeViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -97,4 +94,4 @@ extension DawnExtension where Base: UIViewController {
 
 fileprivate var DawnInteractiveDriverViewControllerAssociatedKey: Void?
 fileprivate var DawnTransitionCapableViewControllerAssociatedKey: Void?
-fileprivate var DawnModalAnimationTypeViewControllerAssociatedKey: Void?
+fileprivate var DawnTransitionAnimationTypeViewControllerAssociatedKey: Void?

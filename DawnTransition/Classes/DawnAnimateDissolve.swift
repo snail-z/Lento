@@ -51,6 +51,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         self.pathSourceView = sourceView
     }
     
+    // swiftlint:disable function_body_length cyclomatic_complexity
     public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign {
         let containerView = context.container
         let fromView = context.fromViewController.view!
@@ -107,27 +108,29 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             toView.isHidden = false
             fromView.layer.transform = CATransform3DIdentity
             
-            /// fix：在截图前将sourceView隐藏，避免出现视觉重叠
-            sourceView.isHidden = true
-            if let fromSnapshotView = fromView.dawn.snapshotView() {
-                sourceView.isHidden = false
-                fromSnapshotView.frame = context.container.bounds
-                fromSnapshotView.tag = self.kSnapshotKey
-                context.container.insertSubview(fromSnapshotView, at: 0)
-                switch self.overlayType {
-                case .clear: break
-                case .translucent(let opacity, let color):
-                    let overlayView = UIView(frame: context.container.bounds)
-                    overlayView.backgroundColor = color
-                    overlayView.alpha = opacity
-                    overlayView.tag = self.kOverlayKey
-                    context.container.insertSubview(overlayView, aboveSubview: fromSnapshotView)
-                case .blur(let style, let color):
-                    let effectView = UIVisualEffectView(frame: context.container.bounds)
-                    effectView.backgroundColor = color
-                    effectView.effect = UIBlurEffect(style: style)
-                    effectView.tag = self.kOverlayKey
-                    context.container.insertSubview(effectView, aboveSubview: fromSnapshotView)
+            if !Dawn.shared.isTransitionCancelled {
+                /// fix：在截图前将sourceView隐藏，避免出现视觉重叠
+                sourceView.isHidden = true
+                if let fromSnapshotView = fromView.dawn.snapshotView() {
+                    sourceView.isHidden = false
+                    fromSnapshotView.frame = context.container.bounds
+                    fromSnapshotView.tag = self.kSnapshotKey
+                    context.container.insertSubview(fromSnapshotView, at: 0)
+                    switch self.overlayType {
+                    case .clear: break
+                    case .translucent(let opacity, let color):
+                        let overlayView = UIView(frame: context.container.bounds)
+                        overlayView.backgroundColor = color
+                        overlayView.alpha = opacity
+                        overlayView.tag = self.kOverlayKey
+                        context.container.insertSubview(overlayView, aboveSubview: fromSnapshotView)
+                    case .blur(let style, let color):
+                        let effectView = UIVisualEffectView(frame: context.container.bounds)
+                        effectView.backgroundColor = color
+                        effectView.effect = UIBlurEffect(style: style)
+                        effectView.tag = self.kOverlayKey
+                        context.container.insertSubview(effectView, aboveSubview: fromSnapshotView)
+                    }
                 }
             }
             complete(finished)
@@ -184,13 +187,14 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
                                           width: tempView.bounds.width,
                                           height: tempView.bounds.width / targetScale)
             sourceSnapshot.frame = tempView.bounds
-            
             sourceSnapshot.alpha = 1
             targetSnapshot.alpha = 0
             overlayView?.alpha = 0
         } completion: { finished in
-            snapsView?.removeFromSuperview()
-            overlayView?.removeFromSuperview()
+            if !Dawn.shared.isTransitionCancelled {
+                snapsView?.removeFromSuperview()
+                overlayView?.removeFromSuperview()
+            }
             tempView.removeFromSuperview()
             toView.isHidden = false
             fromView.isHidden = false

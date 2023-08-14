@@ -61,21 +61,21 @@ extension Sample2ViewController {
     func jump1() {
         let vc = Modal1ViewController()
         vc.dawn.isModalEnabled = true
-        vc.dawn.modalAnimationType = .pageIn(direction: .left)
+        vc.dawn.transitionAnimationType = .pageIn(direction: .left)
         self.present(vc, animated: true)
     }
     
     func jump2() {
         let vc = Modal2ViewController()
         vc.dawn.isModalEnabled = true
-        vc.dawn.modalAnimationType = .pageIn(direction: .up)
+        vc.dawn.transitionAnimationType = .pageIn(direction: .up)
         self.present(vc, animated: true)
     }
     
     func jump3() {
         let vc = Modal3ViewController()
         vc.dawn.isModalEnabled = true
-        vc.dawn.modalAnimationType = .zoomSlide(direction: .right)
+        vc.dawn.transitionAnimationType = .zoomSlide(direction: .right)
         self.present(vc, animated: true)
     }
 }
