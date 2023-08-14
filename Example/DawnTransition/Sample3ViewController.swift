@@ -92,7 +92,6 @@ extension Sample3ViewController {
             guard let `self` = self else { return }
             sender.dawn.transitionCapable = DawnAnimateButtonhole(holeView: `self`.roundBtn)
         }
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     

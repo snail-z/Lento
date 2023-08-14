@@ -35,26 +35,22 @@ pod 'DawnTransition'
    ```swift
    let vc = TestViewController()
    vc.dawn.isNavigationEnabled = true
-   vc.dawn.navigationAnimationType = .pageIn(direction: .left)
+   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
    self.navigationController?.pushViewController(vc, animated: true)
    ```
 
-   `isNavigationEnabled`
-
-   `navigationAnimationType`
+   `isNavigationEnabled` Must be set true.
 
 2. UIModalViewController transitioning:
 
    ```swift
    let vc = TestViewController()
    vc.dawn.isModalEnabled = true
-   vc.dawn.modalAnimationType = .pageIn(direction: .left)
+   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
    self.present(vc, animated: true)
    ```
 
-   `isModalEnabled`
-
-   `modalAnimationType`
+   `isModalEnabled` Must be set true.
 
 ## Author
 
