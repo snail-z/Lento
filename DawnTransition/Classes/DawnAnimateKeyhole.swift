@@ -1,5 +1,5 @@
 //
-//  DawnAnimateButtonhole.swift
+//  DawnAnimateKeyhole.swift
 //  DawnTransition
 //
 //  Created by zhang on 2022/7/25.
@@ -28,10 +28,10 @@
 
 import UIKit
 
-public class DawnAnimateButtonhole: NSObject, DawnCustomTransitionCapable {
+public class DawnAnimateKeyhole: NSObject, DawnCustomTransitionCapable {
     
     /// 动画时长
-    public var duration: TimeInterval = 0.375
+    public var duration: TimeInterval = 0.325
     
     /// 动画类型
     public var animType: DawnAnimationType = .push(direction: .left)
@@ -70,20 +70,19 @@ public class DawnAnimateButtonhole: NSObject, DawnCustomTransitionCapable {
         
         let roundView = UIView()
         roundView.frame = tempView.bounds
-        roundView.backgroundColor = .white
+        roundView.backgroundColor = fromView.backgroundColor
         roundView.alpha = 0
         tempView.addSubview(roundView)
         
         fromView.isHidden = true
         tempView.layer.cornerRadius = 10
-        UIView.animate(withDuration: 0.275, delay: 0, options: .curveEaseOut) {
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut) {
             let holeFrame = holeView.superview!.convert(holeView.frame, to: containerView)
             tempView.frame = holeFrame
             sourceSnapshot.frame = tempView.bounds
-            roundView.alpha = 1
             tempView.layer.cornerRadius = holeFrame.height / 2
         } completion: { finished in
-            UIView.animate(withDuration: 0.25) {
+            UIView.animate(withDuration: 0.2) {
                 if !Dawn.shared.isTransitionCancelled {
                     tempView.alpha = 0
                 }
@@ -94,6 +93,9 @@ public class DawnAnimateButtonhole: NSObject, DawnCustomTransitionCapable {
                 toView.isHidden = false
                 complete(finished)
             }
+        }
+        UIView.animate(withDuration: duration - 0.15, delay: 0.15, options: .curveEaseOut) {
+            roundView.alpha = 1
         }
         return .customizing
     }

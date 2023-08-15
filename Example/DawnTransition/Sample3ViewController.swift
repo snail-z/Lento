@@ -92,7 +92,7 @@ extension Sample3ViewController {
         vc.dawn.transitionCapable = DawnAnimateDiffuse(diffuseOut: roundBtn, diffuseIn: roundBtn)
         vc.willDismiss = { [weak self] sender in
             guard let `self` = self else { return }
-            sender.dawn.transitionCapable = DawnAnimateButtonhole(holeView: `self`.roundBtn)
+            sender.dawn.transitionCapable = DawnAnimateKeyhole(holeView: `self`.roundBtn)
         }
         self.present(vc, animated: true)
     }
