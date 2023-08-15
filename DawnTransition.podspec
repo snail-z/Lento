@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DawnTransition'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'DawnTransition mainly solves the problem of gesture interaction in view controller transition animation.'
 
 # This description is used to generate tags and improve search results.
