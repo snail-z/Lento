@@ -7,11 +7,146 @@
 
 
 
-DawnTransition mainly solves the problem of gesture interaction in view controller transition animation. And supports custom transition animation effects
+DawnTransition主要解决转场动画中的手势交互问题。例如转场手势与TableView滚动手势优先级、响应策略等问题。目前常见的转场库对手势体验做得都不够细腻，之前使用 [Hero](https://github.com/HeroTransitions/Hero) 做转场，虽然功能强大动画丰富，但手势交互这块处理的不够平滑，外部也无法对手势自定义设置与修改，为了解决这些问题，借鉴 [Hero](https://github.com/HeroTransitions/Hero) 思路实现了一套新的转场控制，处理了不同场景下的手势转场问题，[DawnTransition](https://github.com/snail-z/DawnTransition)几乎与系统体验一致的侧滑效果；并且内置了交叉溶解、神奇移动、扩散缩放等动画效果，使用简洁成本低，可下载demo体验。
 
-## Example
+## Preview
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+image1
+
+
+
+## Usage
+
+1. UINavigationController 导航控制器转场：
+
+   ```swift
+   let vc = TestViewController()
+   vc.dawn.isNavigationEnabled = true
+   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
+   self.navigationController?.pushViewController(vc, animated: true)
+   ```
+
+   启用`isNavigationEnabled` 设置为true；
+
+   设置`transitionAnimationType`转场动画类型；
+
+   完成以上两个配置，即可为你的视图控制器实现转场动画；
+
+2. UIModalViewController 模态控制器转场:
+
+   ```swift
+   let vc = TestViewController()
+   vc.dawn.isModalEnabled = true
+   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
+   self.present(vc, animated: true)
+   ```
+
+   启用`isModalEnabled` 设置为true；
+   
+   同样设置`transitionAnimationType`转场动画类型；
+   
+   设置后模态跳转便支持了转场动画；
+   
+3. 基于`DawnTransition`内置动画类型的自定义转场：
+
+   ```swift
+   public protocol DawnCustomTransitionCapable {
+       
+       /// 自定义视图状态
+       func dawnModifierStagePresenting() -> DawnModifierStage
+       func dawnModifierStageDismissing() -> DawnModifierStage
+       
+       /// 自定义转场配置
+       func dawnAnimationConfigurationPresenting() -> DawnAnimationConfiguration
+       func dawnAnimationConfigurationDismissing() -> DawnAnimationConfiguration
+   }
+   ```
+
+   实现以上两个方法，可以自定义转场前转场后不同状态`DawnModifierStage`，以及转场动画曲线，时长等属性配置`DawnAnimationConfiguration`；然后设置`transitionCapable` 如下：
+
+   ```swift
+   let vc = TestViewController()
+   vc.dawn.isNavigationEnabled = true // 启动导航转场
+   let pathway = DawnAnimateDissolve(sourceView: btn2)
+   pathway.duration = 0.95
+   pathway.overlayType = .blur(style: .light, color: .clear)
+   pathway.usingSpring = (0.6, 0.2)
+   vc.dawn.transitionCapable = pathway //设置自定转场动画
+   navigationController?.pushViewController(vc, animated: true)
+   ```
+
+   
+
+4. dsf 
+
+5. 自定义转场动画：
+
+   1.  实现以下方法并返回`.customizing`则完全由外部自定义动画
+
+   ```swift
+   typealias DawnSign = DawnTransitionCapableSign
+   typealias DawnContext = (container: UIView, 
+                            fromViewController: UIViewController, 
+                            toViewController: UIViewController)
+   
+   func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign
+   func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign
+   ```
+
+   Iamge2
+
+   例如想实现上图中扩散收缩效果，只需要实现`DawnCustomTransitionCapable`协议
+
+   ```swift
+   let vc = DescIMGViewController(descItem: takeDescIMGModel())
+   vc.dawn.isModalEnabled = true
+   vc.dawn.transitionCapable = DawnAnimateDiffuse(diffuseOut: roundBtn, diffuseIn: roundBtn)
+   self.present(vc, animated: true)
+   ```
+
+6. 交互手势`DawnPanGestureRecognizer`：
+
+   ```swift
+   let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
+   		guard let `self` = self else { return }
+   		self.dismiss(animated: true)
+   }
+   pan.isRecognizeWhenEdges = false
+   pan.recognizeDirection = .leftToRight
+   view.dawn.addPanGestureRecognizer(pan)
+   ```
+
+   和使用系统拖动手势一样，初始化配置后，添加到目标视图即可；
+
+   `isRecognizeWhenEdges`: 该属性设置为true只能在屏幕边缘识别手势，若设为false则全屏幕可识别；
+
+   `recognizeDirection`: 手势响应方向，例如只在水平方向，从左往右拖动手势时响应转场交互则设置为：
+
+   ```swift
+   panGesture.recognizeDirection = .leftToRight // 仅识别水平方向、从左往右拖动
+   ```
+
+7. 自定义手势，类似苹果商店Today效果 `DawnTodayGestureRecognizer`：
+
+   ```swift
+   public class DawnTodayGestureRecognizer: DawnPanGestureRecognizer {
+   
+       /// 拖动到达缩放边界是否自动转场
+       public var shouldAutoDissmiss = true
+       
+       /// 拖动缩放到达的最小比例，取值范围(0-1]
+       public var zoomScale: CGFloat = 0.8
+       
+       /// 拖动缩放系数，该值越大缩放越快，取值范围(0-1]
+       public var zoomFactor: CGFloat = 0.8
+       
+       /// 拖动中页面圆角变化最大值
+       public var zoomMaxRadius: CGFloat = 20
+       
+       /// 需要追踪的UIScrollView，用于解决手势冲突
+       public weak var trackScrollView: UIScrollView?
+   }
+   ```
 
 ## Requirements
 
@@ -21,36 +156,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-DawnTransition is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+DawnTransition is available through [CocoaPods](https://cocoapods.org/). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'DawnTransition'
 ```
-
-## Usage
-
-1. UINavigationController transitioning：
-
-   ```swift
-   let vc = TestViewController()
-   vc.dawn.isNavigationEnabled = true
-   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
-   self.navigationController?.pushViewController(vc, animated: true)
-   ```
-
-   `isNavigationEnabled` Must be set true.
-
-2. UIModalViewController transitioning:
-
-   ```swift
-   let vc = TestViewController()
-   vc.dawn.isModalEnabled = true
-   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
-   self.present(vc, animated: true)
-   ```
-
-   `isModalEnabled` Must be set true.
 
 ## Author
 
