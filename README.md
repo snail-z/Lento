@@ -7,22 +7,16 @@
 
 
 
-DawnTransition主要解决转场动画中的手势交互问题。例如转场手势与TableView滚动手势优先级、响应策略等问题。目前常见的转场库对手势体验做得都不够细腻，之前使用 [Hero](https://github.com/HeroTransitions/Hero) 做转场，虽然功能强大动画丰富，但手势交互这块处理的不够平滑，外部也无法对手势自定义设置与修改，为了解决这些问题，借鉴 [Hero](https://github.com/HeroTransitions/Hero) 思路实现了一套新的转场控制，处理了不同场景下的手势转场问题，[DawnTransition](https://github.com/snail-z/DawnTransition)几乎与系统体验一致的侧滑效果；并且内置了交叉溶解、神奇移动、扩散缩放等动画效果，使用简洁成本低，可下载demo体验。
-
-## Preview
-
-image1
-
-
+[DawnTransition](https://github.com/snail-z/DawnTransition)主要解决转场动画中的手势交互问题。例如转场手势与TableView滚动手势优先级、响应策略等问题。目前常见的转场库对手势体验做得都不够细腻，之前使用 [Hero](https://github.com/HeroTransitions/Hero) 做转场，虽然功能强大动画丰富，但手势交互这块处理的不够平滑，外部也无法对手势自定义设置与修改，为了解决这些问题，借鉴 [Hero](https://github.com/HeroTransitions/Hero) 思路实现了一套新的转场控制，处理了不同场景下的手势转场问题，[DawnTransition](https://github.com/snail-z/DawnTransition)几乎与系统体验一致的侧滑效果；并且内置了交叉溶解、神奇移动、扩散缩放等动画效果，使用简洁成本低，可下载demo体验。
 
 ## Usage
 
 1. UINavigationController 导航控制器转场：
 
    ```swift
-   let vc = TestViewController()
+   let vc = Push2ViewController()
    vc.dawn.isNavigationEnabled = true
-   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
+   vc.dawn.transitionAnimationType = .selectBy(presenting: .fade, dismissing: .push(direction: .up))
    self.navigationController?.pushViewController(vc, animated: true)
    ```
 
@@ -32,21 +26,25 @@ image1
 
    完成以上两个配置，即可为你的视图控制器实现转场动画；
 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_fade.gif?raw=true" width="267px"/> 
+
 2. UIModalViewController 模态控制器转场:
 
    ```swift
    let vc = TestViewController()
    vc.dawn.isModalEnabled = true
-   vc.dawn.transitionAnimationType = .pageIn(direction: .left)
+   vc.dawn.transitionAnimationType = .pageIn(direction: .up)
    self.present(vc, animated: true)
    ```
 
    启用`isModalEnabled` 设置为true；
-   
+
    同样设置`transitionAnimationType`转场动画类型；
-   
+
    设置后模态跳转便支持了转场动画；
-   
+
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_PageUp.gif?raw=true" width="267px"/> 
+
 3. 基于`DawnTransition`内置动画类型的自定义转场：
 
    ```swift
@@ -65,21 +63,18 @@ image1
    实现以上两个方法，可以自定义转场前转场后不同状态`DawnModifierStage`，以及转场动画曲线，时长等属性配置`DawnAnimationConfiguration`；然后设置`transitionCapable` 如下：
 
    ```swift
-   let vc = TestViewController()
-   vc.dawn.isNavigationEnabled = true // 启动导航转场
-   let pathway = DawnAnimateDissolve(sourceView: btn2)
-   pathway.duration = 0.95
-   pathway.overlayType = .blur(style: .light, color: .clear)
-   pathway.usingSpring = (0.6, 0.2)
+   let vc = LagerImageController()
+   vc.ccimage = model.takeImage()
+   vc.dawn.isModalEnabled = true // 启动模态转场
+   let pathway = DawnAnimateDissolve(sourceView: cell.contentView)
+   pathway.duration = 0.375
    vc.dawn.transitionCapable = pathway //设置自定转场动画
-   navigationController?.pushViewController(vc, animated: true)
+   self.present(vc, animated: true, completion: nil)
    ```
 
-   
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Dissolve1.gif?raw=true" width="267px"/> 
 
-4. dsf 
-
-5. 自定义转场动画：
+4. 自定义转场动画：
 
    1.  实现以下方法并返回`.customizing`则完全由外部自定义动画
 
@@ -93,7 +88,7 @@ image1
    func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign
    ```
 
-   Iamge2
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Diffuse.gif?raw=true" width="267px"/> 
 
    例如想实现上图中扩散收缩效果，只需要实现`DawnCustomTransitionCapable`协议
 
@@ -104,7 +99,9 @@ image1
    self.present(vc, animated: true)
    ```
 
-6. 交互手势`DawnPanGestureRecognizer`：
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Diffuse2.gif?raw=true" width="267px"/> 
+
+5. 交互手势`DawnPanGestureRecognizer`：
 
    ```swift
    let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
@@ -126,7 +123,11 @@ image1
    panGesture.recognizeDirection = .leftToRight // 仅识别水平方向、从左往右拖动
    ```
 
-7. 自定义手势，类似苹果商店Today效果 `DawnTodayGestureRecognizer`：
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_ges.gif?raw=true" width="267px"/> 
+
+6. 自定义手势，类似苹果商店Today效果 `DawnTodayGestureRecognizer`：
+
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Today1.gif?raw=true" width="267px"/> 
 
    ```swift
    public class DawnTodayGestureRecognizer: DawnPanGestureRecognizer {
