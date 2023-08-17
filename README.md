@@ -26,7 +26,7 @@
 
    完成以上两个配置，即可为你的视图控制器实现转场动画；
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_fade.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_fade.gif?raw=true" width="188px"/> 
 
 2. UIModalViewController 模态控制器转场:
 
