@@ -26,7 +26,7 @@
 
    完成以上两个配置，即可为你的视图控制器实现转场动画；
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_fade.gif?raw=true" width="188px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/pagein.gif?raw=true" width="220px"/> 
 
 2. UIModalViewController 模态控制器转场:
 
@@ -43,7 +43,7 @@
 
    设置后模态跳转便支持了转场动画；
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_PageUp.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/zoom.gif?raw=true" width="220px"/> 
 
 3. 基于`DawnTransition`内置动画类型的自定义转场：
 
@@ -72,7 +72,7 @@
    self.present(vc, animated: true, completion: nil)
    ```
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Dissolve1.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/flow2.gif?raw=true" width="220px"/> 
 
 4. 自定义转场动画：
 
@@ -88,7 +88,7 @@
    func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign
    ```
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Diffuse.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/shffein.gif?raw=true" width="220px"/> 
 
    例如想实现上图中扩散收缩效果，只需要实现`DawnCustomTransitionCapable`协议
 
@@ -98,8 +98,6 @@
    vc.dawn.transitionCapable = DawnAnimateDiffuse(diffuseOut: roundBtn, diffuseIn: roundBtn)
    self.present(vc, animated: true)
    ```
-
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Diffuse2.gif?raw=true" width="267px"/> 
 
 5. 交互手势`DawnPanGestureRecognizer`：
 
@@ -123,11 +121,11 @@
    panGesture.recognizeDirection = .leftToRight // 仅识别水平方向、从左往右拖动
    ```
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_ges.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/toady1.gif?raw=true" width="220px"/> 
 
 6. 自定义手势，类似苹果商店Today效果 `DawnTodayGestureRecognizer`：
 
-   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/DawnTransition_Today1.gif?raw=true" width="267px"/> 
+   <img src="https://github.com/snail-z/DawnTransition/blob/master/Preview/today2.gif?raw=true" width="220px"/> 
 
    ```swift
    public class DawnTodayGestureRecognizer: DawnPanGestureRecognizer {
