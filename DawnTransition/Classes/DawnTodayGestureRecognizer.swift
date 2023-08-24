@@ -75,8 +75,14 @@ extension DawnTodayGestureRecognizer {
         let minRadius: CGFloat = 0, maxRadius: CGFloat = zoomMaxRadius
         var shouldTransition = false
         if scale < minScale {
-            self.panView.layer.transform = CATransform3DScale(CATransform3DIdentity, minScale, minScale, 1)
-            self.panView.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
+            self.panView.layer.transform = CATransform3DScale(
+                CATransform3DIdentity,
+                minScale, minScale, 1
+            )
+            self.panView.center = CGPoint(
+                x: UIScreen.main.bounds.width / 2,
+                y: UIScreen.main.bounds.height / 2
+            )
             self.panView.layer.cornerRadius = maxRadius
             self.panView.layer.masksToBounds = true
             if shouldAutoDissmiss {
@@ -86,9 +92,14 @@ extension DawnTodayGestureRecognizer {
                 shouldTransition = true
             }
         } else {
-            self.panView.layer.transform = CATransform3DScale(CATransform3DIdentity,
-                                                              min(maxScale, scale), min(maxScale, scale), 1)
-            self.panView.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
+            self.panView.layer.transform = CATransform3DScale(
+                CATransform3DIdentity,
+                min(maxScale, scale), min(maxScale, scale), 1
+            )
+            self.panView.center = CGPoint(
+                x: UIScreen.main.bounds.width / 2,
+                y: UIScreen.main.bounds.height / 2
+            )
             let cornerRadius = (1 - scale) / (1 - minScale) * maxRadius
             self.panView.layer.cornerRadius = max(minRadius, cornerRadius)
             self.panView.layer.masksToBounds = true
