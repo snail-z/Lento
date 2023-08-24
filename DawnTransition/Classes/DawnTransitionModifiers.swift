@@ -83,15 +83,19 @@ extension DawnModifier {
     
     public static func position(horizontal offset : CGFloat) -> DawnModifier {
         return DawnModifier { targetState in
-            targetState.position = .any(x: UIScreen.main.bounds.width * 0.5 + offset,
-                                        y: UIScreen.main.bounds.height * 0.5)
+            targetState.position = .any(
+                x: UIScreen.main.bounds.width * 0.5 + offset,
+                y: UIScreen.main.bounds.height * 0.5
+            )
         }
     }
     
     public static func position(vertical offset : CGFloat) -> DawnModifier {
         return DawnModifier { targetState in
-            targetState.position = .any(x: UIScreen.main.bounds.width * 0.5,
-                                        y: UIScreen.main.bounds.height * 0.5 + offset)
+            targetState.position = .any(
+                x: UIScreen.main.bounds.width * 0.5,
+                y: UIScreen.main.bounds.height * 0.5 + offset
+            )
         }
     }
     
@@ -197,7 +201,10 @@ extension DawnModifier {
     /// 缩放-设置x轴y轴和z轴上的缩放比例，默认为1
     public static func scale(x: CGFloat = 1, y: CGFloat = 1, z: CGFloat = 1) -> DawnModifier {
       return DawnModifier { targetState in
-          targetState.transform = CATransform3DScale(targetState.transform ?? CATransform3DIdentity, x, y, z)
+          targetState.transform = CATransform3DScale(
+            targetState.transform ?? CATransform3DIdentity,
+            x, y, z
+          )
       }
     }
     
@@ -209,7 +216,10 @@ extension DawnModifier {
     /// 平移-设置x轴y轴和z轴上的平移距离，默认为0
     public static func translate(x: CGFloat = 0, y: CGFloat = 0, z: CGFloat = 0) -> DawnModifier {
         return DawnModifier { targetState in
-            targetState.transform = CATransform3DTranslate(targetState.transform ?? CATransform3DIdentity, x, y, z)
+            targetState.transform = CATransform3DTranslate(
+                targetState.transform ?? CATransform3DIdentity,
+                x, y, z
+            )
         }
     }
     
@@ -221,9 +231,18 @@ extension DawnModifier {
     /// 旋转-设置x轴y轴和z轴上的旋转角度，默认为0
     public static func rotate(x: CGFloat = 0, y: CGFloat = 0, z: CGFloat = 0) -> DawnModifier {
         return DawnModifier { targetState in
-            targetState.transform = CATransform3DRotate(targetState.transform ?? CATransform3DIdentity, x, 1, 0, 0)
-            targetState.transform = CATransform3DRotate(targetState.transform!, y, 0, 1, 0)
-            targetState.transform = CATransform3DRotate(targetState.transform!, z, 0, 0, 1)
+            targetState.transform = CATransform3DRotate(
+                targetState.transform ?? CATransform3DIdentity,
+                x, 1, 0, 0
+            )
+            targetState.transform = CATransform3DRotate(
+                targetState.transform!,
+                y, 0, 1, 0
+            )
+            targetState.transform = CATransform3DRotate(
+                targetState.transform!,
+                z, 0, 0, 1
+            )
         }
     }
 }

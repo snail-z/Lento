@@ -165,17 +165,23 @@ internal extension Dawn {
                         animations: @escaping () -> Void,
                         completion: ((Bool) -> Void)?) {
         if let spring = usingSpring {
-            UIView.animate(withDuration: duration,
-                           delay: delay,
-                           usingSpringWithDamping: spring.damping,
-                           initialSpringVelocity: spring.velocity,
-                           options: options,
-                           animations: animations, completion: completion)
+            UIView.animate(
+                withDuration: duration,
+                delay: delay,
+                usingSpringWithDamping: spring.damping,
+                initialSpringVelocity: spring.velocity,
+                options: options,
+                animations: animations,
+                completion: completion
+            )
         } else {
-            UIView.animate(withDuration: duration,
-                           delay: delay,
-                           options: options,
-                           animations: animations, completion: completion)
+            UIView.animate(
+                withDuration: duration,
+                delay: delay,
+                options: options,
+                animations: animations,
+                completion: completion
+            )
         }
     }
 }

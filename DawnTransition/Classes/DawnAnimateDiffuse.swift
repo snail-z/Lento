@@ -35,11 +35,20 @@ public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
         tempView.frame = containerView.bounds
         containerView.addSubview(tempView)
         
-        let center = CGPoint(x: containerView.bounds.width / 2, y: containerView.bounds.height / 2)
+        let center = CGPoint(
+            x: containerView.bounds.width / 2,
+            y: containerView.bounds.height / 2
+        )
         let raduius = sqrt(pow(center.x, 2) + pow(center.y, 2))
         let sourceFrame = sourceView.superview!.convert(sourceView.frame, to: containerView)
         let startPath = UIBezierPath(ovalIn: sourceFrame)
-        let endPath = UIBezierPath(arcCenter: containerView.center, radius: raduius, startAngle: .zero, endAngle: CGFloat.pi*2, clockwise: true)
+        let endPath = UIBezierPath(
+            arcCenter: containerView.center,
+            radius: raduius,
+            startAngle: .zero,
+            endAngle: CGFloat.pi*2,
+            clockwise: true
+        )
 
         let maskLayer = CAShapeLayer()
         maskLayer.path = endPath.cgPath
@@ -76,10 +85,19 @@ public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
         tempView.frame = containerView.bounds
         containerView.addSubview(tempView)
         
-        let center = CGPoint(x: containerView.bounds.width / 2, y: containerView.bounds.height / 2)
+        let center = CGPoint(
+            x: containerView.bounds.width / 2,
+            y: containerView.bounds.height / 2
+        )
         let raduius = sqrt(pow(center.x, 2) + pow(center.y, 2))
         let sourceFrame = inView.superview!.convert(inView.frame, to: containerView)
-        let startPath = UIBezierPath(arcCenter: containerView.center, radius: raduius, startAngle: .zero, endAngle: CGFloat.pi*2, clockwise: true)
+        let startPath = UIBezierPath(
+            arcCenter: containerView.center,
+            radius: raduius,
+            startAngle: .zero,
+            endAngle: CGFloat.pi*2,
+            clockwise: true
+        )
         let endPath = UIBezierPath(ovalIn: sourceFrame)
         
         let maskLayer = CAShapeLayer()
