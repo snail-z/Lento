@@ -7,7 +7,7 @@
 
 
 
-[DawnTransition](https://github.com/snail-z/DawnTransition)主要解决转场动画中的手势交互问题。例如转场手势与TableView滚动手势优先级、响应策略等问题。目前常见的转场库对手势体验做得都不够细腻，之前使用 [Hero](https://github.com/HeroTransitions/Hero) 做转场，虽然功能强大动画丰富，但手势交互这块处理的不够平滑，外部也无法对手势自定义设置与修改，为了解决这些问题，借鉴 [Hero](https://github.com/HeroTransitions/Hero) 思路实现了一套新的转场控制，处理了不同场景下的手势转场问题，[DawnTransition](https://github.com/snail-z/DawnTransition)几乎与系统体验一致的侧滑效果；并且内置了交叉溶解、神奇移动、扩散缩放等动画效果，使用简洁成本低，可下载demo体验。
+[DawnTransition](https://github.com/snail-z/DawnTransition)主要解决转场动画中的手势交互问题。例如转场手势与TableView滚动手势优先级、响应策略等问题。目前常见的转场库对手势体验做得都不够细腻，之前使用 [Hero](https://github.com/HeroTransitions/Hero) 做转场，虽然功能强大动画丰富，但手势交互这块处理的不够平滑，外部无法对手势自定义设置与修改，为了解决这些问题，借鉴 [Hero](https://github.com/HeroTransitions/Hero) 思路实现了一套新的转场控制，处理了不同场景下的手势转场问题，[DawnTransition](https://github.com/snail-z/DawnTransition)几乎与系统体验一致的侧滑效果；并且内置了交叉溶解、神奇移动、扩散缩放等动画效果，使用简洁成本低，可下载demo体验。
 
 ## Usage
 
