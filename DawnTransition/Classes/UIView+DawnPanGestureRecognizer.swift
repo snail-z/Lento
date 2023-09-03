@@ -67,6 +67,9 @@ public class DawnPanGestureRecognizer: NSObject {
     /// 设置手势从某个方向开始识别
     public var recognizeDirection: Direction = .leftToRight
     
+    /// 将要识别手势，可用于提前更改动画类型
+    public var willRecognizeGestures: (() -> Void)?
+    
     public enum TransitioningType {
         case present, dismiss
     }
@@ -146,6 +149,7 @@ extension DawnPanGestureRecognizer {
 extension DawnPanGestureRecognizer {
     
     @objc internal func prepare() {
+        willRecognizeGestures?()
         switch transitionType {
         case .present:
             Dawn.shared.driven(presenting: driverViewController)

@@ -12,9 +12,7 @@ extension UIView: DawnCompatible {}
 internal extension DawnExtension where Base: UIView {
     
     func snapshotView(_ undelayed: Bool = true) -> UIView? {
-        if undelayed {
-            return slowSnapshotView()
-        }
+        if undelayed { return slowSnapshotView() }
         return base.snapshotView(afterScreenUpdates: true)
     }
     
