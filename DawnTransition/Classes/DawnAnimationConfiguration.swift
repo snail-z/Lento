@@ -23,7 +23,7 @@ public struct DawnAnimationConfiguration {
     public var spring: (damping: CGFloat, velocity: CGFloat)?
     
     /// 截图类型
-    public var snapshotType: DawnSnapshotType = .normal
+    public var snapshotType: DawnSnapshotType = .noSnapshot
     
     /// 转场容器背景色
     public var containerBackgroundColor: UIColor = .black
@@ -54,9 +54,9 @@ extension DawnAnimationCurve {
 
 public enum DawnSnapshotType {
     
-    /// 正常快照视图动画
-    case normal
+    /// 不创建快照，直接对视图做动画
+    case noSnapshot
     
-    /// 不创建快照，直接视图做动画(会打乱视图层次结构，视图控制器必须重建「慎用」)
-    case noSnapshot//todo
+    /// 创建视图快照后再做动画
+    case slowSnapshot
 }

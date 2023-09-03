@@ -57,6 +57,18 @@ extension DawnTargetState {
         }
         return state
     }
+    
+    internal static func reinstate() -> DawnTargetState {
+        let modifiers: [DawnModifier] = [
+            .transformIdentity,
+            .border(.clear, width: .zero),
+            .opacity(1),
+            .position(.center),
+            .cornerRadius(.zero),
+            .shadow(.clear, opacity: .zero)
+        ]
+        return final(modifiers)
+    }
 }
 
 public final class DawnModifier {

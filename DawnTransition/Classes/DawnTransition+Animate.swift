@@ -13,9 +13,7 @@ extension DawnTransition {
     internal func start() {
         guard state == .starting else { return }
         state = .animating
-        // DispatchQueue.main.async {
-        //    self.animate()
-        // }
+        // DispatchQueue.main.async { self.animate() }
         // BUG inNavigationController.
         // Hero solution: https://github.com/HeroTransitions/Hero/blob/develop/Sources/Transition/HeroTransition%2BStart.swift
         // When animating within navigationController, we have to dispatch later into the main queue.
@@ -33,60 +31,72 @@ extension DawnTransition {
         
         if isPresenting {
             let ctx = (containerView!, fromVC, toVC)
-            let sign = toVC.dawn.transitionCapable?.dawnTransitionPresenting(context: ctx, complete: { [weak self] finished in
+            let sign = toVC.dawn.transitionCapable?.dawnTransitionPresenting(
+                context: ctx,
+                complete: { [weak self] finished in
                 self?.complete(finished: finished)
             })
+            
             let tempCapable: DawnCustomTransitionCapable?
             switch sign {
             case .customizing: return
             case .using(let type):
-                tempCapable = type.toTransitionDeputy()
+                tempCapable = type.toTransitionUsing()
             default:
                 tempCapable = toVC.dawn.transitionCapable
             }
             guard let capable = tempCapable else { return }
+            
             let config = (drivenConfiguration != nil) ? drivenConfiguration! : capable.dawnAnimationConfigurationPresenting()
             let stage = capable.dawnModifierStagePresenting()
-            let fromModifiers = preprocessFromModifiers(stage)
+            let fromModifiers = preprocessFromModifiers(stage, config)
             let toModifiers = preprocessToModifiers(stage, config)
-            Dawn.animate(duration: config.duration,
-                         delay: config.delay,
-                         options: config.curve.usable(),
-                         usingSpring: config.spring) {
+            Dawn.animate(
+                duration: config.duration,
+                delay: config.delay,
+                options: config.curve.usable(),
+                usingSpring: config.spring
+            ) {
                 fromModifiers?.didChange()
                 toModifiers?.didChange()
             } completion: { finished in
-                let _ = fromModifiers?.endChange()
-                let _ = toModifiers?.endChange()
+                fromModifiers?.endChange()
+                toModifiers?.endChange()
                 self.complete(finished: finished)
             }
         } else { // dismissing
             let ctx = (containerView!, fromVC, toVC)
-            let sign = fromVC.dawn.transitionCapable?.dawnTransitionDismissing(context: ctx) { [weak self] finished in
+            let sign = fromVC.dawn.transitionCapable?.dawnTransitionDismissing(
+                context: ctx,
+                complete: { [weak self] finished in
                 self?.complete(finished: finished)
-            }
+            })
+            
             let tempCapable: DawnCustomTransitionCapable?
             switch sign {
             case .customizing: return
             case .using(let type):
-                tempCapable = type.toTransitionDeputy()
+                tempCapable = type.toTransitionUsing()
             default:
                 tempCapable = fromVC.dawn.transitionCapable
             }
             guard let capable = tempCapable else { return }
+            
             let config = (drivenConfiguration != nil) ? drivenConfiguration! : capable.dawnAnimationConfigurationDismissing()
             let stage = capable.dawnModifierStageDismissing()
-            let fromModifiers = preprocessFromModifiers(stage)
+            let fromModifiers = preprocessFromModifiers(stage, config)
             let toModifiers = preprocessToModifiers(stage, config)
-            Dawn.animate(duration: config.duration,
-                         delay: config.delay,
-                         options: config.curve.usable(),
-                         usingSpring: config.spring) {
+            Dawn.animate(
+                duration: config.duration,
+                delay: config.delay,
+                options: config.curve.usable(),
+                usingSpring: config.spring
+            ) {
                 fromModifiers?.didChange()
                 toModifiers?.didChange()
             } completion: { finished in
-                let _ = fromModifiers?.endChange()
-                let _ = toModifiers?.endChange()
+                fromModifiers?.endChange()
+                toModifiers?.endChange()
                 self.complete(finished: finished)
             }
         }
@@ -96,12 +106,19 @@ extension DawnTransition {
 internal extension DawnTransition {
     
     typealias AnimatedBlock = () -> Void
-    typealias FinishedBlock = () -> Bool
+    typealias FinishedBlock = () -> Void
     typealias Changed = (didChange: AnimatedBlock, endChange: FinishedBlock)
     
-    func preprocessFromModifiers(_ stage: DawnModifierStage) -> Changed? {
+    func preprocessFromModifiers(_ stage: DawnModifierStage, _ config: DawnAnimationConfiguration) -> Changed? {
         guard let fromView = fromViewController?.view, let containerView = containerView else { return nil }
-        guard let snoptView = fromView.dawn.snapshotView(inNavigationController) else { return nil }
+        
+        let willSnoptView: UIView?
+        if config.snapshotType == .slowSnapshot {
+            willSnoptView = fromView.dawn.snapshotView(inNavigationController)
+        } else {
+            willSnoptView = fromViewController?.view
+        }
+        guard let snoptView = willSnoptView else { return nil }
         snoptView.frame = containerView.bounds
         containerView.addSubview(snoptView)
         
@@ -115,27 +132,35 @@ internal extension DawnTransition {
             }
         }
         
-        fromView.isHidden = true
+        fromView.isHidden = (config.snapshotType == .slowSnapshot)
         let endChange: FinishedBlock = {
             fromView.isHidden = false
+            snoptView.dawn.render(.reinstate())
             snoptView.dawn.nilOverlay()
             snoptView.removeFromSuperview()
-            return true
         }
         return (didChange, endChange)
     }
 
     func preprocessToModifiers(_ stage: DawnModifierStage, _ config: DawnAnimationConfiguration) -> Changed? {
         guard let toView = toViewController?.view, let containerView = containerView else { return nil }
-        containerView.backgroundColor = config.containerBackgroundColor
-        guard let snoptView = toView.dawn.snapshotView(inNavigationController) else { return nil }
+        
+        let willSnoptView: UIView?
+        if config.snapshotType == .slowSnapshot {
+            willSnoptView = toView.dawn.snapshotView(inNavigationController)
+        } else {
+            willSnoptView = toViewController?.view
+        }
+        guard let snoptView = willSnoptView else { return nil }
         snoptView.frame = containerView.bounds
         containerView.addSubview(snoptView)
+        
         if config.sendToViewToBack {
             containerView.sendSubviewToBack(snoptView)
         } else {
             containerView.bringSubviewToFront(snoptView)
         }
+        containerView.backgroundColor = config.containerBackgroundColor
         
         if let begin = stage.toViewBeginModifiers {
             snoptView.dawn.render(DawnTargetState.final(begin))
@@ -148,9 +173,9 @@ internal extension DawnTransition {
         }
         
         let endChange: FinishedBlock = {
+            snoptView.dawn.render(.reinstate())
             snoptView.dawn.nilOverlay()
             snoptView.removeFromSuperview()
-            return true
         }
         return (didChange, endChange)
     }

@@ -51,11 +51,9 @@ extension DawnTransition {
     
     internal func driven(_ viewController: UIViewController, configuration: DawnAnimationConfiguration? = nil, presenting: Bool) {
         driveninViewController = viewController
-        if let deputy = viewController.dawn.transitionCapable as? DawnCustomTransitionDeputy, configuration == nil {
-            let sendBack = presenting ?
-            deputy.presentingConfiguration.sendToViewToBack :
-            deputy.dismissingConfiguration.sendToViewToBack
-            drivenConfiguration = DawnAnimationConfiguration(curve: .linear, sendToViewToBack: sendBack)
+        if let deputy = viewController.dawn.transitionCapable as? DawnCustomTransitionUsing, configuration == nil {
+            drivenConfiguration = presenting ?
+            deputy.presentingConfiguration.regenerate() : deputy.dismissingConfiguration.regenerate()
         } else {
             drivenConfiguration = configuration
         }
@@ -73,5 +71,20 @@ extension DawnTransition {
     
     fileprivate var drivable: UIPercentDrivenInteractiveTransition {
         return driveninViewController!.dawn.interactiveDriver
+    }
+}
+
+extension DawnAnimationConfiguration {
+    
+    fileprivate func regenerate() -> DawnAnimationConfiguration {
+        return DawnAnimationConfiguration(
+            delay: self.delay,
+            duration: self.duration,
+            curve: .linear,
+            spring: self.spring,
+            snapshotType: self.snapshotType,
+            containerBackgroundColor: self.containerBackgroundColor,
+            sendToViewToBack: self.sendToViewToBack
+        )
     }
 }

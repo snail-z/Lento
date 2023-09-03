@@ -33,7 +33,7 @@ extension DawnExtension where Base: UIViewController {
             return objc_getAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey) as? DawnAnimationType ?? .none
         }
         set {
-            transitionCapable = newValue.toTransitionDeputy()
+            transitionCapable = newValue.toTransitionUsing()
             objc_setAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
