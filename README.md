@@ -147,6 +147,27 @@
    }
    ```
 
+7. 新增为外部提供便捷扩展，已实现DawnCustomTransitionCapable，可直接设置动画类型及配置方法
+
+```swift
+    public static func using(
+        type: DawnAnimationType,
+        duration: TimeInterval = 0.295,
+        curve: DawnAnimationCurve = .easeInOut,
+        snapshotType: DawnSnapshotType = .noSnapshot
+    ) ->  DawnCustomTransitionUsing {
+        let deputy = type.toTransitionUsing()
+        deputy.presentingConfiguration.duration = duration
+        deputy.presentingConfiguration.curve = curve
+        deputy.presentingConfiguration.snapshotType = snapshotType
+        deputy.dismissingConfiguration.duration = duration
+        deputy.dismissingConfiguration.curve = curve
+        deputy.dismissingConfiguration.snapshotType = snapshotType
+        return deputy
+    }
+}
+```
+
 ## Requirements
 
 - Requires iOS11.0 or later
