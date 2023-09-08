@@ -1,5 +1,5 @@
 //
-//  DawnAnimateDiffuse.swift
+//  DawnAnimationDiffuse.swift
 //  DawnTransition
 //
 //  Created by zhang on 2022/7/25.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-/// DawnAnimateDiffuse暂不支持手势响应
-/// 目前仅 UIView.animate(withDuratio...) 方式处理的动画支持手势响应，
-/// 使用 CAAnimation/CAAnimationGroup 动画组暂不支持手势，需要结合CADisplayLink更新每一帧进度，待完善...
-public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
+/// DawnAnimationDiffuse暂不支持手势响应
+/// 使用 CAAnimation/CAAnimationGroup 动画组暂不支持手势，需要结合CADisplayLink更新每一帧进度，todo...
+open class DawnAnimationDiffuse: NSObject, DawnAnimationCapable {
 
     /// 动画时长
     public var duration: TimeInterval = 0.375
@@ -26,15 +25,15 @@ public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
         diffuseOutView = diffuseOut
         diffuseInView = diffuseIn
     }
-
-    public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign {
-        let containerView = context.container
-        let toView = context.toViewController.view!
-        guard let tempView = toView.dawn.snapshotView() else { return .none }
-        guard let sourceView = diffuseOutView else { return .none }
+    
+    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+        let containerView = dawn.containerView!
+        let toView = dawn.toViewController!.view!
+        guard let tempView = toView.dawn.snapshotView() else { return }
+        guard let sourceView = diffuseOutView else { return }
         tempView.frame = containerView.bounds
         containerView.addSubview(tempView)
-        
+
         let center = CGPoint(
             x: containerView.bounds.width / 2,
             y: containerView.bounds.height / 2
@@ -68,18 +67,16 @@ public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
 
         Dawn.runningAnimations([pathAnim, opacityAnim], in: maskLayer, duration: duration) { flag in
             tempView.removeFromSuperview()
-            complete(flag)
+            dawn.complete(finished: flag)
         }
-        return .customizing
     }
     
-    public func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign {
-        let containerView = context.container
-        let fromView = context.fromViewController.view!
-        let toView = context.toViewController.view!
-    
-        guard let tempView = fromView.dawn.snapshotView() else { return .none }
-        guard let inView = diffuseInView else { return .none }
+    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+        let containerView = dawn.containerView!
+        let fromView = dawn.fromViewController!.view!
+        let toView = dawn.toViewController!.view!
+        guard let tempView = fromView.dawn.snapshotView() else { return }
+        guard let inView = diffuseInView else { return }
         toView.frame = containerView.bounds
         containerView.addSubview(toView)
         tempView.frame = containerView.bounds
@@ -118,8 +115,7 @@ public class DawnAnimateDiffuse: NSObject, DawnCustomTransitionCapable {
         
         Dawn.runningAnimations([pathAnim, opacityAnim], in: maskLayer, duration: duration) { flag in
             tempView.removeFromSuperview()
-            complete(flag)
+            dawn.complete(finished: flag)
         }
-        return .customizing
     }
 }

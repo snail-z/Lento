@@ -89,10 +89,10 @@ extension Sample3ViewController {
     func jump3() {
         let vc = DescIMGViewController(descItem: takeDescIMGModel())
         vc.dawn.isModalEnabled = true
-        vc.dawn.transitionCapable = DawnAnimateDiffuse(diffuseOut: roundBtn, diffuseIn: roundBtn)
+        vc.dawn.transitionCapable = DawnAnimationDiffuse(diffuseOut: roundBtn, diffuseIn: roundBtn)
         vc.willDismiss = { [weak self] sender in
             guard let `self` = self else { return }
-            sender.dawn.transitionCapable = DawnAnimateKeyhole(holeView: `self`.roundBtn)
+            sender.dawn.transitionCapable = DawnAnimationSpot(holeView: `self`.roundBtn)
         }
         self.present(vc, animated: true)
     }
@@ -106,7 +106,7 @@ extension Sample3ViewController {
             let vc = MyViewController()
             vc.dawn.isNavigationEnabled = true
             vc.dawn.transitionAnimationType = .pageIn(direction: .left)
-            let pathway = DawnAnimateDissolve(sourceView: btn2)
+            let pathway = DawnAnimationDissolve(sourceView: btn2)
             pathway.duration = 0.95
             pathway.overlayType = .blur(style: .light, color: .clear)
             pathway.usingSpring = (0.6, 0.2)

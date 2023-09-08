@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B1B332790299BED1C7A22C3 /* Pods_DawnTransition_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF99FD24F7C7A4B83B64E9D /* Pods_DawnTransition_Example.framework */; };
+		2F61BAC42AAB2AA300DA6ECA /* Sample4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61BAC32AAB2AA300DA6ECA /* Sample4ViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		04E9FFF63D52BF9EB4692647 /* Pods-DawnTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DawnTransition_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DawnTransition_Tests/Pods-DawnTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2256BED02C5ED6DB470F85A6 /* Pods-DawnTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DawnTransition_Example.release.xcconfig"; path = "Target Support Files/Pods-DawnTransition_Example/Pods-DawnTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2F61BAC32AAB2AA300DA6ECA /* Sample4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample4ViewController.swift; sourceTree = "<group>"; };
 		3DDACE4D050352F81046E8DE /* DawnTransition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DawnTransition.podspec; path = ../DawnTransition.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6035A916C0FCBA8730E642FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DawnTransition_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DawnTransition_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 				817C55302A84712F0059B5F0 /* Sample1ViewController.swift */,
 				817C55322A8471530059B5F0 /* Sample2ViewController.swift */,
 				81C85AA02A865999009A7987 /* Sample3ViewController.swift */,
+				2F61BAC32AAB2AA300DA6ECA /* Sample4ViewController.swift */,
 			);
 			name = Smaple;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				817C55312A84712F0059B5F0 /* Sample1ViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2F61BAC42AAB2AA300DA6ECA /* Sample4ViewController.swift in Sources */,
 				817C553D2A84CAC10059B5F0 /* SmapleBaseViewController.swift in Sources */,
 				81C85AC62A88B716009A7987 /* DescIMGModel.swift in Sources */,
 			);

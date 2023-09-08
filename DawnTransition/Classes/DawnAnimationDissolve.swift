@@ -1,5 +1,5 @@
 //
-//  DawnAnimateDissolve.swift
+//  DawnAnimationDissolve.swift
 //  DawnTransition
 //
 //  Created by zhang on 2022/6/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DawnAnimateDissolve: DawnCustomTransitionCapable {
+open class DawnAnimationDissolve: DawnAnimationCapable {
     
     /// 动画时长
     public var duration: TimeInterval = 0.275
@@ -32,15 +32,15 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
     }
     
     // swiftlint:disable function_body_length cyclomatic_complexity
-    public func dawnTransitionPresenting(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign {
-        let containerView = context.container
-        let fromView = context.fromViewController.view!
-        let toView = context.toViewController.view!
+    public func dawnAnimationPresenting(_ dawn: DawnTransition) {
+        let containerView = dawn.containerView!
+        let fromView = dawn.fromViewController!.view!
+        let toView = dawn.toViewController!.view!
         
-        guard let sourceView = pathSourceView else { return .none }
-        guard let targetView = context.toViewController.view else { return .none }
-        guard let sourceSnapshot = sourceView.dawn.snapshotView() else { return .none }
-        guard let targetSnapshot = targetView.dawn.snapshotView() else { return .none }
+        guard let sourceView = pathSourceView else { return }
+        guard let targetView = dawn.toViewController?.view else { return }
+        guard let sourceSnapshot = sourceView.dawn.snapshotView() else { return }
+        guard let targetSnapshot = targetView.dawn.snapshotView() else { return }
         
         toView.frame = containerView.bounds
         containerView.addSubview(toView)
@@ -73,7 +73,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         Dawn.animate(duration: duration,
                      delay: 0,
                      options: .curveEaseInOut,
-                     usingSpring: usingSpring) {
+                     springParameters: usingSpring) {
             tempView.frame = containerView.frame
             tempView.layer.cornerRadius = toView.layer.cornerRadius
             
@@ -93,46 +93,48 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             tempView.removeFromSuperview()
             toView.isHidden = false
             fromView.layer.transform = CATransform3DIdentity
-            
-            if !Dawn.shared.isTransitionCancelled {
-                /// fix：在截图前将sourceView隐藏，避免出现视觉重叠
-                sourceView.isHidden = true
-                if let fromSnapshotView = fromView.dawn.snapshotView() {
-                    sourceView.isHidden = false
-                    fromSnapshotView.frame = context.container.bounds
-                    fromSnapshotView.tag = self.kSnapshotKey
-                    context.container.insertSubview(fromSnapshotView, at: 0)
-                    switch self.overlayType {
-                    case .clear: break
-                    case .translucent(let opacity, let color):
-                        let overlayView = UIView(frame: context.container.bounds)
-                        overlayView.backgroundColor = color
-                        overlayView.alpha = opacity
-                        overlayView.tag = self.kOverlayKey
-                        context.container.insertSubview(overlayView, aboveSubview: fromSnapshotView)
-                    case .blur(let style, let color):
-                        let effectView = UIVisualEffectView(frame: context.container.bounds)
-                        effectView.backgroundColor = color
-                        effectView.effect = UIBlurEffect(style: style)
-                        effectView.tag = self.kOverlayKey
-                        context.container.insertSubview(effectView, aboveSubview: fromSnapshotView)
-                    }
-                }
-            }
-            complete(finished)
+            fake()
+            dawn.complete(finished: finished)
         }
-        return .customizing
+        
+        func fake() {
+            defer { sourceView.isHidden = false }
+            guard !dawn.isTransitionCancelled else { return }
+            /// fix：在截图前将sourceView隐藏，避免出现视觉重叠
+            sourceView.isHidden = true
+            guard let fromSnapshotView = fromView.dawn.snapshotView() else { return }
+            sourceView.isHidden = false
+            fromSnapshotView.frame = containerView.bounds
+            fromSnapshotView.tag = self.kSnapshotKey
+            containerView.insertSubview(fromSnapshotView, at: 0)
+            switch self.overlayType {
+            case .clear: break
+            case .translucent(let opacity, let color):
+                let overlayView = UIView(frame: containerView.bounds)
+                overlayView.backgroundColor = color
+                overlayView.alpha = opacity
+                overlayView.tag = self.kOverlayKey
+                containerView.insertSubview(overlayView, aboveSubview: fromSnapshotView)
+            case .blur(let style, let color):
+                let effectView = UIVisualEffectView(frame: containerView.bounds)
+                effectView.backgroundColor = color
+                effectView.effect = UIBlurEffect(style: style)
+                effectView.tag = self.kOverlayKey
+                containerView.insertSubview(effectView, aboveSubview: fromSnapshotView)
+            }
+        }
     }
     
-    public func dawnTransitionDismissing(context: DawnContext, complete: @escaping ((Bool) -> Void)) -> DawnSign {
-        let containerView = context.container
-        let fromView = context.fromViewController.view!
-        let toView = context.toViewController.view!
+    // swiftlint:disable function_body_length cyclomatic_complexity
+    public func dawnAnimationDismissing(_ dawn: DawnTransition) {
+        let containerView = dawn.containerView!
+        let fromView = dawn.fromViewController!.view!
+        let toView = dawn.toViewController!.view!
         
-        guard let sourceView = pathSourceView else { return .none }
-        guard let targetView = context.fromViewController.view else { return .none }
-        guard let sourceSnapshot = sourceView.dawn.snapshotView() else { return .none }
-        guard let targetSnapshot = targetView.dawn.snapshotView() else { return .none }
+        guard let sourceView = pathSourceView else { return }
+        guard let targetView = dawn.fromViewController?.view else { return }
+        guard let sourceSnapshot = sourceView.dawn.snapshotView() else { return }
+        guard let targetSnapshot = targetView.dawn.snapshotView() else { return }
         toView.isHidden = true
         toView.layoutIfNeeded()
         fromView.isHidden = true
@@ -169,7 +171,7 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
         Dawn.animate(duration: duration,
                      delay: 0,
                      options: .curveEaseInOut,
-                     usingSpring: usingSpring) {
+                     springParameters: usingSpring) {
             tempView.frame = targetFrame
             tempView.layer.cornerRadius = sourceView.layer.cornerRadius
             
@@ -183,15 +185,14 @@ public class DawnAnimateDissolve: DawnCustomTransitionCapable {
             targetSnapshot.alpha = 0
             overlayView?.alpha = 0
         } completion: { finished in
-            if !Dawn.shared.isTransitionCancelled {
+            if !dawn.isTransitionCancelled {
                 snapsView?.removeFromSuperview()
                 overlayView?.removeFromSuperview()
             }
             tempView.removeFromSuperview()
             toView.isHidden = false
             fromView.isHidden = false
-            complete(finished)
+            dawn.complete(finished: finished)
         }
-        return .customizing
     }
 }

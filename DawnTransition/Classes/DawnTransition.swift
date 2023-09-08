@@ -56,6 +56,6 @@ public class DawnTransition: NSObject {
     
     internal var inNavigationController = false
     internal var driveninViewController: UIViewController?
-    internal var drivenConfiguration: DawnAnimationConfiguration?
+    internal var drivenAdjustable: DawnTransitionAdjustable?
     internal var drivenChanged = false
 }

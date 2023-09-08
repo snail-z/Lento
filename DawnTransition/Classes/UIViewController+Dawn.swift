@@ -33,15 +33,15 @@ extension DawnExtension where Base: UIViewController {
             return objc_getAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey) as? DawnAnimationType ?? .none
         }
         set {
-            transitionCapable = newValue.toTransitionUsing()
+            transitionCapable = newValue.toTransitionProducer()
             objc_setAssociatedObject(base, &DawnTransitionAnimationTypeViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
     /// 自定义转场动画
-    public var transitionCapable: DawnCustomTransitionCapable? {
+    public var transitionCapable: DawnAnimationCapable? {
         get {
-            return objc_getAssociatedObject(base, &DawnTransitionCapableViewControllerAssociatedKey) as? DawnCustomTransitionCapable
+            return objc_getAssociatedObject(base, &DawnTransitionCapableViewControllerAssociatedKey) as? DawnAnimationCapable
         }
         set {
             objc_setAssociatedObject(base, &DawnTransitionCapableViewControllerAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)

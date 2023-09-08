@@ -5,7 +5,7 @@ PODS:
   - DawnKit/DawnExtensions (1.0.2)
   - DawnKit/DawnUI (1.0.2):
     - DawnKit/DawnExtensions
-  - DawnTransition (1.0.1)
+  - DawnTransition (1.0.2)
 
 DEPENDENCIES:
   - DawnKit
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DawnKit: 24c68842c81e4ec25b31d33852fff98cc1bbb503
-  DawnTransition: c6c5a51dbf20d4d2a1b47af435c70ea14c27dd51
+  DawnTransition: d097cf590fbd965bf448491625956dbb0736f0c5
 
-PODFILE CHECKSUM: 99f2e7b58c4ecb7dc4e1e971e606b8ed0b33196b
+PODFILE CHECKSUM: 3284419e6fe9717a35c19b9226f60921ec55286f
 
 COCOAPODS: 1.11.3

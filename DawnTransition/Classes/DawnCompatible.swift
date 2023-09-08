@@ -25,7 +25,7 @@ public extension DawnCompatible {
 
 public class DawnExtension<Base> {
     
-    public let base: Base
+    public var base: Base
     init(_ base: Base) {
         self.base = base
     }

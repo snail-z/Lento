@@ -1,5 +1,5 @@
 //
-//  DawnAnimationConfiguration.swift
+//  DawnTransitionAdjustable.swift
 //  DawnTransition
 //
 //  Created by zhang on 2022/6/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct DawnAnimationConfiguration {
+public struct DawnTransitionAdjustable {
  
     /// 动画延迟
     public var delay: TimeInterval = 0
@@ -22,14 +22,22 @@ public struct DawnAnimationConfiguration {
     /// 使用自定义阻尼弹性动画
     public var spring: (damping: CGFloat, velocity: CGFloat)?
     
-    /// 截图类型
-    public var snapshotType: DawnSnapshotType = .noSnapshot
+    /// 快照类型
+    /// noSnapshot：不创建快照，直接对视图做动画
+    /// slowSnapshot：创建视图快照后再做动画
+    public enum SnapshotType { case noSnapshot, slowSnapshot }
+    
+    /// 默认不使用快照，直接使用控制器view
+    public var snapshotType: SnapshotType = .noSnapshot
     
     /// 转场容器背景色
     public var containerBackgroundColor: UIColor = .black
     
-    /// 是否将toView推到最后面
-    public var sendToViewToBack: Bool = false
+    /// 转场容器子视图类型
+    public enum Hierarchy { case from, to }
+    
+    /// 控制子视图添加顺序，默认addFromView、然后addToView
+    public var subviewsHierarchy: [Hierarchy] = [.from, .to]
 }
 
 public enum DawnAnimationCurve {
@@ -42,7 +50,7 @@ public enum DawnAnimationCurve {
 
 extension DawnAnimationCurve {
     
-    internal func usable() -> UIView.AnimationOptions {
+    public var options: UIView.AnimationOptions {
         switch self {
         case .linear: return .curveLinear
         case .easeIn: return .curveEaseIn
@@ -50,13 +58,4 @@ extension DawnAnimationCurve {
         case .easeInOut: return .curveEaseInOut
         }
     }
-}
-
-public enum DawnSnapshotType {
-    
-    /// 不创建快照，直接对视图做动画
-    case noSnapshot
-    
-    /// 创建视图快照后再做动画
-    case slowSnapshot
 }

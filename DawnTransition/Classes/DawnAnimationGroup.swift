@@ -1,5 +1,5 @@
 //
-//  DawnAnimateGroup.swift
+//  DawnAnimationGroup.swift
 //  DawnTransition
 //
 //  Created by zhang on 2022/7/25.
@@ -85,10 +85,12 @@ extension DawnExtension where Base: CALayer {
 
 internal extension Dawn {
     
-    static func runningAnimations(_ animations: [CAAnimation]?,
-                                  in layer: CALayer,
-                                  duration: TimeInterval,
-                                  completion: ((Bool) -> Void)? = nil) {
+    static func runningAnimations(
+        _ animations: [CAAnimation]?,
+        in layer: CALayer,
+        duration: TimeInterval,
+        completion: ((Bool) -> Void)? = nil
+    ) {
         let aKey = "dawn.anim.group.calayer"
         let group = DawnAnimationGroup()
         group.duration = duration
@@ -98,5 +100,52 @@ internal extension Dawn {
             completion?(flag)
         }
         layer.dawn.add(group, forKey: aKey)
+    }
+}
+
+internal extension Dawn {
+    
+    static func animate(
+        parameters: DawnTransitionAdjustable,
+        animations: @escaping () -> Void,
+        completion: ((Bool) -> Void)?
+    ) {
+         animate(
+            duration: parameters.duration,
+            delay: parameters.delay,
+            options: parameters.curve.options,
+            springParameters: parameters.spring,
+            animations: animations,
+            completion: completion
+        )
+    }
+    
+    static func animate(
+        duration: TimeInterval,
+        delay: TimeInterval = 0,
+        options: UIView.AnimationOptions,
+        springParameters: (damping: CGFloat, velocity: CGFloat)? = nil,
+        animations: @escaping () -> Void,
+        completion: ((Bool) -> Void)?
+    ) {
+        if let spring = springParameters {
+            UIView.animate(
+                withDuration: duration,
+                delay: delay,
+                usingSpringWithDamping: spring.damping,
+                initialSpringVelocity: spring.velocity,
+                options: options,
+                animations: animations,
+                completion: completion
+            )
+        } else {
+            UIView.animate(
+                withDuration: duration,
+                delay: delay,
+                options: options,
+                animations: animations,
+                completion: completion
+            )
+        }
     }
 }

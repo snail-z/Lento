@@ -32,10 +32,10 @@ extension DawnTransition {
         
         if transitionCancelled {
             addSubview(fromViewController!.view)
-            removeView(toViewController!.view)
+            removeSubview(toViewController!.view)
         } else {
             addSubview(toViewController!.view)
-            removeView(fromViewController!.view)
+            removeSubview(fromViewController!.view)
         }
         
         transitionContext!.completeTransition(!transitionCancelled)
@@ -63,7 +63,7 @@ extension DawnTransition {
         containerView!.addSubview(aView)
     }
     
-    fileprivate func removeView(_ aView: UIView) {
+    fileprivate func removeSubview(_ aView: UIView) {
         guard aView.superview == containerView else { return }
         aView.removeFromSuperview()
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DawnTodayGestureRecognizer: DawnPanGestureRecognizer {
+open class DawnTodayGestureRecognizer: DawnPanGestureRecognizer {
 
     /// 拖动到达缩放边界是否自动转场
     public var shouldAutoDissmiss = true

@@ -199,8 +199,11 @@ extension DawnAnimationType {
         }
         return stage
     }
+}
+
+extension DawnAnimationType {
     
-    internal func toTransitionUsing() -> DawnCustomTransitionUsing {
+    public func toTransitionProducer() -> DawnAnimationProducer {
         let pType: DawnAnimationType, dType: DawnAnimationType
         switch self {
         case .selectBy(let presenting, let dismissing):
@@ -211,71 +214,25 @@ extension DawnAnimationType {
             dType = reversed()
         }
         
-        let deputy = DawnCustomTransitionUsing()
-        deputy.presentingModifierStage = DawnAnimationType.stage(type: pType)
-        deputy.dismissingModifierStage = DawnAnimationType.stage(type: dType)
+        let producer = DawnAnimationProducer()
+        producer.presentingModifierStage = DawnAnimationType.stage(type: pType)
+        producer.dismissingModifierStage = DawnAnimationType.stage(type: dType)
         
-        let presentingToBack: Bool, dismissingToBack: Bool
+        let presentingHierarchy: [DawnTransitionAdjustable.Hierarchy]
+        let dismissingHierarchy: [DawnTransitionAdjustable.Hierarchy]
+        
         switch pType {
-        case .pull(_), .pageOut(_,_): presentingToBack = true
-        default: presentingToBack = false
+        case .pull(_), .pageOut(_,_): presentingHierarchy = [.to, .from]
+        default: presentingHierarchy = [.from, .to]
         }
         
         switch dType {
-        case .pull(_), .pageOut(_,_): dismissingToBack = true
-        default: dismissingToBack = false
+        case .pull(_), .pageOut(_,_): dismissingHierarchy = [.to, .from]
+        default: dismissingHierarchy = [.from, .to]
         }
         
-        deputy.presentingConfiguration = DawnAnimationConfiguration(sendToViewToBack: presentingToBack)
-        deputy.dismissingConfiguration = DawnAnimationConfiguration(sendToViewToBack: dismissingToBack)
-        return deputy
-    }
-}
-
-public class DawnCustomTransitionUsing {
-    
-    public var presentingModifierStage: DawnModifierStage = .init()
-    public var dismissingModifierStage: DawnModifierStage = .init()
-    
-    public var presentingConfiguration: DawnAnimationConfiguration = .init(sendToViewToBack: false)
-    public var dismissingConfiguration: DawnAnimationConfiguration = .init(sendToViewToBack: true)
-}
-
-extension DawnCustomTransitionUsing: DawnCustomTransitionCapable {
-    
-    public func dawnModifierStagePresenting() -> DawnModifierStage {
-        return presentingModifierStage
-    }
-    
-    public func dawnModifierStageDismissing() -> DawnModifierStage {
-        return dismissingModifierStage
-    }
-    
-    public func dawnAnimationConfigurationPresenting() -> DawnAnimationConfiguration {
-        return presentingConfiguration
-    }
-    
-    public func dawnAnimationConfigurationDismissing() -> DawnAnimationConfiguration {
-        return dismissingConfiguration
-    }
-}
-
-extension DawnCustomTransitionUsing {
-    
-    /// 为外部提供便捷扩展，已实现DawnCustomTransitionCapable，可直接设置动画类型及配置方法
-    public static func using(
-        type: DawnAnimationType,
-        duration: TimeInterval = 0.295,
-        curve: DawnAnimationCurve = .easeInOut,
-        snapshotType: DawnSnapshotType = .noSnapshot
-    ) ->  DawnCustomTransitionUsing {
-        let deputy = type.toTransitionUsing()
-        deputy.presentingConfiguration.duration = duration
-        deputy.presentingConfiguration.curve = curve
-        deputy.presentingConfiguration.snapshotType = snapshotType
-        deputy.dismissingConfiguration.duration = duration
-        deputy.dismissingConfiguration.curve = curve
-        deputy.dismissingConfiguration.snapshotType = snapshotType
-        return deputy
+        producer.presentingAdjustable = DawnTransitionAdjustable(subviewsHierarchy: presentingHierarchy)
+        producer.dismissingAdjustable = DawnTransitionAdjustable(subviewsHierarchy: dismissingHierarchy)
+        return producer
     }
 }

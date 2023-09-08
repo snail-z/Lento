@@ -41,7 +41,10 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
     
-    let dataList = ["Sample1ViewController", "Sample2ViewController", "Sample3ViewController"]
+    let dataList = ["Sample1ViewController",
+                    "Sample2ViewController",
+                    "Sample3ViewController",
+                    "Sample4ViewController"]
 }
 
 extension ViewController: UITableViewDataSource {
@@ -78,6 +81,11 @@ extension ViewController: UITableViewDelegate {
         
         if value == "Sample3ViewController" {
             let vc = Sample3ViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if value == "Sample4ViewController" {
+            let vc = Sample4ViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

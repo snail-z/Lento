@@ -108,7 +108,7 @@ extension KlipageViewController: UICollectionViewDelegate {
         let vc = LagerImageController()
         vc.ccimage = model.takeImage()
         vc.dawn.isModalEnabled = true
-        let pathway = DawnAnimateDissolve(sourceView: cell.contentView)
+        let pathway = DawnAnimationDissolve(sourceView: cell.contentView)
         pathway.duration = 0.375
         vc.dawn.transitionCapable = pathway
         self.present(vc, animated: true, completion: nil)

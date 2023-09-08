@@ -10,14 +10,14 @@ import UIKit
 
 extension DawnTransition {
     
-    public func driven(presenting viewController: UIViewController, configuration: DawnAnimationConfiguration? = nil) {
+    public func driven(presenting viewController: UIViewController) {
         drivenChanged = false
-        driven(viewController, configuration: configuration, presenting: true)
+        driven(viewController, presenting: true)
     }
     
-    public func driven(dismissing viewController: UIViewController, configuration: DawnAnimationConfiguration? = nil) {
+    public func driven(dismissing viewController: UIViewController) {
         drivenChanged = false
-        driven(viewController, configuration: configuration, presenting: false)
+        driven(viewController, presenting: false)
     }
     
     public func update(_ percentageComplete: CGFloat) {
@@ -49,18 +49,17 @@ extension DawnTransition {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.025, execute: work)
     }
     
-    internal func driven(_ viewController: UIViewController, configuration: DawnAnimationConfiguration? = nil, presenting: Bool) {
+    internal func driven(_ viewController: UIViewController, presenting: Bool) {
         driveninViewController = viewController
-        if let deputy = viewController.dawn.transitionCapable as? DawnCustomTransitionUsing, configuration == nil {
-            drivenConfiguration = presenting ?
-            deputy.presentingConfiguration.regenerate() : deputy.dismissingConfiguration.regenerate()
-        } else {
-            drivenConfiguration = configuration
+        if let producer = viewController.dawn.transitionCapable as? DawnAnimationProducer {
+            /// 手势拖动时使用.linear动画，保持与手指同步的效果
+            drivenAdjustable = presenting ?
+            producer.presentingAdjustable.regenerate() : producer.dismissingAdjustable.regenerate()
         }
     }
     
     internal func drivenComplete() {
-        drivenConfiguration = nil
+        drivenAdjustable = nil
         drivenChanged = false
         driveninViewController?.dawn.invalidateInteractiveDriver()
         driveninViewController = nil
@@ -74,17 +73,17 @@ extension DawnTransition {
     }
 }
 
-extension DawnAnimationConfiguration {
+extension DawnTransitionAdjustable {
     
-    fileprivate func regenerate() -> DawnAnimationConfiguration {
-        return DawnAnimationConfiguration(
+    fileprivate func regenerate() -> DawnTransitionAdjustable {
+        return DawnTransitionAdjustable(
             delay: self.delay,
             duration: self.duration,
             curve: .linear,
             spring: self.spring,
             snapshotType: self.snapshotType,
             containerBackgroundColor: self.containerBackgroundColor,
-            sendToViewToBack: self.sendToViewToBack
+            subviewsHierarchy: self.subviewsHierarchy
         )
     }
 }

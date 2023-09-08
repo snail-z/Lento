@@ -56,7 +56,7 @@ extension DawnExtension where Base: UIView {
     }
 }
 
-public class DawnPanGestureRecognizer: NSObject {
+open class DawnPanGestureRecognizer: NSObject {
     
     /// 默认true只在屏幕边缘识别手势，若设为false则全屏幕识别
     public var isRecognizeWhenEdges: Bool = true
