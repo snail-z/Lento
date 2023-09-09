@@ -22,10 +22,11 @@ extension DawnTransition {
     
     public func update(_ percentageComplete: CGFloat) {
         drivenChanged = true
-        drivable.update(percentageComplete)
+        drivable?.update(percentageComplete)
     }
     
     public func finish() {
+        guard let drivable = drivable else { return }
         func work() {
             drivable.completionSpeed =  1 - drivable.percentComplete
             drivable.finish()
@@ -35,6 +36,7 @@ extension DawnTransition {
     }
 
     public func cancel() {
+        guard let drivable = drivable else { return }
         func work() {
             drivable.completionSpeed = drivable.percentComplete
             drivable.cancel()
@@ -45,7 +47,7 @@ extension DawnTransition {
     
     /// fix: 手指快速扫动未调用update(percentage:)动画不执行问题
     internal func sudden(_ work: @escaping () -> Void) {
-        drivable.update(0.01)
+        drivable?.update(0.01)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.025, execute: work)
     }
     
@@ -68,8 +70,8 @@ extension DawnTransition {
 
 extension DawnTransition {
     
-    fileprivate var drivable: UIPercentDrivenInteractiveTransition {
-        return driveninViewController!.dawn.interactiveDriver
+    fileprivate var drivable: UIPercentDrivenInteractiveTransition? {
+        return driveninViewController?.dawn.interactiveDriver
     }
 }
 
