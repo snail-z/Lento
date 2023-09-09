@@ -98,7 +98,9 @@ extension Sample4ViewController {
     func jump4() {
         let vc = Transform4ViewController()
         vc.dawn.isModalEnabled = true
-        vc.dawn.transitionCapable = DawnAnimationCard()
+        vc.dawn.transitionCapable =  DawnAnimationCard {
+            vc.dismiss(animated: true)
+        }
         self.present(vc, animated: true)
     }
 }
@@ -117,4 +119,14 @@ fileprivate class Transform3ViewController: SmapleBaseViewController {
 
 fileprivate class Transform4ViewController: SmapleBaseViewController {
     
+    override func setGestures() {
+        pageTip("从屏幕任意位置，从上向下滑动")
+        
+        let pan = DawnPanGestureRecognizer(driver: self, type: .dismiss) { [weak self] in
+            self?.dismiss(animated: true)
+        }
+        pan.isRecognizeWhenEdges = false
+        pan.recognizeDirection = .topToBottom
+        view.dawn.addPanGestureRecognizer(pan)
+    }
 }

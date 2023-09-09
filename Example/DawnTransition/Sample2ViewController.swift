@@ -75,7 +75,11 @@ extension Sample2ViewController {
     func jump3() {
         let vc = Modal3ViewController()
         vc.dawn.isModalEnabled = true
-        vc.dawn.transitionAnimationType = .zoomSlide(direction: .right)
+        vc.dawn.transitionCapable = DawnAnimationProducer.using(
+            type: .zoomSlide(direction: .right),
+            duration: 0.55,
+            snapshotType: .slowSnapshot
+        )
         self.present(vc, animated: true)
     }
 }

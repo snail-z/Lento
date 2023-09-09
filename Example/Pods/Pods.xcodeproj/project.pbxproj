@@ -7,80 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027CAAB7AB624653A900F3090B084D31 /* DawnAnimationTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81010F8243E44AD90D094E3C79477C6 /* DawnAnimationTurn.swift */; };
 		055F691CE84EF20DC376F2157C8E7729 /* DispatchQueue+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5E8DF52518330C125787AB9C4F150F /* DispatchQueue+DawnExtensions.swift */; };
+		06C2CAE37C6DD7285712D50086E23F57 /* DawnTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B04F6597EA2477C39C655338C912AE /* DawnTransition+Animate.swift */; };
 		0926E09AB87C97E65031DF1F4FAA4542 /* UIViewController+ANExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE11FBC941E16FE329918E5DB6DE52 /* UIViewController+ANExtensions.swift */; };
 		0D484562966377954E35E77EDAF31D3A /* UIDevice+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A460763AE0AD9DC1C588B17205253C /* UIDevice+DawnExtensions.swift */; };
+		0F2F8E4DB10C3BBA921354195E609415 /* DawnAnimationCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36690889DC75D132737A00611E590DC9 /* DawnAnimationCube.swift */; };
 		10670489E7AE43930B761698AC72F1DC /* NSString+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869276E67ADD0DE28D2DB4A0ADE6356 /* NSString+DawnExtensions.swift */; };
-		10D9D4BCDBA0B8BF5345A1183FDB291F /* DawnAnimationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307FD3AD9361FA774A404D8041C5E7A /* DawnAnimationTransform.swift */; };
-		110553A833908A45ECEB3C677996D4FE /* DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB52D9AE37BF51889E7647C5B6D5 /* DawnSwizzling.swift */; };
+		10800BACE2CDDE876F3B394BC15672AE /* DawnTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76541FF61BACF21AAACB3BFEDFB425B /* DawnTransition+Complete.swift */; };
+		1386285E5A0A5F1B8D1399AE99FDFA1A /* DawnAnimationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B582BBF461525F8E6077BC391D4BBAE7 /* DawnAnimationTransform.swift */; };
 		14481775F375D737DCD9C8BD223CADAA /* Pods-DawnTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F5149E51A318EC91AF788215E3BCDA /* Pods-DawnTransition_Tests-dummy.m */; };
 		1689B52C48BD50D44E1B8081EAF30137 /* DawnKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B416423D5D292110259B402F70C731 /* DawnKit-dummy.m */; };
 		192E51BF27718729F68DCF1621639FD6 /* UIImage+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21905E7BA42DD5140FA3010EC228F231 /* UIImage+DawnExtensions.swift */; };
 		19A5695FBE4F6B70745C61FE38CDA840 /* DawnConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D695086CFA702E73C753FEFFD3AB0 /* DawnConstraints.swift */; };
-		1FA302F8E023CF3E376D020F954E4231 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2078273E0C6E539931EEA72552FBC9CC /* DawnAnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0519586E2AD4DFE4E69D3C2502DA2C4 /* DawnAnimationProducer.swift */; };
+		268E1FCB55578518F70AF629AC6F8C5E /* DawnTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFEECB57A8246516004F2C4A9C8203C /* DawnTransition+UINavigationControllerDelegate.swift */; };
 		2704D980AC979CED9D86A5FFA3CEEC53 /* Array+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B1AFEABC91F1AA2843CAA1ED1D1F6 /* Array+DawnExtensions.swift */; };
-		2F61BAC62AAC088B00DA6ECA /* DawnAnimationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61BAC52AAC088B00DA6ECA /* DawnAnimationCard.swift */; };
+		29C70310250B6FCC306F3EBE83326AA2 /* DawnAnimationCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B2712FDB65896F7E0F2BA72E089185 /* DawnAnimationCapable.swift */; };
+		2D0C9D49B84164BEC9D8AAE3C3515B7B /* UIView+DawnPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5D2C5BA50C7EB8A52B335A67CDD76 /* UIView+DawnPanGestureRecognizer.swift */; };
+		2D346A8872032CD0E1E78D930A0B4F1D /* DawnTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B7677156D52C602FFFD16D10B72D9B /* DawnTransition-dummy.m */; };
 		3583AF31560F92DD34F47CF4B180ACC8 /* Date+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C651659786F92F915344DECDFF383F3 /* Date+DawnExtensions.swift */; };
 		3615D0975B690A9D9124C79699F1C1B6 /* NSUIFont+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739DA8F7872887D4ECF45EBF8287535 /* NSUIFont+DawnExtensions.swift */; };
-		44CE20B65D2884A4F4AFF0B702DF733C /* DawnAnimationFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68590A9197E65C108C250173A86E7DA4 /* DawnAnimationFlip.swift */; };
+		378FC7E4DA7FAE16E006A852C8C2779A /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F186470805A4AE5854AF3602D72A39 /* DawnTransitionModifiers.swift */; };
+		3DC22347A8CE3B5F771065131A357CF3 /* DawnCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC86EF3923D1DE27AAA6129AC346B0E /* DawnCompatible.swift */; };
 		455E7646FDFA83ED45B14431F0A7B052 /* DawnTagContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6C151718F9AA91987911A4EC4F1AB /* DawnTagContainerView.swift */; };
-		464B9A1945E3CC27230F40F8A97FF00E /* DawnTransitionAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25337CE5A1D0233610EE93E05E1201DB /* DawnTransitionAdjustable.swift */; };
-		4DFA6C97C211D53F733833489CC7C82A /* DawnTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EAB35297BD9E9C9A6024245C83A9D /* DawnTransition.swift */; };
-		4EC0A2005F82D7664ED2AA63A811D7BF /* DawnTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93EE82D3DC5DD51019E78AB21DB0D81 /* DawnTransition+UINavigationControllerDelegate.swift */; };
-		58E375B9B0B66EDCCAAEB5F677CD2079 /* DawnAnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB6307A24F34B17981CB48F8C0B138 /* DawnAnimationProducer.swift */; };
+		4B6E3F7D428D3C66E95719D7FCA6D498 /* DawnAnimationSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999A4B1EAF380175F748F0D02A67EA9 /* DawnAnimationSpot.swift */; };
+		539F4F7A0D1C06CC0AA260F8D8052325 /* DawnAnimationFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9470E980F58A70CDA4A78852FED28A /* DawnAnimationFlip.swift */; };
 		59830B5BAF818FE603DAF52DD66DFC13 /* UILabel+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA115228595C650C9905256FB9D8835 /* UILabel+DawnExtensions.swift */; };
 		5E83FB5EEBC4DE1BE21871260DA9B98E /* UIAlertController+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB8158A2813D3C588D95F767230F9 /* UIAlertController+DawnExtensions.swift */; };
-		616A806DB0FC15B1F79D427B1458895A /* DawnTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407EB6D65A451FBBB1EA008E6DD10B4D /* DawnTransition+Animate.swift */; };
 		62AE1635DF96B283AF4652444400985F /* UIControl+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FA33BD8145E1E9E68238DE9C47F0A /* UIControl+DawnExtensions.swift */; };
 		62CD13F612CDA4835EDAC14260028ADA /* UITextView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4967937153D50EAA1E4FC741C8A641 /* UITextView+DawnExtensions.swift */; };
-		664F806368A411E4CAF394D81798E494 /* DawnAnimationSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B117DB59D0B93F2D211686DF5440DE4C /* DawnAnimationSpot.swift */; };
+		68D2ABD838B95690230572C37C835B86 /* DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEB3BE651C6B43C602D397C7821A37 /* DawnSwizzling.swift */; };
 		6A8E290D90E4142DD7740B5A38E36C23 /* NSAttributedString+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70699C4887BDF295A05F8C70492EC1E2 /* NSAttributedString+DawnExtensions.swift */; };
 		6C8329F3B7171584049E10E3B0BCF6D2 /* Timer+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A3B57BF9A1D7308482CE1D6D5EF552 /* Timer+DawnExtensions.swift */; };
 		6D9AE73FCC2BAD6660EDF43E8DE0F82B /* UINavigationController+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796AF73F7A917D265269A5983C199656 /* UINavigationController+DawnExtensions.swift */; };
-		70D10F681BBA2FADAFD577410CF1A732 /* DawnTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E198105F72128898053FE0B99BB6BB /* DawnTransition-dummy.m */; };
-		74022810F2DFDB26210891D4305959F4 /* DawnAnimationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B46DD87D96AF72218F5D52A70720DF /* DawnAnimationGroup.swift */; };
 		749CAAB1638EBA8D88E3140C28C97F3C /* UITabBar+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605C8C0F57B823CFC6FA85C60D75F545 /* UITabBar+DawnExtensions.swift */; };
+		7559DC13A43E7F46E6523AAAADA871EE /* UINavigationController+DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF843F98A1F4376996FEAB3BBC9B4F /* UINavigationController+DawnSwizzling.swift */; };
 		7650096DE4B3FEE8528EF948A0BB1338 /* DawnToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248ABD5FA6CE9706AF50978965F08635 /* DawnToast.swift */; };
-		7671BA6F89E7D29B15B08D4717CF83FC /* DawnTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A25E522DC41887FF29B08B7C72F56039 /* DawnTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77228044CBBE974281A9F0DF5354535D /* DawnAnimationDiffuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3BC114BDDC6D0A0563ABA7C475C6C /* DawnAnimationDiffuse.swift */; };
 		7DB196731423E1ED9223A7FFDEC324BA /* DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1594589FA94B64F881371497D568BB /* DawnExtensions.swift */; };
-		8151BC350EE74943EFAE99ACAFE054BE /* DawnAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DACD50C370583BDB58A3F2E13C0F22 /* DawnAnimationType.swift */; };
 		88000239399FB40112682EBE72546E54 /* DawnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB17102640D8733A687F4EDC2161CA4 /* DawnButton.swift */; };
 		8AF5ECF0420B64F1B3414A56D8CB9DC4 /* NSUIColor+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640E3D4E8343DC804B804BE73B33E15 /* NSUIColor+DawnExtensions.swift */; };
+		8AF7F930DD15311223B18D8BAF151D40 /* DawnAnimationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2ADEDFDAE3E8A464856701EB5999B0 /* DawnAnimationGroup.swift */; };
 		8B271DCB8D9B95F698BE68BA5AA9303A /* DawnKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5CBD3401E9F781D8CEEE3632F1BCCA /* DawnKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BFA49C7F3C37358A34A2DD16A801B40 /* Pods-DawnTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB3884B083E75E880486DA0F9080350 /* Pods-DawnTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C9D63802E035763EFAA794F14EE3194 /* UINavigationController+DawnSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA8873EAC061419CDE469E22006C22 /* UINavigationController+DawnSwizzling.swift */; };
 		8CEC7BFFC45A20883E8CFA625892A8EC /* NSUIBezierPath+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008AF701B6B770E4A854E275F991944 /* NSUIBezierPath+DawnExtensions.swift */; };
-		91F83B9E7CE042334A2DE6DDCACCC839 /* DawnAnimationCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A799C27463ABDCDA3641D842BDAAE /* DawnAnimationCapable.swift */; };
-		9439D884DEB59C6615226759D50F87F4 /* DawnAnimationTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCAB27AADD6E5679CD752F72A401F6 /* DawnAnimationTurn.swift */; };
-		94E0D5936B91C41BE2359E9F7EB5B252 /* DawnAnimationDissolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A922D715FF69AB86BBFB429C59BC367 /* DawnAnimationDissolve.swift */; };
 		9858643D7AB4D06CF9A84CE1013CF060 /* NSObject+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4312DA8F46DDDE8B14D0AD5F034A5DD /* NSObject+DawnExtensions.swift */; };
+		9B2559CBB02E8475BAB490D5AF59734B /* DawnAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0577E2508734871F58B4CEC14E0F599 /* DawnAnimationType.swift */; };
 		9B9DA38B2335149DD86DD65EC37E305C /* CALayer+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0E394F852EBC7427E531895601CB5 /* CALayer+DawnExtensions.swift */; };
+		9DF470B38EE47A94F1DB537577D7A2AE /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406B96F9511F4B03589A9938E0515A0D /* DawnTransition+UIViewControllerTransitioningDelegate.swift */; };
 		9F5EB4EA5CA068C803440F04F8BA6266 /* DawnTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7AF950F29B1654A581960E7C57A2D /* DawnTextField.swift */; };
 		A40AEFF9A9E95DC2A20D6D1F605B5DB4 /* Bundle+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBBD74BD85FBC551B3E668E683E437 /* Bundle+DawnExtensions.swift */; };
-		A48CE76DB75983EAD6838BF195AA1507 /* DawnAnimationCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07E9A55C01C6CB8E0CC61DBCBD236A /* DawnAnimationCube.swift */; };
-		ACE120763473B86DD56B99E169D57872 /* DawnTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CF7B1CDE460B77F6AC594738EB4BA /* DawnTransition+Complete.swift */; };
-		AEEA843ABDD4A751A9783B163EE08FEE /* DawnAnimationDiffuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F057BECE8EFC85842EA3590542D3A55 /* DawnAnimationDiffuse.swift */; };
 		B20C831809F8B03A13EC56C269EA8CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B6128F8F01600E3903670A73247C6BB1 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93160E9A65B889F3D5AB2F8EDC9F00E4 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */; };
 		B7C41E64473D95B7068DCA6E8097D7B8 /* Dictionary+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4761D3EE79B3983B7DB538A9384D5D5 /* Dictionary+DawnExtensions.swift */; };
-		B82A208A765E0F0716DB0FDB8D13325B /* DawnTodayGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9FCC98A9875D5673B52C8E1FEC0E18 /* DawnTodayGestureRecognizer.swift */; };
+		BCB0D39BFF97A61B81376B2A927955DA /* UIViewController+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F3B16CA72842ED4CCBE642C3FA8073 /* UIViewController+Dawn.swift */; };
 		BD350D12DE364DDFDC4B137A60AE58A0 /* UIView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C2AC17055D823EDECC3704B33AEB9 /* UIView+DawnExtensions.swift */; };
 		BF750B9C3A6F154D17E58DC733162050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C025C1CDDEABB6770DC14554CBC160BB /* NSUIApplication+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775832C60AA195BA2E7613C94E9B6460 /* NSUIApplication+DawnExtensions.swift */; };
-		C4296CB1C002878AAE6A7BEE589B4E33 /* UIViewController+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F122515669DC5AEF80E0FB67845540 /* UIViewController+Dawn.swift */; };
+		C0C51E9465A63B7689FCE8BC578ECC11 /* DawnTransitionAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012BD3472406A4791A6D883C67C057D1 /* DawnTransitionAdjustable.swift */; };
+		C405A25388BF7EF8BD759B909B920D07 /* UIView+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29408A4E6CC6B7EBF084F9726E09B64 /* UIView+Dawn.swift */; };
 		C6140DC0FCDC8CD70A79FC2B630FF75C /* DawnGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C124AC6FDD2EF3E892A6C2A7C84BA41 /* DawnGradientView.swift */; };
 		C79ED463E9270CD213A483CD286B5927 /* UIWindow+ANExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385914E1671ED13B4795B22E8F8E63DA /* UIWindow+ANExtensions.swift */; };
 		C83F8402569BAF4328820C8497BD5646 /* UINavigationBar+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E63295F37F8B0B2DA0B92540C0016 /* UINavigationBar+DawnExtensions.swift */; };
-		C977632A5BAF85A7D4838C3644C2E2CF /* UIView+DawnPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7896122AC7CDDB40A73E6FA28595A7 /* UIView+DawnPanGestureRecognizer.swift */; };
 		C9CDEA68C6C34956B375C6B9D862DD04 /* UIButton+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACB1508CBB89FBCB393D7B586F456A /* UIButton+DawnExtensions.swift */; };
 		CA64051613F622CB882B5AC0CCF3E89F /* UIScrollView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302492BD3C79763F2CBAE2F8E8849E6 /* UIScrollView+DawnExtensions.swift */; };
 		CAE50DECB3919CA77617704FEEEA51C1 /* UIScreen+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4918FFAB1EEC69C0DF2703AC9D4AC14 /* UIScreen+DawnExtensions.swift */; };
-		CD13C5EC0A65A5DDE1B2DAAB168BA411 /* DawnTransitionModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96411F5BCCD614FEBF5F9957ED90248 /* DawnTransitionModifiers.swift */; };
-		CED2640EBE7A018F37A85FE141E5E9CE /* DispatchQueue+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111AD4809FA67520274DB4160B4BC5F /* DispatchQueue+Dawn.swift */; };
+		CCAFAC0BDE153CFB4D0312D10F00A3EF /* DawnAnimationDissolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC6BBAB438BAE56373C3B9105B3D0E0 /* DawnAnimationDissolve.swift */; };
 		D2157BE0932799D1DA2069E11BCEF061 /* CGGeometry+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D0A4371FDF7DAC78B5FE94CDE0DDD /* CGGeometry+DawnExtensions.swift */; };
 		D843ED5D391C3AC2C8E1306D750D84F3 /* Pods-DawnTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9B64B8FAC3683480C3F2ADC0D42FCA6 /* DawnCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB75643D819B7BB137B3EEC6855DF44 /* DawnCompatible.swift */; };
+		D9FB3A33389A5280C7443EF4AA12054A /* DawnTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C141B6114FD5C1B6E59E4C5D1901F /* DawnTransition.swift */; };
 		DA3B91DA915F2C3A2134C1BC4A91A110 /* Double+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30C8A7D97B979458C9578110C5C9B6 /* Double+DawnExtensions.swift */; };
+		DAB8C1BCB9E320A41ECBCFF86C24E674 /* DawnAnimationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ACE0F7551AE194FB6BB1138114CA0 /* DawnAnimationCard.swift */; };
+		E18560F8547B4492F460A198C6CE79B6 /* DispatchQueue+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB45A7BEA51263E53AF82A46E2A01E6 /* DispatchQueue+Dawn.swift */; };
 		E3AEB44DBBA3AD994BCC46C89F6E238E /* UITextField+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5898212683EC327C62F2F712006049F /* UITextField+DawnExtensions.swift */; };
 		E43C7FFF237979658599D11E267DD24C /* UICollectionView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EFFDD32B54433E59E9993C35AADDA /* UICollectionView+DawnExtensions.swift */; };
 		E5E953F8AEA915575E027670F0512921 /* DawnShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76BD505FC21D512EF75DDE8EFC829BD /* DawnShapeLayer.swift */; };
@@ -88,30 +86,32 @@
 		EBCE421D65C66A982D64BF3C403FBB2E /* String+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218019C3AE59D25B774F9EFF5F981C8 /* String+DawnExtensions.swift */; };
 		EBFCEC36F9C94AFA104381533A6C37E0 /* NSUIGestureRecognizer+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BDF8025C43A96F559F03DE8B353ACB /* NSUIGestureRecognizer+DawnExtensions.swift */; };
 		EDC37EF5B9AD0B2C1D55AD87F4AE322D /* UITableView+DawnExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810412FC791A93696A15E32914F6654B /* UITableView+DawnExtensions.swift */; };
+		F2B0DB9A5DC1AB793DB400EEDABC9510 /* DawnTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B41E3FC94191871DB6BE7BF990B8DA4 /* DawnTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2CBABD90306593356E22A294B3920C4 /* Pods-DawnTransition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E50521F00532FDE2D89E0C9288EF411 /* Pods-DawnTransition_Example-dummy.m */; };
-		F9B48A42FE6008924016299469FD5300 /* DawnTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1144D0974D4C1302B8A7EA8C6DEC2 /* DawnTransition+Interactive.swift */; };
+		F73BB4F30EB3E278D87AF949151BB101 /* DawnTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1D69E1E5E062115BD20EDDCA99A72 /* DawnTransition+Interactive.swift */; };
 		FA5B2980671CEEA2571B5BB068D4B781 /* DawnTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC87EF21BB880D4B838812FA050C9B /* DawnTextView.swift */; };
-		FAF9795CB7C540F05B5B0C4EA9C1CBFA /* UIView+Dawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ADB44514C9C828A8FAD4EEC75B2B2F /* UIView+Dawn.swift */; };
+		FA603C9E26E5132DB1D8A99B5DF2D71C /* DawnTodayGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DE21899DA1ED5ECB9810AD7BA037A /* DawnTodayGestureRecognizer.swift */; };
 		FD07462191AE1C53E5E72DE7C35531B9 /* DawnLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E10CFDA12A6BA64A7B5D5E7881A1A /* DawnLabel.swift */; };
+		FD0EB35132F80206A0B5BA53154F8518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FD363BE91A1A55565F5A5A64141C10C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0D373AE3E197338DDCAA61E8004B470C /* PBXContainerItemProxy */ = {
+		29D6D309D0A373E8484C58D79C8B29CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 94907EC06CD9521E6FC770EE45E57CFC;
 			remoteInfo = DawnKit;
 		};
-		3C2856EDDFF36424C7B0357735CE9EE2 /* PBXContainerItemProxy */ = {
+		60ADAA184A9C8C8DDDB892A02098A5C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14FDBF1AB05729E04DB219B25751A5F0;
 			remoteInfo = "Pods-DawnTransition_Example";
 		};
-		6BBA18FB37218B13C521ED868A3D5C7F /* PBXContainerItemProxy */ = {
+		ADD9A06798EDF98740DD535BF52CD4B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -122,119 +122,119 @@
 
 /* Begin PBXFileReference section */
 		00C2DCF4C9C8EB276A74419528DC8082 /* Pods-DawnTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
-		05023D5B83A6CABFC3B75040CFB102D6 /* DawnTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DawnTransition.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		012BD3472406A4791A6D883C67C057D1 /* DawnTransitionAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionAdjustable.swift; path = DawnTransition/Classes/DawnTransitionAdjustable.swift; sourceTree = "<group>"; };
 		06ACB1508CBB89FBCB393D7B586F456A /* UIButton+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIButton+DawnExtensions.swift"; sourceTree = "<group>"; };
 		0A4967937153D50EAA1E4FC741C8A641 /* UITextView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UITextView+DawnExtensions.swift"; sourceTree = "<group>"; };
 		0BFD0CE222D6EC7EA6F8839C66FF1397 /* DawnKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DawnKit.modulemap; sourceTree = "<group>"; };
-		0D6CEA7651AB928BDCB45993537AD7AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0E4EAB35297BD9E9C9A6024245C83A9D /* DawnTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransition.swift; path = DawnTransition/Classes/DawnTransition.swift; sourceTree = "<group>"; };
 		0ECA59FA4F18E9685319E2EEAB9DF61D /* Pods-DawnTransition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		14B2712FDB65896F7E0F2BA72E089185 /* DawnAnimationCapable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCapable.swift; path = DawnTransition/Classes/DawnAnimationCapable.swift; sourceTree = "<group>"; };
 		17BDF8025C43A96F559F03DE8B353ACB /* NSUIGestureRecognizer+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIGestureRecognizer+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIGestureRecognizer+DawnExtensions.swift"; sourceTree = "<group>"; };
-		1A922D715FF69AB86BBFB429C59BC367 /* DawnAnimationDissolve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDissolve.swift; path = DawnTransition/Classes/DawnAnimationDissolve.swift; sourceTree = "<group>"; };
-		1B7896122AC7CDDB40A73E6FA28595A7 /* UIView+DawnPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DawnPanGestureRecognizer.swift"; path = "DawnTransition/Classes/UIView+DawnPanGestureRecognizer.swift"; sourceTree = "<group>"; };
+		1AB45A7BEA51263E53AF82A46E2A01E6 /* DispatchQueue+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Dawn.swift"; path = "DawnTransition/Classes/DispatchQueue+Dawn.swift"; sourceTree = "<group>"; };
 		1BB17102640D8733A687F4EDC2161CA4 /* DawnButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnButton.swift; path = DawnKit/Classes/DawnUI/DawnButton.swift; sourceTree = "<group>"; };
 		1E512B96FB9C653A8A8D36193B5DCD00 /* Pods-DawnTransition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1F30C8A7D97B979458C9578110C5C9B6 /* Double+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Double+DawnExtensions.swift"; sourceTree = "<group>"; };
 		21905E7BA42DD5140FA3010EC228F231 /* UIImage+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIImage+DawnExtensions.swift"; sourceTree = "<group>"; };
 		2218019C3AE59D25B774F9EFF5F981C8 /* String+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/String+DawnExtensions.swift"; sourceTree = "<group>"; };
+		23F186470805A4AE5854AF3602D72A39 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionModifiers.swift; path = DawnTransition/Classes/DawnTransitionModifiers.swift; sourceTree = "<group>"; };
 		248ABD5FA6CE9706AF50978965F08635 /* DawnToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnToast.swift; path = DawnKit/Classes/DawnUI/DawnToast.swift; sourceTree = "<group>"; };
 		252E10CFDA12A6BA64A7B5D5E7881A1A /* DawnLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnLabel.swift; path = DawnKit/Classes/DawnUI/DawnLabel.swift; sourceTree = "<group>"; };
-		25337CE5A1D0233610EE93E05E1201DB /* DawnTransitionAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionAdjustable.swift; path = DawnTransition/Classes/DawnTransitionAdjustable.swift; sourceTree = "<group>"; };
-		2CB0F426328D0773AFB96EF6F839DBCB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D6CF4EDD195171E796812F1AECB399C /* Pods-DawnTransition_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Example-Info.plist"; sourceTree = "<group>"; };
 		2DA115228595C650C9905256FB9D8835 /* UILabel+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UILabel+DawnExtensions.swift"; sourceTree = "<group>"; };
-		2F61BAC52AAC088B00DA6ECA /* DawnAnimationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnAnimationCard.swift; sourceTree = "<group>"; };
 		309B1AFEABC91F1AA2843CAA1ED1D1F6 /* Array+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Array+DawnExtensions.swift"; sourceTree = "<group>"; };
 		32A460763AE0AD9DC1C588B17205253C /* UIDevice+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIDevice+DawnExtensions.swift"; sourceTree = "<group>"; };
-		32ACC1466C4B483B7F8D43C859E4EB7A /* DawnTransition-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DawnTransition-Info.plist"; sourceTree = "<group>"; };
 		35FC87EF21BB880D4B838812FA050C9B /* DawnTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTextView.swift; path = DawnKit/Classes/DawnUI/DawnTextView.swift; sourceTree = "<group>"; };
+		36690889DC75D132737A00611E590DC9 /* DawnAnimationCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCube.swift; path = DawnTransition/Classes/DawnAnimationCube.swift; sourceTree = "<group>"; };
 		385914E1671ED13B4795B22E8F8E63DA /* UIWindow+ANExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+ANExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIWindow+ANExtensions.swift"; sourceTree = "<group>"; };
+		39EEB3BE651C6B43C602D397C7821A37 /* DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnSwizzling.swift; path = DawnTransition/Classes/DawnSwizzling.swift; sourceTree = "<group>"; };
+		3AF1D69E1E5E062115BD20EDDCA99A72 /* DawnTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Interactive.swift"; path = "DawnTransition/Classes/DawnTransition+Interactive.swift"; sourceTree = "<group>"; };
+		3BDB6FECA415B9AF76E6A9451EA450C2 /* DawnTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.debug.xcconfig; sourceTree = "<group>"; };
 		3C124AC6FDD2EF3E892A6C2A7C84BA41 /* DawnGradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnGradientView.swift; path = DawnKit/Classes/DawnUI/DawnGradientView.swift; sourceTree = "<group>"; };
 		3C651659786F92F915344DECDFF383F3 /* Date+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Date+DawnExtensions.swift"; sourceTree = "<group>"; };
 		3CF3E1CDCD166070058ED8995BC9B3E8 /* DawnKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnKit.debug.xcconfig; sourceTree = "<group>"; };
-		407EB6D65A451FBBB1EA008E6DD10B4D /* DawnTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Animate.swift"; path = "DawnTransition/Classes/DawnTransition+Animate.swift"; sourceTree = "<group>"; };
+		406B96F9511F4B03589A9938E0515A0D /* DawnTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UIViewControllerTransitioningDelegate.swift"; path = "DawnTransition/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		40A3B57BF9A1D7308482CE1D6D5EF552 /* Timer+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Timer+DawnExtensions.swift"; sourceTree = "<group>"; };
-		44DACD50C370583BDB58A3F2E13C0F22 /* DawnAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationType.swift; path = DawnTransition/Classes/DawnAnimationType.swift; sourceTree = "<group>"; };
+		446DE21899DA1ED5ECB9810AD7BA037A /* DawnTodayGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTodayGestureRecognizer.swift; path = DawnTransition/Classes/DawnTodayGestureRecognizer.swift; sourceTree = "<group>"; };
 		481F575376F62F97C67DFFAFAF667F66 /* Pods-DawnTransition_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DawnTransition_Tests-Info.plist"; sourceTree = "<group>"; };
 		4869276E67ADD0DE28D2DB4A0ADE6356 /* NSString+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSString+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSString+DawnExtensions.swift"; sourceTree = "<group>"; };
 		48F5149E51A318EC91AF788215E3BCDA /* Pods-DawnTransition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DawnTransition_Tests-dummy.m"; sourceTree = "<group>"; };
 		4E5D695086CFA702E73C753FEFFD3AB0 /* DawnConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnConstraints.swift; path = DawnKit/Classes/DawnUI/DawnConstraints.swift; sourceTree = "<group>"; };
 		533C2AC17055D823EDECC3704B33AEB9 /* UIView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIView+DawnExtensions.swift"; sourceTree = "<group>"; };
+		56A5D2C5BA50C7EB8A52B335A67CDD76 /* UIView+DawnPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DawnPanGestureRecognizer.swift"; path = "DawnTransition/Classes/UIView+DawnPanGestureRecognizer.swift"; sourceTree = "<group>"; };
 		58AE35D7BF39FAA7EA2B2ADC3F54E7F3 /* Pods-DawnTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A5E8DF52518330C125787AB9C4F150F /* DispatchQueue+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/DispatchQueue+DawnExtensions.swift"; sourceTree = "<group>"; };
+		5B41E3FC94191871DB6BE7BF990B8DA4 /* DawnTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-umbrella.h"; sourceTree = "<group>"; };
+		5C1C141B6114FD5C1B6E59E4C5D1901F /* DawnTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransition.swift; path = DawnTransition/Classes/DawnTransition.swift; sourceTree = "<group>"; };
 		5E50521F00532FDE2D89E0C9288EF411 /* Pods-DawnTransition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DawnTransition_Example-dummy.m"; sourceTree = "<group>"; };
 		605C8C0F57B823CFC6FA85C60D75F545 /* UITabBar+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBar+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UITabBar+DawnExtensions.swift"; sourceTree = "<group>"; };
-		68590A9197E65C108C250173A86E7DA4 /* DawnAnimationFlip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationFlip.swift; path = DawnTransition/Classes/DawnAnimationFlip.swift; sourceTree = "<group>"; };
+		692ACE0F7551AE194FB6BB1138114CA0 /* DawnAnimationCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCard.swift; path = DawnTransition/Classes/DawnAnimationCard.swift; sourceTree = "<group>"; };
 		70699C4887BDF295A05F8C70492EC1E2 /* NSAttributedString+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSAttributedString+DawnExtensions.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76ADB44514C9C828A8FAD4EEC75B2B2F /* UIView+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dawn.swift"; path = "DawnTransition/Classes/UIView+Dawn.swift"; sourceTree = "<group>"; };
 		775832C60AA195BA2E7613C94E9B6460 /* NSUIApplication+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIApplication+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIApplication+DawnExtensions.swift"; sourceTree = "<group>"; };
 		796AF73F7A917D265269A5983C199656 /* UINavigationController+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UINavigationController+DawnExtensions.swift"; sourceTree = "<group>"; };
 		7A0FA33BD8145E1E9E68238DE9C47F0A /* UIControl+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIControl+DawnExtensions.swift"; sourceTree = "<group>"; };
+		7B92C8A35A680919FA3A72FC1AF2EA77 /* DawnTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DawnTransition.modulemap; sourceTree = "<group>"; };
+		7CFEECB57A8246516004F2C4A9C8203C /* DawnTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UINavigationControllerDelegate.swift"; path = "DawnTransition/Classes/DawnTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
 		7D1594589FA94B64F881371497D568BB /* DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnExtensions.swift; path = DawnKit/Classes/DawnExtensions/DawnExtensions.swift; sourceTree = "<group>"; };
-		7F057BECE8EFC85842EA3590542D3A55 /* DawnAnimationDiffuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDiffuse.swift; path = DawnTransition/Classes/DawnAnimationDiffuse.swift; sourceTree = "<group>"; };
-		80451647157C4F7F90F8EEAEB7C084FA /* DawnTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DawnTransition.modulemap; sourceTree = "<group>"; };
 		810412FC791A93696A15E32914F6654B /* UITableView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UITableView+DawnExtensions.swift"; sourceTree = "<group>"; };
+		85B04F6597EA2477C39C655338C912AE /* DawnTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Animate.swift"; path = "DawnTransition/Classes/DawnTransition+Animate.swift"; sourceTree = "<group>"; };
+		87BD6A9345368F196194ADEF1D0BD069 /* DawnTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-prefix.pch"; sourceTree = "<group>"; };
+		8999A4B1EAF380175F748F0D02A67EA9 /* DawnAnimationSpot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationSpot.swift; path = DawnTransition/Classes/DawnAnimationSpot.swift; sourceTree = "<group>"; };
 		8BDDA67807557E3C0EAB036BD4989412 /* FileManager+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/FileManager+DawnExtensions.swift"; sourceTree = "<group>"; };
 		8BF0E394F852EBC7427E531895601CB5 /* CALayer+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/CALayer+DawnExtensions.swift"; sourceTree = "<group>"; };
 		8CB3884B083E75E880486DA0F9080350 /* Pods-DawnTransition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DawnTransition_Example-umbrella.h"; sourceTree = "<group>"; };
-		8DDB6307A24F34B17981CB48F8C0B138 /* DawnAnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationProducer.swift; path = DawnTransition/Classes/DawnAnimationProducer.swift; sourceTree = "<group>"; };
 		8F4D7167A0B412C7B766C7706B0988BC /* Pods-DawnTransition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DawnTransition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		908D9CFF129E1FE80A37C8F6549A8BB3 /* DawnTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.debug.xcconfig; sourceTree = "<group>"; };
-		93160E9A65B889F3D5AB2F8EDC9F00E4 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UIViewControllerTransitioningDelegate.swift"; path = "DawnTransition/Classes/DawnTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		93CE11FBC941E16FE329918E5DB6DE52 /* UIViewController+ANExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ANExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIViewController+ANExtensions.swift"; sourceTree = "<group>"; };
+		95C99D124E535E0FAE9A114CEC2D7177 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9640E3D4E8343DC804B804BE73B33E15 /* NSUIColor+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIColor+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIColor+DawnExtensions.swift"; sourceTree = "<group>"; };
 		98B416423D5D292110259B402F70C731 /* DawnKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnKit-dummy.m"; sourceTree = "<group>"; };
-		99B46DD87D96AF72218F5D52A70720DF /* DawnAnimationGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationGroup.swift; path = DawnTransition/Classes/DawnAnimationGroup.swift; sourceTree = "<group>"; };
 		9C6FD974ED3038059800080AEDD081D3 /* DawnKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnKit.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A04A799C27463ABDCDA3641D842BDAAE /* DawnAnimationCapable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCapable.swift; path = DawnTransition/Classes/DawnAnimationCapable.swift; sourceTree = "<group>"; };
-		A25E522DC41887FF29B08B7C72F56039 /* DawnTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA3BC114BDDC6D0A0563ABA7C475C6C /* DawnAnimationDiffuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDiffuse.swift; path = DawnTransition/Classes/DawnAnimationDiffuse.swift; sourceTree = "<group>"; };
+		9F9470E980F58A70CDA4A78852FED28A /* DawnAnimationFlip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationFlip.swift; path = DawnTransition/Classes/DawnAnimationFlip.swift; sourceTree = "<group>"; };
+		A0577E2508734871F58B4CEC14E0F599 /* DawnAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationType.swift; path = DawnTransition/Classes/DawnAnimationType.swift; sourceTree = "<group>"; };
 		A31EFFDD32B54433E59E9993C35AADDA /* UICollectionView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UICollectionView+DawnExtensions.swift"; sourceTree = "<group>"; };
 		A76BD505FC21D512EF75DDE8EFC829BD /* DawnShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnShapeLayer.swift; path = DawnKit/Classes/DawnUI/DawnShapeLayer.swift; sourceTree = "<group>"; };
-		A96411F5BCCD614FEBF5F9957ED90248 /* DawnTransitionModifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTransitionModifiers.swift; path = DawnTransition/Classes/DawnTransitionModifiers.swift; sourceTree = "<group>"; };
+		A81010F8243E44AD90D094E3C79477C6 /* DawnAnimationTurn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTurn.swift; path = DawnTransition/Classes/DawnAnimationTurn.swift; sourceTree = "<group>"; };
 		AC614D18F34D1E34FA9720CAD58A8E76 /* DawnKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DawnKit-Info.plist"; sourceTree = "<group>"; };
+		ADCC4892A3F876E8E771BA45BB49F808 /* DawnTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.release.xcconfig; sourceTree = "<group>"; };
 		AF166DDB0EC390297ED8761A7379D5CB /* Pods-DawnTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Tests.modulemap"; sourceTree = "<group>"; };
-		AF1CF7B1CDE460B77F6AC594738EB4BA /* DawnTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Complete.swift"; path = "DawnTransition/Classes/DawnTransition+Complete.swift"; sourceTree = "<group>"; };
-		B117DB59D0B93F2D211686DF5440DE4C /* DawnAnimationSpot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationSpot.swift; path = DawnTransition/Classes/DawnAnimationSpot.swift; sourceTree = "<group>"; };
+		B1B7677156D52C602FFFD16D10B72D9B /* DawnTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnTransition-dummy.m"; sourceTree = "<group>"; };
+		B582BBF461525F8E6077BC391D4BBAE7 /* DawnAnimationTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTransform.swift; path = DawnTransition/Classes/DawnAnimationTransform.swift; sourceTree = "<group>"; };
+		B76541FF61BACF21AAACB3BFEDFB425B /* DawnTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Complete.swift"; path = "DawnTransition/Classes/DawnTransition+Complete.swift"; sourceTree = "<group>"; };
 		B8156F1697DE3C24A91AD8DE335CA48A /* Pods-DawnTransition_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DawnTransition_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC9EDC6484F61B9F32843EE77B56CF3C /* DawnTransition */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DawnTransition; path = DawnTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC6BBAB438BAE56373C3B9105B3D0E0 /* DawnAnimationDissolve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationDissolve.swift; path = DawnTransition/Classes/DawnAnimationDissolve.swift; sourceTree = "<group>"; };
 		C4761D3EE79B3983B7DB538A9384D5D5 /* Dictionary+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Dictionary+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C4918FFAB1EEC69C0DF2703AC9D4AC14 /* UIScreen+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIScreen+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C5898212683EC327C62F2F712006049F /* UITextField+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UITextField+DawnExtensions.swift"; sourceTree = "<group>"; };
-		C6E198105F72128898053FE0B99BB6BB /* DawnTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DawnTransition-dummy.m"; sourceTree = "<group>"; };
 		C739DA8F7872887D4ECF45EBF8287535 /* NSUIFont+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIFont+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIFont+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C8A259ECD18E07442898CCF50ABF1ECC /* Pods-DawnTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C8BCAB27AADD6E5679CD752F72A401F6 /* DawnAnimationTurn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTurn.swift; path = DawnTransition/Classes/DawnAnimationTurn.swift; sourceTree = "<group>"; };
-		C93EE82D3DC5DD51019E78AB21DB0D81 /* DawnTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+UINavigationControllerDelegate.swift"; path = "DawnTransition/Classes/DawnTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
 		C95E63295F37F8B0B2DA0B92540C0016 /* UINavigationBar+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UINavigationBar+DawnExtensions.swift"; sourceTree = "<group>"; };
 		C973143335A85B6310D637CA5DC86927 /* DawnKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DawnKit; path = DawnKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2ADEDFDAE3E8A464856701EB5999B0 /* DawnAnimationGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationGroup.swift; path = DawnTransition/Classes/DawnAnimationGroup.swift; sourceTree = "<group>"; };
 		CDE6C151718F9AA91987911A4EC4F1AB /* DawnTagContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTagContainerView.swift; path = DawnKit/Classes/DawnUI/DawnTagContainerView.swift; sourceTree = "<group>"; };
 		CDEEB8158A2813D3C588D95F767230F9 /* UIAlertController+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIAlertController+DawnExtensions.swift"; sourceTree = "<group>"; };
-		CF9FCC98A9875D5673B52C8E1FEC0E18 /* DawnTodayGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTodayGestureRecognizer.swift; path = DawnTransition/Classes/DawnTodayGestureRecognizer.swift; sourceTree = "<group>"; };
+		CFC86EF3923D1DE27AAA6129AC346B0E /* DawnCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnCompatible.swift; path = DawnTransition/Classes/DawnCompatible.swift; sourceTree = "<group>"; };
 		D302492BD3C79763F2CBAE2F8E8849E6 /* UIScrollView+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/UIScrollView+DawnExtensions.swift"; sourceTree = "<group>"; };
-		D36F3094831B0A93F6CA4129F5FBD3B1 /* DawnTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DawnTransition.release.xcconfig; sourceTree = "<group>"; };
 		DA8D0A4371FDF7DAC78B5FE94CDE0DDD /* CGGeometry+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGGeometry+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/CGGeometry+DawnExtensions.swift"; sourceTree = "<group>"; };
 		DAA6ED8C879A6E0BC09A171A429928E8 /* Pods-DawnTransition_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Example"; path = Pods_DawnTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1CD37B83C85B5A3362A87D0357CFBF /* DawnKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnKit-prefix.pch"; sourceTree = "<group>"; };
-		DBC1144D0974D4C1302B8A7EA8C6DEC2 /* DawnTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DawnTransition+Interactive.swift"; path = "DawnTransition/Classes/DawnTransition+Interactive.swift"; sourceTree = "<group>"; };
-		DE07E9A55C01C6CB8E0CC61DBCBD236A /* DawnAnimationCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationCube.swift; path = DawnTransition/Classes/DawnAnimationCube.swift; sourceTree = "<group>"; };
 		DFFBBD74BD85FBC551B3E668E683E437 /* Bundle+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/Bundle+DawnExtensions.swift"; sourceTree = "<group>"; };
-		E19E9CAAE3F00EBD9FCBD1392836A6D8 /* DawnTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnTransition-prefix.pch"; sourceTree = "<group>"; };
-		E307FD3AD9361FA774A404D8041C5E7A /* DawnAnimationTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationTransform.swift; path = DawnTransition/Classes/DawnAnimationTransform.swift; sourceTree = "<group>"; };
+		E9F3B16CA72842ED4CCBE642C3FA8073 /* UIViewController+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Dawn.swift"; path = "DawnTransition/Classes/UIViewController+Dawn.swift"; sourceTree = "<group>"; };
 		EABC180C1336EE7949CCA83D403AAC34 /* Pods-DawnTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DawnTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EBCA8873EAC061419CDE469E22006C22 /* UINavigationController+DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+DawnSwizzling.swift"; path = "DawnTransition/Classes/UINavigationController+DawnSwizzling.swift"; sourceTree = "<group>"; };
 		EC5CBD3401E9F781D8CEEE3632F1BCCA /* DawnKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DawnKit-umbrella.h"; sourceTree = "<group>"; };
+		ED736E86FD868C1D52493ED19352B465 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		EEA9EEBE11C0C4DFD09DD902F8160609 /* Pods-DawnTransition_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DawnTransition_Tests"; path = Pods_DawnTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F008AF701B6B770E4A854E275F991944 /* NSUIBezierPath+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSUIBezierPath+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSUIBezierPath+DawnExtensions.swift"; sourceTree = "<group>"; };
-		F111AD4809FA67520274DB4160B4BC5F /* DispatchQueue+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Dawn.swift"; path = "DawnTransition/Classes/DispatchQueue+Dawn.swift"; sourceTree = "<group>"; };
+		F0519586E2AD4DFE4E69D3C2502DA2C4 /* DawnAnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnAnimationProducer.swift; path = DawnTransition/Classes/DawnAnimationProducer.swift; sourceTree = "<group>"; };
+		F29408A4E6CC6B7EBF084F9726E09B64 /* UIView+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dawn.swift"; path = "DawnTransition/Classes/UIView+Dawn.swift"; sourceTree = "<group>"; };
 		F4312DA8F46DDDE8B14D0AD5F034A5DD /* NSObject+DawnExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+DawnExtensions.swift"; path = "DawnKit/Classes/DawnExtensions/NSObject+DawnExtensions.swift"; sourceTree = "<group>"; };
-		F5F2FB52D9AE37BF51889E7647C5B6D5 /* DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnSwizzling.swift; path = DawnTransition/Classes/DawnSwizzling.swift; sourceTree = "<group>"; };
 		F6E7AF950F29B1654A581960E7C57A2D /* DawnTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnTextField.swift; path = DawnKit/Classes/DawnUI/DawnTextField.swift; sourceTree = "<group>"; };
-		F7F122515669DC5AEF80E0FB67845540 /* UIViewController+Dawn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Dawn.swift"; path = "DawnTransition/Classes/UIViewController+Dawn.swift"; sourceTree = "<group>"; };
 		F83AB5685DC58D811C3327C927E8A93D /* Pods-DawnTransition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DawnTransition_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F9F2B35D1920F1D03DC0C186B7A43029 /* DawnTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DawnTransition.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FB3A76D1A10BCD1046EBF38BB1B712A8 /* DawnTransition-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DawnTransition-Info.plist"; sourceTree = "<group>"; };
+		FCBF843F98A1F4376996FEAB3BBC9B4F /* UINavigationController+DawnSwizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+DawnSwizzling.swift"; path = "DawnTransition/Classes/UINavigationController+DawnSwizzling.swift"; sourceTree = "<group>"; };
 		FD72BF9924AFC0E0917C20299B313ADE /* Pods-DawnTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DawnTransition_Example.modulemap"; sourceTree = "<group>"; };
-		FFB75643D819B7BB137B3EEC6855DF44 /* DawnCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DawnCompatible.swift; path = DawnTransition/Classes/DawnCompatible.swift; sourceTree = "<group>"; };
 		FFF906234FF6FE7761300867B6F94A4D /* Pods-DawnTransition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DawnTransition_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,19 +255,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		440CA2F8A31FE38EF5F187C1B08C57DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0EB35132F80206A0B5BA53154F8518 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCE1E0EFDB0E6B0C056B8C2AA542D117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF750B9C3A6F154D17E58DC733162050 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDE04135F4FA11593B07476EBAC3EEE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FA302F8E023CF3E376D020F954E4231 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,57 +290,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		31790DAC9946503E218B23BFD2A344D8 /* Support Files */ = {
+		2514368893F63F983D19F4A627A8B783 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				80451647157C4F7F90F8EEAEB7C084FA /* DawnTransition.modulemap */,
-				C6E198105F72128898053FE0B99BB6BB /* DawnTransition-dummy.m */,
-				32ACC1466C4B483B7F8D43C859E4EB7A /* DawnTransition-Info.plist */,
-				E19E9CAAE3F00EBD9FCBD1392836A6D8 /* DawnTransition-prefix.pch */,
-				A25E522DC41887FF29B08B7C72F56039 /* DawnTransition-umbrella.h */,
-				908D9CFF129E1FE80A37C8F6549A8BB3 /* DawnTransition.debug.xcconfig */,
-				D36F3094831B0A93F6CA4129F5FBD3B1 /* DawnTransition.release.xcconfig */,
+				F9F2B35D1920F1D03DC0C186B7A43029 /* DawnTransition.podspec */,
+				95C99D124E535E0FAE9A114CEC2D7177 /* LICENSE */,
+				ED736E86FD868C1D52493ED19352B465 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3FFC506B94691F09F20C4A9BF79EC04B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B92C8A35A680919FA3A72FC1AF2EA77 /* DawnTransition.modulemap */,
+				B1B7677156D52C602FFFD16D10B72D9B /* DawnTransition-dummy.m */,
+				FB3A76D1A10BCD1046EBF38BB1B712A8 /* DawnTransition-Info.plist */,
+				87BD6A9345368F196194ADEF1D0BD069 /* DawnTransition-prefix.pch */,
+				5B41E3FC94191871DB6BE7BF990B8DA4 /* DawnTransition-umbrella.h */,
+				3BDB6FECA415B9AF76E6A9451EA450C2 /* DawnTransition.debug.xcconfig */,
+				ADCC4892A3F876E8E771BA45BB49F808 /* DawnTransition.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DawnTransition";
-			sourceTree = "<group>";
-		};
-		3D866A994ED3B942A19A2B1E7F8625F8 /* DawnTransition */ = {
-			isa = PBXGroup;
-			children = (
-				2F61BAC52AAC088B00DA6ECA /* DawnAnimationCard.swift */,
-				A04A799C27463ABDCDA3641D842BDAAE /* DawnAnimationCapable.swift */,
-				DE07E9A55C01C6CB8E0CC61DBCBD236A /* DawnAnimationCube.swift */,
-				7F057BECE8EFC85842EA3590542D3A55 /* DawnAnimationDiffuse.swift */,
-				1A922D715FF69AB86BBFB429C59BC367 /* DawnAnimationDissolve.swift */,
-				68590A9197E65C108C250173A86E7DA4 /* DawnAnimationFlip.swift */,
-				99B46DD87D96AF72218F5D52A70720DF /* DawnAnimationGroup.swift */,
-				8DDB6307A24F34B17981CB48F8C0B138 /* DawnAnimationProducer.swift */,
-				B117DB59D0B93F2D211686DF5440DE4C /* DawnAnimationSpot.swift */,
-				E307FD3AD9361FA774A404D8041C5E7A /* DawnAnimationTransform.swift */,
-				C8BCAB27AADD6E5679CD752F72A401F6 /* DawnAnimationTurn.swift */,
-				44DACD50C370583BDB58A3F2E13C0F22 /* DawnAnimationType.swift */,
-				FFB75643D819B7BB137B3EEC6855DF44 /* DawnCompatible.swift */,
-				F5F2FB52D9AE37BF51889E7647C5B6D5 /* DawnSwizzling.swift */,
-				CF9FCC98A9875D5673B52C8E1FEC0E18 /* DawnTodayGestureRecognizer.swift */,
-				0E4EAB35297BD9E9C9A6024245C83A9D /* DawnTransition.swift */,
-				407EB6D65A451FBBB1EA008E6DD10B4D /* DawnTransition+Animate.swift */,
-				AF1CF7B1CDE460B77F6AC594738EB4BA /* DawnTransition+Complete.swift */,
-				DBC1144D0974D4C1302B8A7EA8C6DEC2 /* DawnTransition+Interactive.swift */,
-				C93EE82D3DC5DD51019E78AB21DB0D81 /* DawnTransition+UINavigationControllerDelegate.swift */,
-				93160E9A65B889F3D5AB2F8EDC9F00E4 /* DawnTransition+UIViewControllerTransitioningDelegate.swift */,
-				25337CE5A1D0233610EE93E05E1201DB /* DawnTransitionAdjustable.swift */,
-				A96411F5BCCD614FEBF5F9957ED90248 /* DawnTransitionModifiers.swift */,
-				F111AD4809FA67520274DB4160B4BC5F /* DispatchQueue+Dawn.swift */,
-				EBCA8873EAC061419CDE469E22006C22 /* UINavigationController+DawnSwizzling.swift */,
-				76ADB44514C9C828A8FAD4EEC75B2B2F /* UIView+Dawn.swift */,
-				1B7896122AC7CDDB40A73E6FA28595A7 /* UIView+DawnPanGestureRecognizer.swift */,
-				F7F122515669DC5AEF80E0FB67845540 /* UIViewController+Dawn.swift */,
-				B561511D3993FB5A555BC7490A718CF6 /* Pod */,
-				31790DAC9946503E218B23BFD2A344D8 /* Support Files */,
-			);
-			name = DawnTransition;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		48EAF7EBC77D9362CB4683D19C82D4EB /* DawnExtensions */ = {
@@ -364,6 +336,44 @@
 				9404E4777F407EF07741548E5379C60C /* DawnKit */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B4E4491B49688CDAFCD36AF79C76E74 /* DawnTransition */ = {
+			isa = PBXGroup;
+			children = (
+				14B2712FDB65896F7E0F2BA72E089185 /* DawnAnimationCapable.swift */,
+				692ACE0F7551AE194FB6BB1138114CA0 /* DawnAnimationCard.swift */,
+				36690889DC75D132737A00611E590DC9 /* DawnAnimationCube.swift */,
+				9EA3BC114BDDC6D0A0563ABA7C475C6C /* DawnAnimationDiffuse.swift */,
+				BCC6BBAB438BAE56373C3B9105B3D0E0 /* DawnAnimationDissolve.swift */,
+				9F9470E980F58A70CDA4A78852FED28A /* DawnAnimationFlip.swift */,
+				CD2ADEDFDAE3E8A464856701EB5999B0 /* DawnAnimationGroup.swift */,
+				F0519586E2AD4DFE4E69D3C2502DA2C4 /* DawnAnimationProducer.swift */,
+				8999A4B1EAF380175F748F0D02A67EA9 /* DawnAnimationSpot.swift */,
+				B582BBF461525F8E6077BC391D4BBAE7 /* DawnAnimationTransform.swift */,
+				A81010F8243E44AD90D094E3C79477C6 /* DawnAnimationTurn.swift */,
+				A0577E2508734871F58B4CEC14E0F599 /* DawnAnimationType.swift */,
+				CFC86EF3923D1DE27AAA6129AC346B0E /* DawnCompatible.swift */,
+				39EEB3BE651C6B43C602D397C7821A37 /* DawnSwizzling.swift */,
+				446DE21899DA1ED5ECB9810AD7BA037A /* DawnTodayGestureRecognizer.swift */,
+				5C1C141B6114FD5C1B6E59E4C5D1901F /* DawnTransition.swift */,
+				85B04F6597EA2477C39C655338C912AE /* DawnTransition+Animate.swift */,
+				B76541FF61BACF21AAACB3BFEDFB425B /* DawnTransition+Complete.swift */,
+				3AF1D69E1E5E062115BD20EDDCA99A72 /* DawnTransition+Interactive.swift */,
+				7CFEECB57A8246516004F2C4A9C8203C /* DawnTransition+UINavigationControllerDelegate.swift */,
+				406B96F9511F4B03589A9938E0515A0D /* DawnTransition+UIViewControllerTransitioningDelegate.swift */,
+				012BD3472406A4791A6D883C67C057D1 /* DawnTransitionAdjustable.swift */,
+				23F186470805A4AE5854AF3602D72A39 /* DawnTransitionModifiers.swift */,
+				1AB45A7BEA51263E53AF82A46E2A01E6 /* DispatchQueue+Dawn.swift */,
+				FCBF843F98A1F4376996FEAB3BBC9B4F /* UINavigationController+DawnSwizzling.swift */,
+				F29408A4E6CC6B7EBF084F9726E09B64 /* UIView+Dawn.swift */,
+				56A5D2C5BA50C7EB8A52B335A67CDD76 /* UIView+DawnPanGestureRecognizer.swift */,
+				E9F3B16CA72842ED4CCBE642C3FA8073 /* UIViewController+Dawn.swift */,
+				2514368893F63F983D19F4A627A8B783 /* Pod */,
+				3FFC506B94691F09F20C4A9BF79EC04B /* Support Files */,
+			);
+			name = DawnTransition;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		8EC4DAC7A8740B6279C9B796DBFDF012 /* Pods-DawnTransition_Example */ = {
@@ -437,7 +447,16 @@
 				08C000FEA3121F325BCDBB87226D3822 /* DawnUI */,
 				E30FEDE0E4E65F88866138A1F58DD374 /* Support Files */,
 			);
+			name = DawnKit;
 			path = DawnKit;
+			sourceTree = "<group>";
+		};
+		9420ECE1CC2DF6659B5511F045C11017 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E4491B49688CDAFCD36AF79C76E74 /* DawnTransition */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		AC1C23AF7B1E363668E1A84F1CCF93B3 /* Pods-DawnTransition_Tests */ = {
@@ -456,21 +475,11 @@
 			path = "Target Support Files/Pods-DawnTransition_Tests";
 			sourceTree = "<group>";
 		};
-		B561511D3993FB5A555BC7490A718CF6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				05023D5B83A6CABFC3B75040CFB102D6 /* DawnTransition.podspec */,
-				0D6CEA7651AB928BDCB45993537AD7AC /* LICENSE */,
-				2CB0F426328D0773AFB96EF6F839DBCB /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F2C655BC226D7625C8DA98C65F8B7BA4 /* Development Pods */,
+				9420ECE1CC2DF6659B5511F045C11017 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				5F33C638D77F7CA1A6F24B83E05F3568 /* Pods */,
 				FD5800535196D4C3E2A71BD442062AB7 /* Products */,
@@ -501,14 +510,6 @@
 			path = "../Target Support Files/DawnKit";
 			sourceTree = "<group>";
 		};
-		F2C655BC226D7625C8DA98C65F8B7BA4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3D866A994ED3B942A19A2B1E7F8625F8 /* DawnTransition */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		FD5800535196D4C3E2A71BD442062AB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,19 +532,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26FC5AD4290B53B2000FDB513088081A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7671BA6F89E7D29B15B08D4717CF83FC /* DawnTransition-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		522E70DB146C72EFAA19E3DF2A9D0911 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D843ED5D391C3AC2C8E1306D750D84F3 /* Pods-DawnTransition_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		538FAD3550F01EC343D1F57F915AE2D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B0DB9A5DC1AB793DB400EEDABC9510 /* DawnTransition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,8 +571,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A501D0F2742319E7B122118E846F97AE /* PBXTargetDependency */,
-				8A9BBCAF993141A2709570B2808F6914 /* PBXTargetDependency */,
+				CBB1CD7AAAFE3AA069232EAD043B5A2C /* PBXTargetDependency */,
+				A451625FF0141CB6911D834023BD0EA1 /* PBXTargetDependency */,
 			);
 			name = "Pods-DawnTransition_Example";
 			productName = Pods_DawnTransition_Example;
@@ -598,12 +599,12 @@
 		};
 		A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F08678405A4CFB9F3C39DCE75EA0021 /* Build configuration list for PBXNativeTarget "DawnTransition" */;
+			buildConfigurationList = B2B145698A59DAE1D5461138458C68DC /* Build configuration list for PBXNativeTarget "DawnTransition" */;
 			buildPhases = (
-				26FC5AD4290B53B2000FDB513088081A /* Headers */,
-				330807B113AD31AEBAB64B71208F863D /* Sources */,
-				EDE04135F4FA11593B07476EBAC3EEE9 /* Frameworks */,
-				338EAB4D8A42F6B9931919A450268E8D /* Resources */,
+				538FAD3550F01EC343D1F57F915AE2D5 /* Headers */,
+				C835644BDBB4181ABD2A8EC4341DCD98 /* Sources */,
+				440CA2F8A31FE38EF5F187C1B08C57DA /* Frameworks */,
+				5DC916754CA6C3C670C9928B3AD4B865 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -626,7 +627,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6AEF10D9A3013E474329B3DCEEA8B682 /* PBXTargetDependency */,
+				8C4ACF6DB933C22683FD90C57C1BDC1C /* PBXTargetDependency */,
 			);
 			name = "Pods-DawnTransition_Tests";
 			productName = Pods_DawnTransition_Tests;
@@ -664,14 +665,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		338EAB4D8A42F6B9931919A450268E8D /* Resources */ = {
+		4B63DC68454AB53D4741E742F1C79197 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B63DC68454AB53D4741E742F1C79197 /* Resources */ = {
+		5DC916754CA6C3C670C9928B3AD4B865 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -695,42 +696,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		330807B113AD31AEBAB64B71208F863D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91F83B9E7CE042334A2DE6DDCACCC839 /* DawnAnimationCapable.swift in Sources */,
-				A48CE76DB75983EAD6838BF195AA1507 /* DawnAnimationCube.swift in Sources */,
-				AEEA843ABDD4A751A9783B163EE08FEE /* DawnAnimationDiffuse.swift in Sources */,
-				94E0D5936B91C41BE2359E9F7EB5B252 /* DawnAnimationDissolve.swift in Sources */,
-				44CE20B65D2884A4F4AFF0B702DF733C /* DawnAnimationFlip.swift in Sources */,
-				74022810F2DFDB26210891D4305959F4 /* DawnAnimationGroup.swift in Sources */,
-				58E375B9B0B66EDCCAAEB5F677CD2079 /* DawnAnimationProducer.swift in Sources */,
-				664F806368A411E4CAF394D81798E494 /* DawnAnimationSpot.swift in Sources */,
-				10D9D4BCDBA0B8BF5345A1183FDB291F /* DawnAnimationTransform.swift in Sources */,
-				9439D884DEB59C6615226759D50F87F4 /* DawnAnimationTurn.swift in Sources */,
-				8151BC350EE74943EFAE99ACAFE054BE /* DawnAnimationType.swift in Sources */,
-				D9B64B8FAC3683480C3F2ADC0D42FCA6 /* DawnCompatible.swift in Sources */,
-				110553A833908A45ECEB3C677996D4FE /* DawnSwizzling.swift in Sources */,
-				2F61BAC62AAC088B00DA6ECA /* DawnAnimationCard.swift in Sources */,
-				B82A208A765E0F0716DB0FDB8D13325B /* DawnTodayGestureRecognizer.swift in Sources */,
-				4DFA6C97C211D53F733833489CC7C82A /* DawnTransition.swift in Sources */,
-				616A806DB0FC15B1F79D427B1458895A /* DawnTransition+Animate.swift in Sources */,
-				ACE120763473B86DD56B99E169D57872 /* DawnTransition+Complete.swift in Sources */,
-				F9B48A42FE6008924016299469FD5300 /* DawnTransition+Interactive.swift in Sources */,
-				4EC0A2005F82D7664ED2AA63A811D7BF /* DawnTransition+UINavigationControllerDelegate.swift in Sources */,
-				B6128F8F01600E3903670A73247C6BB1 /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
-				70D10F681BBA2FADAFD577410CF1A732 /* DawnTransition-dummy.m in Sources */,
-				464B9A1945E3CC27230F40F8A97FF00E /* DawnTransitionAdjustable.swift in Sources */,
-				CD13C5EC0A65A5DDE1B2DAAB168BA411 /* DawnTransitionModifiers.swift in Sources */,
-				CED2640EBE7A018F37A85FE141E5E9CE /* DispatchQueue+Dawn.swift in Sources */,
-				8C9D63802E035763EFAA794F14EE3194 /* UINavigationController+DawnSwizzling.swift in Sources */,
-				FAF9795CB7C540F05B5B0C4EA9C1CBFA /* UIView+Dawn.swift in Sources */,
-				C977632A5BAF85A7D4838C3644C2E2CF /* UIView+DawnPanGestureRecognizer.swift in Sources */,
-				C4296CB1C002878AAE6A7BEE589B4E33 /* UIViewController+Dawn.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6F15249838BE209B675EED681E2775E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -794,6 +759,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C835644BDBB4181ABD2A8EC4341DCD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C70310250B6FCC306F3EBE83326AA2 /* DawnAnimationCapable.swift in Sources */,
+				DAB8C1BCB9E320A41ECBCFF86C24E674 /* DawnAnimationCard.swift in Sources */,
+				0F2F8E4DB10C3BBA921354195E609415 /* DawnAnimationCube.swift in Sources */,
+				77228044CBBE974281A9F0DF5354535D /* DawnAnimationDiffuse.swift in Sources */,
+				CCAFAC0BDE153CFB4D0312D10F00A3EF /* DawnAnimationDissolve.swift in Sources */,
+				539F4F7A0D1C06CC0AA260F8D8052325 /* DawnAnimationFlip.swift in Sources */,
+				8AF7F930DD15311223B18D8BAF151D40 /* DawnAnimationGroup.swift in Sources */,
+				2078273E0C6E539931EEA72552FBC9CC /* DawnAnimationProducer.swift in Sources */,
+				4B6E3F7D428D3C66E95719D7FCA6D498 /* DawnAnimationSpot.swift in Sources */,
+				1386285E5A0A5F1B8D1399AE99FDFA1A /* DawnAnimationTransform.swift in Sources */,
+				027CAAB7AB624653A900F3090B084D31 /* DawnAnimationTurn.swift in Sources */,
+				9B2559CBB02E8475BAB490D5AF59734B /* DawnAnimationType.swift in Sources */,
+				3DC22347A8CE3B5F771065131A357CF3 /* DawnCompatible.swift in Sources */,
+				68D2ABD838B95690230572C37C835B86 /* DawnSwizzling.swift in Sources */,
+				FA603C9E26E5132DB1D8A99B5DF2D71C /* DawnTodayGestureRecognizer.swift in Sources */,
+				D9FB3A33389A5280C7443EF4AA12054A /* DawnTransition.swift in Sources */,
+				06C2CAE37C6DD7285712D50086E23F57 /* DawnTransition+Animate.swift in Sources */,
+				10800BACE2CDDE876F3B394BC15672AE /* DawnTransition+Complete.swift in Sources */,
+				F73BB4F30EB3E278D87AF949151BB101 /* DawnTransition+Interactive.swift in Sources */,
+				268E1FCB55578518F70AF629AC6F8C5E /* DawnTransition+UINavigationControllerDelegate.swift in Sources */,
+				9DF470B38EE47A94F1DB537577D7A2AE /* DawnTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				2D346A8872032CD0E1E78D930A0B4F1D /* DawnTransition-dummy.m in Sources */,
+				C0C51E9465A63B7689FCE8BC578ECC11 /* DawnTransitionAdjustable.swift in Sources */,
+				378FC7E4DA7FAE16E006A852C8C2779A /* DawnTransitionModifiers.swift in Sources */,
+				E18560F8547B4492F460A198C6CE79B6 /* DispatchQueue+Dawn.swift in Sources */,
+				7559DC13A43E7F46E6523AAAADA871EE /* UINavigationController+DawnSwizzling.swift in Sources */,
+				C405A25388BF7EF8BD759B909B920D07 /* UIView+Dawn.swift in Sources */,
+				2D0C9D49B84164BEC9D8AAE3C3515B7B /* UIView+DawnPanGestureRecognizer.swift in Sources */,
+				BCB0D39BFF97A61B81376B2A927955DA /* UIViewController+Dawn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7FBC38B6A444E4111C341E42C9542F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -805,23 +806,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6AEF10D9A3013E474329B3DCEEA8B682 /* PBXTargetDependency */ = {
+		8C4ACF6DB933C22683FD90C57C1BDC1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DawnTransition_Example";
 			target = 14FDBF1AB05729E04DB219B25751A5F0 /* Pods-DawnTransition_Example */;
-			targetProxy = 3C2856EDDFF36424C7B0357735CE9EE2 /* PBXContainerItemProxy */;
+			targetProxy = 60ADAA184A9C8C8DDDB892A02098A5C9 /* PBXContainerItemProxy */;
 		};
-		8A9BBCAF993141A2709570B2808F6914 /* PBXTargetDependency */ = {
+		A451625FF0141CB6911D834023BD0EA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DawnTransition;
 			target = A6CFB672F7B23B4F7E0DF351F4E24834 /* DawnTransition */;
-			targetProxy = 6BBA18FB37218B13C521ED868A3D5C7F /* PBXContainerItemProxy */;
+			targetProxy = ADD9A06798EDF98740DD535BF52CD4B7 /* PBXContainerItemProxy */;
 		};
-		A501D0F2742319E7B122118E846F97AE /* PBXTargetDependency */ = {
+		CBB1CD7AAAFE3AA069232EAD043B5A2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DawnKit;
 			target = 94907EC06CD9521E6FC770EE45E57CFC /* DawnKit */;
-			targetProxy = 0D373AE3E197338DDCAA61E8004B470C /* PBXContainerItemProxy */;
+			targetProxy = 29D6D309D0A373E8484C58D79C8B29CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -894,9 +895,9 @@
 			};
 			name = Release;
 		};
-		67E4B0E56D000A4B604DDDBAD7F88296 /* Release */ = {
+		46DAF8817FB1C20AF62C5FB42C3DA17F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D36F3094831B0A93F6CA4129F5FBD3B1 /* DawnTransition.release.xcconfig */;
+			baseConfigurationReference = ADCC4892A3F876E8E771BA45BB49F808 /* DawnTransition.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1049,7 +1050,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1155,38 +1157,6 @@
 			};
 			name = Debug;
 		};
-		D8AD323CD76B1F9E9F67D9493A127E11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 908D9CFF129E1FE80A37C8F6549A8BB3 /* DawnTransition.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DawnTransition/DawnTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DawnTransition/DawnTransition-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DawnTransition/DawnTransition.modulemap";
-				PRODUCT_MODULE_NAME = DawnTransition;
-				PRODUCT_NAME = DawnTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		EB0A26ECBCE108F603AC64909FDABA1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58AE35D7BF39FAA7EA2B2ADC3F54E7F3 /* Pods-DawnTransition_Tests.debug.xcconfig */;
@@ -1221,18 +1191,41 @@
 			};
 			name = Debug;
 		};
+		EEF0B86221A643DD9BF831C9F6C0F43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDB6FECA415B9AF76E6A9451EA450C2 /* DawnTransition.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DawnTransition/DawnTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DawnTransition/DawnTransition-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DawnTransition/DawnTransition.modulemap";
+				PRODUCT_MODULE_NAME = DawnTransition;
+				PRODUCT_NAME = DawnTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F08678405A4CFB9F3C39DCE75EA0021 /* Build configuration list for PBXNativeTarget "DawnTransition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8AD323CD76B1F9E9F67D9493A127E11 /* Debug */,
-				67E4B0E56D000A4B604DDDBAD7F88296 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1265,6 +1258,15 @@
 			buildConfigurations = (
 				EB0A26ECBCE108F603AC64909FDABA1E /* Debug */,
 				8B72DD6C5210281165C9D13D30DF7E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B145698A59DAE1D5461138458C68DC /* Build configuration list for PBXNativeTarget "DawnTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0B86221A643DD9BF831C9F6C0F43A /* Debug */,
+				46DAF8817FB1C20AF62C5FB42C3DA17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
