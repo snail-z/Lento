@@ -22,13 +22,8 @@ public struct DawnTransitionAdjustable {
     /// 使用自定义阻尼弹性动画
     public var spring: (damping: CGFloat, velocity: CGFloat)?
     
-    /// 快照类型
-    /// noSnapshot：不创建快照，直接对视图做动画
-    /// slowSnapshot：创建视图快照后再做动画
-    public enum SnapshotType { case noSnapshot, slowSnapshot }
-    
     /// 默认不使用快照，直接使用控制器view
-    public var snapshotType: SnapshotType = .noSnapshot
+    public var snapshotType: DawnAnimationSnapshotType = .noSnapshot
     
     /// 转场容器背景色
     public var containerBackgroundColor: UIColor = .black
@@ -58,4 +53,13 @@ extension DawnAnimationCurve {
         case .easeInOut: return .curveEaseInOut
         }
     }
+}
+
+public enum DawnAnimationSnapshotType {
+    
+    /// 不创建快照，直接对视图做动画
+    case noSnapshot
+    
+    /// 创建视图快照后再做动画
+    case slowSnapshot
 }

@@ -29,14 +29,25 @@ extension DawnAnimationProducer {
     public static func using(
         type: DawnAnimationType,
         duration: TimeInterval = 0.295,
-        curve: DawnAnimationCurve = .easeInOut
+        curve: DawnAnimationCurve = .easeInOut,
+        snapshotType: DawnAnimationSnapshotType = .slowSnapshot
     ) ->  DawnAnimationProducer {
         let producer = type.toTransitionProducer()
         producer.presentingAdjustable.duration = duration
         producer.presentingAdjustable.curve = curve
-        producer.dismissingAdjustable.duration = duration
-        producer.dismissingAdjustable.curve = curve
+        producer.presentingAdjustable.snapshotType = snapshotType
+        producer.sameDismissingAdjustable()
         return producer
+    }
+    
+    /// 设置dismissingAdjustable其他参数值与presentingAdjustable相同
+    public func sameDismissingAdjustable() {
+        dismissingAdjustable.delay = presentingAdjustable.delay
+        dismissingAdjustable.duration = presentingAdjustable.duration
+        dismissingAdjustable.curve = presentingAdjustable.curve
+        dismissingAdjustable.spring = presentingAdjustable.spring
+        dismissingAdjustable.snapshotType = presentingAdjustable.snapshotType
+        dismissingAdjustable.containerBackgroundColor = presentingAdjustable.containerBackgroundColor
     }
 }
 

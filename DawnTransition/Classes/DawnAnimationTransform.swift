@@ -2,7 +2,8 @@
 //  DawnAnimationTransform.swift
 //  DawnTransition
 //
-//  Created by zhang on 2023/9/7.
+//  Created by zhang on 2022/7/25.
+//  Copyright (c) 2022 snail-z <haozhang0770@163.com> All rights reserved.
 //
 
 import UIKit
@@ -101,6 +102,19 @@ open class DawnAnimationTransform: NSObject {
             return CGPoint(x: 0.5, y: 1)
         case .center:
             return CGPoint(x: 0.5, y: 0.5)
+        }
+    }
+    
+    public enum DepthPriority {
+        case low, normal, high
+    }
+    
+    /// 设置三维坐标系中，z轴深度优先级
+    public func depth(_ priority: DepthPriority) -> CGFloat {
+        switch priority {
+        case .low:  return -2022
+        case .normal: return .zero
+        case .high: return 2022
         }
     }
 }

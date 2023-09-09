@@ -93,11 +93,11 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
             tempView.removeFromSuperview()
             toView.isHidden = false
             fromView.layer.transform = CATransform3DIdentity
-            fake()
+            addFake()
             dawn.complete(finished: finished)
         }
         
-        func fake() {
+        func addFake() {
             defer { sourceView.isHidden = false }
             guard !dawn.isTransitionCancelled else { return }
             /// fix：在截图前将sourceView隐藏，避免出现视觉重叠
@@ -105,7 +105,7 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
             guard let fromSnapshotView = fromView.dawn.snapshotView() else { return }
             sourceView.isHidden = false
             fromSnapshotView.frame = containerView.bounds
-            fromSnapshotView.tag = self.kSnapshotKey
+            fromSnapshotView.tag = kSnapshotKey
             containerView.insertSubview(fromSnapshotView, at: 0)
             switch self.overlayType {
             case .clear: break
@@ -113,13 +113,13 @@ open class DawnAnimationDissolve: DawnAnimationCapable {
                 let overlayView = UIView(frame: containerView.bounds)
                 overlayView.backgroundColor = color
                 overlayView.alpha = opacity
-                overlayView.tag = self.kOverlayKey
+                overlayView.tag = kOverlayKey
                 containerView.insertSubview(overlayView, aboveSubview: fromSnapshotView)
             case .blur(let style, let color):
                 let effectView = UIVisualEffectView(frame: containerView.bounds)
                 effectView.backgroundColor = color
                 effectView.effect = UIBlurEffect(style: style)
-                effectView.tag = self.kOverlayKey
+                effectView.tag = kOverlayKey
                 containerView.insertSubview(effectView, aboveSubview: fromSnapshotView)
             }
         }

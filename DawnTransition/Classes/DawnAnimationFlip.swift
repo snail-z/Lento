@@ -40,7 +40,7 @@ open class DawnAnimationFlip: DawnAnimationTransform, DawnAnimationCapable {
     }
     
     /// 动画样式
-    public var flipType: FlipType = .door()
+    public var type: FlipType = .door()
     
     /// 动画时长
     public var duration: TimeInterval = 0.85
@@ -125,7 +125,7 @@ open class DawnAnimationFlip: DawnAnimationTransform, DawnAnimationCapable {
             endToViewT.m34 = -m34(percentage: percentage)
         }
         
-        switch flipType {
+        switch type {
         case .door(let perspective):
             update(percentage: .zero)
             containerView.layer.sublayerTransform.m34 = -m34(percentage: perspective)

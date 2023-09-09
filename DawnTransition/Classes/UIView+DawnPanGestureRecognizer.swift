@@ -178,7 +178,7 @@ extension DawnPanGestureRecognizer {
     }
     
     @objc internal func handleRight(_ g: UIPanGestureRecognizer) {
-        let translation = abs(g.translation(in: panView).x)
+        let translation = abs(min(g.translation(in: panView).x, .zero))
         let distance = abs(translation / panView.bounds.width)
         switch g.state {
         case .began:
@@ -214,7 +214,7 @@ extension DawnPanGestureRecognizer {
     }
     
     @objc internal func handleBottom(_ g: UIPanGestureRecognizer) {
-        let translation = abs(g.translation(in: panView).y)
+        let translation = abs(min(g.translation(in: panView).y, .zero))
         let distance = abs(translation / panView.bounds.height)
         switch g.state {
         case .began:
