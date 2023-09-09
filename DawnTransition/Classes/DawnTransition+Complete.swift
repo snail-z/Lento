@@ -10,7 +10,7 @@ import UIKit
 
 extension DawnTransition {
 
-    internal func complete(finished: Bool) {
+    public func complete(finished: Bool, automated: Bool = true) {
         guard state == .animating || state == .starting else { return }
         defer {
             inNavigationController = false
@@ -29,28 +29,33 @@ extension DawnTransition {
             transitionContext!.completeTransition(transitionCancelled)
             return
         }
+
+        /// 导航转场的特殊处理，swizzle-push/pop
+        if inNavigationController {
+            if isPresenting {
+                if toViewController!.dawn.isNavigationEnabled {
+                    Dawn.unSwizzlePushViewController()
+                    Dawn.swizzlePopViewController()
+                }
+            } else {
+                if fromViewController!.dawn.isNavigationEnabled, !transitionCancelled {
+                    Dawn.unSwizzlePopViewController()
+                }
+            }
+        }
         
-        if transitionCancelled {
-            addSubview(fromViewController!.view)
-            removeSubview(toViewController!.view)
-        } else {
-            addSubview(toViewController!.view)
-            removeSubview(fromViewController!.view)
+        /// 外部可选择转场结束后，是否由内部自动添加或删除子视图
+        if automated {
+            if transitionCancelled {
+                addSubview(fromViewController!.view)
+                removeSubview(toViewController!.view)
+            } else {
+                addSubview(toViewController!.view)
+                removeSubview(fromViewController!.view)
+            }
         }
         
         transitionContext!.completeTransition(!transitionCancelled)
-        
-        guard inNavigationController else { return }
-        if isPresenting {
-            if toViewController!.dawn.isNavigationEnabled {
-                Dawn.unSwizzlePushViewController()
-                Dawn.swizzlePopViewController()
-            }
-        } else {
-            if fromViewController!.dawn.isNavigationEnabled, !transitionCancelled {
-                Dawn.unSwizzlePopViewController()
-            }
-        }
     }
 }
 
